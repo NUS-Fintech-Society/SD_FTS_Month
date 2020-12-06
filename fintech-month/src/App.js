@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import HomePage from './pages/home/HomePage';
@@ -39,12 +39,12 @@ function App() {
         </AppBar>
       </div>
 
-      <div className='App'>
+      <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/sponsors" exact component={SponsorsPage} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
-      </div>
+      </Switch>
     </BrowserRouter>
   );
 }

@@ -27,7 +27,7 @@ function App() {
             <Typography variant="h6" color="inherit" className={classes.title}>
               <p>
                 NUS FinTech
-                <br></br>
+                <br/>
                 Society
               </p>
             </Typography>

@@ -1,7 +1,16 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
+import EventButtons from './components/EventButtons';
 
 function BlogPage(){
-    return <h1>Blog Page</h1>
+    return (
+        <div>
+            <h1>Blog:</h1>
+            <Container> 
+                <EventButtons></EventButtons>
+            </Container>
+        </div>
+    );
 }
 
 export default BlogPage;

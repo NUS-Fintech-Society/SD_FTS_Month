@@ -5,8 +5,8 @@ import EventButtons from './components/EventButtons';
 function BlogPage(){
     return (
         <div>
-            <h1>Blog:</h1>
             <Container> 
+                <h1>Blog:</h1>
                 <EventButtons></EventButtons>
             </Container>
         </div>

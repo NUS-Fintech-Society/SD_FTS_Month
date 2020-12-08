@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Countdown{
+  margin: 10px auto;
+  font-size: 25px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.HomePageAbout{
+width:550px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.inlineBlock{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  /* outline-style:dotted;
+  outline-color:black; */
+
+}
+
+.FintechMonthHeader{
+font-size: 50px;
+} 
+
+h1,h2,h3,h4,h5 {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  /* border-color:blue;
+  border-style: dotted; */
+}
+
+.center{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-color:coral;
+  border-style: dotted; */
+
+}
+
+.padding20{
+  padding:20px;
+  margin:20px;
+}
+
+.Button {
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  /* align-items:center; */
+  /* border-color:green;
+  border-style: dotted; */
+}
+
+
+.Grp {
+  border-color:black;
+  border-style: dotted;
+}

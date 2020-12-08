@@ -1,7 +1,7 @@
 import React from 'react';
 import Accordion from './Accordion'
 
-function App(){
+function FaqPage(){
   const products = [
     {title:'Hackathon',
      questions: [
@@ -136,7 +136,7 @@ function App(){
     },
   ]
   return(
-  <div className="App">
+  <div className="FaqPage">
     {products.map(product => (
       <Accordion
         title = {product.title}

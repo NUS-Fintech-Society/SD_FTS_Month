@@ -1,7 +1,7 @@
 import React from 'react';
 import Accordion from './Accordion'
 
-function App(){
+function FaqPage(){
   const products = [
     {title:'Hackathon',
      questions: [
@@ -148,4 +148,4 @@ function App(){
   )
 }
 
-export default App;
+export default FaqPage;

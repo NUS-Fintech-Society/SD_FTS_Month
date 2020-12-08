@@ -12,28 +12,32 @@ function Accordion({title,questions}){
       className="accordion-header"
       >
         <Typography variant="h5" align="left">{title}</Typography>
+
         <div className="accordion-indicator">
           {isOpen ? '-' : '+'}
         </div>
+      
       </div>
+      
       {isOpen && (
       <div className="accordion-body">
-        {questions.map((question) =>{
+        {questions.map((question) =>
+        {
           return (
           <div>
+            
             <Typography className="questions">{question.question}</Typography>
             {question.answer.map((ans) => {
               if(ans === ''){
                 return (<br/>)
               }
-
               return (<Typography className="answers">{ans}</Typography>);
             }
-              
-            )}
-          
-          </div>)
-        })}
+            )}        
+          </div>
+          )
+        })
+        }
       </div>
       )}
     </div>

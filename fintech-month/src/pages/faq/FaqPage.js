@@ -148,4 +148,4 @@ function FaqPage(){
   )
 }
 
-export default App;
+export default FaqPage;

@@ -1,0 +1,33 @@
+.accordion-header {
+    background-color: #eee;
+    cursor:pointer;
+    padding: 10px;
+    position:relative;
+}
+
+.accordion-header:hover {
+    padding: 10px;
+}
+
+.accordion-indicator {
+    font-size:30px;
+    position: absolute;
+    right:30px;
+    top:5px;
+}
+
+.questions {
+    font-size: 24px;
+    padding: 10px 10px;
+    text-align:left;
+    margin:auto;
+    font-weight:bold;
+}
+
+.answers {
+    font-size: 16px;
+    padding: 10px 10px;
+    text-align:left;
+    margin:auto;
+    
+}

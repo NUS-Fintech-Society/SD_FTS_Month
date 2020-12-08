@@ -1,25 +1,31 @@
 import React from 'react';
+import Background from '../../../images/placeholder.png';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, ButtonBase } from '@material-ui/core';
 
 const images = [
   {
-    url: '../../../images/placeholder.png',
+    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    href: '/', // currently no hackathon page
     title: 'Hackathon',
     width: '25%',
   },
   {
-    url: '/static/images/grid-list/burgers.jpg',
+    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    href: '/', // currently no workshop page
     title: 'Workshop 1',
     width: '25%',
+
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
+    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    href: '/', // currently no workshop page
     title: 'Workshop 2',
     width: '25%',
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
+    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    href: '/', // currently no workshop page
     title: 'Workshop 3',
     width: '25%',
   },
@@ -109,6 +115,7 @@ export default function EventButtons() {
           key={image.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
+          href={image.href}
           style={{
             width: image.width,
           }}
@@ -116,7 +123,7 @@ export default function EventButtons() {
           <span
             className={classes.imageSrc}
             style={{
-              backgroundImage: `url(${image.url})`,
+              backgroundImage: image.backgroundImage,
             }}
           />
           <span className={classes.imageBackdrop} />

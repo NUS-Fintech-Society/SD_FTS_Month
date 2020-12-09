@@ -6,12 +6,16 @@ function Countdown() {
     const difference = +new Date(`${2021}-01-02`) - +new Date();
     let timeLeft = {};
 
+    function minTwoDigits(n) {
+      return (n < 10 ? '0' : '') + n;
+    }
+
     if (difference >= 0) {
       timeLeft = {
-        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        Min: Math.floor((difference / 1000 / 60) % 60),
-        Sec: Math.floor((difference / 1000) % 60),
+        Days: minTwoDigits(Math.floor(difference / (1000 * 60 * 60 * 24))),
+        Hours: minTwoDigits(Math.floor((difference / (1000 * 60 * 60)) % 24)),
+        Min: minTwoDigits(Math.floor((difference / 1000 / 60) % 60)),
+        Sec: minTwoDigits(Math.floor((difference / 1000) % 60)),
       };
     }
 
@@ -30,13 +34,9 @@ function Countdown() {
   const timerComponents = [];
 
   Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
-
     timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}{" "}
+      <span className="timerPadding">
+        {timeLeft[interval]} {}
       </span>
     );
   });

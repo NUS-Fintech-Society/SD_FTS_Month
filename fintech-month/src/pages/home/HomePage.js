@@ -30,10 +30,10 @@ function HomePage(){
                     
                     <h3>NUS FinTech Society proudly presents to you...</h3>
                     <h1 className='FintechMonthHeader' >FinTech Month 2021</h1>
-                    <h3 className="">Fintech Hackathon coming soon (2nd Jan 2021):</h3>
                     <div className ="Countdown">
                         <Countdown/>
                     </div>
+                    <pre className="CountdownText">  Days    Hours    Min     Sec</pre>
                     <h2 className="underline">About</h2>
                     <h5 className="HomePageAbout">NUS FinTech month is a series of workshops and panel discussions designed to give university and polytechnic students an insight into the world of Fintech.
                     There will be workshops ranging from beginner levels to more advanced levels allowing everyone, no matter their background, to participate in this. 

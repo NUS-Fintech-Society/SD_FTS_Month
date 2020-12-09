@@ -13,12 +13,12 @@ code {
 }
 
 .Countdown{
-  margin: 10px auto;
-  font-size: 25px;
-  padding-bottom: 20px;
+  font-size: 30px;
   display: flex;
   justify-content:center;
   align-items:center;
+  /* border-color:coral;
+  border-style: dotted; */
 }
 
 
@@ -32,7 +32,7 @@ margin-right: auto;
 .inlineBlock{
   display: flex;
   justify-content:center;
-  align-items:center;
+  align-items:top;
   /* outline-style:dotted;
   outline-color:black; */
 
@@ -46,8 +46,10 @@ h1,h2,h3,h4,h5 {
   display: flex;
   justify-content:center;
   align-items:center;
-  /* border-color:blue;
-  border-style: dotted; */
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .center{
@@ -60,21 +62,40 @@ h1,h2,h3,h4,h5 {
 }
 
 .padding20{
-  padding:20px;
-  margin:20px;
+  /* padding:10px; */
+  margin:10px;
 }
 
 .Button {
   display: flex;
   justify-content:center;
   text-align: center;
-  /* align-items:center; */
+  padding:10px;
+  margin:0px;
+  align-items:center;
   /* border-color:green;
   border-style: dotted; */
 }
 
-
-.Grp {
+.Grp1 {
   border-color:black;
   border-style: dotted;
+  width: 500px;
+}
+
+.Grp2 {
+  /* border-color:black;
+  border-style: dotted; */
+  width: 550px;
+}
+
+.outline { 
+  /* border-color:coral;
+  border-style: dotted; */
+}
+
+.comingSoon { 
+  margin:0;
+  /* border-color:coral;
+  border-style: dotted; */
 }

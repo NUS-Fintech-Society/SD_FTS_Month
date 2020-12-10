@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
-import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
+import { AppBar, Toolbar, Button } from '@material-ui/core';
+import Logo from './images/logo.png';
 import HomePage from './pages/home/HomePage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 2,
   },
   emptyitem: {
-    flexGrow: 2,
+    flexGrow: 6,
   },
 }));
 
@@ -29,16 +29,9 @@ function App() {
       <AppBar position="static" color='#C0C0C0'>
         <Toolbar variant="dense">
           <div className={classes.emptyitem}></div>
-          <IconButton className={classes.title}>
-            <EmojiEmotionsIcon />
-          </IconButton>
-          <Typography variant="h6" color="inherit" className={classes.title}>
-            <p>
-              NUS FinTech
-              <br />
-              Society
-            </p>
-          </Typography>
+          <div className={classes.title}>
+            <img src={Logo} alt='Logo' />
+          </div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
           <Button color="inherit" href="/sponsors" className={classes.title}>Sponsors</Button>
           <Button color="inherit" href="/faq" className={classes.title}>FAQ</Button>

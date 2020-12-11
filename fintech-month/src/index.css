@@ -31,6 +31,7 @@ margin-right: auto;
 
 .FintechMonthHeader{
 font-size: 50px;
+text-align: center;
 } 
 
 h1,h2,h3,h4,h5 {
@@ -68,21 +69,18 @@ h1,h2,h3,h4,h5 {
   border-style: dotted; */
 }
 
-.Grp1 {
-  border-color:black;
-  border-style: dotted;
-  width: 500px;
-}
-
-.Grp2 {
-  /* border-color:black;
-  border-style: dotted; */
-  width: 550px;
-}
-
 .outline { 
-  /* border-color:coral;
-  border-style: dotted; */
+  border-color:coral;
+  border-style: dotted;
+}
+
+.legend{
+  text-decoration: underline;
+  justify-content: center;
+}
+
+.centerTextAlign{
+  text-align: center;
 }
 
 .comingSoon { 

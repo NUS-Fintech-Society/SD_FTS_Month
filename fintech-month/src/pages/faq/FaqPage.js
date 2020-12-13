@@ -1,11 +1,49 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
+import {Grid,Box,Container} from '@material-ui/core';
+import {withStyles} from '@material-ui/core/styles';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MuiAccordion from '@material-ui/core/Accordion';
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 
+
+
+const Accordion = withStyles({
+  root: {
+    borderTop: '1px solid rgba(0, 0, 0, .125)',
+    boxShadow: 'none',
+    '&:not(:last-child)': {
+      borderBottom: 0,
+    },
+    '&:before': {
+      display: 'none',
+    },
+    '&$expanded': {
+      margin: 'auto',
+    },
+  },
+  expanded: {},
+})(MuiAccordion);
+
+const AccordionSummary = withStyles({
+  root: {
+    backgroundColor: 'rgba(0, 0, 0, .03)',
+    borderBottom: '1px solid rgba(0, 0, 0, .125)',
+    marginBottom: -1,
+    minHeight: 56,
+    '&$expanded': {
+      minHeight: 56,
+    },
+  },
+  content: {
+    '&$expanded': {
+      margin: '12px 0',
+    },
+  },
+  expanded: {},
+})(MuiAccordionSummary);
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,8 +54,10 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
   },
   heading: {
-    fontSize: theme.typography.pxToRem(30),
+    fontSize: theme.typography.pxToRem(25),
     fontWeight: theme.typography.fontWeightRegular,
+    color: '#FFFFFF',
+    
   },
   questions: {
     fontSize: theme.typography.pxToRem(20),
@@ -30,6 +70,10 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 16px'
   
   },
+  accordionSummary:{
+    backgroundColor: "#000080",
+  },
+  
 }));
 
 export default function FaqPage() {
@@ -42,6 +86,7 @@ export default function FaqPage() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          className={classes.accordionSummary}
         >
           <Typography className={classes.heading}>Hackathon</Typography>
         </AccordionSummary>
@@ -112,12 +157,13 @@ export default function FaqPage() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-
+      
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          className={classes.accordionSummary}
         >
           <Typography className={classes.heading}>Opening ceremony</Typography>
         </AccordionSummary>
@@ -136,12 +182,13 @@ export default function FaqPage() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-
+      
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          className={classes.accordionSummary}
         >
           <Typography className={classes.heading}>Workshops</Typography>
         </AccordionSummary>
@@ -186,12 +233,15 @@ export default function FaqPage() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      
 
+      
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          className={classes.accordionSummary}
         >
           <Typography className={classes.heading}>Closing ceremony</Typography>
         </AccordionSummary>
@@ -210,8 +260,11 @@ export default function FaqPage() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-
+    
+      </div>
+    
+    
       
-    </div>
+  
   );
 }

@@ -7,6 +7,7 @@ import HomePage from './pages/home/HomePage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import SponsorsPage from './pages/sponsors/SponsorsPage';
+import EventOverviewPage from './pages/home/EventOverviewPage';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,6 +54,7 @@ function App() {
         <Route path="/sponsors" exact component={SponsorsPage} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
+        <Route path="/eventoverview" exact component={EventOverviewPage}/>
       </Switch>
 
     </BrowserRouter>

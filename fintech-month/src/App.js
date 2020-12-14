@@ -43,6 +43,7 @@ function App() {
           <Button color="inherit" href="/blog" className={classes.title}>Blog</Button>
           <div className={classes.emptyitem}></div>
           <div className={classes.emptyitem}></div>
+          
         </Toolbar>
       </AppBar>
 

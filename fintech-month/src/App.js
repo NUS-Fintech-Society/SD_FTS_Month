@@ -2,7 +2,8 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button } from '@material-ui/core';
-import Logo from './images/logo.png';
+import FTSLogo from './images/FTS_logo.png';
+import FMLogo from './images/FM_logo.png';
 import HomePage from './pages/home/HomePage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 2,
   },
   emptyitem: {
-    flexGrow: 6,
+    flexGrow: 3,
   },
 }));
 
@@ -28,14 +29,19 @@ function App() {
 
       <AppBar position="static" color='#C0C0C0'>
         <Toolbar variant="dense">
-          <div className={classes.emptyitem}></div>
+          
           <div className={classes.title}>
-            <img src={Logo} alt='Logo' />
+            <img src={FMLogo} alt='Logo' />
           </div>
+          <div className={classes.title}>
+            <img src={FTSLogo} alt='Logo' />
+          </div>
+          <div className={classes.emptyitem}></div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
           <Button color="inherit" href="/sponsors" className={classes.title}>Sponsors</Button>
           <Button color="inherit" href="/faq" className={classes.title}>FAQ</Button>
           <Button color="inherit" href="/blog" className={classes.title}>Blog</Button>
+          <div className={classes.emptyitem}></div>
           <div className={classes.emptyitem}></div>
         </Toolbar>
       </AppBar>

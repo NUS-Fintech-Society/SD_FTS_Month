@@ -7,7 +7,11 @@ import FMLogo from './images/FM_logo.png';
 import HomePage from './pages/home/HomePage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
-import SponsorsPage from './pages/sponsors/SponsorsPage';
+import RaiCapital from './pages/sponsors/RaiCapital';
+import Fundedhere from './pages/sponsors/FundedHere';
+import BNPP from './pages/sponsors/BNPP';
+import Stanley from './pages/sponsors/Stanley';
+import Genping from './pages/sponsors/Genping';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +42,7 @@ function App() {
           </div>
           <div className={classes.emptyitem}></div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
-          <Button color="inherit" href="/sponsors" className={classes.title}>Sponsors</Button>
+          <Button color="inherit" href="/sponsors/raicapital" className={classes.title}>Sponsors</Button>
           <Button color="inherit" href="/faq" className={classes.title}>FAQ</Button>
           <Button color="inherit" href="/blog" className={classes.title}>Blog</Button>
           <div className={classes.emptyitem}></div>
@@ -50,7 +54,11 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/sponsors" exact component={SponsorsPage} />
+        <Route path="/sponsors/raicapital" exact component={RaiCapital} />
+        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
+        <Route path="/sponsors/bnpp" exact component={BNPP} />
+        <Route path="/sponsors/stanley" exact component={Stanley} />
+        <Route path="/sponsors/genping" exact component={Genping} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
       </Switch>

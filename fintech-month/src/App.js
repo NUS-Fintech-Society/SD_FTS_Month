@@ -5,6 +5,7 @@ import { AppBar, Toolbar, Button } from '@material-ui/core';
 import FTSLogo from './images/FTS_logo.png';
 import FMLogo from './images/FM_logo.png';
 import HomePage from './pages/home/HomePage';
+import HackathonPage from './pages/home/HackathonPage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import RaiCapital from './pages/sponsors/RaiCapital';
@@ -37,10 +38,10 @@ function App() {
         <Toolbar variant="dense">
           
           <div className={classes.title}>
-            <img src={FMLogo} alt='Logo' />
+            <img class='App-logo' src={FMLogo} alt='Logo' />
           </div>
           <div className={classes.title}>
-            <img src={FTSLogo} alt='Logo' />
+            <img class='App-logo' src={FTSLogo} alt='Logo' />
           </div>
           <div className={classes.emptyitem}></div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
@@ -56,6 +57,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={HomePage} />
+        <Route path="/hackathon" exact component={HackathonPage} />
         <Route path="/sponsors/raicapital" exact component={RaiCapital} />
         <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
         <Route path="/sponsors/bnpp" exact component={BNPP} />

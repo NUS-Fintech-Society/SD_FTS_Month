@@ -77,7 +77,7 @@ function HomePage(){
                     <Grid item xs={0} md={3} lg={3} xl={4} ></Grid>
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="" size='large'><h3>Hackathon</h3></Button>
+                        <Button className={classes.buttonStyle} variant="" size='large' href="/hackathon"><h3>Hackathon</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
                         <Button className={classes.buttonStyle} variant="" size='large'><h3>Workshop</h3></Button>

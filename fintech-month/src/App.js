@@ -12,6 +12,8 @@ import Fundedhere from './pages/sponsors/FundedHere';
 import BNPP from './pages/sponsors/BNPP';
 import Stanley from './pages/sponsors/Stanley';
 import Genping from './pages/sponsors/Genping';
+import EventOverviewPage from './pages/home/EventOverviewPage';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,6 +63,7 @@ function App() {
         <Route path="/sponsors/genping" exact component={Genping} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
+        <Route path="/eventoverview" exact component={EventOverviewPage}/>
       </Switch>
 
     </BrowserRouter>

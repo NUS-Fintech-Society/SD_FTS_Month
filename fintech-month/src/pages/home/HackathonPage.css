@@ -1,4 +1,4 @@
-.logo {
+.top-logo {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -9,10 +9,48 @@
     max-height: 100px;
 } 
 
+.bottom-logo {
+    display: flex;
+    flex-grow: 1;
+    padding: 50px 50px 50px 50px;
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+} 
+
+.bottom-bar-text {
+    font-size: 50px;
+    color:white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display:inline-block;
+    margin-top: 10px;
+}
+
 .image {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     height: auto; 
     width: auto; 
+}
+
+.reverse-grad {
+    background-image: linear-gradient(#ffffff, 20%,#131d47);
+}
+
+.register-button {
+    text-decoration: none;
+    font-size: 50px;
+    color:orange;
+    font-weight: bold;
+    padding: 15px;
+    flex-grow: 2px;
+    background-image: linear-gradient(#131d47, 80%, #ffffff);
+}
+
+.empty {
+    flex-grow: 1;
 }

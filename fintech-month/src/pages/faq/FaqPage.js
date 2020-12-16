@@ -24,7 +24,7 @@ export default function FaqPage() {
 
           <Container className={classes.qnacontainer}>
           <Typography className={classes.questions}>
-            Who is eligible to take part in the hacakthon?
+            Who is eligible to take part in the hackathon?
           </Typography>
           <Typography className={classes.answers}>
             All university and polytechnic students in Singapore are welcome to sign up for the hackathon!
@@ -49,7 +49,7 @@ export default function FaqPage() {
           </Typography>
           <br/>
           <Typography className={classes.answers}>
-            Each team should only sign up<Typography className={classes.underlinedanswers}>once</Typography>. Please appoint a team leader and fill up all team members' particulars as stated in the form.
+            Each team should only sign up&nbsp;<u>once</u>. Please appoint a team leader and fill up all team members' particulars as stated in the form.
           </Typography>
           </Container>
 
@@ -166,7 +166,7 @@ export default function FaqPage() {
           </Typography>
           <br/>
           <Typography className={classes.answers}>
-            Please sign up individually and only submit each of the forms <Typography className={classes.underlinedanswers}>once</Typography>.
+            Please sign up individually and only submit each of the forms&nbsp;<u>once</u>.
           </Typography>
           </Container>
 

@@ -64,18 +64,18 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
     },
     heading: {
-      fontSize: theme.typography.pxToRem(35),
+      fontSize: theme.typography.pxToRem(25),
       fontWeight: theme.typography.fontWeightRegular,
       color: '#FFFFFF',
     },
     questions: {
-      fontSize: theme.typography.pxToRem(30),
+      fontSize: theme.typography.pxToRem(20),
       fontWeight: theme.typography.fontWeightBold,
       padding: '10px 0',
     },
     answers: {
       display:'flex',
-      fontSize: theme.typography.pxToRem(20),
+      fontSize: theme.typography.pxToRem(15),
       fontWeight: theme.typography.fontWeightMedium,
     },
     
@@ -91,9 +91,6 @@ export const useStyles = makeStyles((theme) => ({
       marginBottom: '20px',
     },
     underlinedanswers:{
-      fontSize: theme.typography.pxToRem(20),
-      fontWeight: theme.typography.fontWeightMedium,
-      textDecoration: 'underline',
       marginLeft: '3px'
     },
     lastAccordionSummary:{

@@ -8,6 +8,7 @@ import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import SponsorsPage from './pages/sponsors/SponsorsPage';
 import EventOverviewPage from './pages/home/EventOverviewPage';
+import RegDatePage from './pages/home/RegDatePage'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,6 +56,7 @@ function App() {
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
         <Route path="/eventoverview" exact component={EventOverviewPage}/>
+        <Route path="/registrationdates" exact component={RegDatePage}/>
       </Switch>
 
     </BrowserRouter>

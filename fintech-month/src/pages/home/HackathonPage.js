@@ -32,7 +32,7 @@ export default function Hackathon() {
                     class='register-button' 
                     href='https://tinyurl.com/y6bk3khb'
                     target="_blank" 
-                    rel='noreferrer'>Register now!</Button>
+                    rel='noreferrer'>Register here!</Button>
                     <div class='empty' />
                 </Toolbar>   
             </div>

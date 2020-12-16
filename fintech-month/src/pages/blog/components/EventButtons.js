@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     top: '10%',
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
-    fontSize: '40px',
+    fontSize: '50px',
     
   },
   imageMarked: {
@@ -124,7 +124,7 @@ export default function EventButtons() {
             href={image.href}
             style={{
               width: image.width,
-              height: '50vh',
+              height: '60vh',
             }}
           >
             <span class='button-grad' />

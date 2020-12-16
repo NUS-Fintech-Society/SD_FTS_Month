@@ -15,9 +15,9 @@ export default function Hackathon() {
                 </div>
             </div>
             <div>
-                <h1>Opening Ceremony</h1>
+                <h2 class='opening'>Opening Ceremony</h2>
                 <img class='image' src={OpeningTimeline} alt='OpeningTimeline' />
-                <h1>Closing Ceremony</h1>
+                <h2 class='closing'>Closing Ceremony</h2>
                 <img class='image' src={ClosingTimeline} alt='ClosingTimeline' />
             </div>
             <div class='reverse-grad'>

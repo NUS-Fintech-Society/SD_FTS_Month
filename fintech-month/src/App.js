@@ -7,6 +7,8 @@ import HomePage from './pages/home/HomePage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import SponsorsPage from './pages/sponsors/SponsorsPage';
+import Workshop from './pages/home/workshop/Workshop';
+import Dynamicpage from './pages/home/workshop/Dynamicpage';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,6 +55,8 @@ function App() {
         <Route path="/sponsors" exact component={SponsorsPage} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
+        <Route path="/workshop" exact component={Workshop}/>
+        <Route path="/workshop/workshopdetail" exact component={Dynamicpage}/>
       </Switch>
 
     </BrowserRouter>

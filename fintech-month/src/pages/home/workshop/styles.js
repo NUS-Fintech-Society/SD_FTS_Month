@@ -75,11 +75,31 @@ export const useStyles = makeStyles((theme) =>({
         flexBasis:'50%',
     },
     image:{
-        flexBasis:'50%',
+        position:'fixed',
+        left:'3%',
+        top:'25%',
+        width:'500px',
+        height:'300px',
+    },
+        box:{
+        width:'100%',
+        display:'flex',
+        flexDirection:'column',
+        height:'400px',
     },
     dynamicroot:{
         width:'100%',
         display:'flex',
-        flexDirection:'row',
+        justifyContent:'flex-end',
+    },
+    paragraph:{
+        flexBasis:'60%',
+        display:'flex',
+        flexDirection:'column',
+    },
+    register:{
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
     },
 }))

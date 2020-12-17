@@ -1,9 +1,8 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles'
-import {Box,Button,Typography} from '@material-ui/core'
+import {Box,Typography, ButtonBase} from '@material-ui/core'
 import logo from '../../../images/placeholder.png'
 import {useStyles} from './styles'
-import Dynamicpage from './Dynamicpage'
+import Complexbutton from './components/Complexbutton';
 
 
 function Workshop(){
@@ -22,19 +21,14 @@ function Workshop(){
                     Beginners Workshops
                 </Typography>
             </Box>
-            <Box className={classes.machinelearning}>
-                <Typography className={classes.title}>
-                    Machine Learning
+            <Complexbutton title="Machine Learning" bgImage = "linear-gradient(#131d47,80%,#ffffff)" href="workshop/workshopdetail/" width="100%" />
+            <Complexbutton title="Blockchain" bgImage = "linear-gradient(#131d47,80%,#ffffff)" href="workshop/workshopdetail/" width="100%" />
+            <Box className={classes.beginnerworkshop}>
+                <Typography className={classes.titleheading}>
+                    External Workshops
                 </Typography>
             </Box>
-            <Box className={classes.blockchain}>
-                <Typography className={classes.title}>
-                   Blockchain
-                </Typography>
-            </Box>
-            <Box>
-                <Dynamicpage/>
-            </Box>
+            <Complexbutton title="Workshop A" bgImage = "linear-gradient(#131d47,80%,#ffffff)" href="workshop/workshopdetail/" width="100%" />
         </Box>
         
     )

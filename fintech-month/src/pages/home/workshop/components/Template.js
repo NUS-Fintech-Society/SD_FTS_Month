@@ -9,16 +9,22 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         justifyContent:'center',
         alignItems:'center',
+        height:'100%',
     },
     title:{
-        fontSize:'40px',
+        fontSize:'30px',
         fontWeight:'bold',
+        textAlign:'center',
+        height:'25%',
     },
     content:{
+        margin:'30px 0',
         fontSize:'25px',
+        height:'50%',
     },
     author:{
         fontSize:'25px',
+        height:'25%',
     },
 }))
 

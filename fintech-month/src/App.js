@@ -9,6 +9,7 @@ import FaqPage from './pages/faq/FaqPage';
 import SponsorsPage from './pages/sponsors/SponsorsPage';
 import Workshop from './pages/home/workshop/Workshop';
 import Dynamicpage from './pages/home/workshop/Dynamicpage';
+import EventOverviewPage from './pages/home/EventOverviewPage';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -57,6 +58,7 @@ function App() {
         <Route path="/blog" exact component={BlogPage} />
         <Route path="/workshop" exact component={Workshop}/>
         <Route path="/workshop/workshopdetail" exact component={Dynamicpage}/>
+        <Route path="/eventoverview" exact component={EventOverviewPage}/>
       </Switch>
 
     </BrowserRouter>

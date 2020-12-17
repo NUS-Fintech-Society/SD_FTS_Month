@@ -66,7 +66,7 @@ function Dynamicpage(){
             setImage(Machine13);
         }else if(window.scrollY <= 1150){
             setImage(Blockchain12);
-        }else if(window.scrollY <= 1500){
+        }else if(window.scrollY <= 1600){
             setImage(Blockchain13);
         }
     };   

@@ -1,0 +1,7 @@
+{
+  "name": "DevOps_FTS_Month",
+  "scripts": {
+    "postinstall": "npm run install-functions",
+    "install-functions": "cd functions && npm install"
+  }
+}

@@ -43,6 +43,16 @@ justify-content: center;
 
 }
 
+.videoCSS{
+  max-width:700px;
+  min-width:400px;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about{
   text-decoration: underline;
   margin-top:45px;

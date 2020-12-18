@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import CardMedia from '@material-ui/core/CardMedia';
 import logo from './Logo.png';
 import vid from './homeVideoV2.mp4'
+import './HomePage.css';
 
 
 const useStyles = makeStyles(theme => ({

@@ -8,6 +8,8 @@ import HomePage from './pages/home/HomePage';
 import HackathonPage from './pages/home/HackathonPage';
 import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
+import Workshop from './pages/home/workshop/Workshop';
+import Workshopdetail from './pages/home/workshop/Workshopdetail';
 import RaiCapital from './pages/sponsors/RaiCapital';
 import Fundedhere from './pages/sponsors/FundedHere';
 import BNPP from './pages/sponsors/BNPP';
@@ -66,6 +68,8 @@ function App() {
         <Route path="/sponsors/genping" exact component={Genping} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
+        <Route path="/workshop" exact component={Workshop}/>
+        <Route path="/workshop/workshopdetail" exact component={Workshopdetail}/>
         <Route path="/eventoverview" exact component={EventOverviewPage}/>
         <Route path="/registrationdates" exact component={RegDatePage}/>
       </Switch>

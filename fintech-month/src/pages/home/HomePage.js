@@ -4,15 +4,7 @@ import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import CardMedia from '@material-ui/core/CardMedia';
-import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
 import logo from './Logo.png';
-import eventTimeline from './eventTimeline.png';
-import registrationTimeline from './registrationTimeline.png';
-import mlTimeline from './mlTimeline.png';
-import bcTimeline from './bcTimeline.png';
-import openingCeremony from './openingCeremony.png';
-import closingCeremony from './closingCeremony.png';
 import vid from './homeVideoV2.mp4'
 
 

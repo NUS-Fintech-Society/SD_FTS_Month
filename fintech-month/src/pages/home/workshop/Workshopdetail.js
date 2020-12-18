@@ -97,7 +97,7 @@ const texts=[
     },
 ]
 
-function Dynamicpage(){
+function Workshopdetail(){
     const classes = useStyles()
     const [Image,setImage] = useState(Machine12)
     const [Title,setTitle] = useState("12 Jan 2020")
@@ -173,4 +173,4 @@ function Dynamicpage(){
 }
 
 
-export default Dynamicpage;
+export default Workshopdetail;

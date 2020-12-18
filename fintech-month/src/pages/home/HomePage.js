@@ -3,6 +3,7 @@ import Countdown from './Countdown.js';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import CardMedia from '@material-ui/core/CardMedia';
 import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import logo from './Logo.png';
@@ -12,6 +13,7 @@ import mlTimeline from './mlTimeline.png';
 import bcTimeline from './bcTimeline.png';
 import openingCeremony from './openingCeremony.png';
 import closingCeremony from './closingCeremony.png';
+import vid from './homeVideoV2.mp4'
 
 
 const useStyles = makeStyles(theme => ({
@@ -20,7 +22,8 @@ const useStyles = makeStyles(theme => ({
     },
     buttonStyle: {
         minWidth: 245,
-        borderRadius: 25 
+        borderRadius: 25,
+        variant: "outlined"
     }
 }));
 
@@ -32,7 +35,6 @@ function HomePage(){
     return (
         <div className={classes.root}>
             <Grid container spacing={0}>
- 
                 <Grid item xs={12} justify="center" className="grad" >
                     
                     <h3 className="subHeader">Join our very first</h3>
@@ -48,7 +50,25 @@ function HomePage(){
                         <Countdown/>
                     </div>
                     <pre className="CountdownText">  Days    Hours    Min     Sec</pre>
-                
+                    
+                    <p></p>
+                </Grid>
+
+                <Grid md={2} lg={3} xl={4}></Grid>
+
+                <Grid container xs={12} md={8} lg={6} xl={4} justify="center" >
+                    <CardMedia 
+                    component="video"
+                    image= {vid}
+                    type='video/mp4'
+                    title='NUS Fintech Month 2020'
+                    controls
+                    />  
+                </Grid>
+
+                <Grid md={2} lg={3} xl={4}></Grid>
+                    
+                <Grid item xs={12} justify="center" >
                     <h2 className="about">About</h2>
                     <h5 className="HomePageAbout">NUS FinTech month is a series of workshops and panel discussions designed to give university and polytechnic students an insight into the world of Fintech.
                     There will be workshops ranging from beginner levels to more advanced levels allowing everyone, no matter their background, to participate in this. 
@@ -70,14 +90,14 @@ function HomePage(){
                         <Button className={classes.buttonStyle} href="/eventoverview" variant="" size='large'><h3>Event Overview</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="" size='large'><h3>Registration Dates</h3></Button>
+                        <Button className={classes.buttonStyle} href="/registrationdates" variant="" size='large'><h3>Registration Dates</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
 
                     <Grid item xs={0} md={3} lg={3} xl={4} ></Grid>
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="" size='large'><h3>Hackathon</h3></Button>
+                        <Button className={classes.buttonStyle} variant="" size='large' href="/hackathon"><h3>Hackathon</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
                         <Button className={classes.buttonStyle} variant="" size='large' href="/workshop"><h3>Workshop</h3></Button>

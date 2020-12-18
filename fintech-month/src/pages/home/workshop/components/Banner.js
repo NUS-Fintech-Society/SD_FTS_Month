@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Box, Typography} from '@material-ui/core';
-import Placeholder from '../../../../images/placeholder.png';
+import FM_logo from '../../../../images/FM_logo.png';
 import Register from '../../../../components/Register';
 
 const useStyles = makeStyles((theme) =>({
@@ -21,13 +21,17 @@ const useStyles = makeStyles((theme) =>({
         color:'#FFF',
     },
     image:{
-        width:'100px',
-        height:'100px',
+        position:'relative',
+        right:'40px',
+        width:'150px',
+        height:'150px',
     },
     box:{
         display:'flex',
         alignItems:'center',
         justifyContent:'space-between',
+        position:'relative',
+        right:'50px',
     }
 }))
 
@@ -37,7 +41,7 @@ function Banner(){
     return(
         <Box className={classes.root}>
             <Box className={classes.box}>
-                <img src={Placeholder} alt="Logo" className={classes.image}/>
+                <img src={FM_logo} alt="Logo" className={classes.image}/>
                 <Typography className={classes.externalworkshop}>
                     External 
                     <br/>

@@ -75,13 +75,12 @@ export const useStyles = makeStyles((theme) =>({
         flexBasis:'50%',
     },
     image:{
-       
         height:'400px',
     },
     imagewrapper:{
         position:'fixed',
         left:'2%',
-        top:'28.5%',
+        top:'22%',
         display:'flex',
     },
     box:{
@@ -120,6 +119,6 @@ export const useStyles = makeStyles((theme) =>({
     backbutton:{
         position:'fixed',
         left:'1.5%',
-        top:'20%',
+        top:'15%',
     },
 }))

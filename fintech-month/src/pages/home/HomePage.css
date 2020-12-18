@@ -95,6 +95,15 @@
     outline-color:black; */
 } 
 
+.regImg{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whiteHeading {
+    color:white;
+}
 
 .grad{
     background-image: linear-gradient(#131d47,80%,#ffffff);

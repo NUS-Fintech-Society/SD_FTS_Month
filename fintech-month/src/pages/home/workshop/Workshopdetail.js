@@ -35,7 +35,7 @@ const texts=[
     {
         tag:'Machine Learning',
         title:'Register',
-        content:[],
+        content:['https://tinyurl.com/y3opnwol'],
         author:'',
     },
     {
@@ -64,7 +64,7 @@ const texts=[
     {
         tag:'Blockchain',
         title:'Register',
-        content:[],
+        content:['https://tinyurl.com/y26gnu29'],
         author:'',
     },
     {
@@ -155,7 +155,7 @@ function Workshopdetail(){
                     if (text.title === 'Register'){
                         return(
                             <Box className={classes.register}>
-                                <Register/>
+                                <Register externalurl={text.content[0]}/>
                             </Box>
                         )   
                     }

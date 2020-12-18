@@ -20,12 +20,17 @@ const useStyles = makeStyles((theme) =>({
     },
 }))
 
+const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
+
 function Register({externalurl}){
     const classes = useStyles()
 
     return(
         <Box className={classes.box}>
-            <Button className={classes.register} href={externalurl}>
+            <Button className={classes.register} onClick={() => openInNewTab(`${externalurl}`)}>
                 Register now!
             </Button>
         </Box>

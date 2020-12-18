@@ -48,7 +48,7 @@ function Banner(){
                     Workshops
                 </Typography>
             </Box>
-            <Register className={classes.register}/>
+            <Register externalurl="https://tinyurl.com/yy2ggyc8" className={classes.register}/>
         </Box>
     )
 }

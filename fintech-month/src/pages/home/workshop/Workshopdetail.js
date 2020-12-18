@@ -3,7 +3,7 @@ import {useStyles} from './styles';
 import {Box, Paper,Button} from '@material-ui/core';
 import Register from '../../../components/Register';
 import Template from './components/Template';
-import Backbutton from './components/Backbutton';
+import Backbutton from '../../../components/Backbutton';
 import Machine12 from './images/ml12jan.png';
 import Machine13 from './images/ml13jan.png';
 import Blockchain12 from './images/blockchain12jan.png';
@@ -12,90 +12,7 @@ import Eddie from './images/mreddie.jpg';
 import Mranatoly from './images/Mranatoly.jpg';
 import Dateblock from './components/Dateblock';
 import Banner from './components/Banner';
-
-const texts=[
-    {
-        tag:'Machine Learning',
-        title:'Stock Price Prediction',
-        content:[
-            'Understand the stock market',
-            'Methods to predict prices using Machine Learning',
-        ],
-        author:'pss',
-    },
-    {
-        tag:'Machine Learning',
-        title:'News Headline Sentiment Analysis',
-        content:[
-            'Understand how news can impact the market',
-            'Natural Language Programming',
-        ],
-        author:'sdsds',
-    },
-    {
-        tag:'Machine Learning',
-        title:'Register',
-        content:['https://tinyurl.com/y3opnwol'],
-        author:'',
-    },
-    {
-        tag:'Blockchain',
-        title:'Understanding Blockchain: Technology Behind Cryptocurrencies',
-        content:[
-            'Understanding peer to peer transactions of value',
-            'Public and private key cryptography',
-            'Components of a block',
-            'Consensus of mechanisms',
-        ],
-        author:'sds',
-    },
-    {
-        tag:'Blockchain',
-        title:'Understanding Cryptocurrencies and Their Impacts on Current Financial System',
-        content:[
-            'Understanding flat money',
-            "Cryptocurrency's rise in recent times",
-            'Fundraising using cryptocurrencies (ICOs and IEOs)',
-            'Is Bitcoin a means of exchange?',
-            'Is Bitcoin a store of value?',
-        ],
-        author:'sdsds',
-    },
-    {
-        tag:'Blockchain',
-        title:'Register',
-        content:['https://tinyurl.com/y26gnu29'],
-        author:'',
-    },
-    {
-        tag:'External Workshop',
-        title:'',
-        content:[],
-        author:'Mr Eddie Lee',
-    },
-    {
-        tag:'External Workshop',
-        title:'BSC Stream Transformations with ParsiQL',
-        content:[
-            'What are data streams?',
-            'How do live data streams function in blockchains?',
-            "How to transform live data streams using PARSIQ's manipulation language?"
-        ],
-        author:'Anatoly Ressin',
-    },
-    {
-        tag:'External Workshop',
-        title:'',
-        content:[],
-        author:'Mr Daniel Lin',
-    },
-    {
-        tag:'External Workshop',
-        title:'',
-        content:[],
-        author:'Mr Hon Kok Wai',
-    },
-]
+import {texts} from './Data.js'
 
 function Workshopdetail(){
     const classes = useStyles()
@@ -132,7 +49,6 @@ function Workshopdetail(){
     };   
 
     window.addEventListener('scroll', changeImage);
-    
     
     return (
         <Box>

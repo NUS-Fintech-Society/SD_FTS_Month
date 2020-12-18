@@ -75,31 +75,51 @@ export const useStyles = makeStyles((theme) =>({
         flexBasis:'50%',
     },
     image:{
-        position:'fixed',
-        left:'3%',
-        top:'25%',
-        width:'500px',
-        height:'300px',
+       
+        height:'400px',
     },
-        box:{
+    imagewrapper:{
+        position:'fixed',
+        left:'2%',
+        top:'28.5%',
+        display:'flex',
+    },
+    box:{
+        marginTop:'100px',
         width:'100%',
         display:'flex',
         flexDirection:'column',
-        height:'400px',
+        height:'360px',
+        padding:'20px 0',
     },
     dynamicroot:{
         width:'100%',
         display:'flex',
         justifyContent:'flex-end',
+        height:'75%',
     },
     paragraph:{
         flexBasis:'60%',
         display:'flex',
         flexDirection:'column',
+        alignItems:'center',
     },
     register:{
+        marginTop:'100px',
+        height:'100px',
+        width:'250px',
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
+    },
+    overlay:{
+        position:'absolute',
+        display:'flex',
+        width:'100%',
+    },
+    backbutton:{
+        position:'fixed',
+        left:'1.5%',
+        top:'20%',
     },
 }))

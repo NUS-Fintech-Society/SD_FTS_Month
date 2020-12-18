@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     author:{
         fontSize:'25px',
         height:'25%',
+        textAlign:'left',
     },
 }))
 
@@ -37,9 +38,15 @@ function Template({title,content,author}){
             <Typography className={classes.title}>
                 {title}
             </Typography>
-            <Typography className={classes.content}>
-                {content}
-            </Typography>
+            <Box className={classes.content}>
+                <ul>
+                    {content.map((text) =>{
+                        return (
+                            <li>{text}</li>
+                        )
+                    })}
+                </ul>
+            </Box>
             <Typography className={classes.author}>
                 By {author}
             </Typography>

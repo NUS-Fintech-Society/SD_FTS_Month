@@ -13,9 +13,10 @@ const useStyles = makeStyles((theme) =>({
         padding:'5px',
     },
     register:{
-        fontWeight:'600',
-        fontSize:'20px',
+        fontSize:'23px',
         color:'#FD8329',
+        fontWeight:'600',
+        textTransform:'none',
     },
 }))
 

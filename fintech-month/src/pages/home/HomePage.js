@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
     buttonStyle: {
         minWidth: 245,
         borderRadius: 25,
-        variant: "outlined"
+        variant: "outlined",
+        margin: 15
     }
 }));
 
@@ -75,25 +76,27 @@ function HomePage(){
                     
                 </Grid>
 
-                <Grid container className="grad2">
+                <Grid container className="">
 
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
 
+
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} href="/eventoverview" variant="" size='large'><h3>Event Overview</h3></Button>
+                        
+                        <Button className={classes.buttonStyle} href="/eventoverview" variant="outlined" size=''><h3>Event Overview</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} href="/registrationdates" variant="" size='large'><h3>Registration Dates</h3></Button>
+                        <Button className={classes.buttonStyle} href="/registrationdates" variant="outlined" size=''><h3>Registration Dates</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
 
                     <Grid item xs={0} md={3} lg={3} xl={4} ></Grid>
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="" size='large' href="/hackathon"><h3>Hackathon</h3></Button>
+                        <Button className={classes.buttonStyle} variant="outlined" size='' href="/hackathon"><h3>Hackathon</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="" size='large' href="/workshop"><h3>Workshop</h3></Button>
+                        <Button className={classes.buttonStyle} variant="outlined" size='' href="/workshop"><h3>Workshop</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
                     
@@ -108,71 +111,3 @@ function HomePage(){
 }
 
 export default HomePage; 
-
-
-{/* <h2 className="underline">Event Overview</h2>
-                    <img className = "center" src={eventTimeline} />
-                    <h2 className="underline">Timelines</h2>
-                    <h3 className="underline">Registration</h3>
-                    <img className = "center" src={registrationTimeline} />
-                    <h2 className="underline">Hackathon</h2>
-
-                <Grid container justify="center" direction="row" className="" >
-                    <Grid item xs={12} md={6} lg={4} xl={3} justify="center" className="">
-                        <h3 className='padding20'>Opening Ceremony</h3>
-                        <img className = "center" src={openingCeremony} />
-                    </Grid>
-                    <Grid item xs={12} md={6} lg={4} xl={3} justify="center" className="" >
-                        <h3 className='padding20'>Closing Ceremony</h3>
-                        <img className = "center" src={closingCeremony} />
-                    </Grid>
-                </Grid> 
-
-                <Grid container justify="center" direction="row" className="" >
-                    <div className="Button">
-                        <Button  style={{
-                        backgroundColor: "#000000",
-                        color:"#FFFFFF"
-                        }} variant="contained" color="disabled" href="https://tinyurl.com/y6bk3khb">Register now</Button>
-                    </div>
-                </Grid>
-
-                <Grid item xs={12} container justify="center" className="" >
-                    <h2 className="underline">Workshops</h2>
-                </Grid> 
-
-                <Grid container justify="center" direction="row" className="" >
-                    <Grid item xs={12} md={12} lg={5} xl={4} justify="center" className="">
-                        <h3 className="padding20">Beginner - Machine Learning</h3>
-                        <img className = "center" src={mlTimeline} />
-                        <div className="Button">
-                            <Button style={{
-                            backgroundColor: "#000000",
-                            color:"#FFFFFF"
-                            }} variant="outlined" color="black" href="https://tinyurl.com/y3opnwol">Register now</Button>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} md={12} lg={5} xl={4} justify="center" className="" >
-                        <h3 className="padding20">Beginner - Blockchain</h3>
-                        <img className = "center" src={bcTimeline} />
-                        <div className="Button">
-                            <Button style={{
-                            backgroundColor: "#000000",
-                            color:"#FFFFFF"
-                            }} variant="outlined" color="primary" href="https://tinyurl.com/y3opnwol">Register now</Button>
-                        </div>
-                    </Grid>
-                </Grid> 
-
-                <Grid item xs={12} container justify="center" className="">
-                    <h3 className="padding20">External</h3> 
-                </Grid>
-
-                <Grid container justify="center" direction="row" className="" >
-                    <div className="Button">
-                        <Button  style={{
-                        backgroundColor: "#000000",
-                        color:"#FFFFFF"
-                        }} variant="contained" color="disabled" href="https://tinyurl.com/yy2ggyc8">Register now</Button>
-                    </div>
-                </Grid> */}

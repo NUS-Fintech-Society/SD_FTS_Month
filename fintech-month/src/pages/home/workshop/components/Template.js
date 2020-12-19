@@ -7,26 +7,24 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         width:'100%',
         flexDirection:'column',
-        justifyContent:'center',
+        justifyContent:'space-evenly',
         alignItems:'center',
         height:'100%',
+        padding:'10px',
     },
     title:{
-        fontSize:'30px',
+        fontSize:'clamp(1rem, 0.5000rem + 1.6000vw, 1.5rem)',
         fontWeight:'bold',
         textAlign:'center',
-        height:'25%',
     },
     content:{
-        margin:'30px 0',
-        fontSize:'25px',
-        height:'50%',
+        fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)',
     },
     author:{
-        fontSize:'25px',
-        height:'25%',
-        textAlign:'left',
+        fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)',
     },
+    box:{
+    }
 }))
 
 function Template({title,content,author}){
@@ -35,9 +33,12 @@ function Template({title,content,author}){
 
     return(
         <Box className={classes.root}>
-            <Typography className={classes.title}>
-                {title}
-            </Typography>
+            <Box className={classes.box}>
+                <Typography className={classes.title}>
+                    {title}
+                </Typography>
+            </Box>
+            
             <Box className={classes.content}>
                 <ul>
                     {content.map((text) =>{
@@ -47,9 +48,11 @@ function Template({title,content,author}){
                     })}
                 </ul>
             </Box>
-            <Typography className={classes.author}>
-                By {author}
-            </Typography>
+            <Box className={classes.box}>
+                <Typography className={classes.author}>
+                    By {author}
+                </Typography>
+            </Box>
         </Box>
     )
 }

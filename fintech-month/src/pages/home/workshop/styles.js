@@ -75,20 +75,24 @@ export const useStyles = makeStyles((theme) =>({
         flexBasis:'50%',
     },
     image:{
+        maxWidth: '40vw',
+        maxHeight: '40vw',
     },
     imagewrapper:{
         position:'fixed',
-        left:'2%',
+        left:0,
         top:'165px',
         display:'flex',
+        border:'8px solid #131D47',
     },
-    box:{
+    paper:{
         marginTop:'100px',
         width:'100%',
         display:'flex',
         flexDirection:'column',
-        height:'360px',
-        padding:'20px 0',
+        maxHeight:'40vw',
+        minHeight:'30vw',
+        padding:'2rem 0',
     },
     dynamicroot:{
         width:'100%',
@@ -97,7 +101,7 @@ export const useStyles = makeStyles((theme) =>({
         height:'75%',
     },
     paragraph:{
-        flexBasis:'60%',
+        flexBasis:'50%',
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
@@ -117,7 +121,7 @@ export const useStyles = makeStyles((theme) =>({
     },
     backbutton:{
         position:'fixed',
-        left:'1.5%',
+        left:0,
         top:'100px',
     },
 }))

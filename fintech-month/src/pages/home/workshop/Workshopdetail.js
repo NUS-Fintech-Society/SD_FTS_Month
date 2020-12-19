@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useStyles} from './styles';
-import {Box, Paper,Button} from '@material-ui/core';
+import {Box, Paper} from '@material-ui/core';
 import Register from '../../../components/Register';
 import Template from './components/Template';
 import Backbutton from '../../../components/Backbutton';
@@ -23,23 +23,23 @@ function Workshopdetail(){
     const [Leftbox, setLeftbox] = useState(true)
 
     const changeImage = () => {
-        if(window.scrollY <= 400){
+        if(window.scrollY <= 600){
             setImage(Machine12);
             setTitle("12 Jan 2020");
-        }else if(window.scrollY <= 1100){
+        }else if(window.scrollY <= 1400){
             setImage(Machine13);
             setTitle("13 Jan 2020");
         }else if(window.scrollY <= 1600){
             setImage(Blockchain12);
             setTitle("12 Jan 2020");
-        }else if(window.scrollY <= 2300){
+        }else if(window.scrollY <= 2600){
             setImage(Blockchain13);
             setTitle("13 Jan 2020");
-        }else if(window.scrollY <= 2800){
+        }else if(window.scrollY <= 4200){
             setImage(Eddie)
             setTitle("15 Jan 2020");
             setImgWidth("550px")
-        }else if(window.scrollY <= 3200){
+        }else if(window.scrollY <= 5000){
             setImage(Mranatoly)
             setTitle("12 Jan 2020")
             setImgWidth("400px")
@@ -52,7 +52,7 @@ function Workshopdetail(){
     window.addEventListener('scroll', changeImage);
     
     return (
-        <Box>
+        <Box className={classes.workshopdetailroot}>
         <Box className={classes.dynamicroot}>
             <Box className={classes.backbutton}>
                 <Backbutton/>
@@ -77,7 +77,7 @@ function Workshopdetail(){
                         )   
                     }
                     return (
-                    <Paper elevation={3} className={classes.box}>
+                    <Paper elevation={3} className={classes.paper}>
                         <Template title={text.title} content={text.content} author={text.author} className={classes.template}/>
                     </Paper>
                     )

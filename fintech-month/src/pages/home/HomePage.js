@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import ScrollIndicator from './ScrollIndicator.js';
 import Countdown from './Countdown.js';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -22,11 +23,47 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function HomePage(){
+function HomePage(){ 
 
     const classes = useStyles();
 
+    const eventOverviewSection = useRef(null);
+    const timelinesSection = useRef(null);
+    const registrationSection = useRef(null);
+    const hackathonSection = useRef(null);
+    const workshopsSection = useRef(null);
+
+    const gotoEventOverviewSection = () =>
+        window.scrollTo({
+            top: eventOverviewSection.current.offsetTop,
+            behavior: "smooth"
+        });
+    const gotoTimelinesSection = () =>
+    window.scrollTo({
+        top: timelinesSection.current.offsetTop,
+        behavior: "smooth"
+    });
+
+    const gotoRegistrationSection = () =>
+    window.scrollTo({
+        top: registrationSection.current.offsetTop,
+        behavior: "smooth"
+    });
+
+    const gotoHackathonSection = () =>
+    window.scrollTo({
+        top: hackathonSection.current.offsetTop,
+        behavior: "smooth"
+    });
+
+    const gotoWorkshopsSection = () =>
+    window.scrollTo({
+        top: workshopsSection.current.offsetTop,
+        behavior: "smooth"
+    });
+
     return (
+    
         <div className={classes.root}>
             <Grid container spacing={0}>
                 <Grid item xs={12} justify="center" className="grad" >

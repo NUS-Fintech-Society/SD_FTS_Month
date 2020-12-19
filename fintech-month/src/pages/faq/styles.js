@@ -38,7 +38,7 @@ export const CustomizedAccordionSummary = withStyles({
         margin: '12px 0',
       },
       order:1,
-      flexBasis:'25%',
+      flexBasis:'28%',
     },
     expanded: {
       borderBottom:'0px',

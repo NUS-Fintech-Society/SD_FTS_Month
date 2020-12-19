@@ -18,7 +18,8 @@ function Workshopdetail(){
     const classes = useStyles()
     const [Image,setImage] = useState(Machine12)
     const [Title,setTitle] = useState("12 Jan 2020")
-    const [ImgWidth,setImgWidth] = useState('550px')
+    const [ImgWidth,setImgWidth] = useState('400px')
+    const [ImgHeight,setImgHeight] = useState('400px')
     const [Leftbox, setLeftbox] = useState(true)
 
     const changeImage = () => {
@@ -59,7 +60,7 @@ function Workshopdetail(){
             {
                 Leftbox && (
                     <Box className={classes.imagewrapper}>
-                        <img src={Image} width={ImgWidth} className={classes.image} alt="placeholder"/>
+                        <img src={Image} width={ImgWidth} height={ImgHeight} className={classes.image} alt="placeholder"/>
                         <Box className={classes.overlay}>
                             <Dateblock title={Title} className={classes.dateblock}/>    
                         </Box>

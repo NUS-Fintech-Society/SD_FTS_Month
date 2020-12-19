@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) =>({
     workshopbanner:{
         display:'flex',
         alignItems:'center',
-        justifyContent:'center',
+        justifyContent:'space-evenly',
         minHeight:'300px',
         flexDirection:'column',
         backgroundImage: 'linear-gradient(#131d47,80%,#ffffff)',
@@ -75,12 +75,11 @@ export const useStyles = makeStyles((theme) =>({
         flexBasis:'50%',
     },
     image:{
-        height:'400px',
     },
     imagewrapper:{
         position:'fixed',
         left:'2%',
-        top:'22%',
+        top:'165px',
         display:'flex',
     },
     box:{
@@ -119,6 +118,6 @@ export const useStyles = makeStyles((theme) =>({
     backbutton:{
         position:'fixed',
         left:'1.5%',
-        top:'15%',
+        top:'100px',
     },
 }))

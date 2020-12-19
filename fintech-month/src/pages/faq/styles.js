@@ -29,21 +29,21 @@ export const CustomizedAccordionSummary = withStyles({
       '&$expanded': {
         minHeight: 56,
       },
+      justifyContent:'flex-start',
     },
     content: {
       flexDirection:'row',
-      width:'33.33%',
+      flexGrow:0,
       '&$expanded': {
         margin: '12px 0',
       },
       order:1,
+      flexBasis:'25%',
     },
     expanded: {
       borderBottom:'0px',
     },
     expandIcon: {
-      position: 'absolute',
-      right: '75%',
       color:'#FD8329',
       '& svg':{
         fontSize:48,

@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
   emptyitem: {
     flexGrow: 3,
   },
+  appbar:{
+    position:'sticky',
+    top:0,
+  }
 }));
 
 function App() {
@@ -37,7 +41,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <AppBar position="static" color='#C0C0C0'>
+      <AppBar className={classes.appbar}color='#C0C0C0'>
         <Toolbar variant="dense">
           
           <div className={classes.title}>

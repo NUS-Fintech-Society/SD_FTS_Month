@@ -2,32 +2,37 @@ import React from 'react';
 import Background from '../../../images/placeholder.png';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, ButtonBase } from '@material-ui/core';
+import '../BlogPage.css';
 
 const images = [
   {
     backgroundImage: "url(" + Background + ")", // currently placeholder image
-    href: '/', // currently no hackathon page
+    href: '/hackathon',
     title: 'Hackathon',
     width: '25%',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
   },
   {
     backgroundImage: "url(" + Background + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Workshop 1',
     width: '25%',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
 
   },
   {
     backgroundImage: "url(" + Background + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Workshop 2',
-    width: '25%',
+    width: '25%',    
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
   },
   {
     backgroundImage: "url(" + Background + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Workshop 3',
     width: '25%',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
   },
 ];
 
@@ -52,9 +57,6 @@ const useStyles = makeStyles((theme) => ({
       },
       '& $imageMarked': {
         opacity: 0,
-      },
-      '& $imageTitle': {
-        border: '4px solid currentColor',
       },
     },
   },
@@ -90,8 +92,11 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create('opacity'),
   },
   imageTitle: {
+    top: '10%',
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
+    fontSize: '50px',
+    
   },
   imageMarked: {
     height: 3,
@@ -110,36 +115,46 @@ export default function EventButtons() {
   return (
     <div className={classes.root}>
       {images.map((image) => (
-        <ButtonBase
-          focusRipple
-          key={image.title}
-          className={classes.image}
-          focusVisibleClassName={classes.focusVisible}
-          href={image.href}
-          style={{
-            width: image.width,
-          }}
-        >
-          <span
-            className={classes.imageSrc}
+        <>
+          <ButtonBase
+            focusRipple
+            key={image.title}
+            className={classes.image}
+            focusVisibleClassName={classes.focusVisible}
+            href={image.href}
             style={{
-              backgroundImage: image.backgroundImage,
+              width: image.width,
+              height: '60vh',
             }}
-          />
-          <span className={classes.imageBackdrop} />
-          <span className={classes.imageButton}>
-            <Typography
-              component="span"
-              variant="subtitle1"
-              color="inherit"
-              className={classes.imageTitle}
-            >
-              {image.title}
-              <span className={classes.imageMarked} />
-            </Typography>
-          </span>
-        </ButtonBase>
+          >
+            <span class='button-grad' />
+            <span class='desc-bar'>
+              {image.description}
+            </span>
+            <span
+              className={classes.imageSrc}
+              style={{
+                backgroundImage: image.backgroundImage,
+                height: '80%',
+              }}
+            />
+            <span className={classes.imageBackdrop} />
+            <span className={classes.imageButton}>
+              <Typography
+                component="span"
+                variant="subtitle1"
+                color="inherit"
+                className={classes.imageTitle}
+              >
+                {image.title}
+              </Typography>
+            </span>
+            
+          </ButtonBase>
+          
+        </>
       ))}
+
     </div>
   );
 }

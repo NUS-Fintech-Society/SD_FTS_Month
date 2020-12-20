@@ -1,19 +1,18 @@
 import React from 'react';
-import Background from '../../../images/placeholder.png';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, ButtonBase } from '@material-ui/core';
 import '../BlogPage.css';
 
 const images = [
   {
-    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    backgroundImage: "url(" + "," + ")", // currently placeholder image
     href: '/hackathon',
     title: 'Hackathon',
     width: '25%',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
   },
   {
-    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    backgroundImage: "url(" + "," + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Workshop 1',
     width: '25%',
@@ -21,14 +20,14 @@ const images = [
 
   },
   {
-    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    backgroundImage: "url(" + "," + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Workshop 2',
-    width: '25%',    
+    width: '25%',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
   },
   {
-    backgroundImage: "url(" + Background + ")", // currently placeholder image
+    backgroundImage: "url(" + "," + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Workshop 3',
     width: '25%',
@@ -96,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
     fontSize: '50px',
-    
+
   },
   imageMarked: {
     height: 3,
@@ -127,10 +126,6 @@ export default function EventButtons() {
               height: '60vh',
             }}
           >
-            <span class='button-grad' />
-            <span class='desc-bar'>
-              {image.description}
-            </span>
             <span
               className={classes.imageSrc}
               style={{
@@ -138,6 +133,10 @@ export default function EventButtons() {
                 height: '80%',
               }}
             />
+            <span class='button-grad' />
+            <span class='desc-bar'>
+              {image.description}
+            </span>
             <span className={classes.imageBackdrop} />
             <span className={classes.imageButton}>
               <Typography
@@ -149,9 +148,9 @@ export default function EventButtons() {
                 {image.title}
               </Typography>
             </span>
-            
+
           </ButtonBase>
-          
+
         </>
       ))}
 

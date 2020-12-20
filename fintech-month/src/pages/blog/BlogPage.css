@@ -26,4 +26,14 @@
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
+    color: whitesmoke;
+}
+
+.blog-main {
+    background-image: url('../../images/backgroundimage.png');
+    background-size: 100% 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;;
 }

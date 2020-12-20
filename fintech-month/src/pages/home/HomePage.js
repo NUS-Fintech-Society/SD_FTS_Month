@@ -27,13 +27,10 @@ function HomePage(){
                     
                 </Grid>
 
-                <Grid item xs={12} justify="center" >
-                    <div className ="Countdown">
-                        <Countdown/>
-                    </div>
-                    <pre className="CountdownText">  Days    Hours    Min     Sec</pre>
+                <Grid item xs={12}>
                     
-                    <p></p>
+                    <Countdown/>
+                    
                 </Grid>
 
                 <Grid md={2} lg={3} xl={4}></Grid>
@@ -50,9 +47,10 @@ function HomePage(){
 
                 <Grid md={2} lg={3} xl={4}></Grid>
                     
-                <Grid container justify="center" spacing={0} direction="column" alignItems="center">
-
-                    <h2 className="about">About</h2>
+                <Grid container justify="center" spacing={0} justify="center">
+                    <Grid xs={12}>
+                        <h2 className="aboutHeader">About</h2>
+                    </Grid>
                     <h5 className="HomePageAbout">NUS FinTech month is a series of workshops and panel discussions designed to give university and polytechnic students an insight into the world of Fintech.
                     There will be workshops ranging from beginner levels to more advanced levels allowing everyone, no matter their background, to participate in this. 
                     There will also be a hackathon where a real world problem will be tackled using Fintech demonstrating the usefulness of this technology in a real world context.

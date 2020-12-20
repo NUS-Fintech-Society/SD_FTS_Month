@@ -19,9 +19,8 @@ export const useStyles = makeStyles(theme => ({
         textTransform: "none",
         fontSize: 12,
         "&:hover":{
-            backgroundColor: "white",
+            // backgroundColor: "white",
             color:"black",
-            borderColor: 'white',
         }
         
     },
@@ -57,5 +56,36 @@ export const useStyles = makeStyles(theme => ({
         backgroundColor: "white !important",
         borderRadius:25,
 
+    },
+    timeGrid: {
+        // borderStyle:"solid",
+        // borderColor:"black",
+        paddingTop:10,
+        paddingBottom:15,
+    },
+    timeBox: {
+        backgroundColor:"#FFF",
+        color:"black",
+        // borderColor:"#ffccbc",
+        // borderStyle:"solid",
+        justifyContent:'center',
+        padding:20,
+        margin:20,
+        minWidth:102.27,
+        maxWidth:102.27,
+        alignItems:"center",
+        alignContent:"center",
+        textAlign: 'center',
+        opacity:0.5,
+        
+    },
+    timeNumber: {
+        fontSize:28,
+        fontWeight:"bold",
+        paddingBottom:5,
+    },
+    timeWords: {
+        fontSize: 14,
+        // fontWeight:"bold",
     }
 }));

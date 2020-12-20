@@ -1,11 +1,9 @@
 
 .HomePageAbout{
+    min-width: 300px;
+    width:auto;
     width:500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* outline-style:dotted;
-    outline-color:black; */
+    
     align-items:center;
     justify-content: center;
     }

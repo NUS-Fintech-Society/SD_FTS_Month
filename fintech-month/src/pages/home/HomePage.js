@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1
     },
     buttonStyle: {
-        minWidth: 245,
+        minWidth: 230,
         borderRadius: 25,
         margin: 15,
         backgroundColor: "#2b43a1",
@@ -23,6 +23,12 @@ const useStyles = makeStyles(theme => ({
         borderWidth: 2,
         color: "white",
         textTransform: "none",
+        fontSize: 12,
+        "&:hover":{
+            backgroundColor: "transparent",
+            color:"black"
+        }
+        
     }
 }));
 
@@ -69,18 +75,18 @@ function HomePage(){
 
                 <Grid md={2} lg={3} xl={4}></Grid>
                     
-                <Grid item xs={12} justify="center" >
+                <Grid container justify="center" spacing={0} direction="column" alignItems="center">
+
                     <h2 className="about">About</h2>
                     <h5 className="HomePageAbout">NUS FinTech month is a series of workshops and panel discussions designed to give university and polytechnic students an insight into the world of Fintech.
                     There will be workshops ranging from beginner levels to more advanced levels allowing everyone, no matter their background, to participate in this. 
                     There will also be a hackathon where a real world problem will be tackled using Fintech demonstrating the usefulness of this technology in a real world context.
-                    </h5>
-                    
-                    <h5 className="HomePageAbout">
+                    <br></br>
+                    <br></br>
                     We are anticipating about 150 participants for the hackathon, consisting of teams of 2-4 people. Team members need not be from the same school. 
                     </h5>
-                    <p></p>
-                    
+
+            
                 </Grid>
 
                 <Grid container className="">

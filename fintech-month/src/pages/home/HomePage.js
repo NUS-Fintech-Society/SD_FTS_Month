@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import ScrollIndicator from './ScrollIndicator.js';
 import Countdown from './Countdown.js';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -17,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     buttonStyle: {
         minWidth: 245,
         borderRadius: 25,
-        variant: "outlined",
+        variant: "contained",
         margin: 15
     }
 }));
@@ -27,40 +26,6 @@ function HomePage(){
 
     const classes = useStyles();
 
-    const eventOverviewSection = useRef(null);
-    const timelinesSection = useRef(null);
-    const registrationSection = useRef(null);
-    const hackathonSection = useRef(null);
-    const workshopsSection = useRef(null);
-
-    const gotoEventOverviewSection = () =>
-        window.scrollTo({
-            top: eventOverviewSection.current.offsetTop,
-            behavior: "smooth"
-        });
-    const gotoTimelinesSection = () =>
-    window.scrollTo({
-        top: timelinesSection.current.offsetTop,
-        behavior: "smooth"
-    });
-
-    const gotoRegistrationSection = () =>
-    window.scrollTo({
-        top: registrationSection.current.offsetTop,
-        behavior: "smooth"
-    });
-
-    const gotoHackathonSection = () =>
-    window.scrollTo({
-        top: hackathonSection.current.offsetTop,
-        behavior: "smooth"
-    });
-
-    const gotoWorkshopsSection = () =>
-    window.scrollTo({
-        top: workshopsSection.current.offsetTop,
-        behavior: "smooth"
-    });
 
     return (
     
@@ -119,21 +84,20 @@ function HomePage(){
 
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        
-                        <Button className={classes.buttonStyle} href="/eventoverview" variant="outlined" size=''><h3>Event Overview</h3></Button>
+                        <Button className={classes.buttonStyle} href="/eventoverview" ><h3>Event Overview</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} href="/registrationdates" variant="outlined" size=''><h3>Registration Dates</h3></Button>
+                        <Button className={classes.buttonStyle} href="/registrationdates" ><h3>Registration Dates</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
 
                     <Grid item xs={0} md={3} lg={3} xl={4} ></Grid>
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="outlined" size='' href="/hackathon"><h3>Hackathon</h3></Button>
+                        <Button className={classes.buttonStyle} href="/hackathon"><h3>Hackathon</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="outlined" size='' href="/workshop"><h3>Workshop</h3></Button>
+                        <Button className={classes.buttonStyle}  href="/workshop"><h3>Workshop</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
                     

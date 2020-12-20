@@ -14,7 +14,7 @@ function Counter() {
     const [days, setDays] = useState(Math.floor(difference / (1000 * 60 * 60 * 24)))
   
     function updateTime() {
-      if (hours == 0 && minutes == 0 && seconds == 0) {
+      if (days== 0 && hours == 0 && minutes == 0 && seconds == 0) {
         
       }
       else {

@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         minWidth: 245,
         borderRadius: 25,
         margin: 15,
-        backgroundColor: "#2e5cb8",
+        backgroundColor: "#2b43a1",
         borderColor: 'black',
         borderStyle: 'solid',
         borderWidth: 2,

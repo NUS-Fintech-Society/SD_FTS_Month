@@ -13,6 +13,7 @@ import Mranatoly from './images/Mranatoly.jpg';
 import Dateblock from './components/Dateblock';
 import Banner from './components/Banner';
 import {texts} from './Data.js'
+import Background from '../../../images/backgroundimage.png';
 
 function Workshopdetail(){
     const classes = useStyles()
@@ -52,7 +53,12 @@ function Workshopdetail(){
     window.addEventListener('scroll', changeImage);
     
     return (
-        <Box>
+        <Box style={{ 
+            backgroundImage: "url(" + Background + ")",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: '100% 100%',
+            
+        }}>
         <Box className={classes.dynamicroot}>
             <Box className={classes.backbutton}>
                 <Backbutton/>

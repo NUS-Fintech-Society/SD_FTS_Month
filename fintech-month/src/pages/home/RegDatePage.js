@@ -1,21 +1,27 @@
 import React from 'react';
-import Countdown from './Countdown.js';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
 import registrationTimeline from './regTimeline.png';
+import './HomePage.css';
+import backgroundImg from '../../images/backgroundimage.png';
 
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
+        minHeight: 900
+        
     },
-    buttonStyle: {
-        minWidth: 245,
-        borderRadius: 25 
+    bgImg: {
+        backgroundImage: `url(${backgroundImg})`,
+        justify: 'center',
+        minHeight: 1400,
+        backgroundRepeat: 'no-repeat',
+        // backgroundPosition: 'center',
+        backgroundSize: 'cover'
     }
+
 }));
 
 function RegDatePage(){
@@ -23,12 +29,11 @@ function RegDatePage(){
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
-            <Grid container spacing={0}>
+        <div className={classes.root} >
+            <Grid container spacing={0} className={classes.bgImg}>
                 <Grid item xs={12} justify="center">
-                    <h2 className="">Registration Dates</h2>
-                    <img className = "center" src={registrationTimeline} />
-                    
+                    <h2 className="whiteHeading">Registration Dates</h2>
+                    <img className = "regImg" src={registrationTimeline} />
                 </Grid>
             </Grid>
         </div>

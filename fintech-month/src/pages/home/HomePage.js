@@ -1,42 +1,17 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Countdown from './Countdown.js';
 import { Button } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import CardMedia from '@material-ui/core/CardMedia';
 import logo from './Logo.png';
 import vid from './homeVideoV2.mp4'
+import {useStyles} from './styles'
 import './HomePage.css';
-
-
-const useStyles = makeStyles(theme => ({
-    root: {
-        flexGrow: 1
-    },
-    buttonStyle: {
-        minWidth: 230,
-        borderRadius: 25,
-        margin: 15,
-        backgroundColor: "#2b43a1",
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: 2,
-        color: "white",
-        textTransform: "none",
-        fontSize: 12,
-        "&:hover":{
-            backgroundColor: "transparent",
-            color:"black"
-        }
-        
-    }
-}));
 
 
 function HomePage(){ 
 
     const classes = useStyles();
-
 
     return (
     

@@ -66,26 +66,26 @@ function HomePage(){
 
                 <Grid container className="">
 
-                    <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
+                    <Grid item xs={0} md={3} lg={4} xl={4}></Grid>
 
 
-                    <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} variant="contained" color = "cornflowerblue" href="/eventoverview" ><h3>Event Overview</h3></Button>
+                    <Grid container xs={12} md={3} lg={2} xl={2} alignItems="center" justify="center" direction="column" >
+                        <Button className={classes.buttonStyle} variant="contained" href="/eventoverview" ><h3>Event Overview</h3></Button>
                     </Grid>
-                    <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
+                    <Grid container xs={12} md={3} lg={2} xl={2} alignItems="center" justify="center" direction="column" >
                         <Button className={classes.buttonStyle} variant="contained" href="/registrationdates" ><h3>Registration Dates</h3></Button>
                     </Grid>
-                    <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
+                    <Grid item xs={0} md={3} lg={4} xl={4}></Grid>
 
-                    <Grid item xs={0} md={3} lg={3} xl={4} ></Grid>
+                    <Grid item xs={0} md={3} lg={4} xl={4} ></Grid>
 
-                    <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
+                    <Grid container xs={12} md={3} lg={2} xl={2} alignItems="center" justify="center" direction="column" >
                         <Button className={classes.buttonStyle} variant="contained" href="/hackathon"><h3>Hackathon</h3></Button>
                     </Grid>
-                    <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
+                    <Grid container xs={12} md={3} lg={2} xl={2} alignItems="center" justify="center" direction="column" >
                         <Button className={classes.buttonStyle} variant="contained" href="/workshop"><h3>Workshop</h3></Button>
                     </Grid>
-                    <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
+                    <Grid item xs={0} md={3} lg={4} xl={4}></Grid>
                     
                 </Grid>
 

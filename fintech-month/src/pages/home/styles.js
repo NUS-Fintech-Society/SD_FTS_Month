@@ -12,13 +12,9 @@ export const useStyles = makeStyles(theme => ({
         
     },
     buttonStyle: {
-        minWidth: 230,
-        borderRadius: 25,
+        minWidth: 200,
         margin: 15,
         backgroundColor: "#2b43a1",
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: 2,
         color: "white",
         textTransform: "none",
         fontSize: 12,

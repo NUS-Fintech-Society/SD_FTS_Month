@@ -3,13 +3,18 @@ import {Box,Typography, ButtonBase} from '@material-ui/core'
 import logo from '../../../images/placeholder.png'
 import {useStyles} from './styles'
 import Complexbutton from './components/Complexbutton';
+import Backbutton from '../../../components/Backbutton';
 
 
 function Workshop(){
+
     const classes = useStyles()
 
     return (
         <Box className={classes.root}>
+            <Box className={classes.backButton}>
+                <Backbutton />
+            </Box>
             <Box className={classes.workshopbanner}>
                 <img src={logo} alt="logo" className={classes.logo}/>
                 <Typography className={classes.workshop}>

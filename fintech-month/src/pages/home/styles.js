@@ -1,4 +1,5 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withTheme } from '@material-ui/core/styles';
+import backgroundImg from '../../images/backgroundimage.png';
 
 export const useStyles = makeStyles(theme => ({
     root: {
@@ -16,9 +17,43 @@ export const useStyles = makeStyles(theme => ({
         textTransform: "none",
         fontSize: 12,
         "&:hover":{
-            backgroundColor: "transparent",
-            color:"black"
+            backgroundColor: "white",
+            color:"black",
+            borderColor: 'white',
         }
         
+    },
+    backButton: {
+        position: 'absolute',
+        // borderColor: 'black',
+        // borderStyle: 'solid',
+    },
+    dateStyle: {
+        backgroundColor: '#2b43a1',
+        color:'white',
+        marginTop: 12,
+        marginRight: 12,
+        padding: 10,
+        borderRadius: 8,
+        fontSize: 12,
+        borderColor: 'black',
+        borderStyle: 'solid',
+        borderWidth: 2,
+        fontWeight: 'bold',
+        
+    },
+    bgImg: {
+        backgroundImage: `url(${backgroundImg})`,
+        justify: 'center',
+        minHeight: 1400,
+        backgroundRepeat: 'no-repeat',
+        // backgroundPosition: 'center',
+        backgroundSize: 'cover'
+    },
+    backButtonRegDate: {
+        position: 'absolute',
+        backgroundColor: "white !important",
+        borderRadius:25,
+
     }
 }));

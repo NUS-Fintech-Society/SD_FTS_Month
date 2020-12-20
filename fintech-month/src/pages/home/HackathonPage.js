@@ -1,13 +1,21 @@
 import React from 'react';
-import { Typography, Toolbar, Button } from '@material-ui/core';
+import { Typography, Toolbar, Button, Box} from '@material-ui/core';
 import FMLogo from '../../images/FM_logo.png';
 import OpeningTimeline from '../../images/openingtimeline.png';
 import ClosingTimeline from '../../images/closingtimeline.png';
+import Backbutton from '../../components/Backbutton';
+import {useStyles} from './styles'
 import './HackathonPage.css';
 
 export default function Hackathon() {
+
+    const classes = useStyles();
+
     return (
         <>
+            <Box className={classes.backButton}>
+                <Backbutton />
+            </Box>
             <div class='grad'>
                 <img className="top-logo" src={FMLogo} />
                 <div className="headerAlignment">

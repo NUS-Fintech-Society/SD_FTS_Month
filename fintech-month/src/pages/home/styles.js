@@ -5,6 +5,12 @@ export const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1
     },
+    homePage: {
+        flexGrow: 1,
+        backgroundImage: "linear-gradient(#131d47,55%,#ffffff)",
+
+        
+    },
     buttonStyle: {
         minWidth: 230,
         borderRadius: 25,

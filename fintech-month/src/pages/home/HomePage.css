@@ -140,6 +140,7 @@
     display: flex;
     justify-content:center;
     align-items:center;
+    color:white;
     /* border-color:coral;
     border-style: dotted; */
 }
@@ -150,6 +151,7 @@
     display: flex;
     justify-content:center;
     align-items:center;
+    color:white;
     /* border-color:coral;
     border-style: dotted; */
 }

@@ -15,9 +15,9 @@ function HomePage(){
 
     return (
     
-        <div className={classes.root}>
+        <div className={classes.homePage}>
             <Grid container spacing={0}>
-                <Grid item xs={12} justify="center" className="grad" >
+                <Grid item xs={12} justify="center" >
                     
                     <h3 className="subHeader">Join our very first</h3>
                     <img className = "logo" src={logo} />

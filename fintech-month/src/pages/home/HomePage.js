@@ -16,8 +16,10 @@ const useStyles = makeStyles(theme => ({
     buttonStyle: {
         minWidth: 245,
         borderRadius: 25,
-        variant: "contained",
-        margin: 15
+        margin: 15,
+        backgroundColor: "#2e5cb8",
+        color: "white",
+        textTransform: "none",
     }
 }));
 
@@ -84,20 +86,20 @@ function HomePage(){
 
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} href="/eventoverview" ><h3>Event Overview</h3></Button>
+                        <Button className={classes.buttonStyle} variant="contained" color = "cornflowerblue" href="/eventoverview" ><h3>Event Overview</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} href="/registrationdates" ><h3>Registration Dates</h3></Button>
+                        <Button className={classes.buttonStyle} variant="contained" href="/registrationdates" ><h3>Registration Dates</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
 
                     <Grid item xs={0} md={3} lg={3} xl={4} ></Grid>
 
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle} href="/hackathon"><h3>Hackathon</h3></Button>
+                        <Button className={classes.buttonStyle} variant="contained" href="/hackathon"><h3>Hackathon</h3></Button>
                     </Grid>
                     <Grid container xs={12} md={3} lg={3} xl={2} alignItems="center" justify="center" direction="column" >
-                        <Button className={classes.buttonStyle}  href="/workshop"><h3>Workshop</h3></Button>
+                        <Button className={classes.buttonStyle} variant="contained" href="/workshop"><h3>Workshop</h3></Button>
                     </Grid>
                     <Grid item xs={0} md={3} lg={3} xl={4}></Grid>
                     

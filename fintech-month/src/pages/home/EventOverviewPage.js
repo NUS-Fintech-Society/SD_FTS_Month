@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         borderRadius: 25 
     },
     dateStyle: {
-        backgroundColor: 'cornflowerblue',
+        backgroundColor: '#2e5cb8',
         color:'white',
         padding: 10,
         borderRadius: 8,

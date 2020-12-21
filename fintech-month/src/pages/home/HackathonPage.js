@@ -22,7 +22,7 @@ export default function Hackathon() {
                 <img class='image' src={ClosingTimeline} alt='ClosingTimeline' />
             </div>
 
-            <BottomBar externalurl='https://tinyurl.com/y6bk3khb'/>
+            <BottomBar externalurl='https://tinyurl.com/y6bk3khb'>Hackathon</BottomBar>
         </>
     );
 }

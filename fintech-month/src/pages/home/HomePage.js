@@ -3,8 +3,8 @@ import Countdown from './Countdown.js';
 import { Button } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import CardMedia from '@material-ui/core/CardMedia';
-import logo from './Logo.png';
-import vid from './homeVideoV2.mp4'
+import logo from './images/Logo.png';
+import vid from './images/homeVideoV2.mp4'
 import {useStyles} from './styles'
 import './HomePage.css';
 

@@ -29,6 +29,7 @@ export const useStyles = makeStyles(theme => ({
         borderStyle: 'solid',
         borderWidth: 2,
         fontWeight: 'bold',
+        position: 'absolute',
         
     },
 

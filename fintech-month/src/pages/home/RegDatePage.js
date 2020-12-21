@@ -2,7 +2,7 @@ import React from 'react';
 import {useStyles} from './styles';
 import { Box } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import registrationTimeline from './regTimeline.png';
+import registrationTimeline from './images/regTimeline.png';
 import BlackBackbutton from '../../components/BlackBackbutton';
 import './HomePage.css';
 

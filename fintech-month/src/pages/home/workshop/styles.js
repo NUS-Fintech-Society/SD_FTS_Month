@@ -77,7 +77,7 @@ export const useStyles = makeStyles((theme) =>({
     },
     image:{
         maxWidth: '40vw',
-        maxHeight: '40vw',
+        height: '80vh',
     },
     imagewrapper:{
         position:'fixed',
@@ -91,8 +91,7 @@ export const useStyles = makeStyles((theme) =>({
         width:'100%',
         display:'flex',
         flexDirection:'column',
-        maxHeight:'40vw',
-        minHeight:'30vw',
+        height:'80vh',
         padding:'2rem 0',
     },
     dynamicroot:{

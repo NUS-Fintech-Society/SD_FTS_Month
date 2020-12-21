@@ -69,13 +69,11 @@ export const useStyles = makeStyles((theme) => ({
       color: '#FFFFFF',
     },
     questions: {
-      display:'flex',
       fontSize: 'clamp(1rem, 0.7500rem + 0.8000vw, 1.25rem)',
       fontWeight: theme.typography.fontWeightBold,
       padding: '10px 0',
     },
     answers: {
-      display:'flex',
       fontSize: 'clamp(0.75rem, 0.5000rem + 0.8000vw, 1rem)',
       fontWeight: theme.typography.fontWeightMedium,
     },

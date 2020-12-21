@@ -1,5 +1,6 @@
 import React, {useEffect, useState } from "react";
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import {useStyles} from './styles.js';
 
 function Counter() {
@@ -57,47 +58,52 @@ function Counter() {
     return (<div className={classes.root}>
  
             <Grid className={classes.timeGrid} container spacing={0} justify="center">
-                <Grid item className={classes.timeBox}>
-                    <div className={classes.timeNumber}>
-                    {daysRounded} 
-                    </div> 
-                </Grid>
 
-                <Grid item className={classes.timeBox}>
-                    <div className={classes.timeNumber}>
-                    {hoursRounded} 
-                    </div> 
-                </Grid>
+                <Box>
+                    <Grid item className={classes.timeBox}>
+                        <div className={classes.timeNumber}>
+                        {daysRounded} 
+                        </div> 
+                    </Grid>
+                    <Grid item className={classes.numBox}>
+                        <span className={classes.timeWords}>Days</span> 
+                    </Grid>
 
-                <Grid item className={classes.timeBox}>
-                    <div className={classes.timeNumber}>
-                    {minutesRounded} 
-                    </div> 
-                </Grid>
+                </Box>
 
-                <Grid item className={classes.timeBox}>
-                    <div className={classes.timeNumber}>
-                    {secondsRounded} 
-                    </div> 
-                </Grid>
-            </Grid>
+                <Box>
+                    <Grid item className={classes.timeBox}>
+                        <div className={classes.timeNumber}>
+                        {hoursRounded} 
+                        </div> 
+                    </Grid>
+                    <Grid item className={classes.numBox}>
+                        <span className={classes.timeWords}>Hours</span> 
+                    </Grid>
 
-            <Grid className={classes.numGrid} container spacing={0} justify="center">
-                <Grid item className={classes.numBox}>
-                    <span className={classes.timeWords}>Days</span> 
-                </Grid>
+                </Box>
+                <Box>
+                    <Grid item className={classes.timeBox}>
+                        <div className={classes.timeNumber}>
+                        {minutesRounded} 
+                        </div> 
+                    </Grid>
+                    <Grid item className={classes.numBox}>
+                        <span className={classes.timeWords}>Mins</span> 
+                    </Grid>
 
-                <Grid item className={classes.numBox}>
-                    <span className={classes.timeWords}>Hours</span> 
-                </Grid>
+                </Box>
+                <Box>
+                    <Grid item className={classes.timeBox}>
+                        <div className={classes.timeNumber}>
+                        {secondsRounded} 
+                        </div> 
+                    </Grid>
+                    <Grid item className={classes.numBox}>
+                        <span className={classes.timeWords}>Sec</span> 
+                    </Grid>
 
-                <Grid item className={classes.numBox}>
-                    <span className={classes.timeWords}>Min</span> 
-                </Grid>
-
-                <Grid item className={classes.numBox}>
-                    <span className={classes.timeWords}>Sec</span> 
-                </Grid>
+                </Box>
             </Grid>
         
     </div>);

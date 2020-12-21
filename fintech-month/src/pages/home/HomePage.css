@@ -1,60 +1,8 @@
-.homeButtons{
-    margin-top:50px;
-    outline-style:dotted;
-    outline-color:black;
-  }
-  
-    
-.inlineBlock{
-    display: flex;
-    justify-content:center;
-    align-items:top;
-    /* outline-style:dotted;
-    outline-color:black; */
+/* Header Section */
 
-}
-
-.videoCSS{
-    max-width:700px;
-    min-width:400px;
-    justify-content:center;
-    align-items: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.aboutHeader{
-    text-decoration: underline;
-    margin:0;
-    padding:40px;
-    /* outline-style:dotted;
-    outline-color:black; */
-}
-
-.HomePageAbout{
-    min-width: 300px;
-    width:500px;
-    align-items:center;
-    justify-content: center;
-    margin:0;
-    padding-bottom: 35px;
-    /* outline-style:dotted;
-    outline-color:black; */
-}
-
-
-.underline {
-    text-decoration: underline;
-}
-
-.center{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    /* border-color:coral;
-    border-style: dotted; */
-
+.subHeader{
+    padding-top:10px;
+    color: white
 }
 
 .logo{
@@ -77,6 +25,14 @@
     border-style: dotted; */
 }
 
+.eventOverviewHeaders{
+    padding:10px;
+    margin-top:400px;
+    margin-bottom:400px;
+    background-image: linear-gradient(#ffffff,#f5a742);
+
+} 
+
 .FintechMonthHeader{
     font-size: 40px;
     color:white;
@@ -91,28 +47,34 @@
     outline-color:black; */
 } 
 
-.regImg{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+/* About Section */
+
+.aboutHeader{
+    text-decoration: underline;
+    margin:0;
+    padding:40px;
+    /* outline-style:dotted;
+    outline-color:black; */
 }
 
-.whiteHeading {
-    color:white;
+.HomePageAbout{
+    min-width: 300px;
+    width:500px;
+    align-items:center;
+    justify-content: center;
+    margin:0;
+    padding-bottom: 35px;
+    /* outline-style:dotted;
+    outline-color:black; */
 }
 
-.subHeader{
-    padding-top:10px;
-    color: white
+
+
+/* ETC */
+
+.underline {
+    text-decoration: underline;
 }
-
-.eventOverviewHeaders{
-    padding:10px;
-    margin-top:400px;
-    margin-bottom:400px;
-    background-image: linear-gradient(#ffffff,#f5a742);
-
-} 
 
 .outline { 
     border-color:coral;

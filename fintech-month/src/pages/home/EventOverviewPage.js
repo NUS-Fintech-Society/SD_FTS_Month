@@ -3,6 +3,8 @@ import { Box } from '@material-ui/core';
 import {useStyles} from './styles'
 import Grid from '@material-ui/core/Grid';
 import Backbutton from '../../components/Backbutton';
+import './HomePage.css';
+
 
 
 function EventOverviewPage(){

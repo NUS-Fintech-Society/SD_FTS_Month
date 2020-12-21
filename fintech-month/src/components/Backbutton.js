@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-function BlueBackbutton(){
+function Backbutton(){
     const history = useHistory()
     const classes = useStyles()
 
@@ -34,4 +34,4 @@ function BlueBackbutton(){
     )
 }
 
-export default BlueBackbutton;
+export default Backbutton;

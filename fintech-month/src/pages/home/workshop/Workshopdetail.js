@@ -4,7 +4,7 @@ import {Box} from '@material-ui/core';
 import Register from '../../../components/Register';
 import Template from './components/Template';
 import Dateblock from './components/Dateblock';
-import BlueBackbutton from '../../../components/BlueBackbutton.js';
+import Backbutton from '../../../components/Backbutton.js';
 import Banner from './components/Banner';
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -32,7 +32,7 @@ function Workshopdetail({match}){
     
     return (
         <Box className={classes.workshopdetailroot}>
-            <BlueBackbutton className={classes.backbutton}/>
+            <Backbutton className={classes.backbutton}/>
             <Box className={classes.paragraph}>
             {texts.map((text) =>{
                 if (text.title === 'Register'){

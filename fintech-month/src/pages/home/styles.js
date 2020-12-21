@@ -32,6 +32,16 @@ export const useStyles = makeStyles(theme => ({
         position: 'absolute',
         
     },
+    imgClass: {
+        height: 250,
+        right: "auto",
+        bottom: 0,
+        borderColor: 'pink',
+        borderStyle: 'solid',
+    },
+    textSize: {
+        fontSize:12,
+    },
 
 
     // Reg Page Section

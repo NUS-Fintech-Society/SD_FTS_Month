@@ -47,7 +47,7 @@ function HomePage(){
 
                 <Grid md={2} lg={3} xl={4}></Grid>
                     
-                <Grid container justify="center" spacing={0} justify="center">
+                <Grid container spacing={0} justify="center">
                     <Grid xs={12}>
                         <h2 className="aboutHeader">About</h2>
                     </Grid>

@@ -61,27 +61,41 @@ function Counter() {
                     <div className={classes.timeNumber}>
                     {daysRounded} 
                     </div> 
-                    <span className={classes.timeWords}>Days</span> 
                 </Grid>
 
                 <Grid item className={classes.timeBox}>
                     <div className={classes.timeNumber}>
                     {hoursRounded} 
                     </div> 
-                    <span className={classes.timeWords}>Hours</span> 
                 </Grid>
 
                 <Grid item className={classes.timeBox}>
                     <div className={classes.timeNumber}>
                     {minutesRounded} 
                     </div> 
-                    <span className={classes.timeWords}>Min</span> 
                 </Grid>
 
                 <Grid item className={classes.timeBox}>
                     <div className={classes.timeNumber}>
                     {secondsRounded} 
                     </div> 
+                </Grid>
+            </Grid>
+
+            <Grid className={classes.numGrid} container spacing={0} justify="center">
+                <Grid item className={classes.numBox}>
+                    <span className={classes.timeWords}>Days</span> 
+                </Grid>
+
+                <Grid item className={classes.numBox}>
+                    <span className={classes.timeWords}>Hours</span> 
+                </Grid>
+
+                <Grid item className={classes.numBox}>
+                    <span className={classes.timeWords}>Min</span> 
+                </Grid>
+
+                <Grid item className={classes.numBox}>
                     <span className={classes.timeWords}>Sec</span> 
                 </Grid>
             </Grid>

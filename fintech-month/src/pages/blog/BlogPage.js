@@ -14,6 +14,8 @@ function BlogPage() {
                 <div class='row'>
                     <span/>
                     <h1>Blog</h1>
+                    <span />
+                    <span />
                     <h1>{date}</h1>
                     <span />
                 </div>

@@ -2,15 +2,59 @@ import { makeStyles, withTheme } from '@material-ui/core/styles';
 import backgroundImg from '../../images/backgroundimage.png';
 
 export const useStyles = makeStyles(theme => ({
+
+    // Home Section 
+
     root: {
         flexGrow: 1
     },
     homePage: {
         flexGrow: 1,
         backgroundImage: "linear-gradient(#131d47,55%,#ffffff)",
+    },
 
+
+    //  Event Overview Page Section
+
+
+    dateStyle: {
+        backgroundColor: '#2b43a1',
+        color:'white',
+        marginTop: 12,
+        marginRight: 12,
+        padding: 10,
+        borderRadius: 8,
+        fontSize: 12,
+        borderColor: 'black',
+        borderStyle: 'solid',
+        borderWidth: 2,
+        fontWeight: 'bold',
         
     },
+
+
+    // Reg Page Section
+
+
+    bgImg: {
+        backgroundImage: `url(${backgroundImg})`,
+        justify: 'center',
+        minHeight: 1400,
+        backgroundRepeat: 'no-repeat',
+        // backgroundPosition: 'center',
+        backgroundSize: 'cover'
+    },
+    backButtonRegDate: {
+        position: 'absolute',
+        backgroundColor: "white !important",
+        borderRadius:25,
+
+    },
+
+
+    // Button Section 
+
+
     buttonStyle: {
         minWidth: 200,
         margin: 15,
@@ -29,34 +73,11 @@ export const useStyles = makeStyles(theme => ({
         // borderColor: 'black',
         // borderStyle: 'solid',
     },
-    dateStyle: {
-        backgroundColor: '#2b43a1',
-        color:'white',
-        marginTop: 12,
-        marginRight: 12,
-        padding: 10,
-        borderRadius: 8,
-        fontSize: 12,
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: 2,
-        fontWeight: 'bold',
-        
-    },
-    bgImg: {
-        backgroundImage: `url(${backgroundImg})`,
-        justify: 'center',
-        minHeight: 1400,
-        backgroundRepeat: 'no-repeat',
-        // backgroundPosition: 'center',
-        backgroundSize: 'cover'
-    },
-    backButtonRegDate: {
-        position: 'absolute',
-        backgroundColor: "white !important",
-        borderRadius:25,
+    
 
-    },
+    // Timer Section
+
+
     timeGrid: {
         // borderStyle:"solid",
         // borderColor:"black",
@@ -72,8 +93,6 @@ export const useStyles = makeStyles(theme => ({
     timeBox: {
         backgroundColor:"#FFF",
         color:"black",
-        // borderColor:"#ffccbc",
-        // borderStyle:"solid",
         justifyContent:'center',
         padding:20,
         margin:20,
@@ -98,8 +117,7 @@ export const useStyles = makeStyles(theme => ({
         alignItems:"center",
         alignContent:"center",
         textAlign: 'center',
-        // borderStyle:"solid",
-        // borderColor:"black",
+        
     },
     timeNumber: {
         fontSize:28,
@@ -108,6 +126,5 @@ export const useStyles = makeStyles(theme => ({
     },
     timeWords: {
         fontSize: 14,
-        // fontWeight:"bold",
     }
 }));

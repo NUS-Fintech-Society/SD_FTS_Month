@@ -8,14 +8,16 @@ const useStyles = makeStyles((theme) => ({
     icon:{
         width:'60px',
         height:'60px',
-        color:'#FD8329',
+        color:'#52B9FF',
+        position:'fixed',
+        zIndex:3,
     },
     arrow:{
         fontSize:'60px',
     }
 }))
 
-function Backbutton(){
+function BlueBackbutton(){
     const history = useHistory()
     const classes = useStyles()
 
@@ -32,4 +34,4 @@ function Backbutton(){
     )
 }
 
-export default Backbutton;
+export default BlueBackbutton;

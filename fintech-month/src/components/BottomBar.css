@@ -20,7 +20,7 @@
 .bottom-bar-text {
     display: inline-block;
     flex: 1;
-    font-size: 3vw;
+    font-size: 3vmin;
     color:white;
     font-weight: bold;
 }

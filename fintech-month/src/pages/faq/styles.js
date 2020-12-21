@@ -29,7 +29,11 @@ export const CustomizedAccordionSummary = withStyles({
       '&$expanded': {
         minHeight: 56,
       },
+      
       justifyContent:'flex-start',
+    },
+    ':last-of-type':{
+      borderBottom:'0px',
     },
     content: {
       flexDirection:'row',
@@ -38,7 +42,7 @@ export const CustomizedAccordionSummary = withStyles({
         margin: '12px 0',
       },
       order:1,
-      flexBasis:'28%',
+      flexBasis:'25%',
     },
     expanded: {
       borderBottom:'0px',
@@ -64,24 +68,23 @@ export const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
     },
     heading: {
-      fontSize: theme.typography.pxToRem(25),
+      fontSize: 'clamp(1.25rem, 1.0000rem + 0.8000vw, 1.5rem)',
       fontWeight: theme.typography.fontWeightRegular,
       color: '#FFFFFF',
     },
     questions: {
-      fontSize: theme.typography.pxToRem(20),
+      fontSize: 'clamp(1rem, 0.7500rem + 0.8000vw, 1.25rem)',
       fontWeight: theme.typography.fontWeightBold,
       padding: '10px 0',
     },
     answers: {
-      display:'flex',
-      fontSize: theme.typography.pxToRem(15),
+      fontSize: 'clamp(0.75rem, 0.5000rem + 0.8000vw, 1rem)',
       fontWeight: theme.typography.fontWeightMedium,
     },
     
     faq:{
       height: '25%',
-      fontSize: theme.typography.pxToRem(45),
+      fontSize: 'clamp(1.5rem, 1.0000rem + 1.6000vw, 2rem)',
       margin:'40px 0',
       marginLeft: '20px',
       justifyContent: 'left',
@@ -90,10 +93,4 @@ export const useStyles = makeStyles((theme) => ({
     qnacontainer:{
       marginBottom: '20px',
     },
-    underlinedanswers:{
-      marginLeft: '3px'
-    },
-    lastAccordionSummary:{
-      borderBottom:'0px',
-    }
   }));

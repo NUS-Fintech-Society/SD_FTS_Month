@@ -9,12 +9,12 @@ const useStyles = makeStyles((theme) =>({
         alignItems:'center',
         justifyContent:'center',
         backgroundColor:'#FD8329',
-        height:'50px',
-        width:'150px',
+        height:'4vw',
+        width:'14vw',
     },
     text:{
         fontWeight:'bold',
-        fontSize:'20px'
+        fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)'
     }
 }))
 

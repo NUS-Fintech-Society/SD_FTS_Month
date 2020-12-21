@@ -1,5 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles'
+import Background from '../../../images/backgroundimage.png'
 
 export const useStyles = makeStyles((theme) =>({
     root:{
@@ -71,36 +72,26 @@ export const useStyles = makeStyles((theme) =>({
         width:'150px',
         height:'150px',
     },
-    template: {
-        flexBasis:'50%',
-    },
     image:{
-    },
-    imagewrapper:{
-        position:'fixed',
-        left:'2%',
-        top:'165px',
-        display:'flex',
-    },
-    box:{
+        borderRadius:'10px',
         marginTop:'100px',
-        width:'100%',
-        display:'flex',
-        flexDirection:'column',
-        height:'360px',
-        padding:'20px 0',
+        width: '45vw',
+        height: '80vh',
+    },
+    paper:{
+        marginTop:'100px',
+        height:'80vh',
+        width:'45vw',
     },
     dynamicroot:{
         width:'100%',
         display:'flex',
-        justifyContent:'flex-end',
-        height:'75%',
     },
     paragraph:{
-        flexBasis:'60%',
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
+        justifyContent:'center',
     },
     register:{
         marginTop:'100px',
@@ -117,7 +108,21 @@ export const useStyles = makeStyles((theme) =>({
     },
     backbutton:{
         position:'fixed',
-        left:'1.5%',
+        left:0,
         top:'100px',
     },
+    workshopdetailroot:{
+        backgroundImage:`url(${Background})`,
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'100% 100%', 
+    },
+    hide:{
+        display:'none'
+    },
+    container1:{
+        width:'100%',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-evenly',
+    }
 }))

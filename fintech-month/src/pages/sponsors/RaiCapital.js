@@ -6,9 +6,9 @@ import './SponsorsPage.css';
 
 function RaiCapital() {
     
-    const seedlink = <a target='_blank' rel='noreferrer' href='https://brdge.tech/'>SeedIn</a>
-    const railink = <a target='_blank' rel='noreferrer' href='http://www.rai.capital/'>Rai Capital</a>
-    const pilonlink = <a target='_blank' rel='noreferrer' href='http://www.pilon.sg/'>Pilon Pte Ltd</a>
+    const seedlink = <a target='_blank' rel='noreferrer noopener' href='https://brdge.tech/'>SeedIn</a>
+    const railink = <a target='_blank' rel='noreferrer noopener' href='http://www.rai.capital/'>Rai Capital</a>
+    const pilonlink = <a target='_blank' rel='noreferrer noopener' href='http://www.pilon.sg/'>Pilon Pte Ltd</a>
     return (
         <>
             <SideNav />

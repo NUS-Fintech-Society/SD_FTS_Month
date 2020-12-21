@@ -5,7 +5,7 @@ import DanielPhoto from '../../images/danielphoto.jpg';
 import './SponsorsPage.css';
 
 function FundedHere() {
-    const link = <a target="_blank" rel='noreferrer' href='https://fundedhere.com/'>FundedHere</a>
+    const link = <a target="_blank" rel='noreferrer noopener' href='https://fundedhere.com/'>FundedHere</a>
     return (
         <>
             <SideNav />

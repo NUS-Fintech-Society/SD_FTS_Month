@@ -5,13 +5,13 @@ import GenpingPhoto from '../../images/genpingphoto.jpg';
 import './SponsorsPage.css';
 
 function Genping() {
-    const link = <a target="_blank" rel='noreferrer' href='https://www.vertexventures.sg/'>Vertex Ventures</a>
+    const link = <a target="_blank" rel='noreferrer noopener' href='https://www.vertexventures.sg/'>Vertex Ventures</a>
     return (
         <>
             <SideNav />
             <Grid class='main' justify='center'>
                 <h1>
-                    <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/liugenping/'>
+                    <a target="_blank" rel='noreferrer noopener' href='https://www.linkedin.com/in/liugenping/'>
                         Mr Liu Genping
                     </a>
                 </h1>

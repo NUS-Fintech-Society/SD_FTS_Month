@@ -8,7 +8,7 @@ function FundedHere() {
     const link = 
         <a 
         target="_blank" 
-        rel='noreferrer' 
+        rel='noreferrer noopener' 
         href='https://www.bnpparibas.com.sg/en/'>
             BNP Paribas
         </a>
@@ -17,7 +17,7 @@ function FundedHere() {
             <SideNav />
             <Grid class='main' justify='center'>
                 <h1>
-                    <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/kok-wai-hon-3269632b/'>
+                    <a target="_blank" rel='noreferrer noopener' href='https://www.linkedin.com/in/kok-wai-hon-3269632b/'>
                         Mr Hon Kok Wai
                     </a>
                 </h1>

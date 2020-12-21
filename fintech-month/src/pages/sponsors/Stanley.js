@@ -10,7 +10,7 @@ function Stanley() {
             <SideNav />
             <Grid class='main' justify='center'>
                 <h1>
-                    <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/stanley-kok-7226136/'>
+                    <a target="_blank" rel="noreferrer noopener" href='https://www.linkedin.com/in/stanley-kok-7226136/'>
                         Prof Stanley Kok
                     </a>
                 </h1>

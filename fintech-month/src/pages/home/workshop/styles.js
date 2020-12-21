@@ -1,5 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles'
+import Background from '../../../images/backgroundimage.png'
 
 export const useStyles = makeStyles((theme) =>({
     root:{
@@ -124,4 +125,9 @@ export const useStyles = makeStyles((theme) =>({
         left:0,
         top:'100px',
     },
+    workshopdetailroot:{
+        backgroundImage:`url(${Background})`,
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'100% 100%', 
+    }
 }))

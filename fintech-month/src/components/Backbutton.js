@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
         width:'60px',
         height:'60px',
         color:'#52B9FF',
-        position:'fixed',
         zIndex:3,
     },
     arrow:{

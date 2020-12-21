@@ -9,6 +9,7 @@ import Banner from './components/Banner';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import {MachineLearning, BlockChain, ExternalWorkshop} from './Data.js';
+import BottomBar from '../../../components/BottomBar';
  
 
 function Workshopdetail({match}){
@@ -19,10 +20,16 @@ function Workshopdetail({match}){
 
     if (whichWorkshop === 'machinelearning'){
         var texts = MachineLearning
+        var tag = 'Machine Learning'
+        var link = 'https://tinyurl.com/y3opnwol'
     }else if (whichWorkshop === 'blockchain'){
         var texts = BlockChain
+        var tag = 'Blockchain'
+        var link = 'https://tinyurl.com/y26gnu29'
     }else if(whichWorkshop === 'externalworkshop'){
         var texts = ExternalWorkshop
+        var tag = 'External Workshops'
+        var link = "https://tinyurl.com/yy2ggyc8"
     }
    
     useEffect(() => {
@@ -32,16 +39,11 @@ function Workshopdetail({match}){
     
     return (
         <Box className={classes.workshopdetailroot}>
-            <Backbutton className={classes.backbutton}/>
+            <Box className={classes.backbutton}>
+                <Backbutton/>
+            </Box>
             <Box className={classes.paragraph}>
-            {texts.map((text) =>{
-                if (text.title === 'Register'){
-                    return(
-                        <Box className={classes.register}>
-                            <Register externalurl={text.content[0]}/>
-                        </Box>
-                    )   
-                }
+            {texts.map((text) =>{   
                 return (
                 <Box className={classes.container1}>
                     <Box data-aos="fade-right">
@@ -54,7 +56,10 @@ function Workshopdetail({match}){
                 )
                 })}
             </Box>
-            <Banner/>
+            <Box className={classes.bottombar}>
+                 <BottomBar children={tag} externalurl={link}/>
+            </Box>
+            
         </Box>
     )
 }

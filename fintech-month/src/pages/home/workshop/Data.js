@@ -25,11 +25,6 @@ export const MachineLearning = [
         author:'sdsds',
         image:Machine13,
     },
-    {
-        title:'Register',
-        content:['https://tinyurl.com/y3opnwol'],
-        author:'',
-    },
 ]
 
 export const BlockChain = [
@@ -56,11 +51,6 @@ export const BlockChain = [
         author:'sdsds',
         image:Blockchain13,
     },
-    {
-        title:'Register',
-        content:['https://tinyurl.com/y26gnu29'],
-        author:'',
-    },
 ]
 
 export const ExternalWorkshop=[
@@ -81,7 +71,7 @@ export const ExternalWorkshop=[
         image:Mranatoly,
     },
     {
-        title:'',
+        title:'Why Crowdfunding is the preferred choice for Startup Fundraising',
         content:[],
         author:'Mr Daniel Lin',
         image:'',

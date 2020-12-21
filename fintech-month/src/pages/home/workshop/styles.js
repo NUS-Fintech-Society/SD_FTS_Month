@@ -93,23 +93,13 @@ export const useStyles = makeStyles((theme) =>({
         alignItems:'center',
         justifyContent:'center',
     },
-    register:{
+    bottombar:{
         marginTop:'100px',
-        height:'100px',
-        width:'250px',
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'center',
     },
     overlay:{
         position:'absolute',
         display:'flex',
         width:'100%',
-    },
-    backbutton:{
-        position:'fixed',
-        left:0,
-        top:'10%',
     },
     workshopdetailroot:{
         backgroundImage:`url(${Background})`,
@@ -126,5 +116,10 @@ export const useStyles = makeStyles((theme) =>({
         display:'flex',
         alignItems:'center',
         justifyContent:'space-evenly',
+    },
+    backbutton:{
+        position:'fixed',
+        left:0,
+        top:'10%',
     }
 }))

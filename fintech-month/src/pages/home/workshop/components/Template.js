@@ -1,16 +1,13 @@
 import React from 'react';
-import {Box, Typography} from '@material-ui/core'
+import {Box, Typography, Paper} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root:{
+        marginTop:'100px',
         display:'flex',
-        width:'100%',
-        flexDirection:'column',
-        justifyContent:'space-evenly',
-        alignItems:'center',
-        height:'100%',
-        padding:'10px',
+        width:'45vw',
+        height:'80vh',
     },
     title:{
         fontSize:'clamp(1rem, 0.5000rem + 1.6000vw, 1.5rem)',
@@ -22,8 +19,21 @@ const useStyles = makeStyles((theme) => ({
     },
     author:{
         fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)',
+        marginBottom:'10px',
     },
-    box:{
+    ul:{
+        display:'flex',
+        flexDirection:'column',
+        flexWrap:'wrap',
+    },
+    container:{
+        display:'flex',
+        width:'100%',
+        flexDirection:'column',
+        justifyContent:'space-evenly',
+        alignItems:'center',
+        padding:'20px',
+        height:'100%',
     }
 }))
 
@@ -32,28 +42,30 @@ function Template({title,content,author}){
 
 
     return(
-        <Box className={classes.root}>
-            <Box className={classes.box}>
-                <Typography className={classes.title}>
-                    {title}
-                </Typography>
+        <Paper elevation={3} className={classes.root}>
+            <Box className={classes.container}>
+                <Box className={classes.box}>
+                    <Typography className={classes.title}>
+                        {title}
+                    </Typography>
+                </Box>
+                
+                <Box className={classes.content}>
+                    <ul className={classes.ul}>
+                        {content.map((text) =>{
+                            return (
+                                <li>{text}</li>
+                            )
+                        })}
+                    </ul>
+                </Box>
+                <Box className={classes.box}>
+                    <Typography className={classes.author}>
+                        By {author}
+                    </Typography>
+                </Box>
             </Box>
-            
-            <Box className={classes.content}>
-                <ul>
-                    {content.map((text) =>{
-                        return (
-                            <li>{text}</li>
-                        )
-                    })}
-                </ul>
-            </Box>
-            <Box className={classes.box}>
-                <Typography className={classes.author}>
-                    By {author}
-                </Typography>
-            </Box>
-        </Box>
+        </Paper>
     )
 }
 

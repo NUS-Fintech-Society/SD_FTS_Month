@@ -1,4 +1,11 @@
 import React from 'react';
+import Machine12 from './images/ml12jan.png';
+import Machine13 from './images/ml13jan.png';
+import Blockchain12 from './images/blockchain12jan.png';
+import Blockchain13 from './images/blockchain13jan.png';
+import Eddie from './images/mreddie.jpg';
+import Mranatoly from './images/Mranatoly.jpg';
+
 
 export const texts=[
     {
@@ -9,6 +16,7 @@ export const texts=[
             'Methods to predict prices using Machine Learning',
         ],
         author:'pss',
+        image:Machine12,
     },
     {
         tag:'Machine Learning',
@@ -18,6 +26,7 @@ export const texts=[
             'Natural Language Programming',
         ],
         author:'sdsds',
+        image:Machine13,
     },
     {
         tag:'Machine Learning',
@@ -35,6 +44,7 @@ export const texts=[
             'Consensus of mechanisms',
         ],
         author:'sds',
+        image:Blockchain12,
     },
     {
         tag:'Blockchain',
@@ -47,6 +57,7 @@ export const texts=[
             'Is Bitcoin a store of value?',
         ],
         author:'sdsds',
+        image:Blockchain13,
     },
     {
         tag:'Blockchain',
@@ -59,6 +70,7 @@ export const texts=[
         title:'',
         content:[],
         author:'Mr Eddie Lee',
+        image:Eddie,
     },
     {
         tag:'External Workshop',
@@ -69,18 +81,21 @@ export const texts=[
             "How to transform live data streams using PARSIQ's manipulation language?"
         ],
         author:'Anatoly Ressin',
+        image:Mranatoly,
     },
     {
         tag:'External Workshop',
         title:'',
         content:[],
         author:'Mr Daniel Lin',
+        image:'',
     },
     {
         tag:'External Workshop',
         title:'',
         content:[],
         author:'Mr Hon Kok Wai',
+        image:'',
     },
 ]
 

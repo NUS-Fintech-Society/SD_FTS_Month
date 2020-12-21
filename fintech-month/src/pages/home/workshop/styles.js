@@ -72,39 +72,26 @@ export const useStyles = makeStyles((theme) =>({
         width:'150px',
         height:'150px',
     },
-    template: {
-        flexBasis:'50%',
-    },
     image:{
-        maxWidth: '40vw',
+        borderRadius:'10px',
+        marginTop:'100px',
+        width: '45vw',
         height: '80vh',
-    },
-    imagewrapper:{
-        position:'fixed',
-        left:0,
-        top:'165px',
-        display:'flex',
-        border:'8px solid #131D47',
     },
     paper:{
         marginTop:'100px',
-        width:'100%',
-        display:'flex',
-        flexDirection:'column',
         height:'80vh',
-        padding:'2rem 0',
+        width:'45vw',
     },
     dynamicroot:{
         width:'100%',
         display:'flex',
-        justifyContent:'flex-end',
-        height:'75%',
     },
     paragraph:{
-        flexBasis:'50%',
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
+        justifyContent:'center',
     },
     register:{
         marginTop:'100px',
@@ -128,5 +115,14 @@ export const useStyles = makeStyles((theme) =>({
         backgroundImage:`url(${Background})`,
         backgroundRepeat:'no-repeat',
         backgroundSize:'100% 100%', 
+    },
+    hide:{
+        display:'none'
+    },
+    container1:{
+        width:'100%',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-evenly',
     }
 }))

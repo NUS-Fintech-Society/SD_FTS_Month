@@ -29,7 +29,11 @@ export const CustomizedAccordionSummary = withStyles({
       '&$expanded': {
         minHeight: 56,
       },
+      
       justifyContent:'flex-start',
+    },
+    ':last-of-type':{
+      borderBottom:'0px',
     },
     content: {
       flexDirection:'row',
@@ -38,7 +42,7 @@ export const CustomizedAccordionSummary = withStyles({
         margin: '12px 0',
       },
       order:1,
-      flexBasis:'28%',
+      flexBasis:'25%',
     },
     expanded: {
       borderBottom:'0px',
@@ -89,13 +93,4 @@ export const useStyles = makeStyles((theme) => ({
     qnacontainer:{
       marginBottom: '20px',
     },
-    underlinedanswers:{
-      marginLeft: '3px'
-    },
-    lastAccordionSummary:{
-      borderBottom:'0px',
-    },
-    answerbox:{
-      display:'flex',
-    }
   }));

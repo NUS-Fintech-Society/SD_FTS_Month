@@ -1,37 +1,64 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, ButtonBase } from '@material-ui/core';
+import HackathonImage from '../../../images/hackathonimage.JPG';
+import StocksImage from '../../../images/stocksworkshop.jpg';
+import NewsImage from '../../../images/newsworkshop.jpg';
+import BlockchainImage from '../../../images/blockchainworkshop.jpg';
+import CryptoImage from '../../../images/cryptocurrencyworkshop.jpg';
+import AnatolyPhoto from '../../../images/anatolyphoto.jpg';
+import DanielPhoto from '../../../images/danielphoto.jpg';
 import '../BlogPage.css';
 
 const images = [
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + HackathonImage + ")", // currently placeholder image
     href: '/hackathon',
     title: 'Hackathon',
-    width: '25%',
+    width: '475px',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
   },
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + StocksImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Workshop 1',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
-
+    title: 'Stock Price Prediction',
+    width: '475px',
+    description: 'Understand the stock market and learn methods to predict prices using Machine Learning.',
   },
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + NewsImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Workshop 2',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
+    title: 'News Headlines Sentiment Analysis' ,
+    width: '475px',
+    description: 'Understand how news can impact the market and learn about Natural Language Programming.',
   },
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + BlockchainImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Workshop 3',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
+    title: 'Understanding Blockchain: Technology behind Cryptocurrencies',
+    width: '475px',
+    description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
+  },
+  {
+    backgroundImage: "url(" + CryptoImage + ")", // currently placeholder image
+    href: '/', // currently no workshop page
+    title: 'Understanding Blockchain: Technology behind Cryptocurrencies',
+    width: '475px',
+    description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
+  },
+  {
+    backgroundImage: "url(" + AnatolyPhoto + ")", // currently placeholder image
+    href: '/', // currently no workshop page
+    title: 'BSC Stream Transformations with ParsiQL',
+    width: '475px',
+    description: 'What are data streams? How do live data streams function in blockchains? How to transform live data streams using PARSIQ’s stream manipulation language? Learn all these in this workshop.',
+  },
+  {
+    backgroundImage: "url(" + DanielPhoto + ")", // currently placeholder image
+    href: '/', // currently no workshop page
+    title: 'Crowdfunding and Startup Fundraising',
+    width: '475px',
+    description: 'Understand why crowdfunding is the preferred choice for startup fundraising',
   },
 ];
 
@@ -41,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     minWidth: 300,
     width: '100%',
+    justifyContent: 'center',
   },
   image: {
     position: 'relative',
@@ -94,8 +122,9 @@ const useStyles = makeStyles((theme) => ({
     top: '10%',
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
-    fontSize: '200%',
-
+    fontSize: '28px',
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
   imageMarked: {
     height: 3,

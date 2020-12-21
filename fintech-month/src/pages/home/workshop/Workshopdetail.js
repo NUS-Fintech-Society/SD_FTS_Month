@@ -1,19 +1,29 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {useStyles} from './styles';
-import {Box, Paper} from '@material-ui/core';
+import {Box} from '@material-ui/core';
 import Register from '../../../components/Register';
 import Template from './components/Template';
 import Dateblock from './components/Dateblock';
 import Backbutton from '../../../components/Backbutton';
 import Banner from './components/Banner';
-import {texts} from './Data.js'
-import handleViewport from 'react-in-viewport';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import {MachineLearning, BlockChain, ExternalWorkshop} from './Data.js';
  
 
-function Workshopdetail(){
+function Workshopdetail({match}){
     const classes = useStyles()
+    const {
+        params: {whichWorkshop}
+    } = match
+
+    if (whichWorkshop === 'machinelearning'){
+        var texts = MachineLearning
+    }else if (whichWorkshop === 'blockchain'){
+        var texts = BlockChain
+    }else if(whichWorkshop === 'externalworkshop'){
+        var texts = ExternalWorkshop
+    }
    
     useEffect(() => {
         Aos.init({duration:2000});
@@ -22,6 +32,7 @@ function Workshopdetail(){
     
     return (
         <Box className={classes.workshopdetailroot}>
+            <Backbutton className={classes.backbutton}/>
             <Box className={classes.paragraph}>
             {texts.map((text) =>{
                 if (text.title === 'Register'){
@@ -33,7 +44,9 @@ function Workshopdetail(){
                 }
                 return (
                 <Box className={classes.container1}>
-                    <img className={classes.image} src={text.image} alt="faces" data-aos="fade-right"/>
+                    <Box data-aos="fade-right">
+                        <img className={classes.image} src={text.image} alt="faces"/>
+                    </Box>
                     <Box  data-aos="fade-left">
                     <Template title={text.title} content={text.content} author={text.author} className={classes.template}/>                
                     </Box>

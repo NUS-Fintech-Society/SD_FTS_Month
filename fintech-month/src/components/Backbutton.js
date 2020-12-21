@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     icon:{
         width:'60px',
         height:'60px',
-        color:'#FD8329'
+        color:'#FD8329',
     },
     arrow:{
         fontSize:'60px',

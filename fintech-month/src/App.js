@@ -73,9 +73,14 @@ function App() {
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
         <Route path="/workshop" exact component={Workshop}/>
-        <Route path="/workshop/workshopdetail" exact component={Workshopdetail}/>
         <Route path="/eventoverview" exact component={EventOverviewPage}/>
         <Route path="/registrationdates" exact component={RegDatePage}/>
+        <Route
+            exact
+            path="/workshop/:whichWorkshop"
+            render={props => (
+              <Workshopdetail {...props}/>
+            )}/>
       </Switch>
 
     </BrowserRouter>

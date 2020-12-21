@@ -108,8 +108,6 @@ export const useStyles = makeStyles((theme) =>({
     },
     backbutton:{
         position:'fixed',
-        left:0,
-        top:'100px',
     },
     workshopdetailroot:{
         backgroundImage:`url(${Background})`,

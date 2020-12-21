@@ -6,10 +6,8 @@ import Blockchain13 from './images/blockchain13jan.png';
 import Eddie from './images/mreddie.jpg';
 import Mranatoly from './images/Mranatoly.jpg';
 
-
-export const texts=[
+export const MachineLearning = [
     {
-        tag:'Machine Learning',
         title:'Stock Price Prediction',
         content:[
             'Understand the stock market',
@@ -19,7 +17,6 @@ export const texts=[
         image:Machine12,
     },
     {
-        tag:'Machine Learning',
         title:'News Headline Sentiment Analysis',
         content:[
             'Understand how news can impact the market',
@@ -29,13 +26,14 @@ export const texts=[
         image:Machine13,
     },
     {
-        tag:'Machine Learning',
         title:'Register',
         content:['https://tinyurl.com/y3opnwol'],
         author:'',
     },
+]
+
+export const BlockChain = [
     {
-        tag:'Blockchain',
         title:'Understanding Blockchain: Technology Behind Cryptocurrencies',
         content:[
             'Understanding peer to peer transactions of value',
@@ -47,7 +45,6 @@ export const texts=[
         image:Blockchain12,
     },
     {
-        tag:'Blockchain',
         title:'Understanding Cryptocurrencies and Their Impacts on Current Financial System',
         content:[
             'Understanding flat money',
@@ -60,20 +57,20 @@ export const texts=[
         image:Blockchain13,
     },
     {
-        tag:'Blockchain',
         title:'Register',
         content:['https://tinyurl.com/y26gnu29'],
         author:'',
     },
+]
+
+export const ExternalWorkshop=[
     {
-        tag:'External Workshop',
         title:'',
         content:[],
         author:'Mr Eddie Lee',
         image:Eddie,
     },
     {
-        tag:'External Workshop',
         title:'BSC Stream Transformations with ParsiQL',
         content:[
             'What are data streams?',
@@ -84,14 +81,12 @@ export const texts=[
         image:Mranatoly,
     },
     {
-        tag:'External Workshop',
         title:'',
         content:[],
         author:'Mr Daniel Lin',
         image:'',
     },
     {
-        tag:'External Workshop',
         title:'',
         content:[],
         author:'Mr Hon Kok Wai',

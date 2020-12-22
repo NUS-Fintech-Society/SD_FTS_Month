@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useStyles } from './styles';
 import { Box, Paper } from '@material-ui/core';
 import Template from './components/Template';
@@ -10,8 +10,10 @@ import Eddie from '../../../images/eddiephoto.jpg';
 import Mranatoly from './images/Mranatoly.jpg';
 import Dateblock from './components/Dateblock';
 import BottomBar from '../../../components/BottomBar.js';
-import { texts } from './Data.js'
+import { texts } from './Data.js';
 import Background from '../../../images/backgroundimage.png';
+import Register from '../../../components/Register.js';
+import Backbutton from '../../../components/Backbutton.js';
 import handleViewport from 'react-in-viewport';
 import Aos from 'aos';
 import "aos/dist/aos.css";

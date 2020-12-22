@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles'
 import Background from '../../../images/backgroundimage.png'
+import { Hidden } from '@material-ui/core';
 
 export const useStyles = makeStyles((theme) =>({
     root:{
@@ -72,11 +73,45 @@ export const useStyles = makeStyles((theme) =>({
         width:'150px',
         height:'150px',
     },
-    image:{
-        borderRadius:'10px',
+    container2:{
+        height:'80vh',
+        width:'45vw',
         marginTop:'100px',
-        width: '45vw',
-        height: '80vh',
+        borderRadius:'10px',
+        display:'flex',
+        flexDirection:'column',
+    },
+    heading:{
+        display:'flex',
+        minHeight:'10%',
+        borderTopLeftRadius:'10px',
+        borderTopRightRadius:'10px',
+        width:'100%',
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'#52B9FF',
+        borderBottom:'3px solid #131D47',
+        flexGrow:2,
+    },
+    imagewrapper:{
+        width:'100%',
+        display:'flex',
+        height:'80%',
+        flexDirection:'column',
+        flexGrow:1,
+        position:'relative',
+    },
+    headertext:{
+        fontSize:'clamp(1rem, 0.5000rem + 1.6000vw, 1.5rem)',
+        fontWeight:'bold',
+        textAlign:'center',
+    },
+    image:{
+        width: '100%',
+        height:'100%',
+        borderBottomLeftRadius:'10px',
+        borderBottomRightRadius:'10px',
+        flexGrow:1,
     },
     paper:{
         marginTop:'100px',
@@ -119,7 +154,17 @@ export const useStyles = makeStyles((theme) =>({
     },
     backbutton:{
         position:'fixed',
+        left:'1%',
+        top:'13%',
+        zIndex:3,
+    },
+    dateblock:{
+        position:'absolute',
         left:0,
-        top:'10%',
+        bottom:0,
+        borderBottomLeftRadius:'10px',
+    },
+    margintop:{
+        marginTop:'30px',
     }
 }))

@@ -1,11 +1,9 @@
 import React, {useEffect} from 'react';
 import {useStyles} from './styles';
-import {Box} from '@material-ui/core';
-import Register from '../../../components/Register';
+import {Box, Typography} from '@material-ui/core';
 import Template from './components/Template';
 import Dateblock from './components/Dateblock';
 import Backbutton from '../../../components/Backbutton.js';
-import Banner from './components/Banner';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import {MachineLearning, BlockChain, ExternalWorkshop} from './Data.js';
@@ -43,14 +41,23 @@ function Workshopdetail({match}){
                 <Backbutton/>
             </Box>
             <Box className={classes.paragraph}>
+                <Box className={classes.margintop}></Box>
             {texts.map((text) =>{   
                 return (
                 <Box className={classes.container1}>
-                    <Box data-aos="fade-right">
-                        <img className={classes.image} src={text.image} alt="faces"/>
+                    <Box data-aos="fade-right" className={classes.container2}>
+                        <Box className={classes.heading}>
+                            <Typography className={classes.headertext}>{text.title}</Typography>
+                        </Box>
+                        <Box className={classes.imagewrapper}>
+                            <Box className={classes.dateblock}>
+                                <Dateblock color="#FFF" title={text.date}/>
+                            </Box>
+                            <img className={classes.image} src={text.image} alt="faces"/>
+                        </Box>
                     </Box>
                     <Box  data-aos="fade-left">
-                    <Template title={text.title} content={text.content} author={text.author} className={classes.template}/>                
+                        <Template description={text.description} content={text.content} author={text.author} className={classes.template}/>                
                     </Box>
                 </Box>
                 )

@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         width:'45vw',
         height:'80vh',
+        borderRadius:'10px',
     },
     title:{
         fontSize:'clamp(1rem, 0.5000rem + 1.6000vw, 1.5rem)',
@@ -18,38 +19,49 @@ const useStyles = makeStyles((theme) => ({
         fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)',
     },
     author:{
-        fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)',
-        marginBottom:'10px',
+        fontSize:'clamp(0.5rem, 0.0000rem + 1.6000vw, 1rem)',
+        fontWeight:'bold',
+    },
+    description:{
+        fontSize:'clamp(0.5rem, 0.0000rem + 1.6000vw, 1rem)'
     },
     ul:{
         display:'flex',
         flexDirection:'column',
         flexWrap:'wrap',
     },
+    box:{
+        width:'100%',
+        textAlign:'justify',
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'space-evenly',
+        borderTop:'5px solid #52B9FF'
+    },
     container:{
         display:'flex',
         width:'100%',
         flexDirection:'column',
-        justifyContent:'space-evenly',
+        justifyContent:'space-around',
         alignItems:'center',
         padding:'20px',
         height:'100%',
-    }
+    },
+    authorbox:{
+        margin:'10px 0',
+    },
+    descriptionbox:{
+
+    },
 }))
 
-function Template({title,content,author}){
+function Template({description,content,author}){
     const classes = useStyles()
 
 
     return(
         <Paper elevation={3} className={classes.root}>
-            <Box className={classes.container}>
-                <Box className={classes.box}>
-                    <Typography className={classes.title}>
-                        {title}
-                    </Typography>
-                </Box>
-                
+            <Box className={classes.container}>        
                 <Box className={classes.content}>
                     <ul className={classes.ul}>
                         {content.map((text) =>{
@@ -60,9 +72,16 @@ function Template({title,content,author}){
                     </ul>
                 </Box>
                 <Box className={classes.box}>
-                    <Typography className={classes.author}>
-                        By {author}
-                    </Typography>
+                    <Box className={classes.authorbox}>
+                        <Typography className={classes.author}>
+                            By {author}
+                        </Typography>
+                    </Box>
+                    <Box className={classes.descriptionbox}>
+                        <Typography className={classes.description}>
+                            {description}
+                        </Typography>
+                    </Box>
                 </Box>
             </Box>
         </Paper>

@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
         height:'60px',
         color:'#52B9FF',
         zIndex:3,
+        backgroundColor:'#fff',
     },
     arrow:{
         fontSize:'60px',

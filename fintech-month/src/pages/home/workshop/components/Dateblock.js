@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Typography} from '@material-ui/core';
+import {Box, rgbToHex, Typography} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
 
@@ -8,18 +8,20 @@ const useStyles = makeStyles((theme) =>({
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'#FD8329',
+        background:'rgb(255,255,255,0.9)',
         height:'4vw',
         width:'14vw',
+        borderBottomLeftRadius:'10px',
+        borderTopRightRadius:'10px',
     },
     text:{
         fontWeight:'bold',
-        fontSize:'clamp(0.75rem, 0.2500rem + 1.6000vw, 1.25rem)'
+        fontSize:'clamp(0.5rem, 0.0000rem + 1.6000vw, 1rem)'
     }
 }))
 
-function Dateblock({title}){
-    const classes = useStyles()
+function Dateblock({title,...props}){
+    const classes = useStyles(props)
 
     return(
         <Box className={classes.box}>

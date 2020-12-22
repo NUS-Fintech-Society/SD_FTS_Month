@@ -15,6 +15,8 @@ export const MachineLearning = [
         ],
         author:'pss',
         image:Machine12,
+        description:'',
+        date:'12 Jan 2020',
     },
     {
         title:'News Headline Sentiment Analysis',
@@ -24,6 +26,8 @@ export const MachineLearning = [
         ],
         author:'sdsds',
         image:Machine13,
+        description:'',
+        date:'13 Jan 2020',
     },
 ]
 
@@ -38,6 +42,8 @@ export const BlockChain = [
         ],
         author:'sds',
         image:Blockchain12,
+        description:'',
+        date:'12 Jan 2020',
     },
     {
         title:'Understanding Cryptocurrencies and Their Impacts on Current Financial System',
@@ -50,6 +56,8 @@ export const BlockChain = [
         ],
         author:'sdsds',
         image:Blockchain13,
+        description:'',
+        date:'13 Jan 2020',
     },
 ]
 
@@ -59,6 +67,8 @@ export const ExternalWorkshop=[
         content:[],
         author:'Mr Eddie Lee',
         image:Eddie,
+        description:'Founder of SeedIn (BRDGE), Rai Capital, Pilon Pte Ltd, and specialises in P2P lending and crowdfunding. Nominated as the most inspiring entrepeneur by the Spirit of Enterprise Singapore and awarded the 2012 promising SME 500 Award by the Small Medium Business Association Singapore.',
+        date:'15 Jan 2020',
     },
     {
         title:'BSC Stream Transformations with ParsiQL',
@@ -69,18 +79,24 @@ export const ExternalWorkshop=[
         ],
         author:'Anatoly Ressin',
         image:Mranatoly,
+        description:'Chief Blockchain Arhcitect at PARSIQ',
+        date:'',
     },
     {
         title:'Why Crowdfunding is the preferred choice for Startup Fundraising',
         content:[],
         author:'Mr Daniel Lin',
         image:'',
+        description: 'Founder of FundedHere, startup and SMEs crowdfunding platform',
+        date:'15 Jan 2020, 2 PM',
     },
     {
         title:'',
         content:[],
         author:'Mr Hon Kok Wai',
         image:'',
+        description:'Runs market management, pricing and billing functions for the APAC region within BNP Paribas Transaction Banking. Responsibilities include assessment and development of onshore capabilities through platform up-tiering, bank partnership; business development in supporting client conversations and prepositions in pitching to treasury hubs in APAC. His current profesisonal interests are Foreign Exchange Payments, Mobile Money and Alternate payments. He also specialises in Payments and Collections Product Management, and Process Improvement and Revenue Optimization.',
+        date:'',
     },
 ]
 

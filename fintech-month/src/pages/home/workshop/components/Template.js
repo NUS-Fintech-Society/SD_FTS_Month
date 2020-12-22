@@ -1,6 +1,15 @@
 import React from 'react';
 import {Box, Typography, Paper} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
+import {createMuiTheme} from '@material-ui/core/styles'
+import {ThemeProvider} from '@material-ui/styles'
+ 
+
+const theme = createMuiTheme({
+    typography: {
+      fontFamily: "'Montserrat'"
+    }
+  });
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -60,31 +69,34 @@ function Template({description,content,author}){
 
 
     return(
-        <Paper elevation={3} className={classes.root}>
-            <Box className={classes.container}>        
-                <Box className={classes.content}>
-                    <ul className={classes.ul}>
-                        {content.map((text) =>{
-                            return (
-                                <li>{text}</li>
-                            )
-                        })}
-                    </ul>
-                </Box>
-                <Box className={classes.box}>
-                    <Box className={classes.authorbox}>
-                        <Typography className={classes.author}>
-                            By {author}
-                        </Typography>
+        <ThemeProvider theme={theme}>
+            <Paper elevation={3} className={classes.root}>
+                <Box className={classes.container}>        
+                    <Box className={classes.content}>
+                        <ul className={classes.ul}>
+                            {content.map((text) =>{
+                                return (
+                                    <li>{text}</li>
+                                )
+                            })}
+                        </ul>
                     </Box>
-                    <Box className={classes.descriptionbox}>
-                        <Typography className={classes.description}>
-                            {description}
-                        </Typography>
+                    <Box className={classes.box}>
+                        <Box className={classes.authorbox}>
+                            <Typography className={classes.author}>
+                                By {author}
+                            </Typography>
+                        </Box>
+                        <Box className={classes.descriptionbox}>
+                            <Typography className={classes.description}>
+                                {description}
+                            </Typography>
+                        </Box>
                     </Box>
                 </Box>
-            </Box>
-        </Paper>
+            </Paper>
+        </ThemeProvider>
+
     )
 }
 

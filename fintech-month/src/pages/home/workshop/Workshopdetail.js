@@ -14,7 +14,7 @@ import {ThemeProvider} from '@material-ui/styles'
 
 const theme = createMuiTheme({
     typography: {
-      fontFamily: "'Montserrat'"
+      fontFamily: "'Montserrat', 'Nunito', 'Roboto', 'sans-serif'"
     }
   });
 
@@ -66,7 +66,7 @@ function Workshopdetail({match}){
                                 <img className={classes.image} src={text.image} alt="faces"/>
                             </Box>
                         </Box>
-                        <Box  data-aos="fade-left">
+                        <Box data-aos="fade-left" className={classes.container3}>
                             <Template description={text.description} content={text.content} author={text.author} className={classes.template}/>                
                         </Box>
                     </Box>

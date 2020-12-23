@@ -7,13 +7,12 @@ import {ThemeProvider} from '@material-ui/styles'
 
 const theme = createMuiTheme({
     typography: {
-      fontFamily: "'Montserrat'"
+        fontFamily: "'Montserrat', 'Nunito', 'Roboto', 'sans-serif'"
     }
   });
 
 const useStyles = makeStyles((theme) => ({
     root:{
-        marginTop:'100px',
         display:'flex',
         width:'45vw',
         height:'80vh',

@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles'
 import Background from '../../../images/backgroundimage.png'
-import { Hidden } from '@material-ui/core';
+
 
 export const useStyles = makeStyles((theme) =>({
     root:{
@@ -77,9 +77,14 @@ export const useStyles = makeStyles((theme) =>({
         height:'80vh',
         width:'45vw',
         marginTop:'100px',
-        borderRadius:'10px',
         display:'flex',
         flexDirection:'column',
+    },
+    container3:{
+        height:'80vh',
+        width:'45vw',
+        marginTop:'100px',
+        display:'flex',
     },
     heading:{
         display:'flex',
@@ -142,6 +147,7 @@ export const useStyles = makeStyles((theme) =>({
         backgroundSize:'100% 100%', 
         height:'100%',
         width:'100%',
+        overflow:'hidden',
     },
     hide:{
         display:'none'

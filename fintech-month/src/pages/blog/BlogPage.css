@@ -32,5 +32,5 @@
     background-image: url('../../images/backgroundimage.png');
     background-size: 100vw 100%;
     background-repeat: no-repeat;;
-    padding-bottom: 15vh;
+    min-height: 93vh;
 }

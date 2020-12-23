@@ -16,49 +16,28 @@ const images = [
     href: '/hackathon',
     title: 'Hackathon',
     width: '475px',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
+    description: 'Sign up for our Hackathon and stand to win prizes',
   },
   {
     backgroundImage: "url(" + StocksImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Stock Price Prediction',
+    title: 'Machine Learning',
     width: '475px',
-    description: 'Understand the stock market and learn methods to predict prices using Machine Learning.',
-  },
-  {
-    backgroundImage: "url(" + NewsImage + ")", // currently placeholder image
-    href: '/', // currently no workshop page
-    title: 'News Headlines Sentiment Analysis' ,
-    width: '475px',
-    description: 'Understand how news can impact the market and learn about Natural Language Programming.',
+    description: 'Predict stock market prices using Machine Learning and learn Natural Language Processing',
   },
   {
     backgroundImage: "url(" + BlockchainImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Understanding Blockchain: Technology behind Cryptocurrencies',
+    title: 'Blockchain',
     width: '475px',
     description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
-  },
-  {
-    backgroundImage: "url(" + CryptoImage + ")", // currently placeholder image
-    href: '/', // currently no workshop page
-    title: 'Understanding Blockchain: Technology behind Cryptocurrencies',
-    width: '475px',
-    description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
-  },
-  {
-    backgroundImage: "url(" + AnatolyPhoto + ")", // currently placeholder image
-    href: '/', // currently no workshop page
-    title: 'BSC Stream Transformations with ParsiQL',
-    width: '475px',
-    description: 'What are data streams? How do live data streams function in blockchains? How to transform live data streams using PARSIQ’s stream manipulation language? Learn all these in this workshop.',
   },
   {
     backgroundImage: "url(" + DanielPhoto + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Crowdfunding and Startup Fundraising',
+    title: 'External Workshops',
     width: '475px',
-    description: 'Understand why crowdfunding is the preferred choice for startup fundraising',
+    description: 'Learn from industry experts from ParsiQL, Fundedhere, BNPP, and more',
   },
 ];
 

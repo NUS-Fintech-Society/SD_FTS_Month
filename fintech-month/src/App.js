@@ -60,9 +60,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/hackathon" exact component={HackathonPage} />
-        <Route path="/sponsors/raicapital" exact component={RaiCapital} />
-        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
+        <Route path="/hackathon" exact component={HackathonPage} />        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
         <Route path="/sponsors/bnpp" exact component={BNPP} />
         <Route path="/sponsors/stanley" exact component={Stanley} />
         <Route path="/sponsors/genping" exact component={Genping} />

@@ -1,6 +1,0 @@
-{
-  "projects": {
-    "prod": "fts-month",
-    "dev": "fts-month-dev"
-  }
-}

@@ -15,28 +15,28 @@ const images = [
     backgroundImage: "url(" + HackathonImage + ")", // currently placeholder image
     href: '/hackathon',
     title: 'Hackathon',
-    width: '475px',
+    width: '379px',
     description: 'Sign up for our Hackathon and stand to win prizes',
   },
   {
     backgroundImage: "url(" + StocksImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Machine Learning',
-    width: '475px',
+    width: '379px',
     description: 'Predict stock market prices using Machine Learning and learn Natural Language Processing',
   },
   {
     backgroundImage: "url(" + BlockchainImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'Blockchain',
-    width: '475px',
+    width: '379px',
     description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
   },
   {
     backgroundImage: "url(" + DanielPhoto + ")", // currently placeholder image
     href: '/', // currently no workshop page
     title: 'External Workshops',
-    width: '475px',
+    width: '379px',
     description: 'Learn from industry experts from ParsiQL, Fundedhere, BNPP, and more',
   },
 ];
@@ -131,7 +131,7 @@ export default function EventButtons() {
             href={image.href}
             style={{
               width: image.width,
-              height: '60vh',
+              height: '70vh',
             }}
           >
             <span

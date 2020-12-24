@@ -3,7 +3,6 @@ import Machine12 from './images/ml12jan.png';
 import Machine13 from './images/ml13jan.png';
 import Blockchain12 from './images/blockchain12jan.png';
 import Blockchain13 from './images/blockchain13jan.png';
-import Eddie from './images/mreddie.jpg';
 import Mranatoly from './images/Mranatoly.jpg';
 
 export const MachineLearning = [
@@ -62,14 +61,6 @@ export const BlockChain = [
 ]
 
 export const ExternalWorkshop=[
-    {
-        title:'',
-        content:[],
-        author:'Mr Eddie Lee',
-        image:Eddie,
-        description:'Founder of SeedIn (BRDGE), Rai Capital, Pilon Pte Ltd, and specialises in P2P lending and crowdfunding. Nominated as the most inspiring entrepeneur by the Spirit of Enterprise Singapore and awarded the 2012 promising SME 500 Award by the Small Medium Business Association Singapore.',
-        date:'15 Jan 2020',
-    },
     {
         title:'BSC Stream Transformations with ParsiQL',
         content:[

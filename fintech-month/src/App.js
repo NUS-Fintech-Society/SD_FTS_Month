@@ -48,7 +48,7 @@ function App() {
           </div>
           <div className={classes.emptyitem}></div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
-          <Button color="inherit" href="/sponsors/raicapital" className={classes.title}>Sponsors</Button>
+          <Button color="inherit" href="/sponsors/fundedhere" className={classes.title}>Sponsors</Button>
           <Button color="inherit" href="/faq" className={classes.title}>FAQ</Button>
           <Button color="inherit" href="/blog" className={classes.title}>Blog</Button>
           <div className={classes.emptyitem}></div>
@@ -60,9 +60,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/hackathon" exact component={HackathonPage} />
-        <Route path="/sponsors/raicapital" exact component={RaiCapital} />
-        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
+        <Route path="/hackathon" exact component={HackathonPage} />        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
         <Route path="/sponsors/bnpp" exact component={BNPP} />
         <Route path="/sponsors/stanley" exact component={Stanley} />
         <Route path="/sponsors/genping" exact component={Genping} />

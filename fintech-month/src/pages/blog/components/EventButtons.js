@@ -1,37 +1,43 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, ButtonBase } from '@material-ui/core';
+import HackathonImage from '../../../images/hackathonimage.JPG';
+import StocksImage from '../../../images/stocksworkshop.jpg';
+import NewsImage from '../../../images/newsworkshop.jpg';
+import BlockchainImage from '../../../images/blockchainworkshop.jpg';
+import CryptoImage from '../../../images/cryptocurrencyworkshop.jpg';
+import AnatolyPhoto from '../../../images/anatolyphoto.jpg';
+import DanielPhoto from '../../../images/danielphoto.jpg';
 import '../BlogPage.css';
 
 const images = [
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + HackathonImage + ")", // currently placeholder image
     href: '/hackathon',
     title: 'Hackathon',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
+    width: '379px',
+    description: 'Sign up for our Hackathon and stand to win prizes',
   },
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + StocksImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Workshop 1',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
-
+    title: 'Machine Learning',
+    width: '379px',
+    description: 'Predict stock market prices using Machine Learning and learn Natural Language Processing',
   },
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + BlockchainImage + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Workshop 2',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
+    title: 'Blockchain',
+    width: '379px',
+    description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
   },
   {
-    backgroundImage: "url(" + "," + ")", // currently placeholder image
+    backgroundImage: "url(" + DanielPhoto + ")", // currently placeholder image
     href: '/', // currently no workshop page
-    title: 'Workshop 3',
-    width: '25%',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis leo at erat cursus tempus eu sed mauris. In dapibus dolor vel accumsan consequat.',
+    title: 'External Workshops',
+    width: '379px',
+    description: 'Learn from industry experts from ParsiQL, Fundedhere, BNPP, and more',
   },
 ];
 
@@ -41,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     minWidth: 300,
     width: '100%',
+    justifyContent: 'center',
   },
   image: {
     position: 'relative',
@@ -94,8 +101,9 @@ const useStyles = makeStyles((theme) => ({
     top: '10%',
     position: 'relative',
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
-    fontSize: '200%',
-
+    fontSize: '28px',
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
   imageMarked: {
     height: 3,
@@ -123,7 +131,7 @@ export default function EventButtons() {
             href={image.href}
             style={{
               width: image.width,
-              height: '60vh',
+              height: '70vh',
             }}
           >
             <span

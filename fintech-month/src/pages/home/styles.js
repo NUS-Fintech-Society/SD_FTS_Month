@@ -33,14 +33,23 @@ export const useStyles = makeStyles(theme => ({
         
     },
     imgClass: {
-        height: 250,
-        right: "auto",
-        bottom: 0,
-        borderColor: 'pink',
-        borderStyle: 'solid',
+        // height: 250,
+        // right: "auto",
+        // bottom: 0,
+        // borderColor: 'pink',
+        // borderStyle: 'solid',
+        // width: "auto",
     },
     textSize: {
         fontSize:12,
+        alignContent:"center",
+        alignItems:"center",
+        justifyContent:"center",
+        // borderColor: 'pink',
+        // borderStyle: 'solid',
+    },
+    gridHeight: {
+        minHeight:500,
     },
 
 

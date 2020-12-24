@@ -28,7 +28,7 @@ function EventOverviewPage(){
                     <BlackBackbutton />
                 </Box>
 
-                <Grid item xs={12} justify="center">
+                <Grid item xs={12} justify="center" className={classes.bgImg} >
 
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
@@ -38,19 +38,17 @@ function EventOverviewPage(){
 
                     <h3 className="eventOverviewHeaders">Opening Ceremony</h3>
                     
-                    <Grid container spacing={0} justify = "center">
+                    <div class="centerAlign">
+                
+                        <h5 class="imgTextChild"> Introduction to NUS Fintech Society
 
-                        <Grid xs={12} md={3} lg={2}> 
-                            <CardMedia className="outline" justify="center">
-                                <img className={classes.imgClass} src={bcWorkshops} />
-                            </CardMedia>
-                        </Grid>
+                        Overview of Fintech Month
+                        Beginner and External workshops
+                        Hackathon (release of problem statement, grading criteria etc)
+                        </h5>
 
-                        <Grid xs={12} md={3} lg={2}>
-                            <Typography className={classes.textSize} variant="h5" xs={6}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
-                        </Grid>
-                    
-                    </Grid>
+                    </div>
+
 
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
@@ -58,36 +56,128 @@ function EventOverviewPage(){
                         </Box>
                     </Grid>
                     <h3 className="eventOverviewHeaders">Hackathon</h3>
+
+                    <div class="content2">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={hackathonImg} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Experienced in coding? Passionate about software development? Sign up now to be a part 
+                            of the first hackathon run by NUS FinTech Society!</h5>
+                        </div>
+                    </div>
+
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             13 Jan 2020
                         </Box>
                     </Grid>
-                    <h3 className="eventOverviewHeaders">Beginner Workshops</h3>
+                    <h3 className="eventOverviewHeaders">Machine Learning Workshops</h3>
+
+                    <div class="content">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={mlWorkshops} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Ever wondered where to start learning the basics of machine learning? Fret not!
+                                All is covered by our workshops! We offer topics such as stock market prediction and news headlines sentiment analysis. 
+                                Join us to learn and find out more!
+                            </h5>
+                        </div>
+                    </div>
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             15 Jan 2020
                         </Box>
                     </Grid>
+                    <h3 className="eventOverviewHeaders">Blockchain Workshops</h3>
+
+                    <div class="content2">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={bcWorkshops} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Focusing on cryptocurrencies’ technology and their impact, these workshops are suitable for all 
+                            the blockchain enthusiasts! Join us to learn and find out more!</h5>
+                        </div>
+                    </div>
+
+                    <Grid container justify="flex-end">
+                        <Box className={classes.dateStyle}>
+                            16 Jan 2020
+                        </Box>
+                    </Grid>
                     <h3 className="eventOverviewHeaders">External Workshops</h3>
+
+                    <div class="content">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={extWorkshops} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Text</h5>
+                        </div>
+                    </div>
+
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             24 Jan 2020
                         </Box>
                     </Grid>
                     <h3 className="eventOverviewHeaders">Hackathon Submission Deadline</h3>
+
+                    <div class="content2">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={bcWorkshops} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Text</h5>
+                        </div>
+                    </div>
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             29 Jan 2020
                         </Box>
                     </Grid>
                     <h3 className="eventOverviewHeaders">Release of Finalists</h3>
+
+                    <div class="content">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={finalists} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Text</h5>
+                        </div>
+                    </div>
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             30 Jan 2020
                         </Box>
                     </Grid>
+
                     <h3 className="eventOverviewHeaders">Closing Ceremony</h3>
+                    <div class="content2">
+                
+                        <CardMedia className="imgContent" justify="center">
+                            <img className={classes.imgClass} src={closingCeremony} />
+                        </CardMedia>
+        
+                        <div class="imgText">
+                            <h5 class="imgTextChild"> Text</h5>
+                        </div>
+                    </div>
+
                 </Grid>
             </Grid>
         </div>

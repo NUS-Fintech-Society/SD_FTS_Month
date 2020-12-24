@@ -77,7 +77,136 @@
 }
 
 .outline { 
-    border-color:coral;
+    border-color:black;
     border-style: dotted;
 }
 
+.whiteHeading {
+    color:white;
+}
+
+.regImg{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.content {
+    margin:0;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto,2);
+    grid-template-areas:
+    "imgContent"
+    "imgText"
+}
+
+.content2 {
+    margin:0;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto,2);
+    grid-template-areas:
+    "imgContent"
+    "imgText"
+}
+
+.imgContent {
+    grid-area: imgContent;
+    /* border-color:black;
+    border-style: dotted; */
+    margin:20px
+
+}
+
+.imgText {
+    grid-area: imgText;
+    /* border-color:black;
+    border-style: dotted; */
+    align-self:center;
+    justify-self: center;
+    
+}
+
+.imgTextChild{
+    /* border-color:pink;
+    border-style: dotted; */
+    min-width: 300px;
+    width:500px;
+    font-size: 14px;
+    color: white;
+    
+}
+
+
+@media screen and (min-width: 900px) {
+    .content {
+        margin:0;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "imgContent imgText"
+    }
+    .content2 {
+        margin:0;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "imgText imgContent"
+    }
+
+    .imgContent {
+        grid-area: imgContent;
+        /* border-color:black;
+        border-style: dotted; */
+        margin:50px
+    
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .content {
+        margin:0;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "imgContent imgText"
+    }
+
+    .content2 {
+        margin:0;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "imgText imgContent"
+    }
+
+    .imgContent {
+        grid-area: imgContent;
+        /* border-color:black;
+        border-style: dotted; */
+        margin:100px
+    
+    }
+    
+}
+
+.centerAlign {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    /* border-color:black;
+    border-style: dotted; */
+}

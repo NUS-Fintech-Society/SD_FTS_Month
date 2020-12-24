@@ -60,7 +60,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={hackathonImg} />
+                            <img src={hackathonImg} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -79,7 +79,7 @@ function EventOverviewPage(){
                     <div class="content">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={mlWorkshops} />
+                            <img src={mlWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -99,7 +99,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={bcWorkshops} />
+                            <img src={bcWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -118,7 +118,7 @@ function EventOverviewPage(){
                     <div class="content">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={extWorkshops} />
+                            <img src={extWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -136,7 +136,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={bcWorkshops} />
+                            <img src={bcWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -153,7 +153,7 @@ function EventOverviewPage(){
                     <div class="content">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={finalists} />
+                            <img  src={finalists} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -170,7 +170,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img className={classes.imgClass} src={closingCeremony} />
+                            <img src={closingCeremony} />
                         </CardMedia>
         
                         <div class="imgText">

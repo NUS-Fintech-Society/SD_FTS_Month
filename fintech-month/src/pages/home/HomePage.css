@@ -119,9 +119,8 @@ img {
 
 .imgContent {
     grid-area: imgContent;
-    /* border-color:black;
+    /* border-color:pink;
     border-style: dotted; */
-    margin:20px
 
 }
 
@@ -145,7 +144,7 @@ img {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
     .content {
         margin:0;
         display:grid;
@@ -167,40 +166,12 @@ img {
         grid-area: imgContent;
         /* border-color:black;
         border-style: dotted; */
-        margin:50px
+        /* margin:50px */
     
     }
     
 }
 
-@media screen and (min-width: 1400px) {
-    .content {
-        margin:0;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "imgContent imgText"
-    }
-
-    .content2 {
-        margin:0;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "imgText imgContent"
-    }
-
-    .imgContent {
-        grid-area: imgContent;
-        /* border-color:black;
-        border-style: dotted; */
-        margin:100px
-    
-    }
-    
-}
 
 .centerAlign {
     justify-content: center;

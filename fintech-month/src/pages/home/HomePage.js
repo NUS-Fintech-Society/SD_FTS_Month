@@ -33,19 +33,15 @@ function HomePage(){
                     
                 </Grid>
 
-                <Grid md={2} lg={3} xl={4}></Grid>
-
-                <Grid container xs={12} md={8} lg={6} xl={4} justify="center" >
-                    <CardMedia 
-                    component="video"
-                    image= {vid}
-                    type='video/mp4'
-                    title='NUS Fintech Month 2021'
-                    controls
-                    />  
+                <Grid container justify="center">
+                    <Grid item className="vid">
+                        <video width="" height="420" controls preload="auto" class="vid">
+                            <source src={vid} type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </Grid>
                 </Grid>
-
-                <Grid md={2} lg={3} xl={4}></Grid>
                     
                 <Grid container spacing={0} justify="center">
                     <Grid xs={12}>

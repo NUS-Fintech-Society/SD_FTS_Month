@@ -20,15 +20,15 @@ function EventOverviewPage(){
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div className={classes.bgImg}>
 
-            <Grid container spacing={0}>
+            <Grid container spacing={0} >
 
                 <Box className={classes.backButton}>
                     <BlackBackbutton />
                 </Box>
 
-                <Grid item xs={12} justify="center" className={classes.bgImg} >
+                <Grid item xs={12} justify="center" >
 
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
@@ -60,7 +60,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img src={hackathonImg} />
+                            <img className={classes.imgClass} src={hackathonImg} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -79,7 +79,7 @@ function EventOverviewPage(){
                     <div class="content">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img src={mlWorkshops} />
+                            <img className={classes.imgClass} src={mlWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -99,7 +99,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img src={bcWorkshops} />
+                            <img className={classes.imgClass} src={bcWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -118,7 +118,7 @@ function EventOverviewPage(){
                     <div class="content">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img src={extWorkshops} />
+                            <img className={classes.imgClass} src={extWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -136,7 +136,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img src={bcWorkshops} />
+                            <img className={classes.imgClass} src={bcWorkshops} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -153,7 +153,7 @@ function EventOverviewPage(){
                     <div class="content">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img  src={finalists} />
+                            <img className={classes.imgClass} src={finalists} />
                         </CardMedia>
         
                         <div class="imgText">
@@ -170,7 +170,7 @@ function EventOverviewPage(){
                     <div class="content2">
                 
                         <CardMedia className="imgContent" justify="center">
-                            <img src={closingCeremony} />
+                            <img className={classes.imgClass} src={closingCeremony} />
                         </CardMedia>
         
                         <div class="imgText">

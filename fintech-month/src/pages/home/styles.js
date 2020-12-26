@@ -48,20 +48,25 @@ export const useStyles = makeStyles(theme => ({
 
     bgImg: {
 
-        // position: "fixed",
-        // height: "100vh",
         backgroundImage: `url(${backgroundImg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: "100% 100%",
         backgroundSize: 'cover',
-        // overflow:"scroll",
-        // overflowX:"hidden",
+
     },
     backButtonRegDate: {
         position: 'absolute',
         backgroundColor: "white !important",
         borderRadius:25,
 
+    },
+    imgClass: {
+        margin:0,
+        padding:0,
+        height: "100%",
+        width: "100%",
+        // borderColor: 'black',
+        // borderStyle: 'solid',
     },
 
 

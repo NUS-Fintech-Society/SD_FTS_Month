@@ -59,9 +59,9 @@ function EventOverviewPage(){
 
                     <div class="content2">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={hackathonImg} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Experienced in coding? Passionate about software development? Sign up now to be a part 
@@ -78,9 +78,9 @@ function EventOverviewPage(){
 
                     <div class="content">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={mlWorkshops} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Ever wondered where to start learning the basics of machine learning? Fret not!
@@ -98,9 +98,9 @@ function EventOverviewPage(){
 
                     <div class="content2">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={bcWorkshops} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Focusing on cryptocurrencies’ technology and their impact, these workshops are suitable for all 
@@ -117,9 +117,9 @@ function EventOverviewPage(){
 
                     <div class="content">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div class="imgContent">
                             <img className={classes.imgClass} src={extWorkshops} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Text</h5>
@@ -135,9 +135,9 @@ function EventOverviewPage(){
 
                     <div class="content2">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={bcWorkshops} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Text</h5>
@@ -152,9 +152,9 @@ function EventOverviewPage(){
 
                     <div class="content">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={finalists} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Text</h5>
@@ -169,9 +169,9 @@ function EventOverviewPage(){
                     <h3 className="eventOverviewHeaders">Closing Ceremony</h3>
                     <div class="content2">
                 
-                        <CardMedia className="imgContent" justify="center">
+                        <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={closingCeremony} />
-                        </CardMedia>
+                        </div>
         
                         <div class="imgText">
                             <h5 class="imgTextChild"> Text</h5>

@@ -120,12 +120,18 @@ img {
 
 .imgContent {
     grid-area: imgContent;
+    margin:0;
+    padding:0;
+    align-items: center;
     /* border-color:pink;
+    border-width: 3px;
     border-style: dotted; */
 }
 
 .imgText {
     grid-area: imgText;
+    margin:0;
+    padding:0;
     /* border-color:black;
     border-style: dotted; */
     align-self:center;
@@ -164,6 +170,8 @@ img {
 
     .imgContent {
         grid-area: imgContent;
+        margin:0;
+        padding:0;
         /* border-color:black;
         border-style: dotted; */
     

@@ -86,9 +86,10 @@
 }
 
 .regImg{
-    display: flex;
+    max-width: 800px; 
+    height: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
 }
 
 img {
@@ -166,7 +167,6 @@ img {
         grid-area: imgContent;
         /* border-color:black;
         border-style: dotted; */
-        /* margin:50px */
     
     }
     

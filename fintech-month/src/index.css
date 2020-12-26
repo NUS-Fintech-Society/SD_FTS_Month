@@ -12,13 +12,8 @@ code {
     monospace;
 }
 
-p{
-  margin-bottom:30px;
-}
-
 
 h1,h2,h3,h4,h5 {
-  display: flex;
   justify-content:center;
   align-items:center;
 }

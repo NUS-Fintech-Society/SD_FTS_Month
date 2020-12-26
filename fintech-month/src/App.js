@@ -10,13 +10,13 @@ import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import Workshop from './pages/home/workshop/Workshop';
 import Workshopdetail from './pages/home/workshop/Workshopdetail';
-import RaiCapital from './pages/sponsors/RaiCapital';
 import Fundedhere from './pages/sponsors/FundedHere';
 import BNPP from './pages/sponsors/BNPP';
 import Stanley from './pages/sponsors/Stanley';
 import Genping from './pages/sponsors/Genping';
 import EventOverviewPage from './pages/home/EventOverviewPage';
-import RegDatePage from './pages/home/RegDatePage'
+import RegDatePage from './pages/home/RegDatePage';
+import Externalworkshop from './pages/home/workshop/Externalworkshop'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -78,6 +78,7 @@ function App() {
             render={props => (
               <Workshopdetail {...props}/>
             )}/>
+        <Route path="/externalworkshop" exact component={Externalworkshop}/>
       </Switch>
 
     </BrowserRouter>

@@ -4,6 +4,9 @@ import Machine13 from './images/ml13jan.png';
 import Blockchain12 from './images/blockchain12jan.png';
 import Blockchain13 from './images/blockchain13jan.png';
 import Mranatoly from './images/Mranatoly.jpg';
+import Mrjeff from './images/mrjeff.png';
+import Mrdaniel from './images/mrdaniel.png';
+import Placeholder from '../../../images/placeholder.png'
 
 export const MachineLearning = [
     {
@@ -69,7 +72,8 @@ export const ExternalWorkshop=[
             "How to transform live data streams using PARSIQ's manipulation language?"
         ],
         author:'Anatoly Ressin',
-        image:Mranatoly,
+        leftImage:Placeholder,
+        speakerImage:Mranatoly,
         description:'Chief Blockchain Arhcitect at PARSIQ',
         date:'',
     },
@@ -77,7 +81,8 @@ export const ExternalWorkshop=[
         title:'Why Crowdfunding is the preferred choice for Startup Fundraising',
         content:[],
         author:'Mr Daniel Lin',
-        image:'',
+        leftImage:Placeholder,
+        speakerImage:Mrdaniel,
         description: 'Founder of FundedHere, startup and SMEs crowdfunding platform',
         date:'15 Jan 2020, 2 PM',
     },
@@ -85,9 +90,19 @@ export const ExternalWorkshop=[
         title:'',
         content:[],
         author:'Mr Hon Kok Wai',
-        image:'',
+        leftImage:Placeholder,
+        speakerImage:'',
         description:'Runs market management, pricing and billing functions for the APAC region within BNP Paribas Transaction Banking. Responsibilities include assessment and development of onshore capabilities through platform up-tiering, bank partnership; business development in supporting client conversations and prepositions in pitching to treasury hubs in APAC. His current profesisonal interests are Foreign Exchange Payments, Mobile Money and Alternate payments. He also specialises in Payments and Collections Product Management, and Process Improvement and Revenue Optimization.',
         date:'',
+    },
+    {
+        title:'Introduction to Decentralised Finance - benefits & risks of Decentralised Finance (DeFi) to the general public',
+        content:[],
+        author:'Mr Jeff Zhang (Chang Chi Chang)',
+        leftImage: Placeholder,
+        speakerImage:Mrjeff,
+        description:'The latest Binance Community Manager, Jeff was previously Chief Community Operator with dForce Network and Head of Operations with Wetez, both blockchain companies. He travelled around the world after graduation in 2017 to experience the world before he started working.',
+        date:'19 Jan, 8pm - 9pm',
     },
 ]
 

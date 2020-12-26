@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) =>({
     },
     text:{
         fontWeight:'bold',
-        fontSize:'clamp(0.5rem, 0.0000rem + 1.6000vw, 1rem)'
+        fontSize:'1.7vw'
     }
 }))
 

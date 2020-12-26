@@ -1,17 +1,15 @@
 import React from 'react';
-import {Box, Typography, responsiveFontSizes, Paper} from '@material-ui/core'
+import {Box, Typography, Paper} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 import {createMuiTheme} from '@material-ui/core/styles'
 import {ThemeProvider} from '@material-ui/styles'
  
 
-let theme = createMuiTheme({
+const theme = createMuiTheme({
     typography: {
         fontFamily: "'Montserrat', 'Nunito', 'Roboto', 'sans-serif'"
     }
   });
-
-theme = responsiveFontSizes(theme)
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -41,12 +39,13 @@ const useStyles = makeStyles((theme) => ({
     text:{
         fontSize:'clamp(1rem, 0.4643rem + 2.8571vw, 2.25rem)'
     },
-    li:{
-        fontSize:'200%'
+    imagebox:{
+        width:'132.28px',
+        height:'170.08px'
     }
 }))
 
-function Template({content}){
+function Externalworkshoptemplate({description,content,author, speakerImage}){
     const classes = useStyles()
 
 
@@ -60,12 +59,27 @@ function Template({content}){
                                 return (
                                     <li className={classes.li}>
                                         <Box className={classes.ulbox}>
-                                            <Typography className={classes.text}>{text}</Typography>
+                                            <Typography className={classes.text} align="left">{text}</Typography>
                                         </Box>
                                     </li>
                                 )
                             })}
                         </ul>
+                    </Box>
+                    <Box className={classes.box}>
+                        <Box className={classes.imagebox}>
+                            <img src={speakerImage} alt="speakerimage"/>
+                        </Box>
+                        <Box className={classes.authorbox}>
+                            <Typography className={classes.author}>
+                                By {author}
+                            </Typography>
+                        </Box>
+                        <Box className={classes.descriptionbox}>
+                            <Typography className={classes.description}>
+                                {description}
+                            </Typography>
+                        </Box>
                     </Box>
                 </Box>
             </Paper>
@@ -74,4 +88,4 @@ function Template({content}){
     )
 }
 
-export default Template;
+export default Externalworkshoptemplate;

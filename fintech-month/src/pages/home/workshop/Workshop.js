@@ -39,7 +39,7 @@ function Workshop(){
                         External Workshops
                     </Typography>
                 </Box>
-                <Complexbutton title="Workshop A" bgImage = "linear-gradient(#131d47,80%,#ffffff)" href="workshop/externalworkshop"/>
+                <Complexbutton title="List of Workshops" bgImage = "linear-gradient(#131d47,80%,#ffffff)" href="externalworkshop"/>
             </Box>
         </ThemeProvider>
 

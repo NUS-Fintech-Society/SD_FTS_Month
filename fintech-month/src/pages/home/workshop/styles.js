@@ -73,17 +73,22 @@ export const useStyles = makeStyles((theme) =>({
         width:'150px',
         height:'150px',
     },
+    container1:{
+        display:'flex',
+        width:'100%',
+        justifyContent:'space-around'
+    },
     container2:{
         height:'80vh',
-        width:'45vw',
         marginTop:'100px',
         display:'flex',
+        maxWidth:'45vw',
         flexDirection:'column',
     },
     container3:{
         height:'80vh',
-        width:'45vw',
         marginTop:'100px',
+        maxWidth:'45vw',
         display:'flex',
     },
     heading:{
@@ -95,19 +100,17 @@ export const useStyles = makeStyles((theme) =>({
         alignItems:'center',
         justifyContent:'center',
         backgroundColor:'#52B9FF',
-        borderBottom:'3px solid #131D47',
-        flexGrow:2,
     },
     imagewrapper:{
         width:'100%',
         display:'flex',
         height:'80%',
         flexDirection:'column',
-        flexGrow:1,
         position:'relative',
+        flexGrow:1
     },
     headertext:{
-        fontSize:'clamp(1rem, 0.5000rem + 1.6000vw, 1.5rem)',
+        fontSize:'clamp(1.25rem, 0.5000rem + 2.4000vw, 2rem)',
         fontWeight:'bold',
         textAlign:'center',
     },
@@ -151,12 +154,6 @@ export const useStyles = makeStyles((theme) =>({
     },
     hide:{
         display:'none'
-    },
-    container1:{
-        width:'100%',
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'space-evenly',
     },
     backbutton:{
         position:'fixed',

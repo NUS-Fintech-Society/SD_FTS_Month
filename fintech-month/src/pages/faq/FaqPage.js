@@ -4,13 +4,23 @@ import Typography from '@material-ui/core/Typography';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import {useStyles, CustomizedAccordionSummary, CustomizedAccordion} from './styles.js';
 import {items} from './items.js'
+import {createMuiTheme} from '@material-ui/core/styles'
+import {ThemeProvider} from '@material-ui/styles'
+ 
+
+const theme = createMuiTheme({
+    typography: {
+      fontFamily: "'Montserrat', 'Nunito', 'Roboto', 'sans-serif'"
+    }
+  });
 
 
 export default function FaqPage() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.root}>
+    <ThemeProvider theme={theme}>
+      <Box className={classes.root}>
       <Typography className={classes.faq}>Frequently Asked Questions (FAQs)</Typography>
       {items.map((item) =>{
         return (
@@ -39,8 +49,10 @@ export default function FaqPage() {
             </AccordionDetails>
           </CustomizedAccordion>
         </Box>)
-      })}
-    </Box>
+        })}
+     </Box>
+    </ThemeProvider>
+    
     
     
       

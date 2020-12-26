@@ -22,7 +22,7 @@ function HomePage(){
                     <h3 className="subHeader">Join our very first</h3>
                     <img className = "logo" src={logo} />
                     <div className="headerAlignment">
-                        <h1 className='FintechMonthHeader' >NUS Fintech Month 2020</h1>
+                        <h1 className='FintechMonthHeader' >NUS Fintech Month 2021</h1>
                     </div>
                     
                 </Grid>
@@ -40,7 +40,7 @@ function HomePage(){
                     component="video"
                     image= {vid}
                     type='video/mp4'
-                    title='NUS Fintech Month 2020'
+                    title='NUS Fintech Month 2021'
                     controls
                     />  
                 </Grid>

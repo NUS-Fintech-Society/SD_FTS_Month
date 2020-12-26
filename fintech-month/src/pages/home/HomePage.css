@@ -86,9 +86,10 @@
 }
 
 .regImg{
-    display: flex;
+    max-width: 800px; 
+    height: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
 }
 
 img {
@@ -119,7 +120,7 @@ img {
 
 .imgContent {
     grid-area: imgContent;
-    /* border-color:black;
+    /* border-color:pink;
     border-style: dotted; */
 }
 
@@ -143,7 +144,7 @@ img {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 960px) {
     .content {
         margin:0;
         display:grid;
@@ -165,7 +166,6 @@ img {
         grid-area: imgContent;
         /* border-color:black;
         border-style: dotted; */
-        /* margin:50px */
     
     }
     

@@ -32,14 +32,6 @@ export const useStyles = makeStyles(theme => ({
         position: 'absolute',
         
     },
-    imgClass: {
-        // height: 250,
-        // right: "auto",
-        // bottom: 0,
-        // borderColor: 'pink',
-        // borderStyle: 'solid',
-        // width: "auto",
-    },
     textSize: {
         fontSize:12,
         alignContent:"center",

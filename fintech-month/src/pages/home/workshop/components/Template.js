@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     root:{
         display:'flex',
         width:'45vw',
-        height:'80vh',
+        minHeight:'80vh',
         borderRadius:'10px',
     },
     ul:{
@@ -39,10 +39,14 @@ const useStyles = makeStyles((theme) => ({
         marginBottom:'5px',
     },
     text:{
-        fontSize:'clamp(1rem, 0.4643rem + 2.8571vw, 2.25rem)'
+        fontSize:'clamp(0.75rem, 0.1618rem + 2.9412vw, 2rem)'
     },
     li:{
-        fontSize:'200%'
+        fontSize:'clamp(0.75rem, 0.1618rem + 2.9412vw, 2rem)'
+    },
+    content:{
+        borderTop:'3px solid #131D47',
+        borderBottom:'3px solid #131D47',
     }
 }))
 
@@ -60,7 +64,7 @@ function Template({content}){
                                 return (
                                     <li className={classes.li}>
                                         <Box className={classes.ulbox}>
-                                            <Typography className={classes.text}>{text}</Typography>
+                                            <Typography className={classes.text} >{text}</Typography>
                                         </Box>
                                     </li>
                                 )

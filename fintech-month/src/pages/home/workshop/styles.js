@@ -74,43 +74,39 @@ export const useStyles = makeStyles((theme) =>({
         height:'150px',
     },
     container1:{
-        display:'flex',
-        width:'100%',
-        justifyContent:'space-around'
-    },
-    container2:{
-        height:'80vh',
         marginTop:'100px',
         display:'flex',
-        maxWidth:'45vw',
+        width:'100%',
+        justifyContent:'space-around',
+    },
+    container2:{
+        display:'flex',
+        width:'45vw',
         flexDirection:'column',
     },
     container3:{
-        height:'80vh',
-        marginTop:'100px',
-        maxWidth:'45vw',
+        maxWidth:'50vw',
         display:'flex',
     },
     heading:{
         display:'flex',
-        minHeight:'10%',
         borderTopLeftRadius:'10px',
         borderTopRightRadius:'10px',
         width:'100%',
         alignItems:'center',
         justifyContent:'center',
         backgroundColor:'#52B9FF',
+        flexGrow:1,
     },
     imagewrapper:{
         width:'100%',
         display:'flex',
-        height:'80%',
         flexDirection:'column',
         position:'relative',
-        flexGrow:1
+        flexGrow:4,
     },
     headertext:{
-        fontSize:'clamp(1.25rem, 0.5000rem + 2.4000vw, 2rem)',
+        fontSize:'clamp(1rem, 0.5294rem + 2.3529vw, 2rem)',
         fontWeight:'bold',
         textAlign:'center',
     },
@@ -167,12 +163,12 @@ export const useStyles = makeStyles((theme) =>({
         bottom:0,
         borderBottomLeftRadius:'10px',
     },
-    margintop:{
-        marginTop:'30px',
-    },
     backButton: {
         position: 'absolute',
         // borderColor: 'black',
         // borderStyle: 'solid',
     },
+    marginTop:{
+        marginTop:'2rem',
+    }
 }))

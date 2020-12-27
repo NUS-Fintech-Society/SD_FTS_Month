@@ -38,8 +38,8 @@ function Externalworkshop(){
                 <Box className={classes.backbutton}>
                     <Backbutton/>
                 </Box>
+                <Box className={classes.marginTop}></Box>
                 <Box className={classes.paragraph}>
-                    <Box className={classes.margintop}></Box>
                 {texts.map((text) =>{   
                     return (
                     <Box className={classes.container1}>

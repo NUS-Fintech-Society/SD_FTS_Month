@@ -63,7 +63,7 @@ export const BlockChain = [
     },
 ]
 
-export const ExternalWorkshop=[
+export const ExternalWorkshop = [
     {
         title:'BSC Stream Transformations with ParsiQL',
         content:[
@@ -74,8 +74,8 @@ export const ExternalWorkshop=[
         author:'Anatoly Ressin',
         leftImage:Placeholder,
         speakerImage:Mranatoly,
-        description:'Chief Blockchain Arhcitect at PARSIQ',
-        date:'',
+        description:'Chief Blockchain Architect at PARSIQ',
+        date:'20 Jan, 8pm - 9pm',
     },
     {
         title:'Why Crowdfunding is the preferred choice for Startup Fundraising',
@@ -84,10 +84,10 @@ export const ExternalWorkshop=[
         leftImage:Placeholder,
         speakerImage:Mrdaniel,
         description: 'Founder of FundedHere, startup and SMEs crowdfunding platform',
-        date:'15 Jan 2020, 2 PM',
+        date:'15 Jan, 2pm-3pm',
     },
     {
-        title:'',
+        title:'Dummytext',
         content:[],
         author:'Mr Hon Kok Wai',
         leftImage:Placeholder,
@@ -102,7 +102,7 @@ export const ExternalWorkshop=[
         leftImage: Placeholder,
         speakerImage:Mrjeff,
         description:'The latest Binance Community Manager, Jeff was previously Chief Community Operator with dForce Network and Head of Operations with Wetez, both blockchain companies. He travelled around the world after graduation in 2017 to experience the world before he started working.',
-        date:'19 Jan, 8pm - 9pm',
+        date:'19 Jan, 8pm-9pm',
     },
 ]
 

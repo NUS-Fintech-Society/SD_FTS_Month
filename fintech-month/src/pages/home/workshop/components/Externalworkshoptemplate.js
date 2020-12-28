@@ -14,11 +14,9 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
     root:{
         display:'flex',
-        width:'45vw',
+        minWidth:'45vw',
         borderRadius:'1rem',
-    },
-    '@media screen and (max-width: 1280px)':{
-        root:{
+        [theme.breakpoints.down('xs')]:{
             width:'80vw',
         }
     },
@@ -75,8 +73,8 @@ const useStyles = makeStyles((theme) => ({
         alignItems:'center',
     },
     image:{
-        width: '8rem',
-        clipPath: 'circle(200px at center)', 
+        maxWidth:'7rem',
+        maxHeight:'9rem',
     },
     descriptionbox:{
         textAlign:'center',

@@ -8,7 +8,7 @@ import Mrjeff from './images/mrjeff.png';
 import Mrdaniel from './images/mrdaniel.png';
 import Placeholder from '../../../images/placeholder.png';
 import External1 from './images/external1.png';
-import External2 from './images/external2.png';
+import External2 from './images/external2.jpg';
 import External4 from './images/external4.png';
 
 export const MachineLearning = [

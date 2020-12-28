@@ -17,8 +17,10 @@ const useStyles = makeStyles((theme) => ({
     root:{
         display:'flex',
         width:'45vw',
-        minHeight:'80vh',
         borderRadius:'1rem',
+        [theme.breakpoints.down('xs')]:{
+            width:'80vw',
+        }
     },
     ul:{
         display:'flex',
@@ -45,8 +47,6 @@ const useStyles = makeStyles((theme) => ({
         fontSize:'clamp(0.75rem, 0.1618rem + 2.9412vw, 2rem)'
     },
     content:{
-        borderTop:'3px solid #131D47',
-        borderBottom:'3px solid #131D47',
     }
 }))
 

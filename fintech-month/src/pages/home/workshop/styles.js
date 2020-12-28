@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles'
 import Background from '../../../images/backgroundimage.png'
+import {createMuiTheme} from '@material-ui/core/styles'
 
 
 export const useStyles = makeStyles((theme) =>({
@@ -78,17 +79,27 @@ export const useStyles = makeStyles((theme) =>({
         display:'flex',
         width:'100%',
         justifyContent:'space-around',
+        [theme.breakpoints.down('xs')]:{
+            flexWrap:'wrap'
+        }
     },
     container2:{
         display:'flex',
         width:'45vw',
         minHeight:'80vh',
         flexDirection:'column',
+        [theme.breakpoints.down('xs')]:{
+            width:'80vw',
+            marginBottom:'2rem',
+        }
     },
     container3:{
         minHeight:'80vh',
         width:'45vw',
         display:'flex',
+        [theme.breakpoints.down('xs')]:{
+            width:'80vw',
+        }
     },
     heading:{
         display:'flex',
@@ -158,6 +169,9 @@ export const useStyles = makeStyles((theme) =>({
         left:'1%',
         top:'13%',
         zIndex:3,
+        [theme.breakpoints.down('xs')]:{
+            top:'15%',
+        }
     },
     dateblock:{
         position:'absolute',
@@ -167,25 +181,8 @@ export const useStyles = makeStyles((theme) =>({
     },
     backButton: {
         position: 'absolute',
-        // borderColor: 'black',
-        // borderStyle: 'solid',
     },
     marginTop:{
         marginTop:'2rem',
     },
-    '@media screen and (max-width: 600px)':{
-        container1:{
-            flexWrap:'wrap'
-        },
-        container2:{
-            width:'80vw',
-            marginBottom:'2rem'
-        },
-        container3:{
-            width:'80vw',
-        },
-        backbutton:{
-            top:'15%'
-        }
-    }
 }))

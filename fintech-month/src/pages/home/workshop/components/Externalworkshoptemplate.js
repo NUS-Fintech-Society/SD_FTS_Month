@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('xs')]:{
             height:'100%',
             paddingLeft:'2rem',
-            borderLeft:'0.25rem solid #C1C1C1',
+            borderLeft:'0.25rem solid #52B9FF',
             borderRadius:'0.1rem',
         }
     },
@@ -71,9 +71,12 @@ const useStyles = makeStyles((theme) => ({
     },
     authorbox:{
         margin:'10px 0',
-        borderTop:'3px solid #52B9FF',
+        borderTop:'0.15rem solid #52B9FF',
         textAlign:'center',
         width:'100%',
+        [theme.breakpoints.down('xs')]:{
+            borderTop:'0.15rem solid #52B9FF',
+        }
     },
     authorfont:{
         fontWeight:'bold',

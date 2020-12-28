@@ -78,6 +78,7 @@ export const useStyles = makeStyles((theme) =>({
         marginTop:'100px',
         display:'flex',
         width:'100%',
+        minHeight:'80vh',
         justifyContent:'space-around',
         [theme.breakpoints.down('xs')]:{
             flexWrap:'wrap'

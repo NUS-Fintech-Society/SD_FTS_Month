@@ -13,11 +13,11 @@ function RegDatePage(){
     const classes = useStyles();
 
     return (
-        <div className={classes.root} >
+        <div class="bgImg" >
             <Box className={classes.backButtonRegDate}>
                     <BlackBackbutton />
             </Box>
-            <Grid container spacing={0} className={classes.bgImg}>
+            <Grid container spacing={0}>
                 <Grid item xs={12} justify="center">
                     <h2 className="whiteHeading">Registration Dates</h2>
                     <CardMedia className="regImg" justify="center">

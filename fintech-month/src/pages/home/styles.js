@@ -50,8 +50,8 @@ export const useStyles = makeStyles(theme => ({
 
         backgroundImage: `url(${backgroundImg})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: "100% 100%",
-        backgroundSize: 'cover',
+        // backgroundSize: "100% 100%",
+        backgroundSize: "cover",
 
     },
     backButtonRegDate: {

@@ -198,3 +198,10 @@ img {
     /* border-color:black;
     border-style: dotted; */
 }
+
+.bgImg {
+    background: url('../../images/backgroundimage.png') no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    height: 100vh;
+}

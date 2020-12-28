@@ -1,5 +1,8 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles'
+import Background from '../../../images/backgroundimage.png'
+import {createMuiTheme} from '@material-ui/core/styles'
+
 
 export const useStyles = makeStyles((theme) =>({
     root:{
@@ -17,7 +20,7 @@ export const useStyles = makeStyles((theme) =>({
     workshopbanner:{
         display:'flex',
         alignItems:'center',
-        justifyContent:'center',
+        justifyContent:'space-evenly',
         minHeight:'300px',
         flexDirection:'column',
         backgroundImage: 'linear-gradient(#131d47,80%,#ffffff)',
@@ -71,59 +74,116 @@ export const useStyles = makeStyles((theme) =>({
         width:'150px',
         height:'150px',
     },
-    template: {
-        flexBasis:'50%',
+    container1:{
+        marginTop:'100px',
+        display:'flex',
+        width:'100%',
+        minHeight:'80vh',
+        justifyContent:'space-around',
+        [theme.breakpoints.down('xs')]:{
+            flexWrap:'wrap'
+        }
     },
-    image:{
-        height:'400px',
+    container2:{
+        display:'flex',
+        width:'45vw',
+        minHeight:'80vh',
+        flexDirection:'column',
+        [theme.breakpoints.down('xs')]:{
+            width:'80vw',
+            marginBottom:'2rem',
+        }
+    },
+    container3:{
+        minHeight:'80vh',
+        width:'45vw',
+        display:'flex',
+        [theme.breakpoints.down('xs')]:{
+            width:'80vw',
+        }
+    },
+    heading:{
+        display:'flex',
+        borderTopLeftRadius:'1rem',
+        borderTopRightRadius:'1rem',
+        width:'100%',
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'#52B9FF',
+        flexGrow:1,
     },
     imagewrapper:{
-        position:'fixed',
-        left:'2%',
-        top:'22%',
-        display:'flex',
-    },
-    box:{
-        marginTop:'100px',
         width:'100%',
         display:'flex',
         flexDirection:'column',
-        height:'360px',
-        padding:'20px 0',
+        position:'relative',
+        flexGrow:4,
+    },
+    headertext:{
+        fontSize:'clamp(1rem, 0.5294rem + 2.3529vw, 2rem)',
+        fontWeight:'bold',
+        textAlign:'center',
+    },
+    image:{
+        width: '100%',
+        height:'100%',
+        borderBottomLeftRadius:'1rem',
+        borderBottomRightRadius:'1rem',
+        flexGrow:1,
+    },
+    paper:{
+        marginTop:'100px',
+        height:'80vh',
+        width:'45vw',
     },
     dynamicroot:{
         width:'100%',
         display:'flex',
-        justifyContent:'flex-end',
-        height:'75%',
     },
     paragraph:{
-        flexBasis:'60%',
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
-    },
-    register:{
-        marginTop:'100px',
-        height:'100px',
-        width:'250px',
-        display:'flex',
-        alignItems:'center',
         justifyContent:'center',
+    },
+    bottombar:{
+        marginTop:'100px',
     },
     overlay:{
         position:'absolute',
         display:'flex',
         width:'100%',
     },
+    workshopdetailroot:{
+        backgroundImage:`url(${Background})`,
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'100% 100%', 
+        height:'100%',
+        width:'100%',
+        overflow:'hidden',
+    },
+    hide:{
+        display:'none'
+    },
     backbutton:{
         position:'fixed',
-        left:'1.5%',
-        top:'15%',
+        left:'1%',
+        top:'13%',
+        zIndex:3,
+        [theme.breakpoints.down('xs')]:{
+            top:'15%',
+        }
+    },
+    dateblock:{
+        position:'absolute',
+        left:0,
+        bottom:0,
+        borderBottomLeftRadius:'10px',
     },
     backButton: {
         position: 'absolute',
-        // borderColor: 'black',
-        // borderStyle: 'solid',
+    },
+    marginTop:{
+        marginTop:'2rem',
     },
 }))

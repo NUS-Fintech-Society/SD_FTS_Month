@@ -1,5 +1,9 @@
 /* Header Section */
 
+*{
+    font-family: 'Montserrat', 'Nunito', 'Roboto', 'sans-serif';
+  }
+
 .subHeader{
     padding-top:10px;
     color: white

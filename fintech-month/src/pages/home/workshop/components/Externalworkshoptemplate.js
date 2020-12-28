@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         minWidth:'45vw',
         borderRadius:'1rem',
+        minHeight:'80vh',
         [theme.breakpoints.down('xs')]:{
             width:'80vw',
         }
@@ -72,8 +73,10 @@ const useStyles = makeStyles((theme) => ({
     authorbox:{
         margin:'10px 0',
         borderTop:'0.15rem solid #52B9FF',
-        textAlign:'center',
+        justifyContent:'center',
         width:'100%',
+        textAlign:'center',
+        display:'flex',
         [theme.breakpoints.down('xs')]:{
             borderTop:'0.15rem solid #52B9FF',
         }
@@ -92,6 +95,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius:'50%',
     },
     descriptionbox:{
+        display:'flex',
         textAlign:'center',
     },
     descriptionfont:{

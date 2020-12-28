@@ -18,10 +18,8 @@ export const MachineLearning = [
             'Understand the stock market',
             'Methods to predict prices using Machine Learning',
         ],
-        author:'pss',
         image:Machine12,
-        description:'',
-        date:'12 Jan 2020',
+        date:'12-14 Jan 2021',
     },
     {
         title:'News Headline Sentiment Analysis',
@@ -29,10 +27,8 @@ export const MachineLearning = [
             'Understand how news can impact the market',
             'Natural Language Programming',
         ],
-        author:'sdsds',
         image:Machine13,
-        description:'',
-        date:'13 Jan 2020',
+        date:'12-14 Jan 2021',
     },
 ]
 
@@ -45,10 +41,8 @@ export const BlockChain = [
             'Components of a block',
             'Consensus of mechanisms',
         ],
-        author:'sds',
         image:Blockchain12,
-        description:'',
-        date:'12 Jan 2020',
+        date:'12-14 Jan 2021',
     },
     {
         title:'Understanding Cryptocurrencies and Their Impacts on Current Financial System',
@@ -59,10 +53,8 @@ export const BlockChain = [
             'Is Bitcoin a means of exchange?',
             'Is Bitcoin a store of value?',
         ],
-        author:'sdsds',
         image:Blockchain13,
-        description:'',
-        date:'13 Jan 2020',
+        date:'12-14 Jan 2021',
     },
 ]
 

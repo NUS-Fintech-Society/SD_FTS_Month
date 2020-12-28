@@ -82,16 +82,18 @@ export const useStyles = makeStyles((theme) =>({
     container2:{
         display:'flex',
         width:'45vw',
+        minHeight:'80vh',
         flexDirection:'column',
     },
     container3:{
-        maxWidth:'50vw',
+        minHeight:'80vh',
+        width:'45vw',
         display:'flex',
     },
     heading:{
         display:'flex',
-        borderTopLeftRadius:'10px',
-        borderTopRightRadius:'10px',
+        borderTopLeftRadius:'1rem',
+        borderTopRightRadius:'1rem',
         width:'100%',
         alignItems:'center',
         justifyContent:'center',
@@ -113,8 +115,8 @@ export const useStyles = makeStyles((theme) =>({
     image:{
         width: '100%',
         height:'100%',
-        borderBottomLeftRadius:'10px',
-        borderBottomRightRadius:'10px',
+        borderBottomLeftRadius:'1rem',
+        borderBottomRightRadius:'1rem',
         flexGrow:1,
     },
     paper:{
@@ -170,5 +172,20 @@ export const useStyles = makeStyles((theme) =>({
     },
     marginTop:{
         marginTop:'2rem',
+    },
+    '@media screen and (max-width: 600px)':{
+        container1:{
+            flexWrap:'wrap'
+        },
+        container2:{
+            width:'80vw',
+            marginBottom:'2rem'
+        },
+        container3:{
+            width:'80vw',
+        },
+        backbutton:{
+            top:'15%'
+        }
     }
 }))

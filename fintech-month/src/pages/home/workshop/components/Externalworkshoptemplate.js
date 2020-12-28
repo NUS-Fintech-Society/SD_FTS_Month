@@ -15,8 +15,12 @@ const useStyles = makeStyles((theme) => ({
     root:{
         display:'flex',
         width:'45vw',
-        minHeight:'80vh',
-        borderRadius:'10px',
+        borderRadius:'1rem',
+    },
+    '@media screen and (max-width: 1280px)':{
+        root:{
+            width:'80vw',
+        }
     },
     container:{
         margin:'0 2rem',

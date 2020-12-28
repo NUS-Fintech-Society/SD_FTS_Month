@@ -6,7 +6,10 @@ import Blockchain13 from './images/blockchain13jan.png';
 import Mranatoly from './images/Mranatoly.jpg';
 import Mrjeff from './images/mrjeff.png';
 import Mrdaniel from './images/mrdaniel.png';
-import Placeholder from '../../../images/placeholder.png'
+import Placeholder from '../../../images/placeholder.png';
+import External1 from './images/external1.png';
+import External2 from './images/external2.png';
+import External4 from './images/external4.png';
 
 export const MachineLearning = [
     {
@@ -72,7 +75,7 @@ export const ExternalWorkshop = [
             "How to transform live data streams using PARSIQ's manipulation language?"
         ],
         author:'Anatoly Ressin',
-        leftImage:Placeholder,
+        leftImage:External1,
         speakerImage:Mranatoly,
         description:'Chief Blockchain Architect at PARSIQ',
         date:'20 Jan, 8pm - 9pm',
@@ -81,7 +84,7 @@ export const ExternalWorkshop = [
         title:'Why Crowdfunding is the preferred choice for Startup Fundraising',
         content:[],
         author:'Mr Daniel Lin',
-        leftImage:Placeholder,
+        leftImage:External2,
         speakerImage:Mrdaniel,
         description: 'Founder of FundedHere, startup and SMEs crowdfunding platform',
         date:'15 Jan, 2pm-3pm',
@@ -99,7 +102,7 @@ export const ExternalWorkshop = [
         title:'Introduction to Decentralised Finance - benefits & risks of Decentralised Finance (DeFi) to the general public',
         content:[],
         author:'Mr Jeff Zhang (Chang Chi Chang)',
-        leftImage: Placeholder,
+        leftImage: External4,
         speakerImage:Mrjeff,
         description:'The latest Binance Community Manager, Jeff was previously Chief Community Operator with dForce Network and Head of Operations with Wetez, both blockchain companies. He travelled around the world after graduation in 2017 to experience the world before he started working.',
         date:'19 Jan, 8pm-9pm',

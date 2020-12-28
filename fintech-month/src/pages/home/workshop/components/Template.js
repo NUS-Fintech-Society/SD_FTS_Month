@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         width:'45vw',
         minHeight:'80vh',
-        borderRadius:'10px',
+        borderRadius:'1rem',
     },
     ul:{
         display:'flex',

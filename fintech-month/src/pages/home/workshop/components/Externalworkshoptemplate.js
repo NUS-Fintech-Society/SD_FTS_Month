@@ -73,8 +73,8 @@ const useStyles = makeStyles((theme) => ({
         alignItems:'center',
     },
     image:{
-        maxWidth:'7rem',
-        maxHeight:'9rem',
+        width:'8rem',
+        borderRadius:'50%',
     },
     descriptionbox:{
         textAlign:'center',

@@ -4,7 +4,7 @@ import Machine13 from './images/ml13jan.png';
 import Blockchain12 from './images/blockchain12jan.png';
 import Blockchain13 from './images/blockchain13jan.png';
 import Mranatoly from './images/Mranatoly.jpg';
-import Mrjeff from './images/mrjeff.png';
+import Mrjeff from './images/mrjeff1.png';
 import Mrdaniel from './images/mrdaniel.png';
 import Placeholder from '../../../images/placeholder.png';
 import External1 from './images/external1.png';

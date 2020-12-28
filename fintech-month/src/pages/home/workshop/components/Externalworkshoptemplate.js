@@ -27,12 +27,18 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         alignItems:'center',
         height:'100%',
+        [theme.breakpoints.down('xs')]:{
+            flexDirection:'row',
+        }
     },
     content:{
         display:'flex',
         flexGrow:1,
         justifyContent:'center',
         alignItems:'center',
+        [theme.breakpoints.down('xs')]:{
+            marginRight:'1rem',
+        }
     },
     bycontainer:{
         display:'flex',
@@ -40,7 +46,13 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         justifyContent:'center',
         alignItems:'center',
-        flexGrow:1
+        flexGrow:1,
+        [theme.breakpoints.down('xs')]:{
+            height:'100%',
+            paddingLeft:'2rem',
+            borderLeft:'0.25rem solid #C1C1C1',
+            borderRadius:'0.1rem',
+        }
     },
     ulbox:{
         display:'flex',

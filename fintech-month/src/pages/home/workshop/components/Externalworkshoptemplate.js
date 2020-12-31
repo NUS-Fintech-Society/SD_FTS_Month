@@ -28,18 +28,13 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         alignItems:'center',
         height:'100%',
-        [theme.breakpoints.down('xs')]:{
-            flexDirection:'row',
-        }
     },
     content:{
         display:'flex',
         flexGrow:1,
+        height: props => props.height,
         justifyContent:'center',
         alignItems:'center',
-        [theme.breakpoints.down('xs')]:{
-            marginRight:'1rem',
-        }
     },
     bycontainer:{
         display:'flex',
@@ -48,12 +43,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent:'center',
         alignItems:'center',
         flexGrow:1,
-        [theme.breakpoints.down('xs')]:{
-            height:'100%',
-            paddingLeft:'2rem',
-            borderLeft:'0.25rem solid #52B9FF',
-            borderRadius:'0.1rem',
-        }
     },
     ulbox:{
         display:'flex',
@@ -110,7 +99,9 @@ function Externalworkshoptemplate({description,content,author, speakerImage}){
     return(
         <ThemeProvider theme={theme}>
             <Paper elevation={3} className={classes.root}>
-                <Box className={classes.container}>     
+                <Box className={classes.container}>
+                    {(content.length > 0) &&
+                    (     
                     <Box className={classes.content}>
                         <ul className={classes.ul}>
                             {content.map((text) =>{
@@ -124,6 +115,8 @@ function Externalworkshoptemplate({description,content,author, speakerImage}){
                             })}
                         </ul>
                     </Box>
+                    )
+                    }
                     <Box className={classes.bycontainer}>
                         <Box className={classes.imagebox}>
                                 <img src={speakerImage} alt="speakerimage" className={classes.image}/>

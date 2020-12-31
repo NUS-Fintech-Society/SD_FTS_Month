@@ -7,9 +7,9 @@ import Mranatoly from './images/Mranatoly.jpg';
 import Mrjeff from './images/mrjeff1.png';
 import Mrdaniel from './images/mrdaniel.png';
 import Mrhon from './images/mrhon.jpeg';
-import Placeholder from '../../../images/placeholder.png';
 import External1 from './images/external1.png';
 import External2 from './images/external2.jpg';
+import External3 from './images/external3.png';
 import External4 from './images/external4.png';
 
 export const MachineLearning = [
@@ -91,7 +91,7 @@ export const ExternalWorkshop = [
             'Q&A',
         ],
         author:'Mr Hon Kok Wai',
-        leftImage:Placeholder,
+        leftImage:External3,
         speakerImage:Mrhon,
         description:'Runs market management, pricing and billing functions for the APAC region within BNP Paribas Transaction Banking. Responsibilities include assessment and development of onshore capabilities through platform up-tiering, bank partnership; business development in supporting client conversations and prepositions in pitching to treasury hubs in APAC. His current profesisonal interests are Foreign Exchange Payments, Mobile Money and Alternate payments. He also specialises in Payments and Collections Product Management, and Process Improvement and Revenue Optimization.',
         date:'',

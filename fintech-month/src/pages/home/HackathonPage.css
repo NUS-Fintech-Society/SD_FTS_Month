@@ -33,3 +33,12 @@
     color: white;
     padding: 20px 0 30px 0;
 }
+
+.carouselHeight {
+    height:100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+    max-width:500px;
+}

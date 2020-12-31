@@ -6,6 +6,7 @@ import Blockchain13 from './images/blockchain13jan.png';
 import Mranatoly from './images/Mranatoly.jpg';
 import Mrjeff from './images/mrjeff1.png';
 import Mrdaniel from './images/mrdaniel.png';
+import Mrhon from './images/mrhon.jpeg';
 import Placeholder from '../../../images/placeholder.png';
 import External1 from './images/external1.png';
 import External2 from './images/external2.jpg';
@@ -82,11 +83,16 @@ export const ExternalWorkshop = [
         date:'15 Jan, 2pm-3pm',
     },
     {
-        title:'Dummytext',
-        content:[],
+        title:'Innovative & Design Thinking: Perspective from BNP Paribas',
+        content:[
+            'Introduction to Innovation (BNPP Innovation Lab)',
+            'Transaction banking & our approach to co-creation',
+            'Problems in transaction banking today & our call for responses',
+            'Q&A',
+        ],
         author:'Mr Hon Kok Wai',
         leftImage:Placeholder,
-        speakerImage:'',
+        speakerImage:Mrhon,
         description:'Runs market management, pricing and billing functions for the APAC region within BNP Paribas Transaction Banking. Responsibilities include assessment and development of onshore capabilities through platform up-tiering, bank partnership; business development in supporting client conversations and prepositions in pitching to treasury hubs in APAC. His current profesisonal interests are Foreign Exchange Payments, Mobile Money and Alternate payments. He also specialises in Payments and Collections Product Management, and Process Improvement and Revenue Optimization.',
         date:'',
     },

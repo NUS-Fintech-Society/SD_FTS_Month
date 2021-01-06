@@ -94,7 +94,7 @@ export const ExternalWorkshop = [
         leftImage:External3,
         speakerImage:Mrhon,
         description:'Runs market management, pricing and billing functions for the APAC region within BNP Paribas Transaction Banking. Responsibilities include assessment and development of onshore capabilities through platform up-tiering, bank partnership; business development in supporting client conversations and prepositions in pitching to treasury hubs in APAC. His current profesisonal interests are Foreign Exchange Payments, Mobile Money and Alternate payments. He also specialises in Payments and Collections Product Management, and Process Improvement and Revenue Optimization.',
-        date:'',
+        date:'18 Jan, 2pm-3pm',
     },
     {
         title:'Introduction to Decentralised Finance - benefits & risks of Decentralised Finance (DeFi) to the general public',

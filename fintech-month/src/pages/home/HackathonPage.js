@@ -44,15 +44,15 @@ export default function Hackathon() {
                 </div>
             </div>
 
-            <Carousel justify="center" autoPlay="false" navButtonsAlwaysVisibl="true" animation="slide">
+            <Carousel className="carouselCSS" justify="center" autoPlay="false" navButtonsAlwaysVisibl="true" animation="slide">
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
             </Carousel>
 
             <div>
-                <h2 class='opening'>Opening Ceremony</h2>
-                <img class='image' src={OpeningTimeline} alt='OpeningTimeline' />
+                {/* <h2 class='opening'>Opening Ceremony</h2>
+                <img class='image' src={OpeningTimeline} alt='OpeningTimeline' /> */}
                 <h2 class='closing'>Closing Ceremony</h2>
                 <img class='image' src={ClosingTimeline} alt='ClosingTimeline' />
             </div>

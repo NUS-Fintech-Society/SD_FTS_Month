@@ -84,6 +84,8 @@ const useStyles = makeStyles((theme) => ({
         borderRadius:'50%',
     },
     descriptionbox:{
+        padding:'1rem',
+        paddingTop:'0',
         display:'flex',
         textAlign:'center',
     },

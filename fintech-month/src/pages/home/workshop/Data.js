@@ -20,7 +20,7 @@ export const MachineLearning = [
             'Methods to predict prices using Machine Learning',
         ],
         image:Machine12,
-        date:'12-14 Jan 2021',
+        date:'12 Jan, 9pm-10.30pm',
     },
     {
         title:'News Headline Sentiment Analysis',
@@ -29,7 +29,7 @@ export const MachineLearning = [
             'Natural Language Programming',
         ],
         image:Machine13,
-        date:'12-14 Jan 2021',
+        date:'14 Jan, 8pm-9.30pm',
     },
 ]
 
@@ -43,7 +43,7 @@ export const BlockChain = [
             'Consensus of mechanisms',
         ],
         image:Blockchain12,
-        date:'12-14 Jan 2021',
+        date:'12 Jan, 7pm-8.30pm',
     },
     {
         title:'Understanding Cryptocurrencies and Their Impacts on Current Financial System',
@@ -55,7 +55,7 @@ export const BlockChain = [
             'Is Bitcoin a store of value?',
         ],
         image:Blockchain13,
-        date:'12-14 Jan 2021',
+        date:'13 Jan, 8pm-9.30pm',
     },
 ]
 
@@ -71,7 +71,7 @@ export const ExternalWorkshop = [
         leftImage:External1,
         speakerImage:Mranatoly,
         description:'Chief Blockchain Architect at PARSIQ',
-        date:'20 Jan, 8pm - 9pm',
+        date:'20 Jan, 8pm-9pm',
     },
     {
         title:'Why Crowdfunding is the preferred choice for Startup Fundraising',

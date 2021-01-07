@@ -9,8 +9,8 @@ export const useStyles = makeStyles(theme => ({
         flexGrow: 1
     },
     homePage: {
-        flexGrow: 1,
         backgroundImage: "linear-gradient(#131d47,55%,#ffffff)",
+        height: "100vh",
     },
 
 
@@ -20,25 +20,15 @@ export const useStyles = makeStyles(theme => ({
     dateStyle: {
         backgroundColor: '#2b43a1',
         color:'white',
-        marginTop: 12,
-        marginRight: 12,
-        padding: 10,
-        borderRadius: 8,
+        // marginTop: 21.875,
+        marginBottom: 21.875,
+        // marginRight: 21.875,
+        padding: 21.875,
+        // borderRadius: 8,
         fontSize: 12,
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: 2,
         fontWeight: 'bold',
         position: 'absolute',
         
-    },
-    imgClass: {
-        // height: 250,
-        // right: "auto",
-        // bottom: 0,
-        // borderColor: 'pink',
-        // borderStyle: 'solid',
-        // width: "auto",
     },
     textSize: {
         fontSize:12,
@@ -57,18 +47,26 @@ export const useStyles = makeStyles(theme => ({
 
 
     bgImg: {
+
         backgroundImage: `url(${backgroundImg})`,
-        justify: 'center',
-        minHeight: 1400,
         backgroundRepeat: 'no-repeat',
-        // backgroundPosition: 'center',
-        backgroundSize: 'cover'
+        // backgroundSize: "100% 100%",
+        backgroundSize: "cover",
+
     },
     backButtonRegDate: {
         position: 'absolute',
         backgroundColor: "white !important",
         borderRadius:25,
 
+    },
+    imgClass: {
+        margin:0,
+        padding:0,
+        height: "100%",
+        width: "100%",
+        // borderColor: 'black',
+        // borderStyle: 'solid',
     },
 
 

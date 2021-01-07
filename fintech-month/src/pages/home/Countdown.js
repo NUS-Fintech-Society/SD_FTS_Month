@@ -7,7 +7,7 @@ function Counter() {
 
     const classes = useStyles();
 
-    const difference = new Date(`${2021}-01-02`) - new Date();
+    const difference = new Date(`${2021}-01-11`) - new Date();
 
     const [seconds, setSeconds] = useState(Math.floor((difference / 1000) % 60))
     const [minutes, setMinutes] = useState(Math.floor((difference / 1000 / 60) % 60))

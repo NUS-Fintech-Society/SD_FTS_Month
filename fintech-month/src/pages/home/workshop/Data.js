@@ -6,9 +6,10 @@ import Blockchain13 from './images/blockchain13jan.png';
 import Mranatoly from './images/Mranatoly.jpg';
 import Mrjeff from './images/mrjeff1.png';
 import Mrdaniel from './images/mrdaniel.png';
-import Placeholder from '../../../images/placeholder.png';
+import Mrhon from './images/mrhon.jpeg';
 import External1 from './images/external1.png';
 import External2 from './images/external2.jpg';
+import External3 from './images/external3.png';
 import External4 from './images/external4.png';
 
 export const MachineLearning = [
@@ -18,10 +19,8 @@ export const MachineLearning = [
             'Understand the stock market',
             'Methods to predict prices using Machine Learning',
         ],
-        author:'pss',
         image:Machine12,
-        description:'',
-        date:'12 Jan 2020',
+        date:'12-14 Jan 2021',
     },
     {
         title:'News Headline Sentiment Analysis',
@@ -29,10 +28,8 @@ export const MachineLearning = [
             'Understand how news can impact the market',
             'Natural Language Programming',
         ],
-        author:'sdsds',
         image:Machine13,
-        description:'',
-        date:'13 Jan 2020',
+        date:'12-14 Jan 2021',
     },
 ]
 
@@ -45,10 +42,8 @@ export const BlockChain = [
             'Components of a block',
             'Consensus of mechanisms',
         ],
-        author:'sds',
         image:Blockchain12,
-        description:'',
-        date:'12 Jan 2020',
+        date:'12-14 Jan 2021',
     },
     {
         title:'Understanding Cryptocurrencies and Their Impacts on Current Financial System',
@@ -59,10 +54,8 @@ export const BlockChain = [
             'Is Bitcoin a means of exchange?',
             'Is Bitcoin a store of value?',
         ],
-        author:'sdsds',
         image:Blockchain13,
-        description:'',
-        date:'13 Jan 2020',
+        date:'12-14 Jan 2021',
     },
 ]
 
@@ -90,13 +83,18 @@ export const ExternalWorkshop = [
         date:'15 Jan, 2pm-3pm',
     },
     {
-        title:'Dummytext',
-        content:[],
+        title:'Innovative & Design Thinking: Perspective from BNP Paribas',
+        content:[
+            'Introduction to Innovation (BNPP Innovation Lab)',
+            'Transaction banking & our approach to co-creation',
+            'Problems in transaction banking today & our call for responses',
+            'Q&A',
+        ],
         author:'Mr Hon Kok Wai',
-        leftImage:Placeholder,
-        speakerImage:'',
+        leftImage:External3,
+        speakerImage:Mrhon,
         description:'Runs market management, pricing and billing functions for the APAC region within BNP Paribas Transaction Banking. Responsibilities include assessment and development of onshore capabilities through platform up-tiering, bank partnership; business development in supporting client conversations and prepositions in pitching to treasury hubs in APAC. His current profesisonal interests are Foreign Exchange Payments, Mobile Money and Alternate payments. He also specialises in Payments and Collections Product Management, and Process Improvement and Revenue Optimization.',
-        date:'',
+        date:'18 Jan, 2pm-3pm',
     },
     {
         title:'Introduction to Decentralised Finance - benefits & risks of Decentralised Finance (DeFi) to the general public',

@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         minWidth:'45vw',
         borderRadius:'1rem',
+        minHeight:'80vh',
         [theme.breakpoints.down('xs')]:{
             width:'80vw',
         }
@@ -27,18 +28,13 @@ const useStyles = makeStyles((theme) => ({
         flexDirection:'column',
         alignItems:'center',
         height:'100%',
-        [theme.breakpoints.down('xs')]:{
-            flexDirection:'row',
-        }
     },
     content:{
         display:'flex',
         flexGrow:1,
+        height: props => props.height,
         justifyContent:'center',
         alignItems:'center',
-        [theme.breakpoints.down('xs')]:{
-            marginRight:'1rem',
-        }
     },
     bycontainer:{
         display:'flex',
@@ -47,12 +43,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent:'center',
         alignItems:'center',
         flexGrow:1,
-        [theme.breakpoints.down('xs')]:{
-            height:'100%',
-            paddingLeft:'2rem',
-            borderLeft:'0.25rem solid #52B9FF',
-            borderRadius:'0.1rem',
-        }
     },
     ulbox:{
         display:'flex',
@@ -72,8 +62,10 @@ const useStyles = makeStyles((theme) => ({
     authorbox:{
         margin:'10px 0',
         borderTop:'0.15rem solid #52B9FF',
-        textAlign:'center',
+        justifyContent:'center',
         width:'100%',
+        textAlign:'center',
+        display:'flex',
         [theme.breakpoints.down('xs')]:{
             borderTop:'0.15rem solid #52B9FF',
         }
@@ -92,6 +84,9 @@ const useStyles = makeStyles((theme) => ({
         borderRadius:'50%',
     },
     descriptionbox:{
+        padding:'1rem',
+        paddingTop:'0',
+        display:'flex',
         textAlign:'center',
     },
     descriptionfont:{
@@ -106,7 +101,9 @@ function Externalworkshoptemplate({description,content,author, speakerImage}){
     return(
         <ThemeProvider theme={theme}>
             <Paper elevation={3} className={classes.root}>
-                <Box className={classes.container}>     
+                <Box className={classes.container}>
+                    {(content.length > 0) &&
+                    (     
                     <Box className={classes.content}>
                         <ul className={classes.ul}>
                             {content.map((text) =>{
@@ -120,6 +117,8 @@ function Externalworkshoptemplate({description,content,author, speakerImage}){
                             })}
                         </ul>
                     </Box>
+                    )
+                    }
                     <Box className={classes.bycontainer}>
                         <Box className={classes.imagebox}>
                                 <img src={speakerImage} alt="speakerimage" className={classes.image}/>

@@ -87,7 +87,6 @@ export const useStyles = makeStyles((theme) =>({
     container2:{
         display:'flex',
         width:'45vw',
-        minHeight:'80vh',
         flexDirection:'column',
         [theme.breakpoints.down('xs')]:{
             width:'80vw',
@@ -95,7 +94,6 @@ export const useStyles = makeStyles((theme) =>({
         }
     },
     container3:{
-        minHeight:'80vh',
         width:'45vw',
         display:'flex',
         [theme.breakpoints.down('xs')]:{
@@ -130,11 +128,6 @@ export const useStyles = makeStyles((theme) =>({
         borderBottomLeftRadius:'1rem',
         borderBottomRightRadius:'1rem',
         flexGrow:1,
-    },
-    paper:{
-        marginTop:'100px',
-        height:'80vh',
-        width:'45vw',
     },
     dynamicroot:{
         width:'100%',

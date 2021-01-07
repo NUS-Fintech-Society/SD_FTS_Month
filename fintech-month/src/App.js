@@ -10,13 +10,14 @@ import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import Workshop from './pages/home/workshop/Workshop';
 import Workshopdetail from './pages/home/workshop/Workshopdetail';
-import RaiCapital from './pages/sponsors/RaiCapital';
 import Fundedhere from './pages/sponsors/FundedHere';
 import BNPP from './pages/sponsors/BNPP';
 import Stanley from './pages/sponsors/Stanley';
 import Genping from './pages/sponsors/Genping';
 import EventOverviewPage from './pages/home/EventOverviewPage';
 import RegDatePage from './pages/home/RegDatePage'
+import FinTechLab from './pages/sponsors/FintechLab.js';
+import Externalworkshop from './pages/home/workshop/Externalworkshop'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
   emptyitem: {
     flexGrow: 3,
   },
+  appbar:{
+    position:'sticky',
+    top:0,
+  }
 }));
 
 function App() {
@@ -37,7 +42,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <AppBar position="static" color='#C0C0C0'>
+      <AppBar className={classes.appbar}color='#C0C0C0'>
         <Toolbar variant="dense">
           
           <div className={classes.title}>
@@ -48,28 +53,34 @@ function App() {
           </div>
           <div className={classes.emptyitem}></div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
-          <Button color="inherit" href="/sponsors/fundedhere" className={classes.title}>Sponsors</Button>
+          <Button color="inherit" href="/sponsors/fintechlab" className={classes.title}>Sponsors</Button>
           <Button color="inherit" href="/faq" className={classes.title}>FAQ</Button>
           <Button color="inherit" href="/blog" className={classes.title}>Blog</Button>
           <div className={classes.emptyitem}></div>
           <div className={classes.emptyitem}></div>
-          
         </Toolbar>
       </AppBar>
 
 
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/hackathon" exact component={HackathonPage} />        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
+        <Route path="/hackathon" exact component={HackathonPage} />
+        <Route path="/sponsors/fintechlab" exact component={FinTechLab} />        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
         <Route path="/sponsors/bnpp" exact component={BNPP} />
         <Route path="/sponsors/stanley" exact component={Stanley} />
         <Route path="/sponsors/genping" exact component={Genping} />
         <Route path="/faq" exact component={FaqPage} />
         <Route path="/blog" exact component={BlogPage} />
         <Route path="/workshop" exact component={Workshop}/>
-        <Route path="/workshop/workshopdetail" exact component={Workshopdetail}/>
         <Route path="/eventoverview" exact component={EventOverviewPage}/>
         <Route path="/registrationdates" exact component={RegDatePage}/>
+        <Route
+            exact
+            path="/workshop/:whichWorkshop"
+            render={props => (
+              <Workshopdetail {...props}/>
+            )}/>
+        <Route path="/externalworkshop" exact component={Externalworkshop}/>
       </Switch>
 
     </BrowserRouter>

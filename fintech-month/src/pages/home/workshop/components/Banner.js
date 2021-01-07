@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) =>({
     },
     externalworkshop:{
         fontWeight:'bold',
-        fontSize:'40px',
+        fontSize:'32px',
         color:'#FFF',
     },
     image:{
@@ -32,7 +32,11 @@ const useStyles = makeStyles((theme) =>({
         justifyContent:'space-between',
         position:'relative',
         right:'50px',
-    }
+        flexShrink:2,
+    },
+    register:{
+        flexShrink:1,
+    },
 }))
 
 function Banner(){

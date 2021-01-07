@@ -5,6 +5,8 @@ function SponsorsLegend() {
     return (
         <div class='sidenav'>
             <h1>Our Sponsors</h1>
+            <a href='/sponsors/fintechlab'>FinTech Lab</a>
+            <hr />
             <a href='/sponsors/fundedhere'>FundedHere</a>
             <hr />
             <a href='/sponsors/bnpp'>BNPP</a>

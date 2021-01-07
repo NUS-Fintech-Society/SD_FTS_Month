@@ -30,11 +30,11 @@ function EventOverviewPage(){
 
                 <Grid item xs={12} justify="center" >
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             11 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
 
                     <h3 className="eventOverviewHeaders">Opening Ceremony</h3>
                     
@@ -50,11 +50,11 @@ function EventOverviewPage(){
                     </div>
 
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             12 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Hackathon</h3>
 
                     <div class="content2">
@@ -69,11 +69,11 @@ function EventOverviewPage(){
                         </div>
                     </div>
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             13 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Machine Learning Workshops</h3>
 
                     <div class="content">
@@ -89,11 +89,11 @@ function EventOverviewPage(){
                             </h5>
                         </div>
                     </div>
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             15 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Blockchain Workshops</h3>
 
                     <div class="content2">
@@ -108,11 +108,11 @@ function EventOverviewPage(){
                         </div>
                     </div>
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             16 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">External Workshops</h3>
 
                     <div class="content">
@@ -144,11 +144,11 @@ function EventOverviewPage(){
                             <h5 class="imgTextChild"> Text</h5>
                         </div>
                     </div> */}
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             29 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Release of Finalists</h3>
 
                     <div class="content2">
@@ -161,11 +161,11 @@ function EventOverviewPage(){
                             <h5 class="imgTextChild">Release of Finalists</h5>
                         </div>
                     </div>
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             30 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
 
                     <h3 className="eventOverviewHeaders">Closing Ceremony</h3>
                     <div class="content">

@@ -122,11 +122,12 @@ function EventOverviewPage(){
                         </div>
         
                         <div class="imgText">
-                            <h5 class="imgTextChild"> Text</h5>
+                            <h5 class="imgTextChild">Learn more about live data streams,
+                             crowdfunding and decentralised finance from the experts themselves!</h5>
                         </div>
                     </div>
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             24 Jan 2020
                         </Box>
@@ -142,7 +143,7 @@ function EventOverviewPage(){
                         <div class="imgText">
                             <h5 class="imgTextChild"> Text</h5>
                         </div>
-                    </div>
+                    </div> */}
                     <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             29 Jan 2020
@@ -150,14 +151,14 @@ function EventOverviewPage(){
                     </Grid>
                     <h3 className="eventOverviewHeaders">Release of Finalists</h3>
 
-                    <div class="content">
+                    <div class="content2">
                 
                         <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={finalists} />
                         </div>
         
                         <div class="imgText">
-                            <h5 class="imgTextChild"> Text</h5>
+                            <h5 class="imgTextChild">Release of Finalists</h5>
                         </div>
                     </div>
                     <Grid container justify="flex-end">
@@ -167,14 +168,19 @@ function EventOverviewPage(){
                     </Grid>
 
                     <h3 className="eventOverviewHeaders">Closing Ceremony</h3>
-                    <div class="content2">
+                    <div class="content">
                 
                         <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={closingCeremony} />
                         </div>
         
                         <div class="imgText">
-                            <h5 class="imgTextChild"> Text</h5>
+                            <h5 class="imgTextChild">At last, we conclude our NUS Fintech Month with:</h5>
+                                <div class = "imgTextChild2">
+                                    <li >Top 8 Finalists’ Pitch</li>
+                                    <li class = "">Prize Presentation</li>
+                                    <li class = "">Lucky Draw</li>
+                                </div>
                         </div>
                     </div>
 

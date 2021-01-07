@@ -1,56 +1,80 @@
 import React from 'react';
-import {Box, Typography} from '@material-ui/core'
+import {Box, Typography, responsiveFontSizes, Paper} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
+import {createMuiTheme} from '@material-ui/core/styles'
+import {ThemeProvider} from '@material-ui/styles'
+ 
+
+let theme = createMuiTheme({
+    typography: {
+        fontFamily: "'Montserrat', 'Nunito', 'Roboto', 'sans-serif'"
+    }
+  });
+
+theme = responsiveFontSizes(theme)
 
 const useStyles = makeStyles((theme) => ({
     root:{
         display:'flex',
+        width:'45vw',
+        borderRadius:'1rem',
+        [theme.breakpoints.down('xs')]:{
+            width:'80vw',
+        }
+    },
+    ul:{
+        display:'flex',
+        flexDirection:'column',
+        flexWrap:'wrap',
+    },
+    container:{
+        display:'flex',
         width:'100%',
         flexDirection:'column',
-        justifyContent:'center',
+        justifyContent:'space-around',
         alignItems:'center',
+        padding:'20px',
         height:'100%',
     },
-    title:{
-        fontSize:'30px',
-        fontWeight:'bold',
-        textAlign:'center',
-        height:'25%',
+    ulbox:{
+        display:'flex',
+        marginBottom:'5px',
+    },
+    text:{
+        fontSize:'clamp(0.75rem, 0.1618rem + 2.9412vw, 2rem)'
+    },
+    li:{
+        fontSize:'clamp(0.75rem, 0.1618rem + 2.9412vw, 2rem)'
     },
     content:{
-        margin:'30px 0',
-        fontSize:'25px',
-        height:'50%',
-    },
-    author:{
-        fontSize:'25px',
-        height:'25%',
-        textAlign:'left',
-    },
+    }
 }))
 
-function Template({title,content,author}){
+function Template({content}){
     const classes = useStyles()
 
 
     return(
-        <Box className={classes.root}>
-            <Typography className={classes.title}>
-                {title}
-            </Typography>
-            <Box className={classes.content}>
-                <ul>
-                    {content.map((text) =>{
-                        return (
-                            <li>{text}</li>
-                        )
-                    })}
-                </ul>
-            </Box>
-            <Typography className={classes.author}>
-                By {author}
-            </Typography>
-        </Box>
+        <ThemeProvider theme={theme}>
+            <Paper elevation={3} className={classes.root}>
+                <Box className={classes.container}>        
+                    <Box className={classes.content}>
+                        <ul className={classes.ul}>
+                            {content.map((text) =>{
+                                return (
+                                    <li className={classes.li}>
+                                        <Box className={classes.ulbox}>
+                                            <Typography className={classes.text} >{text}</Typography>
+                                        </Box>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </Box>
+                </Box>
+            </Paper>
+        </ThemeProvider>
+
     )
 }
 

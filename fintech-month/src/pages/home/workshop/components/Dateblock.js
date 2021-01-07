@@ -2,24 +2,25 @@ import React from 'react';
 import {Box, Typography} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
-
 const useStyles = makeStyles((theme) =>({
     box:{
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'#FD8329',
-        height:'50px',
-        width:'150px',
+        background:'rgb(255,255,255,0.9)',
+        height:'4vw',
+        width:'14vw',
+        borderBottomLeftRadius:'10px',
+        borderTopRightRadius:'10px',
     },
     text:{
         fontWeight:'bold',
-        fontSize:'20px'
+        fontSize:'1.7vw'
     }
 }))
 
-function Dateblock({title}){
-    const classes = useStyles()
+function Dateblock({title,...props}){
+    const classes = useStyles(props)
 
     return(
         <Box className={classes.box}>

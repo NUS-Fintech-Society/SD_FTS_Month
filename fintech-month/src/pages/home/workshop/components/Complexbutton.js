@@ -99,7 +99,7 @@ function Complexbutton({title,href,bgImage,width}){
             <span className={classes.imageButton}>
                 <Typography
                 component="span"
-                variant="subtitle1"
+                variant="h5"
                 color="inherit"
                 className={classes.imageTitle}
                 >

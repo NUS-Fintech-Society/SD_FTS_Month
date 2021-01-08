@@ -1,4 +1,5 @@
 import React from 'react';
+import Rubric from './images/Rubric.png'
 
 export const items = [
     {
@@ -59,7 +60,28 @@ export const items = [
         {
           question:'What are the judging criterias?',
           answers:[
-            'TBC'
+            <ul>
+              <li>Simplicity of solution, accommodate client workflow</li>
+              <ul>
+                <li>Does the technical features help in improving the current workflow?</li>  
+                <li>Does the features work as described?</li>
+                <li>Is the slide deck structured and organised (Solutions and implementations are easy to understand)</li>
+              </ul>
+              <li>User friendliness</li>
+              <ul>
+                <li>Is the solution appropriate for use by the target audience?</li>
+                <li>How intuitive is it to use?</li>
+                <li>How reliable is it to use?</li>
+              </ul>
+              <li>How effective and robust the solution is and what kind of analysis will be used to solve?</li>
+              <ul>
+                <li>How creative is the solution?</li>
+                <li>How feasible is the product/solution roadmap?</li>
+                <li>How costly is the proposed solution?</li>
+              </ul>
+            </ul>,
+            <img src={Rubric}/>
+
           ],
         },
       ],
@@ -118,6 +140,17 @@ export const items = [
           question:'Is it compulsory for all hackathon participants to join in the Live Stream?',
           answers:[
             'Yes. Come join us for an exciting lineup of pitches made by our top 8 finalist teams to a panel of external judges and get to claim your e-vouchers from us at the end of the session!'
+          ],
+        },
+      ]
+    },
+    {
+      heading:'General enquiry',
+      qnas:[
+        {
+          question:'Who do we reach out to if we have more enquiries?',
+          answers:[
+            'Please email our team at nusfintech.ops@gmail.com.',
           ],
         },
       ]

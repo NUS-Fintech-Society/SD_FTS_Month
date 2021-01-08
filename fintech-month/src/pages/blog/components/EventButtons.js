@@ -20,21 +20,21 @@ const images = [
   },
   {
     backgroundImage: "url(" + StocksImage + ")", // currently placeholder image
-    href: '/', // currently no workshop page
+    href: '/machinelearning', // currently no workshop page
     title: 'Machine Learning',
     width: '379px',
     description: 'Predict stock market prices using Machine Learning and learn Natural Language Processing',
   },
   {
     backgroundImage: "url(" + BlockchainImage + ")", // currently placeholder image
-    href: '/', // currently no workshop page
+    href: '/blockchain', // currently no workshop page
     title: 'Blockchain',
     width: '379px',
     description: 'Understand how peer-to-peer transactions of value happen and learn about public and private key cryptography, the components of a block, and the consensus of mechanisms.',
   },
   {
     backgroundImage: "url(" + DanielPhoto + ")", // currently placeholder image
-    href: '/', // currently no workshop page
+    href: '/externalworkshop', // currently no workshop page
     title: 'External Workshops',
     width: '379px',
     description: 'Learn from industry experts from ParsiQL, Fundedhere, BNPP, and more',

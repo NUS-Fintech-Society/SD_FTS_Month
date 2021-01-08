@@ -57,7 +57,6 @@ function EventOverviewPage(){
                             <li>Sponsor talk by FinTech Lab</li>
                         </div>
 
-                    </div>
                     {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             12 Jan 2020

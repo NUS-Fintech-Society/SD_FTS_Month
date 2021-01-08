@@ -47,7 +47,7 @@ function HomePage(){
                     <Grid xs={12}>
                         <h2 className="aboutHeader">About</h2>
                     </Grid>
-                    <h5 className="HomePageAbout">NUS FinTech month is a series of workshops and panel discussions designed to give university and polytechnic students an insight into the world of Fintech.
+                    <h5 className="HomePageAbout" >NUS FinTech month is a series of workshops and panel discussions designed to give university and polytechnic students an insight into the world of Fintech.
                     There will be workshops ranging from beginner levels to more advanced levels allowing everyone, no matter their background, to participate in this. 
                     There will also be a hackathon where a real world problem will be tackled using Fintech demonstrating the usefulness of this technology in a real world context.
                     <br></br>

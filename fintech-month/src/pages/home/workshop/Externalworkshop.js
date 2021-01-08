@@ -49,7 +49,7 @@ function Externalworkshop(){
                             </Box>
                             <Box className={classes.imagewrapper}>
                                 <Box className={classes.dateblock}>
-                                    <Dateblock color="#FFF" title={text.date}/>
+                                    <Dateblock color={text.title.slice(0,3) === 'Inn' ? 'rgb(82,185,255,0.8)' : 'rgb(255,255,255,0.9)'} title={text.date}/>
                                 </Box>
                                 <img className={classes.image} src={text.leftImage} alt="faces"/>
                             </Box>

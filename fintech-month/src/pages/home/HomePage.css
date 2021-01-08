@@ -1,8 +1,6 @@
 /* Header Section */
 
-*{
-    font-family: 'Montserrat', 'Nunito', 'Roboto', 'sans-serif';
-  }
+
 
 .subHeader{
     padding-top:10px;
@@ -81,8 +79,6 @@
     /* outline-style:dotted;
     outline-color:black; */
 }
-
-
 
 /* ETC */
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Rubric from './images/Rubric.png'
 
 export const items = [
     {
@@ -7,13 +8,13 @@ export const items = [
         {
           question:'Who is eligible to take part in the hackathon?',
           answers:[
-            'All university and polytechnic students in Singapore are welcome to sign up for the hackathon!',
+            "All university and polytechnic students in Singapore are welcome to sign up for the hackathon! You don't necessarily have to be from NUS!",
           ],
         },
         {
           question:'Are there any requirements for the hackathon team formation?',
           answers:[
-            'The team should be made up of 2-4 members. Team members need not be from the same school. Please appoint a team leader to be the main point of contact.',
+            'The team should be made up of 2-4 members. Team members need not be from NUS as long as they are tertiary students. Please appoint a team leader to be the main point of contact.',
           ],
         },
         {
@@ -24,6 +25,8 @@ export const items = [
             "Each team should only sign up ",
             <u>once</u>,
             ". Please appoint a team leader and fill up all team members' particulars as stated in the form.",
+            <pre></pre>,
+            "In case of any changes, do email our team at nusfintech.ops@gmail.com"
           ],
         },
         {
@@ -31,9 +34,7 @@ export const items = [
           answers:[
             'There are a total of 2 rounds.',
             <pre></pre>,
-            'Following the first round, our internal judges from Fintech Society will be selecting the top 8 finalist teams.',
-            <pre></pre>,
-            'These 8 finalist teams will then be invited to attend our closing ceremony held at (venue) where they will be pitching their proposals to a panel of distinguished external judges. After which, the judges will pick the top 3 teams as well as the team with the most outstanding pitch to win attractive prizes.',
+            "The top 8 teams will be selected from the 1st round of the hackathon and invited to attend our closing ceremony. They will be pitching their prototypes to a panel of distinguished judges who are made up of industry experts and professors to compete for the top prizes."
           ],
         },
         {
@@ -41,45 +42,49 @@ export const items = [
           answers:[
             'Yes, the first round will be conducted remotely for all participants.',
             <pre></pre>,
-            'However, the final round will be conducted physically at (venue) for the top 8 finalist teams. For the teams that did not make it to the final round, we will be conducting a Live Stream event via (platform) for you.',
+            'However, the final round will be conducted physically in NUS for the top 8 finalist teams. For the teams that did not make it to the final round, we will be conducting a Live Stream event via (platform) for you. More details about the final round will be sent to all team leaders via email closer to date.',
           ],
         },
         {
           question:'What should the format of the file be for the hackathon submission?',
           answers:[
-            'TBC'
+            'Please prepare both a 10-page pitch deck and a Github link for submission.'
           ],
         },
         {
           question:'Where do we submit our files for the hackathon?',
           answers:[
-            'TBC'
+            'Please send the 10-page pitch deck and Github link to nusfintech.ops@gmail.com by 24 January, 2359. Please remember to enable sharing with nusfintech.ops@gmail.com or allow anyone on the internet to access the link.'
           ],
         },
         {
           question:'What are the judging criterias?',
           answers:[
-            'TBC'
+            <ul>
+              <li>Simplicity of solution, accommodate client workflow</li>
+              <ul>
+                <li>Does the technical features help in improving the current workflow?</li>  
+                <li>Does the features work as described?</li>
+                <li>Is the slide deck structured and organised (Solutions and implementations are easy to understand)</li>
+              </ul>
+              <li>User friendliness</li>
+              <ul>
+                <li>Is the solution appropriate for use by the target audience?</li>
+                <li>How intuitive is it to use?</li>
+                <li>How reliable is it to use?</li>
+              </ul>
+              <li>How effective and robust the solution is and what kind of analysis will be used to solve?</li>
+              <ul>
+                <li>How creative is the solution?</li>
+                <li>How feasible is the product/solution roadmap?</li>
+                <li>How costly is the proposed solution?</li>
+              </ul>
+            </ul>,
+            <img src={Rubric}/>
+
           ],
         },
       ],
-    },
-    {
-      heading:'Opening ceremony',
-      qnas:[
-        {
-          question:'Will the opening ceremony be conducted virtually?',
-          answers:[
-            'Yes, the opening ceremony will be conducted virtually via (platform). We will be sending out the link via email to all hackathon participants 2-3 days before the opening ceremony.'
-          ],
-        },
-        {
-          question:'Is it compulsory for all hackathon participants to be present during the opening ceremony?',
-          answers:[
-            'Yes, all hackathon participants must be present during the opening ceremony as we will be revealing the problem statement.'
-          ],
-        },
-      ]
     },
     {
       heading:'Workshops',
@@ -135,6 +140,17 @@ export const items = [
           question:'Is it compulsory for all hackathon participants to join in the Live Stream?',
           answers:[
             'Yes. Come join us for an exciting lineup of pitches made by our top 8 finalist teams to a panel of external judges and get to claim your e-vouchers from us at the end of the session!'
+          ],
+        },
+      ]
+    },
+    {
+      heading:'General enquiry',
+      qnas:[
+        {
+          question:'Who do we reach out to if we have more enquiries?',
+          answers:[
+            'Please email our team at nusfintech.ops@gmail.com.',
           ],
         },
       ]

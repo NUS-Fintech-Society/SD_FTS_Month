@@ -8,8 +8,9 @@ import {ThemeProvider} from '@material-ui/styles'
 
 const theme = createMuiTheme({
     typography: {
-        fontFamily: "'Montserrat', 'Nunito', 'Roboto', 'sans-serif'"
-    }
+        fontFamily: "'Montserrat', sans-serif",
+        fontWeight:'400',
+      }
   });
 
 

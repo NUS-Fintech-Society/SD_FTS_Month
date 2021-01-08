@@ -56,6 +56,7 @@ function EventOverviewPage(){
                         <div class="imgTextChildWelcomeDescription">
                             <li>Sponsor talk by FinTech Lab</li>
                         </div>
+                    </div>
 
                     {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>

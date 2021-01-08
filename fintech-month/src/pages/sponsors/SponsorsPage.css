@@ -1,6 +1,7 @@
 /* The sidebar menu */
 *{
-  font-family: 'Montserrat', 'Nunito', 'Roboto', 'sans-serif';
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400;
 }
 
 .sidenav {

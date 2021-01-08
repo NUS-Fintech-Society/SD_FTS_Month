@@ -7,18 +7,20 @@ const useStyles = makeStyles((theme) =>({
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
-        background:'rgb(255,255,255,0.9)',
+        background: props => props.color,
         minHeight:'4vw',
         minWidth:'14vw',
         padding:'5px',
         borderBottomLeftRadius:'10px',
         borderTopRightRadius:'10px',
     },
+    
     text:{
         fontWeight:'bold',
         fontSize:'clamp(0.25rem, -0.2857rem + 2.8571vw, 1.5rem)'
     }
 }))
+
 
 function Dateblock({title,...props}){
     const classes = useStyles(props)

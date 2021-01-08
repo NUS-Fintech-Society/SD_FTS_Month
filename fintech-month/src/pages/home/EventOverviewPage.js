@@ -36,19 +36,26 @@ function EventOverviewPage(){
                         </Box>
                     </Grid> */}
 
-                    <h3 className="eventOverviewHeaders">Opening Ceremony</h3>
-                    
+                    <h3 className="eventOverviewHeaders">Welcome email</h3>
+
                     <div class="centerAlign">
+                    
                 
-                        <h5 class="imgTextChild"> Introduction to NUS Fintech Society
+                        <h5 class="imgTextChildWelcome"> As the starting point of NUS Fintech Month, this event includes:</h5>
+                        
+                        <div class="imgTextChildWelcomeDescription">
+                            <li>Introduction to NUS Fintech Society</li>
+                            <li>Briefing of the overview of NUS  Fintech Month:</li>
+                        </div>
 
-                        Overview of Fintech Month
-                        Beginner and External workshops
-                        Hackathon (release of problem statement, grading criteria etc)
-                        </h5>
+                        <div class="imgTextChildWelcomeDescriptionSub">
+                            <li>Beginner &amp; external workshops</li>
+                            <li>Hackathon (release of problem statement, grading criteria etc)</li>
+                        </div>
 
-                    </div>
-
+                        <div class="imgTextChildWelcomeDescription">
+                            <li>Sponsor talk by FinTech Lab</li>
+                        </div>
 
                     {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>

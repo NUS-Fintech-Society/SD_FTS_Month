@@ -6,7 +6,7 @@ import FTSLogo from './images/FTS_logo.png';
 import FMLogo from './images/FM_logo.png';
 import HomePage from './pages/home/HomePage';
 import HackathonPage from './pages/home/HackathonPage';
-import BlogPage from './pages/blog/BlogPage';
+// import BlogPage from './pages/blog/BlogPage';
 import FaqPage from './pages/faq/FaqPage';
 import Workshop from './pages/home/workshop/Workshop';
 import Workshopdetail from './pages/home/workshop/Workshopdetail';
@@ -53,9 +53,9 @@ function App() {
           </div>
           <div className={classes.emptyitem}></div>
           <Button color="inherit" href="/" className={classes.title}>Home</Button>
-          <Button color="inherit" href="/sponsors/fintechlab" className={classes.title}>Sponsors</Button>
+          <Button color="inherit" href="/partners/fintechlab" className={classes.title}>Partners</Button>
           <Button color="inherit" href="/faq" className={classes.title}>FAQ</Button>
-          <Button color="inherit" href="/blog" className={classes.title}>Blog</Button>
+          {/* <Button color="inherit" href="/blog" className={classes.title}>Blog</Button> */}
           <div className={classes.emptyitem}></div>
           <div className={classes.emptyitem}></div>
         </Toolbar>
@@ -65,12 +65,13 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/hackathon" exact component={HackathonPage} />
-        <Route path="/sponsors/fintechlab" exact component={FinTechLab} />        <Route path="/sponsors/fundedhere" exact component={Fundedhere} />
-        <Route path="/sponsors/bnpp" exact component={BNPP} />
-        <Route path="/sponsors/stanley" exact component={Stanley} />
-        <Route path="/sponsors/genping" exact component={Genping} />
+        <Route path="/partners/fintechlab" exact component={FinTechLab} />        
+        <Route path="/partners/fundedhere" exact component={Fundedhere} />
+        <Route path="/partners/bnpp" exact component={BNPP} />
+        <Route path="/partners/stanley" exact component={Stanley} />
+        <Route path="/partners/genping" exact component={Genping} />
         <Route path="/faq" exact component={FaqPage} />
-        <Route path="/blog" exact component={BlogPage} />
+        {/* <Route path="/blog" exact component={BlogPage} /> */}
         <Route path="/workshop" exact component={Workshop}/>
         <Route path="/eventoverview" exact component={EventOverviewPage}/>
         <Route path="/registrationdates" exact component={RegDatePage}/>

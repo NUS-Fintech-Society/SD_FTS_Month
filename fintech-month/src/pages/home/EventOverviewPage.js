@@ -30,31 +30,39 @@ function EventOverviewPage(){
 
                 <Grid item xs={12} justify="center" >
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             11 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
 
-                    <h3 className="eventOverviewHeaders">Opening Ceremony</h3>
-                    
+                    <h3 className="eventOverviewHeaders">Welcome email</h3>
+
                     <div class="centerAlign">
+                    
                 
-                        <h5 class="imgTextChild"> Introduction to NUS Fintech Society
+                        <h5 class="imgTextChildWelcome"> As the starting point of NUS Fintech Month, this event includes:</h5>
+                        
+                        <div class="imgTextChildWelcomeDescription">
+                            <li>Introduction to NUS Fintech Society</li>
+                            <li>Briefing of the overview of NUS  Fintech Month:</li>
+                        </div>
 
-                        Overview of Fintech Month
-                        Beginner and External workshops
-                        Hackathon (release of problem statement, grading criteria etc)
-                        </h5>
+                        <div class="imgTextChildWelcomeDescriptionSub">
+                            <li>Beginner &amp; external workshops</li>
+                            <li>Hackathon (release of problem statement, grading criteria etc)</li>
+                        </div>
 
+                        <div class="imgTextChildWelcomeDescription">
+                            <li>Sponsor talk by FinTech Lab</li>
+                        </div>
                     </div>
 
-
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             12 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Hackathon</h3>
 
                     <div class="content2">
@@ -69,11 +77,11 @@ function EventOverviewPage(){
                         </div>
                     </div>
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             13 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Machine Learning Workshops</h3>
 
                     <div class="content">
@@ -89,11 +97,11 @@ function EventOverviewPage(){
                             </h5>
                         </div>
                     </div>
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             15 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Blockchain Workshops</h3>
 
                     <div class="content2">
@@ -108,11 +116,11 @@ function EventOverviewPage(){
                         </div>
                     </div>
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             16 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">External Workshops</h3>
 
                     <div class="content">
@@ -122,11 +130,12 @@ function EventOverviewPage(){
                         </div>
         
                         <div class="imgText">
-                            <h5 class="imgTextChild"> Text</h5>
+                            <h5 class="imgTextChild">Learn more about live data streams,
+                             crowdfunding and decentralised finance from the experts themselves!</h5>
                         </div>
                     </div>
 
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             24 Jan 2020
                         </Box>
@@ -142,39 +151,44 @@ function EventOverviewPage(){
                         <div class="imgText">
                             <h5 class="imgTextChild"> Text</h5>
                         </div>
-                    </div>
-                    <Grid container justify="flex-end">
+                    </div> */}
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             29 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <h3 className="eventOverviewHeaders">Release of Finalists</h3>
 
-                    <div class="content">
+                    <div class="content2">
                 
                         <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={finalists} />
                         </div>
         
                         <div class="imgText">
-                            <h5 class="imgTextChild"> Text</h5>
+                            <h5 class="imgTextChild">Release of Finalists</h5>
                         </div>
                     </div>
-                    <Grid container justify="flex-end">
+                    {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>
                             30 Jan 2020
                         </Box>
-                    </Grid>
+                    </Grid> */}
 
                     <h3 className="eventOverviewHeaders">Closing Ceremony</h3>
-                    <div class="content2">
+                    <div class="content">
                 
                         <div className="imgContent" justify="center">
                             <img className={classes.imgClass} src={closingCeremony} />
                         </div>
         
                         <div class="imgText">
-                            <h5 class="imgTextChild"> Text</h5>
+                            <h5 class="imgTextChild">At last, we conclude our NUS Fintech Month with:</h5>
+                                <div class = "imgTextChild2">
+                                    <li >Top 8 Finalists’ Pitch</li>
+                                    <li class = "">Prize Presentation</li>
+                                    <li class = "">Lucky Draw</li>
+                                </div>
                         </div>
                     </div>
 

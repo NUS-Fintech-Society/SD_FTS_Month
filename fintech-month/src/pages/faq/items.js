@@ -1,5 +1,5 @@
 import React from 'react';
-import Rubric from './images/Rubric.png'
+
 
 export const items = [
     {
@@ -58,6 +58,18 @@ export const items = [
           ],
         },
         {
+          question:'Do I need tech experience?',
+          answers:[
+            'Not at all! Students from all faculties, backgrounds, and experiences are welcome. All you need is an interest in FinTech or an interesting idea for our problem statement!'
+          ],
+        },
+        {
+          question:'Does the idea have to be fully working?',
+          answers:[
+            'The idea does not have to be fully implemented. However, the submission should be functional and feasible so that it can be reviewed by the judges.'
+          ],
+        },
+        {
           question:'What are the judging criterias?',
           answers:[
             <ul>
@@ -80,8 +92,6 @@ export const items = [
                 <li>How costly is the proposed solution?</li>
               </ul>
             </ul>,
-            <img src={Rubric}/>
-
           ],
         },
       ],
@@ -131,9 +141,9 @@ export const items = [
       heading:'Closing ceremony',
       qnas:[
         {
-          question:'Will all hackathon participants be physically present at the venue?',
+          question:'Will all hackathon participants be present for the Closing Ceremony?',
           answers:[
-            'No, in view of COVID-19 restrictions, only the top 8 finalist teams will be invited down to the venue. However, a live stream event will be made available to the rest of the participants.',
+            'At least one of the members in each qualifying team of the final round must be present to be considered for the top 3 prizes. For the teams that did not make it to the final round, we will be streaming the Closing Ceremony for you. More details will be released at a later date.',
           ],
         },
         {

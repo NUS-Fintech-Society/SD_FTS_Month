@@ -36,7 +36,7 @@ function EventOverviewPage(){
                         </Box>
                     </Grid> */}
 
-                    <h3 className="eventOverviewHeaders">Welcome email</h3>
+                    {/* <h3 className="eventOverviewHeaders">Welcome email</h3>
 
                     <div class="centerAlign">
                     
@@ -56,7 +56,7 @@ function EventOverviewPage(){
                         <div class="imgTextChildWelcomeDescription">
                             <li>Sponsor talk by FinTech Lab</li>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* <Grid container justify="flex-end">
                         <Box className={classes.dateStyle}>

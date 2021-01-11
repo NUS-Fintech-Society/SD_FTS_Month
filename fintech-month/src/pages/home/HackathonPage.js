@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box} from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel'
-import {Paper, Button} from '@material-ui/core'
+import {Paper, Button, Typography} from '@material-ui/core'
 import BottomBar from '../../components/BottomBar.js';
 import FMLogo from '../../images/FM_logo.png';
 import OpeningTimeline from '../../images/openingtimeline.png';
@@ -9,12 +9,13 @@ import ClosingTimeline from '../../images/closingtimeline.png';
 import Backbutton from '../../components/Backbutton';
 import { useStyles } from './styles'
 import './HackathonPage.css';
-import hackathonImg1 from './images/HackathonPage.jpg';
-import hackathonImg2 from './images/HackathonPage2.jpg';
-import hackathonImg3 from './images/HackathonPage3.jpg';
-import hackathonImg4 from './images/HackathonPage4.jpg';
-import hackathonImg5 from './images/HackathonPage5.jpg';
-import hackathonImg6 from './images/HackathonPage6.jpg';
+import problemStatement from './images/problem_statement.png';
+import hackathonIntro from './images/hackathon_intro.png';
+import hackathonJudges from './images/hackathon_judges.png';
+import hackathonTimeline from './images/Closing_timeline_edited.png';
+import hackathonWorkshop from './images/hackathon_workshop.png';
+import hackathonSubmission from './images/hackathon_submission.png';
+import hackathonClosing from './images/hackathon_closing.png';
 
 
 export default function Hackathon() {
@@ -22,12 +23,13 @@ export default function Hackathon() {
     const classes = useStyles();
 
     const items = [
-        {image: hackathonImg1},
-        {image: hackathonImg2},
-        {image: hackathonImg3},
-        {image: hackathonImg4},
-        {image: hackathonImg5},
-        {image: hackathonImg6},
+        {image: hackathonTimeline},
+        {image: hackathonIntro},
+        {image: problemStatement},
+        {image: hackathonWorkshop},
+        {image: hackathonSubmission},
+        {image: hackathonClosing},
+        {image: hackathonJudges},
     ]   
  
 
@@ -53,7 +55,7 @@ export default function Hackathon() {
             <div>
                 {/* <h2 class='opening'>Opening Ceremony</h2>
                 <img class='image' src={OpeningTimeline} alt='OpeningTimeline' /> */}
-                <h2 class='closing'>Closing Ceremony</h2>
+                <Typography class='closing'>Closing Ceremony</Typography>
                 <img class='image' src={ClosingTimeline} alt='ClosingTimeline' />
             </div>
 

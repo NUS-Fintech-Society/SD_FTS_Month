@@ -15,41 +15,42 @@ function Counter() {
     const [days, setDays] = useState(Math.floor(difference / (1000 * 60 * 60 * 24)))
   
     function updateTime() {
-        if (difference>0) {
-            if (days== 0 && hours == 0 && minutes == 0 && seconds == 0) {
 
+        if (days== 0 && hours == 0 && minutes == 0 && seconds == 0) {
+
+        }
+        else {
+            if (hours == 0 && minutes == 0 && seconds == 0) {
+                setDays(days => days - 1);
+                setHours(23)
+                setMinutes(59);
+                setSeconds(59);
+            } else if (minutes == 0 && seconds == 0) {
+                setHours(hours => hours - 1);
+                setMinutes(59);
+                setSeconds(59);
+            } else if (seconds == 0) {
+                setMinutes(minutes => minutes - 1);
+                setSeconds(59);
+            } else{
+            setSeconds(seconds => seconds - 1);
             }
-            else {
-              if (hours == 0 && minutes == 0 && seconds == 0) {
-                  setDays(days => days - 1);
-                  setHours(23)
-                  setMinutes(59);
-                  setSeconds(59);
-              } else if (minutes == 0 && seconds == 0) {
-                  setHours(hours => hours - 1);
-                  setMinutes(59);
-                  setSeconds(59);
-              } else if (seconds == 0) {
-                  setMinutes(minutes => minutes - 1);
-                  setSeconds(59);
-              } else{
-                setSeconds(seconds => seconds - 1);
-              }
-            }
-        } else {
-            setDays(0);
-            setHours(0)
-            setMinutes(0);
-            setSeconds(0);
         }
     }
      
     useEffect(() => {
-
-      const token = setTimeout(updateTime, 1000)
-  
-      return () => clearTimeout(token);
-      
+        if (difference<0){
+            setDays(0);
+            setHours(0)
+            setMinutes(0);
+            setSeconds(0);
+            return;
+        } 
+        
+        const token = setTimeout(updateTime, 1000)
+    
+        return () => clearTimeout(token);
+        
     })
 
     function minTwoDigits(n) {

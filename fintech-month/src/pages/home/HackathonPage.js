@@ -10,12 +10,17 @@ import Backbutton from '../../components/Backbutton';
 import { useStyles } from './styles'
 import './HackathonPage.css';
 import problemStatement from './images/problem_statement.png';
+import hackathonFront from './images/hackathon_frontpage.png';
 import hackathonIntro from './images/hackathon_intro.png';
 import hackathonJudges from './images/hackathon_judges.png';
 import hackathonTimeline from './images/Closing_timeline_edited.png';
 import hackathonWorkshop from './images/hackathon_workshop.png';
 import hackathonSubmission from './images/hackathon_submission.png';
 import hackathonClosing from './images/hackathon_closing.png';
+import hackathonFaq1 from './images/hackathon_faq1.png';
+import hackathonFaq2 from './images/hackathon_faq2.png';
+import hackathonSpecialthanks from './images/hackathon_specialthanks.png';
+import hackathonQuicklinks from './images/hackathon_quicklink.png';
 
 
 export default function Hackathon() {
@@ -23,6 +28,7 @@ export default function Hackathon() {
     const classes = useStyles();
 
     const items = [
+        {image: hackathonFront},
         {image: hackathonTimeline},
         {image: hackathonIntro},
         {image: problemStatement},
@@ -30,6 +36,10 @@ export default function Hackathon() {
         {image: hackathonSubmission},
         {image: hackathonClosing},
         {image: hackathonJudges},
+        {image: hackathonFaq1},
+        {image: hackathonFaq2},
+        {image: hackathonSpecialthanks},
+        {image: hackathonQuicklinks},
     ]   
  
 

@@ -46,13 +46,13 @@
 .carouselHeight {
     
     margin-top:1rem;
-    height:100px;
+    height:75vh;
+    width:'100%';
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding:0;
-    height:auto;
-    max-width:700px;
+
     
 }
 

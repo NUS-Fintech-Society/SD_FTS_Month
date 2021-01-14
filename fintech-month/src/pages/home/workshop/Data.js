@@ -11,6 +11,7 @@ import External1 from './images/external1.png';
 import External2 from './images/external2.jpg';
 import External3 from './images/external3.png';
 import External4 from './images/external4.png';
+import Mrirwin from './images/mrirwin.jpeg';
 
 export const MachineLearning = [
     {
@@ -104,6 +105,19 @@ export const ExternalWorkshop = [
         speakerImage:Mrjeff,
         description:'The latest Binance Community Manager, Jeff was previously Chief Community Operator with dForce Network and Head of Operations with Wetez, both blockchain companies. He travelled around the world after graduation in 2017 to experience the world before he started working.',
         date:'19 Jan, 8pm-9pm',
+    },
+    {
+        title:'Automated Cryptocurrency Trading',
+        content:[
+            'Introduction to Technical Analysis',
+            'Introduction to Automated Trading',
+            'Current Solutions',
+        ],
+        author:'Mr Irwin Chee',
+        leftImage:External4,
+        speakerImage:Mrirwin,
+        description:'Associate Partner at Novum Capital, a blockchain advisory and investment firm. Irwin has extensive experience in trading and investing in cryptocurrencies.',
+        date:'18 Jan, 3pm-4pm'
     },
 ]
 

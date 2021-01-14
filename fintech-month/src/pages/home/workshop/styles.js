@@ -88,17 +88,15 @@ export const useStyles = makeStyles((theme) =>({
         display:'flex',
         width:'45vw',
         flexDirection:'column',
+        minHeight:'80vh',
         [theme.breakpoints.down('xs')]:{
             width:'80vw',
             marginBottom:'2rem',
+            minHeight:'50vh',
         }
     },
     container3:{
-        width:'45vw',
         display:'flex',
-        [theme.breakpoints.down('xs')]:{
-            width:'80vw',
-        }
     },
     heading:{
         display:'flex',

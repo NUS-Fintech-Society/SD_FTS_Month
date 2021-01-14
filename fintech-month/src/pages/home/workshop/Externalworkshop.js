@@ -55,7 +55,7 @@ function Externalworkshop(){
                             </Box>
                         </Box>
                         <Box data-aos="fade-left" className={classes.container3}>
-                            <Externalworkshoptemplate description={text.description} content={text.content} author={text.author} speakerImage={text.speakerImage}/>                
+                            <Externalworkshoptemplate listType={text.listType} shortParagraph ={text.shortParagraph} description={text.description} content={text.content} author={text.author} speakerImage={text.speakerImage}/>                
                         </Box>
                     </Box>
                     )

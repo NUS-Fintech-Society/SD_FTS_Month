@@ -14,11 +14,12 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
     root:{
         display:'flex',
-        minWidth:'45vw',
+        width:'45vw',
         borderRadius:'1rem',
         minHeight:'80vh',
         [theme.breakpoints.down('xs')]:{
             width:'80vw',
+            minHeight:'50vh',
         }
     },
     container:{
@@ -32,9 +33,8 @@ const useStyles = makeStyles((theme) => ({
     content:{
         display:'flex',
         flexGrow:1,
-        height: props => props.height,
         justifyContent:'center',
-        alignItems:'center',
+        width:'100%',
     },
     bycontainer:{
         display:'flex',
@@ -47,20 +47,32 @@ const useStyles = makeStyles((theme) => ({
     ulbox:{
         display:'flex',
         marginBottom:'5px',
+        width:'100%',
     },
     ul:{
         display:'flex',
         flexDirection:'column',
         flexWrap:'wrap',
+        width:'100%',
     },
     li:{
-        fontSize:'clamp(0.7rem, 0.2059rem + 2.4706vw, 1.75rem)'
+        fontSize:'clamp(0.7rem, 0.2059rem + 2.4706vw, 1.75rem)',
+        textAlign:'left',
     },
     text:{
-        fontSize:'clamp(0.7rem, 0.2059rem + 2.4706vw, 1.75rem)'
+        fontSize:'clamp(0.7rem, 0.2059rem + 2.4706vw, 1.75rem)',
+        textAlign:'left',
+    },
+    shortParagraphBox:{
+        width:'100%',
+        marginTop:'2rem',
+    },
+    shortParagraph:{
+        fontSize:'clamp(0.7rem, 0.2059rem + 2.4706vw, 1.75rem)',
+        textAlign:'left',
     },
     authorbox:{
-        margin:'10px 0',
+        margin:'1rem 0',
         borderTop:'0.15rem solid #52B9FF',
         justifyContent:'center',
         width:'100%',
@@ -92,9 +104,12 @@ const useStyles = makeStyles((theme) => ({
     descriptionfont:{
         fontSize:'clamp(0.75rem, 0.5147rem + 1.1765vw, 1.25rem)',
     },
+    marginTop:{
+        marginTop:'2rem'
+    }
 }))
 
-function Externalworkshoptemplate({description,content,author, speakerImage}){
+function Externalworkshoptemplate({shortParagraph,description,content,author, speakerImage, listType}){
     const classes = useStyles()
 
 
@@ -102,20 +117,46 @@ function Externalworkshoptemplate({description,content,author, speakerImage}){
         <ThemeProvider theme={theme}>
             <Paper elevation={3} className={classes.root}>
                 <Box className={classes.container}>
+                    {shortParagraph ? (
+                        <Box className={classes.shortParagraphBox}>
+                            {shortParagraph.map((line) =>{
+                                return(<Typography className={classes.shortParagraph}>{line}</Typography>)
+                            })}    
+                        </Box>
+                    )
+                    :
+                    <Box className={classes.marginTop}></Box>
+                    }
+
                     {(content.length > 0) &&
                     (     
                     <Box className={classes.content}>
-                        <ul className={classes.ul}>
-                            {content.map((text) =>{
-                                return (
-                                    <li className={classes.li}>
-                                        <Box className={classes.ulbox}>
-                                            <Typography className={classes.text}>{text}</Typography>
-                                        </Box>
-                                    </li>
-                                )
-                            })}
-                        </ul>
+                        {listType ?
+                            <ol className={classes.ul}>
+                                {content.map((text) =>{
+                                    return (
+                                        <li className={classes.li}>
+                                            <Box className={classes.ulbox}>
+                                                <Typography className={classes.text}>{text}</Typography>
+                                            </Box>
+                                        </li>
+                                    )
+                                })}
+                            </ol> 
+                            : 
+                            <ul className={classes.ul}>
+                                {content.map((text) =>{
+                                    return (
+                                        <li className={classes.li}>
+                                            <Box className={classes.ulbox}>
+                                                <Typography className={classes.text}>{text}</Typography>
+                                            </Box>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        }
+                        
                     </Box>
                     )
                     }

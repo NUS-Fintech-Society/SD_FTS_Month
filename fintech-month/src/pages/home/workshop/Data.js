@@ -108,10 +108,16 @@ export const ExternalWorkshop = [
     },
     {
         title:'Automated Cryptocurrency Trading',
+        shortParagraph:[
+            'The crypto markets operate 24/7 and it is difficult to manage crypto investments manually.',
+            <pre></pre>,
+            'Join us to learn more about:'
+        ],
+        listType:'ol',
         content:[
             'Introduction to Technical Analysis',
             'Introduction to Automated Trading',
-            'Current Solutions',
+            'Current solutions',
         ],
         author:'Mr Irwin Chee',
         leftImage:External4,

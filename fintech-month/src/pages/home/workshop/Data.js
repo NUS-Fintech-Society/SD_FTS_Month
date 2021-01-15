@@ -11,7 +11,7 @@ import External1 from './images/external1.png';
 import External2 from './images/external2.jpg';
 import External3 from './images/external3.png';
 import External4 from './images/external4.png';
-import External5 from './images/external5_nowatermark.png';
+import External5 from './images/external5.png';
 import Mrirwin from './images/mrirwin.jpeg';
 
 export const MachineLearning = [

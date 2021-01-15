@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius:'1rem',
         [theme.breakpoints.down('xs')]:{
             width:'80vw',
+            minHeight:'50vh',
         }
     },
     ul:{

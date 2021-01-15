@@ -11,6 +11,7 @@ import External1 from './images/external1.png';
 import External2 from './images/external2.jpg';
 import External3 from './images/external3.png';
 import External4 from './images/external4.png';
+import External5 from './images/external5_nowatermark.png';
 import Mrirwin from './images/mrirwin.jpeg';
 
 export const MachineLearning = [
@@ -120,7 +121,7 @@ export const ExternalWorkshop = [
             'Current solutions',
         ],
         author:'Mr Irwin Chee',
-        leftImage:External4,
+        leftImage:External5,
         speakerImage:Mrirwin,
         description:'Associate Partner at Novum Capital, a blockchain advisory and investment firm. Irwin has extensive experience in trading and investing in cryptocurrencies.',
         date:'18 Jan, 3pm-4pm'

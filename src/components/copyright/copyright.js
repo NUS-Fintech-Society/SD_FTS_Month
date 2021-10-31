@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import Typography from '@material-ui/core/Typography';
-import MuiLink from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography'
+import MuiLink from '@material-ui/core/Link'
 
 const Copyright = () => {
   return (
@@ -13,7 +13,7 @@ const Copyright = () => {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
-  );
-};
+  )
+}
 
-export default Copyright;
+export default Copyright

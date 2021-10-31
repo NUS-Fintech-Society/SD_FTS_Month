@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container'
+import Typography from '@material-ui/core/Typography'
+import Box from '@material-ui/core/Box'
 
-import ProTip from '../components/pro-tip';
-import Link from '../components/link';
-import Copyright from '../components/copyright';
-import InfoIcon from '@material-ui/icons/Info';
+import ProTip from '../components/pro-tip'
+import Link from '../components/link'
+import Copyright from '../components/copyright'
+import InfoIcon from '@material-ui/icons/Info'
 
 const Index = () => {
   return (
@@ -24,7 +24,7 @@ const Index = () => {
         <Copyright />
       </Box>
     </Container>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

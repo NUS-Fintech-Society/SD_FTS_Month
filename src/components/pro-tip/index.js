@@ -1,1 +1,1 @@
-export { default } from './pro-tip';
+export { default } from './pro-tip'

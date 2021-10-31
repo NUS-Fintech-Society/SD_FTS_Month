@@ -21,7 +21,7 @@ It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-a
 
 5.  Access the local version of the website at [http://localhost:3000](http://localhost:3000)
 
-## Code Quality
+## Code Quality:
 
 The project has in place:
 

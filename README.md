@@ -17,9 +17,19 @@ It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-a
 
 4.  Run the development server
 
-        yarn start
+        yarn dev
 
 5.  Access the local version of the website at [http://localhost:3000](http://localhost:3000)
+
+## Code Quality
+
+The project has in place:
+
+- Material UI theme and typography configuration, which can be found in src/themes.
+- makeStyles approach over writing .css files for styling.
+- Husky for lint fixes prior to every commit
+
+Please take a look at the example component in src/component/Example before getting started, and follow the conventions.
 
 ## Instructions for Pull Requests:
 

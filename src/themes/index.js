@@ -1,17 +1,14 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import typography from './typography';
+import { createMuiTheme } from '@material-ui/core/styles'
+import typography from './typography'
 
 // Create a theme instance.
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#059BE5',
+      main: '#E13766',
     },
     secondary: {
-      main: '#FFCB2B',
-    },
-    tertiary: {
-      main: '#FFA611',
+      main: '#101F40',
     },
     success: {
       main: '#4BB543',
@@ -26,13 +23,13 @@ const theme = createMuiTheme({
     },
     background: {
       main: '#FFFFFF',
-      secondary: '#F0F0F0',
+      secondary: '#F5F5F5',
     },
   },
   shape: {
-    borderRadius: 8,
+    borderRadius: 20,
   },
   typography: typography,
-});
+})
 
-export default theme;
+export default theme

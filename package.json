@@ -1,6 +1,7 @@
 {
   "name": "fts-month",
   "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE FILE",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +10,7 @@
     "lint": "npx eslint ./src"
   },
   "lint-staged": {
-    "*.js": "npx eslint --fix"
+    "*.{js,jsx}": "npx eslint --fix"
   },
   "husky": {
     "hooks": {

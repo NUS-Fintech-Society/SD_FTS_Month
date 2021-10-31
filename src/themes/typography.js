@@ -1,6 +1,6 @@
-const headerFontFamily = 'Raleway';
+const headerFontFamily = 'Lato'
 const typography = {
-  fontFamily: 'Nunito',
+  fontFamily: 'Lato',
   h1: {
     fontFamily: headerFontFamily,
     fontSize: 60,
@@ -23,19 +23,19 @@ const typography = {
     fontFamily: headerFontFamily,
     fontSize: 40,
     color: '#000000',
-    fontWeight: 600,
+    fontWeight: 400,
   },
   h5: {
     fontFamily: headerFontFamily,
     fontSize: 35,
     color: '#000000',
-    fontWeight: 600,
+    fontWeight: 400,
   },
   h6: {
     fontFamily: headerFontFamily,
     fontSize: 30,
     color: '#000000',
-    fontWeight: 600,
+    fontWeight: 400,
   },
   subtitle1: {
     fontSize: 24,
@@ -59,13 +59,13 @@ const typography = {
   },
   button: {
     fontSize: 16,
-    fontWeight: 600,
+    fontWeight: 400,
     color: '#000000',
     textTransform: 'none',
   },
   overline: {
     fontSize: 16,
-    fontWeight: 600,
+    fontWeight: 400,
     color: '#000000',
     textTransform: 'none',
   },
@@ -74,9 +74,9 @@ const typography = {
     fontSize: 12,
     fontWeight: 400,
     letterSpacing: '1px',
-    textTransform: 'uppercase',
+    textTransform: 'none',
     color: '#000000',
   },
-};
+}
 
-export default typography;
+export default typography

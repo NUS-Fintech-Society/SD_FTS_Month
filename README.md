@@ -1,42 +1,31 @@
-# DevOps_FTS_Month
+# NUS FinTech Month
 
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Deployment](#deployment)
+This repository contains the code for the frontend of the official NUS FinTech Website.
 
-## General info
-This repository contains the code for the FTS month website.
-The site diplays information on sign ups, dates, sponsers, and timeline of the events.
+It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Technologies
-Project is created with:
-* ReactJS
-* Material UI
-* NUS server (deployment)
+## Instructions for Setup:
 
-## Setup
-- To run this repository, git clone it to your local environment.
-- cd into fintech-month, and key in "yarn install" to install all dependencies for the project.
-- Type 'yarn start' in the terminal to run the website.
+1.  Ensure NodeJS, NPM and Yarn are installed in your workstation
+2.  Clone this repository
 
-## Deployment
+        git clone https://github.com/NUS-Fintech-Society/SD_FTS_Month.git
 
-- Run yarn build to generate all the required files for deployment.
-- In the build folder, create '.htaccess' file. (To prevent directory issues)
-- Include the following lines of code in the file and save:
+3.  Install all module dependencies
 
-```javascript
-RewriteEngine On
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-RewriteRule ^ - [L]
-RewriteRule ^ ./index.html
-```
+        yarn
 
-- Refer to [this](https://dochub.comp.nus.edu.sg/cf/guides/network/vpn) guide to setup SoC VPN.
-- After connection, key in "ssh nusfintechmonth@web1.comp.nus.edu.sg" in the terminal.
-- Contact the Software Dev Director for password to proceed.
-- Refer to [this](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/) to scp files onto remote folder.
+4.  Run the development server
 
+        yarn start
+
+5.  Access the local version of the website at [http://localhost:3000](http://localhost:3000)
+
+## Instructions for Pull Requests:
+
+1. Ensure the branch you are working on is named semantically based on the task at hand. Eg. **add-faq-page**
+2. Submit the Pull Request with **master** as the target branch.
+3. If any, link the GitHub issue to the Pull Request.
+4. Once all checks have passed, view the Preview website and verify if changes are as expected.
+5. Assign a reviewer to review the Pull Request.
+6. Once the reviewer has approved the Pull Request, merge it and delete the source branch.

@@ -99,8 +99,9 @@ const useStyles = makeStyles((theme) => ({
   ftsLogo: {
     backgroundColor: theme.palette.background.secondary,
     width: '360px',
+    paddingLeft: '60px',
     positon: 'absolute',
-    height: '100%',
+    top: '100px',
   },
 }))
 
@@ -127,7 +128,7 @@ const Sponsors = () => {
         <button className={classes.bybitLogoButton}>
           <img
             src="https://res.cloudinary.com/jianoway/image/upload/v1638360412/bybit-logo_svetqo.png"
-            alt="ByBit Logo"
+            alt="ByBit"
             onClick={() => window.open('https://www.bybit.com/en-US/', 'ByBit')}
           />
         </button>
@@ -135,14 +136,14 @@ const Sponsors = () => {
           <img
             src="https://res.cloudinary.com/jianoway/image/upload/v1638360411/ripple-logo_zmlfxh.png"
             alt="Ripple"
-            onClick={() => window.open('https://ripple.com/', 'Ripple')}
+            onClick={() => window.open('https://ripple.com/', '_blank')}
           />
         </button>
         <button className={classes.stellarLogoButton} position="right">
           <img
             src="https://res.cloudinary.com/jianoway/image/upload/v1638360412/stellar-logo_dnsjor.png"
             alt="Stellar"
-            onClick={() => window.open('https://www.stellar.org/', 'Stellar')}
+            onClick={() => window.open('https://www.stellar.org/', '_blank')}
             height="100%"
             width="240px"
           />
@@ -156,12 +157,12 @@ const Sponsors = () => {
           <img
             src="https://res.cloudinary.com/jianoway/image/upload/c_scale,w_362/v1638365359/nus-logo_vxbv5m.png"
             alt="NUS"
-            onClick={() => window.open('https://www.nus.edu.sg/', 'NUS')}
+            onClick={() => window.open('https://www.nus.edu.sg/', '_blank')}
           />
         </button>
         <Box className={classes.ftsLogo}>
           <img
-            src="https://res.cloudinary.com/jianoway/image/upload/c_scale,w_360/v1638365359/fts-logo_ccxzfz.png"
+            src="https://res.cloudinary.com/jianoway/image/upload/c_scale,w_300/v1638367592/FTS-Logo-Transparent_k8gkbs.png"
             alt="NUS FTS"
           />
         </Box>

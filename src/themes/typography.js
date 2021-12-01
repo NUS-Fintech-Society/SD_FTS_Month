@@ -15,7 +15,7 @@ const typography = {
   },
   h3: {
     fontFamily: headerFontFamily,
-    fontSize: 45,
+    fontSize: 36,
     color: '#000000',
     fontWeight: 700,
   },

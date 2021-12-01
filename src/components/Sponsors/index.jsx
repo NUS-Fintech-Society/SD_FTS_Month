@@ -141,7 +141,7 @@ const Sponsors = () => {
         <button className={classes.stellarLogoButton} position="right">
           <img
             src="https://res.cloudinary.com/jianoway/image/upload/v1638360412/stellar-logo_dnsjor.png"
-            alt="Stellar Logo"
+            alt="Stellar"
             onClick={() => window.open('https://www.stellar.org/', 'Stellar')}
             height="100%"
             width="240px"
@@ -155,7 +155,7 @@ const Sponsors = () => {
         <button className={classes.nusLogoButton}>
           <img
             src="https://res.cloudinary.com/jianoway/image/upload/c_scale,w_362/v1638365359/nus-logo_vxbv5m.png"
-            alt="Stellar Logo"
+            alt="NUS"
             onClick={() => window.open('https://www.nus.edu.sg/', 'NUS')}
           />
         </button>

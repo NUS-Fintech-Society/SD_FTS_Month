@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'

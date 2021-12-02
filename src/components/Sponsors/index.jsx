@@ -12,43 +12,26 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.secondary,
     flexDirection: 'column',
   },
-  sectionTitle: {
-    position: 'absolute',
-    top: '10%',
-    height: '43px',
-    width: '279px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   description: {
-    position: 'absolute',
-    top: '20%',
-    height: '21px',
-    width: '1000px',
     textAlign: 'center',
+    paddingTop: '77px',
+    paddingBottom: '80px',
   },
   sponsorTitle: {
-    position: 'absolute',
-    top: '27%',
     width: '953px',
     height: '40px',
     textAlign: 'center',
+    paddingTop: '77px',
   },
   partnersTitle: {
-    position: 'absolute',
-    top: '63%',
-    width: '953px',
-    height: '40px',
     textAlign: 'center',
+    paddingTop: '80px',
   },
   sponsorLogoWrapper: {
-    position: 'absolute',
-    top: '37%',
     display: 'flex',
-    height: '240px',
     width: '1074px',
     alignItems: 'center',
+    paddingTop: '80px',
     textAlign: 'center',
     justifyContent: 'center',
   },
@@ -80,8 +63,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.secondary,
   },
   partnersLogoWrapper: {
-    position: 'absolute',
-    top: '66%',
     display: 'flex',
     height: '360px',
     paddingTop: '20px',
@@ -100,8 +81,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.secondary,
     width: '360px',
     paddingLeft: '60px',
-    positon: 'absolute',
-    top: '100px',
   },
 }))
 
@@ -110,20 +89,16 @@ const Sponsors = () => {
 
   return (
     <Box className={classes.root}>
-      <Box className={classes.sectionTitle}>
-        <Typography variant="h3">OUR SPONSORS</Typography>
-      </Box>
+      <Typography variant="h3">OUR SPONSORS</Typography>
       <Box className={classes.description}>
         <Typography>
           Thank you to our sponsors, Bybit, Ripple and Stellar for making this
           event possible!
         </Typography>
       </Box>
-      <Box className={classes.sponsorTitle}>
-        <Typography variant="h3" className={classes.header}>
-          Supported By:
-        </Typography>
-      </Box>
+      <Typography variant="h3" className={classes.header}>
+        Supported By:
+      </Typography>
       <Box className={classes.sponsorLogoWrapper}>
         <button className={classes.bybitLogoButton}>
           <img

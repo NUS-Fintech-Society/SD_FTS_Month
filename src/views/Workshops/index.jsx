@@ -7,14 +7,14 @@ import WorkshopRenderer from './WorkshopRenderer'
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '200vh', // to be adjusted based on number of workshops
+    height: '250vh', // to be adjusted based on number of workshops
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
   },
   smallRoot: {
-    height: '320vh', // to be adjusted based on number of workshops
+    height: '450vh', // to be adjusted based on number of workshops
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

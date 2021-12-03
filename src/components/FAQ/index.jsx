@@ -23,14 +23,12 @@ const useStyles = makeStyles((theme) => ({
   bodyWrapper: {
     backgroundColor: theme.palette.background.secondary,
   },
-
   title: {
     width: '80vw',
     display: 'flex',
     justifyContent: 'center',
     marginBottom: '10vh',
   },
-
   icon: {
     fontSize: '3rem',
     color: theme.palette.secondary.main,
@@ -40,13 +38,9 @@ const useStyles = makeStyles((theme) => ({
 export default function FAQ() {
   const classes = useStyles()
 
-  const [expandedState, setExpandedState] = React.useState([
-    false,
-    false,
-    false,
-    false,
-    false,
-  ])
+  const initialState = Array(DUMMY_QA.length).fill(false)
+
+  const [expandedState, setExpandedState] = React.useState(initialState)
 
   const expandHandler = (id) => () => {
     if (expandedState[id]) {

@@ -4,33 +4,27 @@ import { Box, Typography } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: 'relative',
-    height: '100vh',
+    // position: 'relative',
+    // height: '100vh',
     display: 'flex',
+    padding: '48px',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.palette.background.secondary,
+    backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
   },
   description: {
     textAlign: 'center',
-    paddingTop: '77px',
-    paddingBottom: '80px',
+    marginTop: '48px',
+    marginBottom: '48px',
   },
   sponsorTitle: {
     textAlign: 'center',
-    padding: '30px',
-  },
-  partnersTitle: {
-    textAlign: 'center',
-    paddingTop: '80px',
-    paddingBottom: '10px',
-    padding: '30px',
   },
   sponsorLogoWrapper: {
     display: 'flex',
     alignItems: 'center',
-    paddingTop: '80px',
+    marginBottom: '48px',
     width: '100%',
     maxWidth: '1000px',
     textAlign: 'center',
@@ -38,6 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     fontWeight: 700,
+    marginBottom: '48px',
+    textAlign: 'center',
   },
   bodyWrapper: {
     marginTop: 16,
@@ -46,26 +42,26 @@ const useStyles = makeStyles((theme) => ({
   },
   bybitLogoButton: {
     border: '0px',
-    backgroundColor: theme.palette.background.secondary,
+    backgroundColor: theme.palette.background.primary,
     width: '20%',
+    cursor: 'pointer',
   },
   rippleLogoButton: {
     border: '0px',
-    paddingLeft: '24px',
-    paddingRight: '24px',
-    backgroundColor: theme.palette.background.secondary,
+    backgroundColor: theme.palette.background.primary,
     width: '40%',
+    cursor: 'pointer',
   },
   stellarLogoButton: {
     border: '0px',
-    backgroundColor: theme.palette.background.secondary,
+    backgroundColor: theme.palette.background.primary,
     width: '20%',
+    cursor: 'pointer',
   },
   partnersLogoWrapper: {
     display: 'flex',
     width: '100%',
     maxWidth: '800px',
-    paddingTop: '40px',
     alignItems: 'center',
     textAlign: 'center',
     justifyContent: 'center',
@@ -73,12 +69,12 @@ const useStyles = makeStyles((theme) => ({
   },
   nusLogoButton: {
     border: '0px',
-    backgroundColor: theme.palette.background.secondary,
+    backgroundColor: theme.palette.background.primary,
     width: '50%',
+    cursor: 'pointer',
   },
   ftsLogo: {
-    backgroundColor: theme.palette.background.secondary,
-    paddingLeft: '40px',
+    backgroundColor: theme.palette.background.primary,
     width: '50%',
   },
 }))
@@ -88,14 +84,16 @@ const Sponsors = () => {
 
   return (
     <Box className={classes.root}>
-      <Typography variant="h3">OUR SPONSORS</Typography>
+      <Typography variant="h3" align="center">
+        OUR SPONSORS
+      </Typography>
       <Box className={classes.description}>
         <Typography>
           Thank you to our sponsors, Bybit, Ripple and Stellar for making this
           event possible!
         </Typography>
       </Box>
-      <Typography variant="h3" className={classes.header}>
+      <Typography variant="h5" className={classes.header}>
         Supported By:
       </Typography>
       <Box className={classes.sponsorLogoWrapper}>
@@ -124,9 +122,9 @@ const Sponsors = () => {
           />
         </button>
       </Box>
-      <Box className={classes.partnersTitle}>
-        <Typography variant="h3">Schools and University Partners:</Typography>
-      </Box>
+      <Typography variant="h5" className={classes.header}>
+        Schools and University Partners:
+      </Typography>
       <Box className={classes.partnersLogoWrapper}>
         <button className={classes.nusLogoButton}>
           <img

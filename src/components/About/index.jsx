@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   bodyWrapper: {
     marginTop: 16,
   },
-
   title: {
     width: '100%',
     display: 'flex',
@@ -29,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '5vh',
     textAlign: 'center',
   },
-
   span: {
     color: theme.palette.primary.main,
   },
@@ -45,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     width: '100%',
   },
-
   vector: {
     position: 'absolute',
     top: '14rem',
@@ -60,8 +57,8 @@ export default function About() {
   return (
     <Box className={classes.root}>
       <Box className={classes.title}>
-        <Typography variant="h2" className={classes.header}>
-          About Fintech Month
+        <Typography variant="h3" className={classes.header}>
+          ABOUT FINTECH MONTH
         </Typography>
       </Box>
       <Container>
@@ -86,10 +83,9 @@ export default function About() {
           </Typography>
 
           <Typography paragraph={true}>
-            We are anticipating about{' '}
-            <span className={classes.span}> 150 </span> participants for the
-            hackathon, consisting of teams of 2-4 people. Team members need not
-            be from the same school.
+            We are anticipating about <span className={classes.span}>150 </span>
+            participants for the hackathon, consisting of teams of 2-4 people.
+            Team members need not be from the same school.
           </Typography>
         </Box>
       </Container>

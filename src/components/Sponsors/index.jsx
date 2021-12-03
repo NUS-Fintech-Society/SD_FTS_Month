@@ -4,8 +4,6 @@ import { Box, Typography } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // position: 'relative',
-    // height: '100vh',
     display: 'flex',
     padding: '48px',
     alignItems: 'center',

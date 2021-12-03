@@ -4,7 +4,7 @@
   "license": "SEE LICENSE IN LICENSE FILE",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint-staged": "npx lint-staged",
     "lint": "npx eslint ./src"

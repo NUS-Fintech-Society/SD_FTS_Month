@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     marginBottom: '10vh',
+    textAlign: 'center',
   },
 
   icon: {

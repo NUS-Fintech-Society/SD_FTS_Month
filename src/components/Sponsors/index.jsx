@@ -18,20 +18,21 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: '80px',
   },
   sponsorTitle: {
-    width: '953px',
-    height: '40px',
     textAlign: 'center',
-    paddingTop: '77px',
+    padding: '30px',
   },
   partnersTitle: {
     textAlign: 'center',
     paddingTop: '80px',
+    paddingBottom: '10px',
+    padding: '30px',
   },
   sponsorLogoWrapper: {
     display: 'flex',
-    width: '1074px',
     alignItems: 'center',
     paddingTop: '80px',
+    width: '100%',
+    maxWidth: '1000px',
     textAlign: 'center',
     justifyContent: 'center',
   },
@@ -45,9 +46,8 @@ const useStyles = makeStyles((theme) => ({
   },
   bybitLogoButton: {
     border: '0px',
-    paddingLeft: '24px',
-    paddingRight: '24px',
     backgroundColor: theme.palette.background.secondary,
+    width: '20%',
   },
   rippleLogoButton: {
     border: '0px',
@@ -58,15 +58,14 @@ const useStyles = makeStyles((theme) => ({
   },
   stellarLogoButton: {
     border: '0px',
-    paddingLeft: '24px',
-    paddingRight: '24px',
     backgroundColor: theme.palette.background.secondary,
+    width: '20%',
   },
   partnersLogoWrapper: {
     display: 'flex',
-    height: '360px',
-    paddingTop: '20px',
-    width: '1000px',
+    width: '100%',
+    maxWidth: '800px',
+    paddingTop: '40px',
     alignItems: 'center',
     textAlign: 'center',
     justifyContent: 'center',
@@ -75,12 +74,12 @@ const useStyles = makeStyles((theme) => ({
   nusLogoButton: {
     border: '0px',
     backgroundColor: theme.palette.background.secondary,
-    width: '360px',
+    width: '50%',
   },
   ftsLogo: {
     backgroundColor: theme.palette.background.secondary,
-    width: '360px',
-    paddingLeft: '60px',
+    paddingLeft: '40px',
+    width: '50%',
   },
 }))
 
@@ -102,25 +101,26 @@ const Sponsors = () => {
       <Box className={classes.sponsorLogoWrapper}>
         <button className={classes.bybitLogoButton}>
           <img
-            src="https://res.cloudinary.com/jianoway/image/upload/v1638360412/bybit-logo_svetqo.png"
+            src="bybit-logo.png"
             alt="ByBit"
+            width="100%"
             onClick={() => window.open('https://www.bybit.com/en-US/', 'ByBit')}
           />
         </button>
         <button className={classes.rippleLogoButton}>
           <img
-            src="https://res.cloudinary.com/jianoway/image/upload/v1638360411/ripple-logo_zmlfxh.png"
+            src="ripple-logo.png"
             alt="Ripple"
+            width="100%"
             onClick={() => window.open('https://ripple.com/', '_blank')}
           />
         </button>
         <button className={classes.stellarLogoButton} position="right">
           <img
-            src="https://res.cloudinary.com/jianoway/image/upload/v1638360412/stellar-logo_dnsjor.png"
+            src="stellar-logo.png"
             alt="Stellar"
             onClick={() => window.open('https://www.stellar.org/', '_blank')}
-            height="100%"
-            width="240px"
+            width="100%"
           />
         </button>
       </Box>
@@ -130,16 +130,14 @@ const Sponsors = () => {
       <Box className={classes.partnersLogoWrapper}>
         <button className={classes.nusLogoButton}>
           <img
-            src="https://res.cloudinary.com/jianoway/image/upload/c_scale,w_362/v1638365359/nus-logo_vxbv5m.png"
+            src="nus-logo.png"
             alt="NUS"
+            width="100%"
             onClick={() => window.open('https://www.nus.edu.sg/', '_blank')}
           />
         </button>
         <Box className={classes.ftsLogo}>
-          <img
-            src="https://res.cloudinary.com/jianoway/image/upload/c_scale,w_300/v1638367592/FTS-Logo-Transparent_k8gkbs.png"
-            alt="NUS FTS"
-          />
+          <img src="FTS-Logo-Transparent.png" alt="NUS FTS" width="100%" />
         </Box>
       </Box>
     </Box>

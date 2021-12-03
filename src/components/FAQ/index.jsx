@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     fontWeight: 700,
+    textAlign: 'center',
   },
   bodyWrapper: {
     backgroundColor: theme.palette.background.secondary,
@@ -57,8 +58,8 @@ export default function FAQ() {
   return (
     <Box className={classes.root}>
       <Box className={classes.title}>
-        <Typography variant="h2" className={classes.header}>
-          Frequently Asked Questions
+        <Typography variant="h3" className={classes.header}>
+          FREQUENTLY ASKED QUESTIONS
         </Typography>
       </Box>
       <Container>

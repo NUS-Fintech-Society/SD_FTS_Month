@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import Example from '../../components/Example'
+import Sponsors from '../../components/Sponsors'
 import FAQ from '../../components/FAQ'
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
       <Example />
       {/* Hero Section */}
       {/* About Section */}
-      {/* Sponsors Section */}
+      <Sponsors />
       {/* Prizes Section */}
       {/* FAQ Section */}
       <FAQ />

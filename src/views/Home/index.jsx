@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import Example from '../../components/Example'
 import Sponsors from '../../components/Sponsors'
 import FAQ from '../../components/FAQ'
+import About from '../../components/About'
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <Example />
       {/* Hero Section */}
       {/* About Section */}
+      <About />
+      {/* Sponsors Section */}
       <Sponsors />
       {/* Prizes Section */}
       {/* FAQ Section */}

@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     marginBottom: '10vh',
+    textAlign: 'center',
   },
   icon: {
     fontSize: '3rem',
@@ -44,12 +45,11 @@ export default function FAQ() {
   const [expandedState, setExpandedState] = React.useState(initialState)
 
   const expandHandler = (id) => () => {
+    const newList = [...expandedState]
     if (expandedState[id]) {
-      const newList = [...expandedState]
       newList[id] = false
       setExpandedState(newList)
     } else {
-      const newList = [...expandedState]
       newList[id] = true
       setExpandedState(newList)
     }

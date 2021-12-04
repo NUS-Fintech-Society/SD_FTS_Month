@@ -4,6 +4,8 @@ import Example from '../../components/Example'
 import Sponsors from '../../components/Sponsors'
 import FAQ from '../../components/FAQ'
 import About from '../../components/About'
+import Prizes from '../../components/Prizes'
+import OtherPrizes from '../../components/OtherPrizes'
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       {/* Sponsors Section */}
       <Sponsors />
       {/* Prizes Section */}
+      <Prizes />
+      <OtherPrizes />
       {/* FAQ Section */}
       <FAQ />
       {/* Contact Us Section */}

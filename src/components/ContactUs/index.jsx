@@ -18,10 +18,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
   },
   contentWrapper: {
-    padding: '48px 0px',
     textAlign: 'center',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.background.primary,
   },
   header: {
     textAlign: 'center',

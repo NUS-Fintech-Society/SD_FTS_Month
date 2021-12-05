@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     margin: 'auto',
     [theme.breakpoints.down('sm')]: {
-      height: '400vh', // to be adjusted based on number of workshops
+      height: '450vh', // to be adjusted based on number of workshops
       display: 'flex',
       margin: 'auto',
     },

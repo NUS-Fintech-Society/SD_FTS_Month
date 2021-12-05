@@ -99,7 +99,7 @@ const WorkshopRenderer = () => {
     workshopArray.push(
       <Box key={i} className={classes.workshopWrapper}>
         <Typography className={classes.tagText}>{tagsList[i]}</Typography>
-        <Typography variant="h3" className={classes.workshopTitle}>
+        <Typography variant="h5" className={classes.workshopTitle}>
           {workshops[i]['title']}
         </Typography>
         <Box className={classes.workshopBodyWrapper}>

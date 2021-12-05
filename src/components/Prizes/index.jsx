@@ -1,25 +1,207 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography } from '@material-ui/core'
+import { Box, CssBaseline, Typography, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    minheight: '144vh',
+    width: '100%',
+    position: 'relative',
+    backgroundSize: 'cover',
+    backgroundColor: theme.palette.background.primary,
+    backgroundImage: `url(${'/prizes-bg.png'})`,
+    backgroundRepeat: 'no-repeat',
     display: 'flex',
-    height: '100vh',
-    width: '100vh',
-    '@media (width: 414px) and (height: 628px)': {
-      backgroundImage: `url(${'/prizes-bg.png'})`,
-      backgroundSize: 'cover',
-      height: '100vh',
-      width: '100vh',
-    },
+    backgroundPosition: 'center right',
+    flexDirection: 'column',
+  },
+  title: {
+    fontWeight: 700,
+    marginTop: '25vh',
+    textAlign: 'center',
+  },
+  firstPrize: {
+    borderRadius: theme.shape.borderRadius,
+    backgroundImage:
+      'linear-gradient(rgba(255, 255, 255, 1), rgba(255, 239, 215, 1))',
+    boxShadow: '4px 24px 60px rgba(109, 141, 173, 0.25);',
+    textAlign: 'center',
+    margin: 20,
+  },
+  secondPrize: {
+    borderRadius: theme.shape.borderRadius,
+    backgroundImage:
+      'linear-gradient(rgba(255, 255, 255, 1), rgba(237, 235, 232, 1))',
+    boxShadow: '4px 24px 60px rgba(109, 141, 173, 0.25);',
+    textAlign: 'center',
+    margin: 20,
+  },
+  thirdPrize: {
+    borderRadius: theme.shape.borderRadius,
+    backgroundImage:
+      'linear-gradient(rgba(255, 255, 255, 1), rgba(234, 210, 175, 1))',
+    boxShadow: '4px 24px 60px rgba(109, 141, 173, 0.25);',
+    textAlign: 'center',
+    margin: 20,
+  },
+  firstPrizeText: {
+    color: '#FDC673',
+    fontWeight: 700,
+    fontSize: '36px',
+    font: 'Lato',
+  },
+  secondPrizeText: {
+    color: '#AEADAB',
+    fontWeight: 700,
+    fontSize: '36px',
+    font: 'Lato',
+  },
+  thirdPrizeText: {
+    color: '#AD8A56',
+    fontWeight: 700,
+    fontSize: '36px',
+    font: 'Lato',
+  },
+  coinAmtText: {
+    fontWeight: 700,
+    fontSize: '48px',
+    font: 'Lato',
+    marginRight: '3vh',
+  },
+  boxWrapper: {
+    marginBottom: '6vh',
+  },
+  box: {
+    height: '10vh',
+  },
+  header: {
+    fontWeight: 700,
+    fontSize: '64px',
+    font: 'Lato',
+    color: '#E13766',
+    textAlign: 'left',
+  },
+  description: {
+    fontWeight: 400,
+    fontSize: '48px',
+    font: 'Lato',
+    textAlign: 'left',
   },
 }))
 
 const Prizes = () => {
   const classes = useStyles()
 
-  return <Box className={classes.root}></Box>
+  return (
+    <div className={classes.root}>
+      <Typography variant="h3" className={classes.title}>
+        PRIZES
+      </Typography>
+      <CssBaseline></CssBaseline>
+      <Grid container direction="row" justify="center" alignItems="center">
+        <Grid item xs={8} md={4}>
+          <Box
+            padding={2}
+            justify="center"
+            alignItems="center"
+            display="flex"
+            flexDirection="column"
+          >
+            <Typography className={classes.header}>Hackathon Prizes</Typography>
+            <Typography className={classes.description}>
+              Stand a chance to win BTC and more!
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={8} md={4}>
+          <Box
+            padding={2}
+            justify="center"
+            alignItems="center"
+            display="flex"
+            flexDirection="column"
+          >
+            <img alt="BTC" src="BTC.png"></img>
+          </Box>
+        </Grid>
+      </Grid>
+      <Grid container direction="row" justify="center" alignItems="center">
+        <Grid item xs={8} md={3}>
+          <Box
+            padding={2}
+            justify="center"
+            alignItems="center"
+            display="flex"
+            flexDirection="column"
+            className={classes.firstPrize}
+          >
+            <Box
+              flexDirection="row"
+              display="flex"
+              justify="center"
+              alignItems="center"
+              className={classes.boxWrapper}
+            >
+              <Typography className={classes.coinAmtText}>0.5</Typography>
+              <img alt="cryptocurrency" src="crypto.png"></img>
+            </Box>
+            <Typography className={classes.firstPrizeText}>
+              1st Prize
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={8} md={3}>
+          <Box
+            padding={2}
+            justify="center"
+            alignItems="center"
+            display="flex"
+            flexDirection="column"
+            className={classes.secondPrize}
+          >
+            <Box
+              flexDirection="row"
+              display="flex"
+              justify="center"
+              alignItems="center"
+              className={classes.boxWrapper}
+            >
+              <Typography className={classes.coinAmtText}>0.25</Typography>
+              <img alt="cryptocurrency" src="crypto.png"></img>
+            </Box>
+            <Typography className={classes.secondPrizeText}>
+              2nd Prize
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={8} md={3}>
+          <Box
+            padding={2}
+            justify="center"
+            alignItems="center"
+            display="flex"
+            flexDirection="column"
+            className={classes.thirdPrize}
+          >
+            <Box
+              flexDirection="row"
+              display="flex"
+              justify="center"
+              alignItems="center"
+              className={classes.boxWrapper}
+            >
+              <Typography className={classes.coinAmtText}>0.1</Typography>
+              <img alt="cryptocurrency" src="crypto.png"></img>
+            </Box>
+            <Typography className={classes.thirdPrizeText}>
+              3rd Prize
+            </Typography>
+          </Box>
+        </Grid>
+      </Grid>
+      <Box className={classes.box}></Box>
+    </div>
+  )
 }
 
 export default Prizes

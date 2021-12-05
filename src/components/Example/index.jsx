@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.palette.background.secondary,
+    padding: '0px 8px',
   },
   contentWrapper: {
     padding: '48px 0px',

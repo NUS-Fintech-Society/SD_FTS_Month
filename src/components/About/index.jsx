@@ -6,7 +6,7 @@ import Vector from './vector'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: '100vh',
+    minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     position: 'relative',
     zIndex: '-10',
+    padding: '32px 8px',
   },
   header: {
     fontWeight: 700,

@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export default function Footer() {
+export default function Vector() {
   return (
     <svg
       width="100%"

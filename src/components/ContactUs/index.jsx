@@ -20,10 +20,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
   },
   header: {
-    width: '953px',
     height: '36px',
     left: '244px',
-    top: '7644px',
     fontweight: 'bold',
     fontFamily: 'Lato',
     fontStyle: 'normal',
@@ -50,6 +48,13 @@ const useStyles = makeStyles((theme) => ({
     '& :not(:first-child)': {
       marginLeft: 12,
     },
+  },
+
+  button: {
+    width: 55,
+    height: 55,
+    marginright: '10px',
+    cursor: 'pointer',
   },
 }))
 
@@ -84,12 +89,7 @@ const ContactUs = () => {
         <Box className={classes.iconWrapper}>
           <FacebookIcon
             onClick={() => window.open('https://www.facebook.com/NUSfintech/')}
-            style={{
-              width: 55,
-              height: 55,
-              marginright: '10px',
-              cursor: 'pointer',
-            }}
+            className={classes.button}
           />
 
           <LinkedInIcon
@@ -98,19 +98,14 @@ const ContactUs = () => {
                 'https://www.linkedin.com/company/nus-fintech-society/'
               )
             }
-            style={{
-              width: 55,
-              height: 55,
-              marginright: '10px',
-              cursor: 'pointer',
-            }}
+            className={classes.button}
           />
 
           <InstagramIcon
             onClick={() =>
               window.open('https://www.instagram.com/nusfintech/?hl=en')
             }
-            style={{ width: 55, height: 55, cursor: 'pointer' }}
+            className={classes.button}
           />
         </Box>
         <Box className={classes.buttonWrapper}>

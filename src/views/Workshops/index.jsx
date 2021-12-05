@@ -4,19 +4,12 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
 import WorkshopRenderer from './WorkshopRenderer'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
-    height: '250vh', // to be adjusted based on number of workshops
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 'auto',
-    [theme.breakpoints.down('sm')]: {
-      height: '450vh', // to be adjusted based on number of workshops
-      display: 'flex',
-      margin: 'auto',
-    },
   },
 }))
 

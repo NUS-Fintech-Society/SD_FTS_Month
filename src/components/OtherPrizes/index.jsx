@@ -32,7 +32,7 @@ export default function OtherPrizes() {
   return (
     <div className={classes.root}>
       <Typography variant="h3" className={classes.title}>
-        Other Prizes
+        OTHER PRIZES
       </Typography>
       <Grid container direction="row" justify="center" alignItems="center">
         <Grid item xs={8} md={3}>

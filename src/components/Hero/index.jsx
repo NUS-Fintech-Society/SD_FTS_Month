@@ -81,11 +81,12 @@ const useStyles = makeStyles((theme) => ({
   },
   SVG: {
     position: 'absolute',
-    left: '0px',
+    left: '50%',
     padding: 'None',
-    width: '100%',
+    minWidth: '100%',
+    minHeight: '30%',
     top: '100%',
-    transform: 'translateY(-100%)',
+    transform: 'translate(-50%, -100%)',
     zIndex: 0,
     [theme.breakpoints.down('sm')]: {
       height: '50%',
@@ -112,7 +113,6 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   root: {
-    height: '100vh',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

@@ -81,6 +81,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '48px',
     textAlign: 'left',
   },
+  image: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
 }))
 
 const Prizes = () => {
@@ -114,9 +118,8 @@ const Prizes = () => {
             alignItems="center"
             display="flex"
             flexDirection="column"
-            overflow="clip"
           >
-            <img alt="BTC" src="BTC.png"></img>
+            <img className={classes.image} alt="BTC" src="BTC.png"></img>
           </Box>
         </Grid>
       </Grid>

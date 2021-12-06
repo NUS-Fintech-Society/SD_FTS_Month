@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     fontWeight: 700,
     fontSize: '64px',
-    color: theme.palette.text.header,
+    color: theme.palette.text.prizeHeader,
     textAlign: 'left',
   },
   description: {
@@ -114,6 +114,7 @@ const Prizes = () => {
             alignItems="center"
             display="flex"
             flexDirection="column"
+            overflow="clip"
           >
             <img alt="BTC" src="BTC.png"></img>
           </Box>

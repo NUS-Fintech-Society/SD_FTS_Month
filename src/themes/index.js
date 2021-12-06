@@ -24,6 +24,8 @@ const theme = createMuiTheme({
       secondPrize: '#AEADAB',
       thirdPrize: '#AD8A56',
       prizeHeader: '#E13766',
+      link: '#E13766',
+      workshopTag: '#E13766',
     },
     background: {
       primary: '#FFFFFF',

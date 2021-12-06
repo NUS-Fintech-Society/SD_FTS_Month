@@ -1,18 +1,42 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'
 
+const calculateTimeLeft = () => {
+  let year = 2022
+  let difference = +new Date(`01/01/${year}`) - +new Date()
+  let timeLeft = {}
+
+  if (difference > 0) {
+    timeLeft = {
+      Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      Minutes: Math.floor((difference / 1000 / 60) % 60),
+      Seconds: Math.floor((difference / 1000) % 60),
+    }
+  }
+
+  return timeLeft
+}
+
 const useStyles = makeStyles((theme) => ({
   countdown: {
-    marginTop: '40px',
     position: 'relative',
     display: 'flex',
     width: 'min-content',
+    left: '50%',
+    transform: 'translate(-50%, 0)',
+    marginTop: '40px',
     '& > div:not(:first-child)': {
       marginLeft: 36,
     },
-    left: '50%',
-    transform: 'translate(-50%, 0)',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '40px',
+      '& > div:not(:first-child)': {
+        marginLeft: '4vw',
+      },
+    },
   },
   countdownUnit: {
     display: 'flex',
@@ -20,6 +44,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 0,
     '& > div:not(:first-child)': {
       marginLeft: 8,
+
+      [theme.breakpoints.down('sm')]: {
+        marginLeft: '1vw',
+      },
     },
   },
   countdownUnitLabel: {
@@ -34,10 +62,21 @@ const useStyles = makeStyles((theme) => ({
     width: '80px',
     height: '100px',
 
+    [theme.breakpoints.down('sm')]: {
+      borderRadius: '2.5vw',
+      width: '10vw',
+      height: '12.5vw',
+    },
+
     '& *': {
       margin: 'auto',
       color: theme.palette.error.main,
+      fontSize: '50px',
       lineHeight: '100px',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '6vw',
+        lineHeight: '12.5vw',
+      },
     },
   },
   SVG: {
@@ -48,14 +87,20 @@ const useStyles = makeStyles((theme) => ({
     top: '100%',
     transform: 'translateY(-100%)',
     zIndex: 0,
+    [theme.breakpoints.down('sm')]: {
+      height: '50%',
+      width: 'auto',
+    },
   },
   titletext: {
+    position: 'relative',
     marginTop: '120px',
     fontWeight: 400,
     color: theme.palette.text.contrast,
     zIndex: 1,
   },
   titleemphasis: {
+    position: 'relative',
     marginTop: '20px',
     fontWeight: 700,
     color: theme.palette.error.main,
@@ -79,6 +124,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: 'transparent',
+    [theme.breakpoints.down('sm')]: {
+      padding: '4px',
+    },
   },
   header: {
     fontWeight: 700,
@@ -102,6 +150,14 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '50px',
     height: '80px',
     width: '320px',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '60vw',
+      height: '40px',
+      '& *': {
+        fontSize: '1em',
+      },
+    },
+
     '& :not(:first-child)': {
       marginLeft: 12,
     },
@@ -112,7 +168,15 @@ const useStyles = makeStyles((theme) => ({
 const Hero = () => {
   const classes = useStyles()
 
-  const timeUnits = ['Days', 'Hours', 'Minutes', 'Seconds']
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft())
+    }, 1000)
+    // Clear timeout if the component is unmounted
+    return () => clearTimeout(timer)
+  })
 
   return (
     <Box className={classes.root}>
@@ -130,18 +194,20 @@ const Hero = () => {
           2022
         </Typography>
         <div className={classes.countdown}>
-          {[11, 22, 23, 50].map((x, i) => (
+          {['Days', 'Hours', 'Minutes', 'Seconds'].map((x, i) => (
             <div key={i}>
               <div className={classes.countdownUnit}>
                 <div className={classes.digit}>
-                  <Typography variant="h2">{Math.floor(x / 10)}</Typography>
+                  <Typography variant="h2">
+                    {Math.floor(timeLeft[x] / 10)}
+                  </Typography>
                 </div>
                 <div className={classes.digit}>
-                  <Typography variant="h2">{x % 10}</Typography>
+                  <Typography variant="h2">{timeLeft[x] % 10}</Typography>
                 </div>
               </div>
               <div className={classes.countdownUnitLabel}>
-                <Typography variant="p">{timeUnits[i]}</Typography>
+                <Typography variant="p">{x}</Typography>
               </div>
             </div>
           ))}

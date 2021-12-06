@@ -45,17 +45,17 @@ const useStyles = makeStyles((theme) => ({
     margin: 20,
   },
   firstPrizeText: {
-    color: '#FDC673',
+    color: theme.palette.text.firstPrize,
     fontWeight: 700,
     fontSize: '36px',
   },
   secondPrizeText: {
-    color: '#AEADAB',
+    color: theme.palette.text.secondPrize,
     fontWeight: 700,
     fontSize: '36px',
   },
   thirdPrizeText: {
-    color: '#AD8A56',
+    color: theme.palette.text.thirdPrize,
     fontWeight: 700,
     fontSize: '36px',
   },
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     fontWeight: 700,
     fontSize: '64px',
-    color: '#E13766',
+    color: theme.palette.text.header,
     textAlign: 'left',
   },
   description: {

@@ -48,24 +48,20 @@ const useStyles = makeStyles((theme) => ({
     color: '#FDC673',
     fontWeight: 700,
     fontSize: '36px',
-    font: 'Lato',
   },
   secondPrizeText: {
     color: '#AEADAB',
     fontWeight: 700,
     fontSize: '36px',
-    font: 'Lato',
   },
   thirdPrizeText: {
     color: '#AD8A56',
     fontWeight: 700,
     fontSize: '36px',
-    font: 'Lato',
   },
   coinAmtText: {
     fontWeight: 700,
     fontSize: '48px',
-    font: 'Lato',
     marginRight: '3vh',
   },
   boxWrapper: {
@@ -77,14 +73,12 @@ const useStyles = makeStyles((theme) => ({
   header: {
     fontWeight: 700,
     fontSize: '64px',
-    font: 'Lato',
     color: '#E13766',
     textAlign: 'left',
   },
   description: {
     fontWeight: 400,
     fontSize: '48px',
-    font: 'Lato',
     textAlign: 'left',
   },
 }))

@@ -22,6 +22,36 @@ const useStyles = makeStyles((theme) => ({
   spacer: {
     flex: '1',
   },
+
+  dropdownContent: {
+    display: 'none',
+    position: 'absolute',
+    backgroundColor: theme.palette.background.secondary,
+    minWidth: '160px',
+    boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
+    '& :link': {
+      textDecoration: 'none',
+      color: 'inherit',
+      padding: '12px',
+      display: 'flex',
+      '& :hover': {
+        color: 'white',
+      },
+    },
+    '& :hover': {
+      color: 'white',
+    },
+  },
+  dropdownLink: {
+    '& :hover': {
+      backgroundColor: 'red',
+    },
+  },
+  dropdown: {
+    position: 'relative',
+    display: 'inline-block',
+    padding: '0 1rem',
+  },
   navbarItem: {
     padding: '0 1rem',
     fontStyle: theme.typography.body1,
@@ -41,32 +71,15 @@ const useStyles = makeStyles((theme) => ({
     '& li': {
       padding: '0 1rem',
     },
-  },
-
-  dropdown: {
-    position: 'relative',
-    display: 'inline-block',
-    padding: '0 1rem',
-
     '& :hover': {
-      display: 'block',
+      '& $dropdownContent': {
+        display: 'block',
+      },
     },
-  },
-
-  dropdownContent: {
-    display: 'none',
-    position: 'absolute',
-    backgroundColor: theme.palette.background.secondary,
-    minWidth: '160px',
-    boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
-    '& :hover': {
-      display: 'block',
-    },
-    '& :link': {
-      textDecoration: 'none',
-      color: 'inherit',
-      padding: '12px',
-      display: 'block',
+    '& $dropdownContent': {
+      '& :hover': {
+        backgroundColor: '#cdcdcd',
+      },
     },
   },
 
@@ -128,8 +141,13 @@ const NavBar = () => {
               Workshop
             </Link>
             <div className={classes.dropdownContent}>
-              <Link href="/workshop/blockchain">Blockchain</Link>
-              <Link href="/workshop/machinelearning">Machine Learning</Link>
+              <a href="/workshop/blockchain">Blockchain</a>
+              <a
+                className={classes.dropdownLink}
+                href="/workshop/machinelearning"
+              >
+                Machine Learning
+              </a>
             </div>
           </div>
           <li>

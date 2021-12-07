@@ -8,6 +8,7 @@ import About from '../../components/About'
 import Prizes from '../../components/Prizes'
 import OtherPrizes from '../../components/OtherPrizes'
 import ContactUs from '../../components/ContactUs'
+import AboutHackathon from '../../components/AboutHackathon'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       {/* About Section */}
       <About />
       {/* Prizes Section */}
+      <AboutHackathon />
       <Prizes />
       <OtherPrizes />
       {/* FAQ Section */}

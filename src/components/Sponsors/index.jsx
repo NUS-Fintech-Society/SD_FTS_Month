@@ -136,6 +136,35 @@ const Sponsors = () => {
           <img src="FTS-Logo-Transparent.png" alt="NUS FTS" width="100%" />
         </Box>
       </Box>
+      <Box
+        className={classes.partnersLogoWrapper}
+        justifyContent="center"
+        margin="auto"
+      >
+        <img
+          src="nus_ftl_logo.png"
+          alt="NUS FTL"
+          width="100%"
+          justifyContent="center"
+          margin="auto"
+        />
+      </Box>
+      <Typography variant="h5" className={classes.header}>
+        Supporting Partner:
+      </Typography>
+      <Box
+        className={classes.partnersLogoWrapper}
+        justifyContent="center"
+        margin="auto"
+      >
+        <img
+          src="shopee_logo.png"
+          alt="Shopee"
+          width="73%"
+          justifyContent="center"
+          margin="auto"
+        />
+      </Box>
     </Box>
   )
 }

@@ -1,6 +1,12 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
+import Button from '@material-ui/core/Button'
+import { Menu } from '@material-ui/core'
+import { IconButton } from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu'
+import MenuItem from '@material-ui/core/MenuItem'
+
 import Link from 'next/link'
 
 const useStyles = makeStyles((theme) => ({
@@ -13,10 +19,14 @@ const useStyles = makeStyles((theme) => ({
     left: '0',
     textDecoration: 'none',
     fontStyle: theme.typography.body1,
+    alignItems: 'center',
   },
 
   navBarLogo: {
     paddingLeft: '4rem',
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: '1rem',
+    },
   },
 
   spacer: {
@@ -42,15 +52,16 @@ const useStyles = makeStyles((theme) => ({
       color: 'white',
     },
   },
-  dropdownLink: {
-    '& :hover': {
-      backgroundColor: 'red',
-    },
-  },
+
   dropdown: {
     position: 'relative',
     display: 'inline-block',
     padding: '0 1rem',
+    /*'& :hover': {
+      '$dropdownContent': {
+        display: 'block',
+      }
+    }*/
   },
   navbarItem: {
     padding: '0 1rem',
@@ -71,15 +82,33 @@ const useStyles = makeStyles((theme) => ({
     '& li': {
       padding: '0 1rem',
     },
+    '& ul': {
+      listStyle: 'none',
+      margin: '0',
+      padding: '0',
+      display: 'flex',
+    },
     '& :hover': {
-      '& $dropdownContent': {
+      '& $dropdown $dropdownContent': {
         display: 'block',
       },
     },
+
+    /*'& $dropdown': {
+      '& :hover': {
+        '$dropdownContent': {
+          display: 'block',
+        }
+      }
+    },*/
+
     '& $dropdownContent': {
       '& :hover': {
         backgroundColor: '#cdcdcd',
       },
+    },
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
     },
   },
 
@@ -88,6 +117,20 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     alignItems: 'center',
     padding: '0 1rem',
+  },
+
+  navButton: {
+    fontSize: '14px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '12px',
+    },
+  },
+
+  menuToggleButton: {
+    display: 'none',
+    [theme.breakpoints.down('sm')]: {
+      display: 'block',
+    },
   },
   contentWrapper: {
     padding: '48px 0px',
@@ -121,39 +164,112 @@ const useStyles = makeStyles((theme) => ({
 
 const NavBar = () => {
   const classes = useStyles()
+  const [anchorElNav, setAnchorElNav] = React.useState(null)
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget)
+  }
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null)
+  }
 
   return (
     <Box className={classes.bar}>
       <nav className={classes.navbarNavigation}>
+        <Box
+          className={classes.menuToggleButton}
+          sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+        >
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="inherit"
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+            }}
+          >
+            <MenuItem component="a" href="/" onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">Home</Typography>
+            </MenuItem>
+            <MenuItem
+              component="a"
+              href="/timeline"
+              onClick={handleCloseNavMenu}
+            >
+              <Typography textAlign="center">Timeline</Typography>
+            </MenuItem>
+            <MenuItem
+              component="a"
+              href="/#workshop"
+              onClick={handleCloseNavMenu}
+            >
+              <Typography textAlign="center">Workshop</Typography>
+            </MenuItem>
+            <MenuItem
+              component="a"
+              href="/contactus"
+              onClick={handleCloseNavMenu}
+            >
+              <Typography textAlign="center">Contact Us</Typography>
+            </MenuItem>
+          </Menu>
+        </Box>
+
         <div className={classes.navBarLogo}>
           <img src="FTS-Logo-Transparent.png" alt="NUS FTS" width="100px" />
         </div>
         <div className={classes.spacer}></div>
+
         <div className={classes.navbarItem}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/timeline">Timeline</Link>
-          </li>
-          <div className={classes.dropdown}>
-            <Link className={classes.navbarItem} href="/workshop">
-              Workshop
-            </Link>
-            <div className={classes.dropdownContent}>
-              <a href="/workshop/blockchain">Blockchain</a>
-              <a
-                className={classes.dropdownLink}
-                href="/workshop/machinelearning"
-              >
-                Machine Learning
-              </a>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/timeline">Timeline</Link>
+            </li>
+            <div className={classes.dropdown}>
+              <Link href="/#workshop">Workshop</Link>
+              <div className={classes.dropdownContent}>
+                <a href="/workshop/blockchain">Blockchain</a>
+                <a href="/workshop/machinelearning">Machine Learning</a>
+              </div>
             </div>
-          </div>
-          <li>
-            <Link href="/contactus">Contact Us</Link>
-          </li>
+            <li>
+              <Link href="/contactus">Contact Us</Link>
+            </li>
+          </ul>
         </div>
+
+        <Button
+          className={classes.navButton}
+          color="primary"
+          variant="contained"
+          href="https://fintechsociety.comp.nus.edu.sg/"
+        >
+          Visit NUS Fintech Website
+        </Button>
       </nav>
     </Box>
   )

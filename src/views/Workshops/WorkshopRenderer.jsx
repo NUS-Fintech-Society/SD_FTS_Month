@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '4px',
     textAlign: 'left',
     width: '60%',
+    fontWeight: 700,
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
       maxWidth: '80%',

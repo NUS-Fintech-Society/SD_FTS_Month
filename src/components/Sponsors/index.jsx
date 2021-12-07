@@ -11,11 +11,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
   },
-  description: {
-    textAlign: 'center',
-    marginTop: '48px',
-    marginBottom: '48px',
-  },
   sponsorTitle: {
     textAlign: 'center',
   },
@@ -23,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     marginBottom: '48px',
-    width: '100%',
-    maxWidth: '1000px',
+    width: '120%',
+    maxWidth: '1400px',
     textAlign: 'center',
     justifyContent: 'center',
   },
@@ -32,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     marginBottom: '48px',
     textAlign: 'center',
+    paddingTop: '100px',
   },
   bodyWrapper: {
     marginTop: 16,
@@ -59,11 +55,21 @@ const useStyles = makeStyles((theme) => ({
   partnersLogoWrapper: {
     display: 'flex',
     width: '100%',
-    maxWidth: '800px',
+    maxWidth: '1150px',
     alignItems: 'center',
     textAlign: 'center',
     justifyContent: 'center',
     verticalAlign: 'center',
+  },
+  shopeeLogoWrapper: {
+    display: 'flex',
+    width: '100%',
+    maxWidth: '900px',
+    alignItems: 'center',
+    textAlign: 'center',
+    justifyContent: 'center',
+    verticalAlign: 'center',
+    paddingBottom: '50px',
   },
   nusLogoButton: {
     border: '0px',
@@ -82,15 +88,9 @@ const Sponsors = () => {
 
   return (
     <Box className={classes.root}>
-      <Typography variant="h3" align="center">
+      <Typography variant="h5" className={classes.header}>
         OUR SPONSORS
       </Typography>
-      <Box className={classes.description}>
-        <Typography>
-          Thank you to our sponsors, Bybit, Ripple and Stellar for making this
-          event possible!
-        </Typography>
-      </Box>
       <Typography variant="h5" className={classes.header}>
         Supported By:
       </Typography>
@@ -135,6 +135,35 @@ const Sponsors = () => {
         <Box className={classes.ftsLogo}>
           <img src="FTS-Logo-Transparent.png" alt="NUS FTS" width="100%" />
         </Box>
+      </Box>
+      <Box
+        className={classes.partnersLogoWrapper}
+        justifyContent="center"
+        margin="auto"
+      >
+        <img
+          src="nus_ftl_logo.png"
+          alt="NUS FTL"
+          width="100%"
+          justifyContent="center"
+          margin="auto"
+        />
+      </Box>
+      <Typography variant="h5" className={classes.header}>
+        Supporting Partner:
+      </Typography>
+      <Box
+        className={classes.shopeeLogoWrapper}
+        justifyContent="center"
+        margin="auto"
+      >
+        <img
+          src="shopee_logo.png"
+          alt="Shopee"
+          width="73%"
+          justifyContent="center"
+          margin="auto"
+        />
       </Box>
     </Box>
   )

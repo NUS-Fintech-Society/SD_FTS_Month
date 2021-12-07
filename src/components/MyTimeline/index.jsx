@@ -125,29 +125,6 @@ const useStyles = makeStyles((theme) => ({
 const MyTimeline = (props) => {
   const classes = useStyles()
 
-  // Put content here
-  // The height of the line might need to be adjusted
-  const content = [
-    {
-      date: '16 Jan',
-      title: 'This is the Timeline page',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-    },
-    {
-      date: '17 Jan',
-      title: 'This is the Timeline page',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-    },
-    {
-      date: '18 Jan',
-      title: 'This is the Timeline page',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-    },
-  ]
-
   return (
     <Box className={classes.root}>
       <Container className={classes.contentWrapper} maxWidth="100vw">
@@ -163,9 +140,11 @@ const MyTimeline = (props) => {
                     <div className={classes.dot}></div>
                     <div className={classes.date}>{x.date}</div>
                     <div className={classes.content}>
-                      <Typography variant="p" className="title">
-                        {x.title}
-                      </Typography>
+                      <a href={x.link}>
+                        <Typography variant="p" className="title">
+                          {x.title}
+                        </Typography>
+                      </a>
                       <br />
                       <Typography variant="p">{x.content}</Typography>
                     </div>

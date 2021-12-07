@@ -16,22 +16,49 @@ const useStyles = makeStyles(() => ({
 const Timeline = () => {
   const classes = useStyles()
 
-  const timelineContent = [
+  const workshopTimelineContent = [
     {
       date: '16 Jan',
-      title: 'This is the Timeline page',
+      title: 'This is the Workshop Timeline',
+      link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
     },
     {
       date: '17 Jan',
       title: 'This is the Timeline page',
+      link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
     },
     {
       date: '18 Jan',
       title: 'This is the Timeline page',
+      link: '#',
+      content:
+        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+    },
+  ]
+
+  const compTimelineContent = [
+    {
+      date: '15 Jan',
+      title: 'This is the Start of the Competition',
+      link: '#',
+      content:
+        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+    },
+    {
+      date: '17 Jan',
+      title: 'This is the Timeline page',
+      link: '#',
+      content:
+        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+    },
+    {
+      date: '18 Jan',
+      title: 'This is the Timeline page',
+      link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
     },
@@ -39,8 +66,8 @@ const Timeline = () => {
 
   return (
     <Box>
-      <MyTimeline title="COMPETITION TIMELINE" content={timelineContent} />
-      <MyTimeline title="WORKSHOP TIMELINE" content={timelineContent} />
+      <MyTimeline title="COMPETITION TIMELINE" content={compTimelineContent} />
+      <MyTimeline title="WORKSHOP TIMELINE" content={workshopTimelineContent} />
     </Box>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 import WorkshopRenderer from './WorkshopRenderer'
 
 const useStyles = makeStyles(() => ({
@@ -13,6 +13,9 @@ const useStyles = makeStyles(() => ({
   },
   title: {
     textAlign: 'left',
+    fontWeight: 700,
+    margin: 'auto',
+    width: '100%',
   },
   overview: {
     textAlign: 'left',
@@ -24,8 +27,9 @@ const Workshops = () => {
   const renderedWorkshops = WorkshopRenderer()
   return (
     <Layout>
-      <Box className={classes.title}></Box>
-
+      <Typography className={classes.title} variant="h5" textAlign="left">
+        General Workshop Details:
+      </Typography>
       <Box className={classes.root}>{renderedWorkshops}</Box>
     </Layout>
   )

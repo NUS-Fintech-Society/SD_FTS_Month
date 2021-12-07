@@ -20,12 +20,21 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     fontStyle: theme.typography.body1,
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   navBarLogo: {
     paddingLeft: '4rem',
     [theme.breakpoints.down('sm')]: {
       paddingLeft: '1rem',
+    },
+  },
+
+  logoImage: {
+    maxWidth: '100px',
+    height: 'auto',
+    [theme.breakpoints.down('xs')]: {
+      width: '80%',
     },
   },
 
@@ -123,6 +132,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '14px',
     [theme.breakpoints.down('sm')]: {
       fontSize: '12px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '8px',
     },
   },
 
@@ -237,7 +249,11 @@ const NavBar = () => {
         </Box>
 
         <div className={classes.navBarLogo}>
-          <img src="FTS-Logo-Transparent.png" alt="NUS FTS" width="100px" />
+          <img
+            className={classes.logoImage}
+            src="FTS-Logo-Transparent.png"
+            alt="NUS FTS"
+          />
         </div>
         <div className={classes.spacer}></div>
 

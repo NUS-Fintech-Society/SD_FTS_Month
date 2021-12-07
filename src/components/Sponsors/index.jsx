@@ -82,7 +82,7 @@ const Sponsors = () => {
 
   return (
     <Box className={classes.root}>
-      <Typography variant="h3" align="center">
+      <Typography variant="h5" align="center">
         OUR SPONSORS
       </Typography>
       <Box className={classes.description}>

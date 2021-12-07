@@ -14,6 +14,7 @@ const Home = () => {
     <Layout>
       <Example />
       <Hero />
+      <Sponsors />
       {/* About Section */}
       <About />
       {/* Prizes Section */}
@@ -23,7 +24,6 @@ const Home = () => {
       <FAQ />
       {/* Contact Us Section */}
       {/* Sponsors Section */}
-      <Sponsors />
       <ContactUs />
     </Layout>
   )

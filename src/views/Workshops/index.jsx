@@ -11,6 +11,12 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  title: {
+    textAlign: 'left',
+  },
+  overview: {
+    textAlign: 'left',
+  },
 }))
 
 const Workshops = () => {
@@ -18,6 +24,8 @@ const Workshops = () => {
   const renderedWorkshops = WorkshopRenderer()
   return (
     <Layout>
+      <Box className={classes.title}></Box>
+
       <Box className={classes.root}>{renderedWorkshops}</Box>
     </Layout>
   )

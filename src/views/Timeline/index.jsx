@@ -1,6 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Typography } from '@material-ui/core'
+import CompetitionTimeline from '../../components/CompetitionTimeline'
+import WorkshopTimeline from '../../components/WorkshopTimeline'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -17,16 +19,8 @@ const Timeline = () => {
 
   return (
     <Box className={classes.root}>
-      <Typography variant="h1">This is the Timeline page</Typography>
-      <Typography variant="h2">This is the Timeline page</Typography>
-      <Typography variant="h3">This is the Timeline page</Typography>
-      <Typography variant="h4">This is the Timeline page</Typography>
-      <Typography variant="h5">This is the Timeline page</Typography>
-      <Typography variant="h6">This is the Timeline page</Typography>
-      <Typography variant="subtitle1">This is the Timeline page</Typography>
-      <Typography variant="subtitle2">This is the Timeline page</Typography>
-      <Typography>This is the Timeline page</Typography>
-      <Typography variant="body2">This is the Timeline page</Typography>
+      <CompetitionTimeline />
+      <WorkshopTimeline />
     </Box>
   )
 }

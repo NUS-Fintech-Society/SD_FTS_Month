@@ -118,6 +118,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     backgroundColor: theme.palette.secondary.main,
     position: 'relative',
+    overflow: 'hidden',
   },
   contentWrapper: {
     padding: '48px 0px',

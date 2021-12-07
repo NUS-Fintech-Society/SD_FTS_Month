@@ -69,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     justifyContent: 'center',
     verticalAlign: 'center',
+    paddingBottom: '50px',
   },
   nusLogoButton: {
     border: '0px',

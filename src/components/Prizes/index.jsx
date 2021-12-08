@@ -119,7 +119,7 @@ const Prizes = () => {
             display="flex"
             flexDirection="column"
           >
-            <img className={classes.image} alt="BTC" src="BTC.png"></img>
+            <img className={classes.image} alt="prizes" src="prizes.png"></img>
           </Box>
         </Grid>
       </Grid>

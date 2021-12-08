@@ -18,7 +18,6 @@ const Layout = (props) => {
   return (
     <Container className={classes.root} disableGutters maxWidth="xl">
       <NavBar />
-      {/* TODO: Add navbar component here */}
       <Box>{children}</Box>
     </Container>
   )

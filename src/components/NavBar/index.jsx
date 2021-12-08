@@ -216,7 +216,7 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem
               component="a"
-              href="/#workshop"
+              href="/workshops?category=blockchain"
               onClick={handleCloseNavMenu}
             >
               <Typography textAlign="center">Workshop</Typography>
@@ -249,14 +249,16 @@ const NavBar = () => {
               <Link href="/timeline">Timeline</Link>
             </li>
             <div className={classes.dropdown}>
-              <Link href="/#workshop">Workshop</Link>
+              <Link href="#">Workshop</Link>
               <div className={classes.dropdownContent}>
-                <a href="/workshop/blockchain">Blockchain</a>
-                <a href="/workshop/machinelearning">Machine Learning</a>
+                <a href="/workshops?category=blockchain">Blockchain</a>
+                <a href="/workshops?category=machine-learning">
+                  Machine Learning
+                </a>
               </div>
             </div>
             <li>
-              <Link href="/contactus">Contact Us</Link>
+              <Link href="#">Contact Us</Link>
             </li>
           </ul>
         </div>

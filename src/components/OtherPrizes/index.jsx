@@ -35,46 +35,44 @@ export default function OtherPrizes() {
         OTHER PRIZES
       </Typography>
       <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Most Creative</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Best Business Case</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Easy Domain Application</Typography>
           </Box>
         </Grid>
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Public Favourite</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Judges Award</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Applicable for Bybit</Typography>
           </Box>
         </Grid>
       </Grid>
       <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">BiDAO-Worthy</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography variant="subtitle1">Best Code Design</Typography>
           </Box>

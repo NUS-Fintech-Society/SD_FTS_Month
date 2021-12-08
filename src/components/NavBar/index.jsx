@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     fontStyle: theme.typography.body1,
     alignItems: 'center',
-    justifyContent: 'center',
+    zIndex: '2',
   },
 
   navBarLogo: {

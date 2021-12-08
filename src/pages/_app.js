@@ -23,13 +23,13 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <title>FinTech Month</title>
+          <title>NUS FinTech Month</title>
           <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width"
           />
           <meta name="theme-color" content={theme.palette.primary.main} />
-
+          <link rel="shortcut icon" href="FTS-Month-Logo.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     backgroundColor: theme.palette.background.primary,
     padding: '0px 8px',
+    paddingTop: 80,
     '& > *': {
       boxSizing: 'border-box',
     },

@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
+    minHeight: '100vh',
   },
   title: {
     textAlign: 'center',

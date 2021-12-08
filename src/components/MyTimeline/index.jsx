@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     position: 'absolute',
-    width: '800px',
+    width: 'calc(100% - 144px)',
     height: '152px',
     border: `solid 2px ${theme.palette.secondary.main}`,
     backgroundColor: theme.palette.background.primary,
@@ -110,13 +110,27 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('sm')]: {
       left: '80px',
-      width: 'calc(100% - 80px)',
+      width: 'calc(100% - 96px)',
       height: 'max-content',
+      maxHeight: '200px',
       borderRadius: '40px',
       border: `solid 2px ${theme.palette.secondary.main}`,
       fontSize: '14px',
-      minWidth: '200px',
       lineHeight: '16px',
+    },
+  },
+  timeline: {
+    paddingLeft: '64px',
+    paddingRight: '64px',
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: '8px',
+      paddingRight: '8px',
+    },
+  },
+  title: {
+    fontSize: '45px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '36px',
     },
   },
 }))
@@ -128,10 +142,12 @@ const MyTimeline = (props) => {
   return (
     <Box className={classes.root}>
       <Container className={classes.contentWrapper} maxWidth="100vw">
-        <Typography variant="h3">{title}</Typography>
+        <Typography variant="h3" className={classes.title}>
+          {title}
+        </Typography>
       </Container>
       <Container className={classes.contentWrapper} maxWidth="md">
-        <div className="timeline">
+        <div className={classes.timeline}>
           <div className={classes.line}>
             {content
               ? content.map((x, i) => (

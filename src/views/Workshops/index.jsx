@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 80,
   },
   title: {
     textAlign: 'left',
@@ -17,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     width: '100%',
     maxWidth: '960px',
-    paddingBottom: '35px',
-    paddingTop: '60px',
+    paddingBottom: '32px',
+    paddingTop: '48px',
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
       justifyContent: 'center',

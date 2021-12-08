@@ -1,21 +1,9 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import MyTimeline from '../../components/MyTimeline'
-
-const useStyles = makeStyles(() => ({
-  root: {
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-}))
+import Layout from '../../components/Layout'
 
 const Timeline = () => {
-  const classes = useStyles()
-
   const workshopTimelineContent = [
     {
       date: '16 Jan',
@@ -65,10 +53,18 @@ const Timeline = () => {
   ]
 
   return (
-    <Box>
-      <MyTimeline title="COMPETITION TIMELINE" content={compTimelineContent} />
-      <MyTimeline title="WORKSHOP TIMELINE" content={workshopTimelineContent} />
-    </Box>
+    <Layout>
+      <Box>
+        <MyTimeline
+          title="COMPETITION TIMELINE"
+          content={compTimelineContent}
+        />
+        <MyTimeline
+          title="WORKSHOP TIMELINE"
+          content={workshopTimelineContent}
+        />
+      </Box>
+    </Layout>
   )
 }
 

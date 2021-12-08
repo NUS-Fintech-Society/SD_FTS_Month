@@ -64,11 +64,6 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     display: 'inline-block',
     padding: '0 1rem',
-    /*'& :hover': {
-      '$dropdownContent': {
-        display: 'block',
-      }
-    }*/
   },
   navbarItem: {
     padding: '0 1rem',
@@ -95,24 +90,8 @@ const useStyles = makeStyles((theme) => ({
       padding: '0',
       display: 'flex',
     },
-    '& :hover': {
-      '& $dropdown $dropdownContent': {
-        display: 'block',
-      },
-    },
-
-    /*'& $dropdown': {
-      '& :hover': {
-        '$dropdownContent': {
-          display: 'block',
-        }
-      }
-    },*/
-
-    '& $dropdownContent': {
-      '& :hover': {
-        backgroundColor: '#cdcdcd',
-      },
+    '& :hover > div:hover > div': {
+      display: 'block',
     },
     [theme.breakpoints.down('sm')]: {
       display: 'none',

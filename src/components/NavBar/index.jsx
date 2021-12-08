@@ -93,6 +93,12 @@ const useStyles = makeStyles((theme) => ({
     '& :hover > div:hover > div': {
       display: 'block',
     },
+
+    '& $dropdownContent': {
+      '& :hover': {
+        backgroundColor: '#cdcdcd',
+      },
+    },
     [theme.breakpoints.down('sm')]: {
       display: 'none',
     },

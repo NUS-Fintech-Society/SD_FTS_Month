@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.secondary,
     padding: '0px 16px',
     position: 'relative',
+    marginBottom: 90,
   },
 
   SVG: {
@@ -128,7 +129,7 @@ export default function WorkshopBanner() {
               justify="center"
               alignItems="center"
             >
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -143,7 +144,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -158,7 +159,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -173,7 +174,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -188,7 +189,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -203,7 +204,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -218,7 +219,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>
@@ -233,7 +234,7 @@ export default function WorkshopBanner() {
                 </Box>
               </Grid>
 
-              <Grid item xs={12} md={3}>
+              <Grid item xs={6} md={3}>
                 <Box className={classes.gridBox}>
                   <img className={classes.image} src="speaker1.png" alt="" />
                   <Typography className={classes.speakerText}>

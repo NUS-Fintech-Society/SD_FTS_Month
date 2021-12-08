@@ -185,10 +185,6 @@ const Hero = () => {
         <img src="sprite-front.svg" className={classes.SVG} />
         <Typography variant="h2" className={classes.titletext}>
           NUS Fintech Month
-          <br />
-          X
-          <br />
-          ByBit Hackathon
         </Typography>
         <Typography variant="h2" className={classes.titleemphasis}>
           2022

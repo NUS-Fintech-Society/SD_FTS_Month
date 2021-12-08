@@ -8,6 +8,7 @@ import About from '../../components/About'
 import Prizes from '../../components/Prizes'
 import OtherPrizes from '../../components/OtherPrizes'
 import ContactUs from '../../components/ContactUs'
+import WorkshopBanner from '../../components/WorkshopBanner'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero />
       {/* About Section */}
       <About />
+      <WorkshopBanner />
       {/* Prizes Section */}
       <Prizes />
       <OtherPrizes />

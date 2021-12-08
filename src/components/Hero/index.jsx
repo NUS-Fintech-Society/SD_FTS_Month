@@ -118,6 +118,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     backgroundColor: theme.palette.secondary.main,
     position: 'relative',
+    overflow: 'hidden',
+    minHeight: '100vh',
   },
   contentWrapper: {
     padding: '48px 0px',
@@ -185,10 +187,6 @@ const Hero = () => {
         <img src="sprite-front.svg" className={classes.SVG} />
         <Typography variant="h2" className={classes.titletext}>
           NUS Fintech Month
-          <br />
-          X
-          <br />
-          ByBit Hackathon
         </Typography>
         <Typography variant="h2" className={classes.titleemphasis}>
           2022

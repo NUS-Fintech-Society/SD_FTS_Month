@@ -119,6 +119,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
     position: 'relative',
     overflow: 'hidden',
+    minHeight: '100vh',
   },
   contentWrapper: {
     padding: '48px 0px',

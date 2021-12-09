@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '4px 24px 60px rgba(109, 141, 173, 0.25);',
     textAlign: 'center',
     margin: 20,
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '18px',
+    },
   },
   secondPrize: {
     borderRadius: theme.shape.borderRadius,
@@ -86,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
       marginRight: '2vh',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '22px',
-      marginRight: '1vh',
+      fontSize: '15px',
+      marginRight: '0.5vh',
     },
   },
   boxWrapper: {
@@ -174,7 +177,7 @@ const Prizes = () => {
       <Grid container direction="row" justify="center" alignItems="center">
         <Grid item xs={4} md={3}>
           <Box
-            padding={2}
+            padding={1.5}
             justify="center"
             alignItems="center"
             display="flex"
@@ -202,7 +205,7 @@ const Prizes = () => {
         </Grid>
         <Grid item xs={4} md={3}>
           <Box
-            padding={2}
+            padding={1.5}
             justify="center"
             alignItems="center"
             display="flex"
@@ -230,7 +233,7 @@ const Prizes = () => {
         </Grid>
         <Grid item xs={4} md={3}>
           <Box
-            padding={2}
+            padding={1.5}
             justify="center"
             alignItems="center"
             display="flex"

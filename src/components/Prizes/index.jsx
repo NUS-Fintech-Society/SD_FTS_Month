@@ -48,21 +48,47 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.firstPrize,
     fontWeight: 700,
     fontSize: '36px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '18px',
+    },
   },
   secondPrizeText: {
     color: theme.palette.text.secondPrize,
     fontWeight: 700,
     fontSize: '36px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '18px',
+    },
   },
   thirdPrizeText: {
     color: theme.palette.text.thirdPrize,
     fontWeight: 700,
     fontSize: '36px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '18px',
+    },
   },
   coinAmtText: {
     fontWeight: 700,
     fontSize: '48px',
     marginRight: '3vh',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '28px',
+      marginRight: '2vh',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '22px',
+      marginRight: '1vh',
+    },
   },
   boxWrapper: {
     marginBottom: '6vh',
@@ -75,15 +101,37 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '64px',
     color: theme.palette.text.prizeHeader,
     textAlign: 'left',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '30px',
+    },
   },
   description: {
     fontWeight: 400,
     fontSize: '48px',
     textAlign: 'left',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '30px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '20px',
+    },
   },
   image: {
     maxWidth: '100%',
     height: 'auto',
+  },
+  cryptoImage: {
+    maxWidth: '100%',
+    height: 'auto',
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '70%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '50%',
+    },
   },
 }))
 
@@ -124,7 +172,7 @@ const Prizes = () => {
         </Grid>
       </Grid>
       <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
+        <Grid item xs={4} md={3}>
           <Box
             padding={2}
             justify="center"
@@ -141,14 +189,18 @@ const Prizes = () => {
               className={classes.boxWrapper}
             >
               <Typography className={classes.coinAmtText}>0.5</Typography>
-              <img alt="cryptocurrency" src="crypto.png"></img>
+              <img
+                className={classes.cryptoImage}
+                alt="cryptocurrency"
+                src="crypto.png"
+              ></img>
             </Box>
             <Typography className={classes.firstPrizeText}>
               1st Prize
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={4} md={3}>
           <Box
             padding={2}
             justify="center"
@@ -165,14 +217,18 @@ const Prizes = () => {
               className={classes.boxWrapper}
             >
               <Typography className={classes.coinAmtText}>0.25</Typography>
-              <img alt="cryptocurrency" src="crypto.png"></img>
+              <img
+                className={classes.cryptoImage}
+                alt="cryptocurrency"
+                src="crypto.png"
+              ></img>
             </Box>
             <Typography className={classes.secondPrizeText}>
               2nd Prize
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={4} md={3}>
           <Box
             padding={2}
             justify="center"
@@ -189,7 +245,11 @@ const Prizes = () => {
               className={classes.boxWrapper}
             >
               <Typography className={classes.coinAmtText}>0.1</Typography>
-              <img alt="cryptocurrency" src="crypto.png"></img>
+              <img
+                className={classes.cryptoImage}
+                alt="cryptocurrency"
+                src="crypto.png"
+              ></img>
             </Box>
             <Typography className={classes.thirdPrizeText}>
               3rd Prize

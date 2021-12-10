@@ -4,8 +4,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { Box, Card, Button, CardMedia, CardContent, CardActions, Collapse, IconButton, Typography } from '@material-ui/core'
 import workshops from '../../data/workshops'
 
-
-
 const ExpandMore = styled(
   (props) => {
     const { expand, ...other } = props;
@@ -21,7 +19,6 @@ const ExpandMore = styled(
       }),
     })
   );
-
 
 const useStyles = makeStyles((theme) => ({
   workshopWrapper: {
@@ -234,10 +231,8 @@ const formatCards = (i) => {
             <ExpandMoreIcon/>
           </ExpandMore>
         </Box>
-        
       </Card>
     </Box>
-
     )
   }
   return workshopArray

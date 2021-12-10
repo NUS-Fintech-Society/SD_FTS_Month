@@ -9,6 +9,7 @@ import OtherPrizes from '../../components/OtherPrizes'
 import ContactUs from '../../components/ContactUs'
 import WorkshopBanner from '../../components/WorkshopBanner'
 import AboutHackathon from '../../components/AboutHackathon'
+import JudgingCriteria from '../../components/JudgingCriteria'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <AboutHackathon />
       <Prizes />
       <OtherPrizes />
+      <JudgingCriteria />
       <FAQ />
       <ContactUs />
     </Layout>

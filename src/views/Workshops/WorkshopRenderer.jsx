@@ -1,63 +1,77 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography } from '@material-ui/core'
+import { makeStyles, styled } from '@material-ui/core/styles'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import { Box, Card, Button, CardMedia, CardContent, CardActions, Collapse, IconButton, Typography } from '@material-ui/core'
 import workshops from '../../data/workshops'
+
+
+
+const ExpandMore = styled(
+  (props) => {
+    const { expand, ...other } = props;
+    return <IconButton {...other} />;
+    }
+  )
+  (
+    ({ theme, expand }) => ({
+      transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+      marginLeft: 'auto',
+      transition: theme.transitions.create('transform', {
+        duration: theme.transitions.duration.shortest,
+      }),
+    })
+  );
+
 
 const useStyles = makeStyles((theme) => ({
   workshopWrapper: {
     width: '100%',
-    maxWidth: '760px',
+    maxWidth: '960px',
     display: 'flex',
     flexDirection: 'column',
     paddingTop: '25px',
     paddingBottom: '25px',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
+      justifyContent: 'center',
+    }
   },
   workshopBodyWrapper: {
     // body consists of image and description
     width: '100%',
     display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
     flexDirection: 'row',
     [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column-reverse',
-      justifyContent: 'center',
+      flexDirection: 'column',
       paddingTop: '20px',
+      justifyContent: 'center',
+      alignItems:'center',
+      textAlign: 'center',
+      margin: 'auto'
     },
   },
   workshopTitle: {
     paddingTop: '4px',
     textAlign: 'left',
-    width: '60%',
     fontWeight: 700,
+    maxWidth: '100%',
+    lineHeight: '1',
+    height: '50px',
     [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
-      maxWidth: '80%',
-      margin: 'auto',
-    },
+        height: 'auto'
+    }
   },
   workshopDescription: {
-    width: '50%',
+    width: '100%',
     textAlign: 'justify',
-    paddingTop: '40px',
     [theme.breakpoints.down('sm')]: {
       textAlign: 'justify',
-      width: '360px',
-      paddingTop: '40px',
-      justifyContent: 'center',
-      margin: 'auto',
-    },
-  },
-  workshopImageWrapper: {
-    width: '40%',
-    paddingLeft: '10%',
-    paddingTop: '40px',
-    verticalAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
-      paddingTop: '15px',
-      textAlign: 'center',
-      justifyContent: 'center',
-      margin: 'auto',
       width: '100%',
-      paddingLeft: '0',
+      justifyContent: 'center',
+      margin: 'auto',
+      height: 'auto',
     },
   },
   workshopRegisterLink: {
@@ -70,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tagText: {
     fontWeight: '400',
+    paddingBottom: '40px',
     color: theme.palette.text.workshopTag,
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
@@ -78,73 +93,154 @@ const useStyles = makeStyles((theme) => ({
   registerText: {
     fontWeight: '400',
     color: theme.palette.text.link,
+    textAlign: 'left',
     textDecoration: 'none',
-    [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
-      margin: 'auto',
-    },
+  },
+  roleText: {
+    fontWeight: '400',
+    textAlign: 'left',
   },
   workshopImage: {
     borderRadius: '20px',
   },
+  workshopCard: {
+    width: '100%',
+    textAlign: 'center',
+    margin: 'auto',
+    justifyContent: 'center',
+    maxHeight: '100%',
+  },
+  cardWrapper: {
+    padding: '20px',
+    maxWidth: '33%',
+    minWidth: '33%',
+    maxHeight: '100%',
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: '20px',
+      width: '360px',
+      maxWidth: '360px',
+    }
+  },
+  moreCardWrapper: {
+    padding: '10px',
+    maxWidth: '25%',
+    minWidth: '25%',
+    maxHeight: '100%',
+    minHeight: '100%',
+    [theme.breakpoints.down('sm')]: {
+      width: '360px',
+      maxWidth: '360px',
+
+    }
+  },
+  expandBox: {
+    width: '100%',
+    textAlign: 'center',
+    marginTop: 'auto',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    [theme.breakpoints.down('sm')]: {
+      height: 'auto'
+    }
+  }
 }))
+
 
 const WorkshopRenderer = () => {
   const classes = useStyles()
-  const tagsList = formatTags()
 
   const workshopArray = []
-
   for (var i = 0; i < workshops.length; i++) {
     workshopArray.push(
+      
       <Box key={i} className={classes.workshopWrapper}>
-        <Typography className={classes.tagText}>{tagsList[i]}</Typography>
-        <Typography variant="h5" className={classes.workshopTitle}>
-          {workshops[i]['title']}
+        <Typography variant='h5' className={classes.tagText}>
+          #{workshops[i]['tag']}  
         </Typography>
+        
         <Box className={classes.workshopBodyWrapper}>
-          <Box className={classes.workshopDescription}>
-            <Typography>{workshops[i]['description']}</Typography>
-          </Box>
-          <Box className={classes.workshopImageWrapper}>
-            <img
-              src={workshops[i]['image']}
-              alt={workshops[i]['title']}
-              className={classes.workshopImage}
-            />
-          </Box>
+          {formatCards(i)}
         </Box>
-        <Typography className={classes.workshopRegisterLink}>
-          <a
-            href={workshops[i]['link']}
-            target="_blank"
-            rel="noreferrer"
-            className={classes.registerText}
-          >
-            Register {'>'}
-          </a>
-        </Typography>
       </Box>
     )
   }
   return workshopArray
 }
 
-const formatTags = () => {
-  //2d loop not optimized
-  const tagsList = []
-  for (var i = 0; i < workshops.length; i++) {
-    var tagString = ''
-    for (var j = 0; j < workshops[i]['tags'].length; j++) {
-      if (tagString == '') {
-        tagString += '#' + workshops[i]['tags'][j]
-      } else {
-        tagString += ' #' + workshops[i]['tags'][j]
-      }
-    }
-    tagsList.push(tagString)
+const formatCards = (i) => {
+  var tagWorkshops = workshops[i]['workshops']
+  const classes = useStyles()
+  const workshopArray = []
+
+  var size = tagWorkshops.length
+  for (var j = 0; j < size; j++) {
+    const [expanded, setExpanded] = React.useState(false);
+    const handleExpandClick = () => {
+      setExpanded(!expanded);
+    };
+    workshopArray.push(  
+      <Box className={size > 3 ? classes.moreCardWrapper : classes.cardWrapper}>
+        <Card className={classes.workshopCard}>
+            <CardMedia
+              component="img"
+              height="194"
+              image="workshop-image.png"
+              alt="Workshop Image"
+            />
+        <CardContent>
+          <Typography className={classes.registerText}>
+            {tagWorkshops[j]['name']}
+          </Typography>
+          <Typography className={classes.roleText}>
+            {tagWorkshops[j]['role']}
+          </Typography>
+          <Typography variant='subtitle1' className={classes.workshopTitle}>
+            {tagWorkshops[j]['title']}
+          </Typography>
+        </CardContent>
+        <CardActions disableSpacing>
+
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography className={classes.workshopDescription}>
+              {tagWorkshops[j]['description']}
+            </Typography>
+            <Box paddingTop ="20px">
+              <Button
+                color="primary"
+                variant="contained"
+                href="https://www.google.com"
+              >
+                  Register
+              </Button>
+            </Box>
+            
+          </CardContent>
+        </Collapse>
+
+        <Box className={classes.expandBox}>
+          <Typography>
+            {expanded ? 'view less' : 'view more'}
+          </Typography>
+          <ExpandMore
+              expand={expanded}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+              textAlign="center"
+              justifyContent="center"
+          >
+            <ExpandMoreIcon/>
+          </ExpandMore>
+        </Box>
+        
+      </Card>
+    </Box>
+
+    )
   }
-  return tagsList
+  return workshopArray
 }
 
 export default WorkshopRenderer

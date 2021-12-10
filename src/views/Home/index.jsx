@@ -15,7 +15,6 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <Sponsors />
       <About />
       <WorkshopBanner />
       <AboutHackathon />
@@ -23,6 +22,7 @@ const Home = () => {
       <OtherPrizes />
       <JudgingCriteria />
       <FAQ />
+      <Sponsors />
       <ContactUs />
     </Layout>
   )

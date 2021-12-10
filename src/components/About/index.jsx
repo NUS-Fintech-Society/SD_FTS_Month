@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     zIndex: '-10',
     padding: '32px 8px',
+    overflow: 'hidden',
   },
   header: {
     fontWeight: 700,

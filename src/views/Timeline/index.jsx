@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@material-ui/core'
-import MyTimeline from '../../components/MyTimeline'
+import MyTimeline from '../../components/MyTimeline/mytimeline'
 import Layout from '../../components/Layout'
 
 const Timeline = () => {

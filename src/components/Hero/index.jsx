@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'
 
+import Sponsors from './Sponsors.jsx'
+
 const calculateTimeLeft = () => {
   let year = 2022
   let difference = +new Date(`01/01/${year}`) - +new Date()
@@ -93,6 +95,14 @@ const useStyles = makeStyles((theme) => ({
       width: 'auto',
     },
   },
+  SVGWrapper: {
+    zIndex: 0,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  },
   titletext: {
     position: 'relative',
     marginTop: '120px',
@@ -148,12 +158,13 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonWrapper: {
     marginTop: '40px',
-    marginBottom: '100px',
+    marginBottom: '60px',
     borderRadius: '50px',
     height: '80px',
     width: '320px',
     [theme.breakpoints.down('sm')]: {
       maxWidth: '60vw',
+      marginBottom: '30px',
       height: '40px',
       '& *': {
         fontSize: '1em',
@@ -164,6 +175,10 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: 12,
     },
     zIndex: 1,
+  },
+  sponsors: {
+    zIndex: 1,
+    position: 'relative',
   },
 }))
 
@@ -183,8 +198,10 @@ const Hero = () => {
   return (
     <Box className={classes.root}>
       <Container className={classes.contentWrapper} maxWidth="md">
-        <img src="sprite-back.svg" className={classes.SVG} />
-        <img src="sprite-front.svg" className={classes.SVG} />
+        <div className={classes.SVGWrapper}>
+          <img src="sprite-back.svg" className={classes.SVG} />
+          <img src="sprite-front.svg" className={classes.SVG} />
+        </div>
         <Typography variant="h2" className={classes.titletext}>
           NUS Fintech Month
         </Typography>
@@ -210,6 +227,7 @@ const Hero = () => {
             </div>
           ))}
         </div>
+
         <Button
           color="primary"
           variant="contained"
@@ -219,6 +237,9 @@ const Hero = () => {
             Apply Now
           </Typography>
         </Button>
+        <div className={classes.sponsors}>
+          <Sponsors />
+        </div>
       </Container>
     </Box>
   )

@@ -19,11 +19,6 @@ const DUMMY_QA = [
     question: 'What are the requirements of forming a team?',
     answer: 'We do not know either. Will let you know later!',
   },
-  {
-    id: 4,
-    question: 'What are the requirements of forming a team?',
-    answer: 'We do not know either. Will let you know later!',
-  },
 ]
 
 export default DUMMY_QA

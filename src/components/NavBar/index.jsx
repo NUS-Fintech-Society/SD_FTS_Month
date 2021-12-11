@@ -207,6 +207,7 @@ const NavBar = () => {
             <MenuItem component="a" href="/" onClick={handleCloseNavMenu}>
               <Typography textAlign="center">Home</Typography>
             </MenuItem>
+
             <MenuItem
               component="a"
               href="/timeline"
@@ -214,6 +215,7 @@ const NavBar = () => {
             >
               <Typography textAlign="center">Timeline</Typography>
             </MenuItem>
+
             <MenuItem
               component="a"
               href="/workshops?category=blockchain"
@@ -221,6 +223,7 @@ const NavBar = () => {
             >
               <Typography textAlign="center">Workshop</Typography>
             </MenuItem>
+
             <MenuItem
               component="a"
               href="/contactus"

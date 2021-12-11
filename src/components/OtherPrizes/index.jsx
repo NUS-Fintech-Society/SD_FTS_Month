@@ -19,10 +19,30 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     boxShadow: '4px 24px 60px rgba(109, 141, 173, 0.25);',
     textAlign: 'center',
-    margin: 20,
+    margin: 30,
+    [theme.breakpoints.down('sm')]: {
+      margin: 16,
+    },
   },
   box: {
     height: '20vh',
+  },
+  text: {
+    fontSize: '24px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '16px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '12px',
+    },
+  },
+  gridContainer: {
+    paddingLeft: 40,
+    paddingRight: 40,
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: 10,
+      paddingRight: 10,
+    },
   },
 }))
 
@@ -34,49 +54,63 @@ export default function OtherPrizes() {
       <Typography variant="h3" className={classes.title}>
         OTHER PRIZES
       </Typography>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
+      <Grid
+        container
+        className={classes.gridContainer}
+        direction="row"
+        justify="center"
+        alignItems="center"
+      >
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Most Creative</Typography>
+            <Typography className={classes.text}>Most Creative</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Best Business Case</Typography>
+            <Typography className={classes.text}>Best Business Case</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Easy Domain Application</Typography>
+            <Typography className={classes.text}>
+              Easy Domain Application
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={6} md={4}>
+          <Box padding={2} className={classes.textWrapper}>
+            <Typography className={classes.text}>Public Favourite</Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={6} md={4}>
+          <Box padding={2} className={classes.textWrapper}>
+            <Typography className={classes.text}>Judges Award</Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={6} md={4}>
+          <Box padding={2} className={classes.textWrapper}>
+            <Typography className={classes.text}>
+              Applicable for Bybit
+            </Typography>
           </Box>
         </Grid>
       </Grid>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
+      <Grid
+        container
+        className={classes.gridContainer}
+        direction="row"
+        justify="center"
+        alignItems="center"
+      >
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Public Favourite</Typography>
+            <Typography className={classes.text}>BiDAO-Worthy</Typography>
           </Box>
         </Grid>
-        <Grid item xs={8} md={3}>
+        <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Judges Award</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={8} md={3}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Applicable for Bybit</Typography>
-          </Box>
-        </Grid>
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={8} md={3}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">BiDAO-Worthy</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={8} md={3}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography variant="subtitle1">Best Code Design</Typography>
+            <Typography className={classes.text}>Best Code Design</Typography>
           </Box>
         </Grid>
       </Grid>

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: theme.palette.background.primary,
+    backgroundColor: theme.palette.background.secondary,
     padding: '0px 16px',
     position: 'relative',
   },

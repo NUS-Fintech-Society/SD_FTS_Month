@@ -47,9 +47,14 @@ const useStyles = makeStyles((theme) => ({
   },
   vector: {
     position: 'absolute',
-    top: '14rem',
-    left: '0',
+    top: '25vh',
+    // left: '0',
     zIndex: '-1',
+    width: '100%',
+    [theme.breakpoints.down('sm')]: {
+      height: '50%',
+      width: 'auto',
+    },
   },
 }))
 

@@ -10,15 +10,13 @@ import DUMMY_QA from '../../data/FAQ'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: '100vh',
+    minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: theme.palette.background.secondary,
     flexDirection: 'column',
   },
   header: {
-    fontWeight: 700,
     textAlign: 'center',
   },
   bodyWrapper: {
@@ -28,12 +26,22 @@ const useStyles = makeStyles((theme) => ({
     width: '80vw',
     display: 'flex',
     justifyContent: 'center',
+    marginTop: '15vh',
     marginBottom: '10vh',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '5vh',
+      marginBottom: '7vh',
+    },
     textAlign: 'center',
   },
   icon: {
     fontSize: '3rem',
     color: theme.palette.secondary.main,
+  },
+  typo: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 17,
+    },
   },
 }))
 
@@ -57,12 +65,12 @@ export default function FAQ() {
 
   return (
     <Box className={classes.root}>
-      <Box className={classes.title}>
+      <Container className={classes.title}>
         <Typography variant="h3" className={classes.header}>
           FREQUENTLY ASKED QUESTIONS
         </Typography>
-      </Box>
-      <Container>
+      </Container>
+      <Container style={{ padding: '2rem' }}>
         {DUMMY_QA.map((qa) => {
           return (
             <Accordion key={qa.id} className={classes.bodyWrapper}>
@@ -76,12 +84,12 @@ export default function FAQ() {
                 }
                 onClick={expandHandler(qa.id)}
               >
-                <Typography variant="subtitle2">
+                <Typography className={classes.typo}>
                   <strong>Question: </strong> {qa.question}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
+                <Typography className={classes.typo}>
                   <strong> Answer: </strong> {qa.answer}
                 </Typography>
               </AccordionDetails>

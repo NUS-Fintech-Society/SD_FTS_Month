@@ -23,8 +23,8 @@ const Home = () => {
       <AboutHackathon />
       <Prizes />
       <OtherPrizes />
-      <Timeline />
       <JudgingCriteria />
+      <Timeline />
       <FAQ />
       <Sponsors />
       <ContactUs />

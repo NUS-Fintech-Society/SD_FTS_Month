@@ -10,19 +10,23 @@ import ContactUs from '../../components/ContactUs'
 import WorkshopBanner from '../../components/WorkshopBanner'
 import AboutHackathon from '../../components/AboutHackathon'
 import Timeline from '../../components/MyTimeline'
+import Workshops from '../../components/Workshops'
+import JudgingCriteria from '../../components/JudgingCriteria'
 
 const Home = () => {
   return (
     <Layout>
       <Hero />
-      <Sponsors />
       <About />
+      <Workshops />
       <WorkshopBanner />
       <AboutHackathon />
       <Prizes />
       <OtherPrizes />
       <Timeline />
+      <JudgingCriteria />
       <FAQ />
+      <Sponsors />
       <ContactUs />
     </Layout>
   )

@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       height: '600px',
     },
+    [theme.breakpoints.up('lg')]: {
+      height: '800px',
+    },
   },
   date: {
     position: 'absolute',

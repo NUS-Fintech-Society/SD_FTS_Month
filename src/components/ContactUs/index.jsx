@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
   vector: {
     position: 'absolute',
+    display: 'flex',
     bottom: '0',
     left: '0',
     right: '0',

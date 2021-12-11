@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       paddingBottom: '60px',
     },
+    [theme.breakpoints.up('lg')]: {
+      paddingLeft: '40px',
+      paddingRight: '40px',
+    },
   },
   sponsorTitle: {
     textAlign: 'center',
@@ -19,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     marginBottom: '48px',
-    maxWidth: '1400px',
     textAlign: 'center',
     justifyContent: 'center',
     [theme.breakpoints.down('sm')]: {
@@ -74,19 +77,23 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     flex: '0 1 270px',
     borderRadius: '20px',
-    marginRight: '2vw',
-    padding: '2vw',
+    marginRight: '16px',
+    padding: '16px',
     [theme.breakpoints.down('sm')]: {
       borderRadius: '10px',
+      marginRight: '2vw',
+      padding: '2vw',
     },
   },
   ftsLogo: {
     backgroundColor: theme.palette.background.primary,
     flex: '0 1 228px',
     borderRadius: '20px',
-    padding: '0 2vw',
+    padding: '0 16px',
     [theme.breakpoints.down('sm')]: {
       borderRadius: '10px',
+      marginRight: '2vw',
+      padding: '2vw',
     },
   },
   nusftsLogodiv: {
@@ -96,6 +103,8 @@ const useStyles = makeStyles((theme) => ({
     padding: '4px',
     [theme.breakpoints.down('sm')]: {
       borderRadius: '10px',
+      marginRight: '2vw',
+      padding: '2vw',
     },
   },
 }))

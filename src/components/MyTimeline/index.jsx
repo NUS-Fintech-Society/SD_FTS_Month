@@ -25,8 +25,8 @@ const Timeline = () => {
   const classes = useStyles()
   const workshopTimelineContent = [
     {
-      date: '16 Jan',
-      title: 'This is the Workshop Timeline',
+      date: '5 Jan',
+      title: 'Commencement of Internal workshops',
       link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
@@ -49,22 +49,29 @@ const Timeline = () => {
 
   const compTimelineContent = [
     {
-      date: '15 Jan',
-      title: 'This is the Start of the Competition',
+      date: '3 Jan',
+      title: 'Commencement of Hackthon First Round',
       link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
     },
     {
       date: '17 Jan',
-      title: 'This is the Timeline page',
+      title: 'First Round Submissions',
       link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
     },
     {
-      date: '18 Jan',
-      title: 'This is the Timeline page',
+      date: '24 Jan',
+      title: 'Commencement of Hackathon Second Round',
+      link: '#',
+      content:
+        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+    },
+    {
+      date: '28 Jan',
+      title: 'Second Round Submissions',
       link: '#',
       content:
         'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',

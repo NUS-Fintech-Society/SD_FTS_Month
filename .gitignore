@@ -1,8 +1,0 @@
-node_modules
-.next
-.firebase
-out
-.env.local
-.env.production
-.env
-.DS_Store

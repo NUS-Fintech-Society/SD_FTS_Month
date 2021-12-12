@@ -27,10 +27,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     marginTop: '15vh',
-    marginBottom: '10vh',
+    marginBottom: '7vh',
     [theme.breakpoints.down('sm')]: {
       marginTop: '5vh',
-      marginBottom: '7vh',
+      marginBottom: '5vh',
     },
     textAlign: 'center',
   },
@@ -70,7 +70,7 @@ export default function FAQ() {
           FREQUENTLY ASKED QUESTIONS
         </Typography>
       </Container>
-      <Container style={{ padding: '2rem' }}>
+      <Container style={{ paddingBottom: '10rem' }}>
         {DUMMY_QA.map((qa) => {
           return (
             <Accordion key={qa.id} className={classes.bodyWrapper}>
@@ -90,7 +90,27 @@ export default function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={classes.typo}>
-                  <strong> Answer: </strong> {qa.answer}
+                  {qa.answer.split('\n').map((paragraph, idx) => {
+                    const strToBold = 'nusfintech.ops@gmail.com'
+                    const textArray = paragraph.split(strToBold)
+                    return (
+                      <Typography
+                        className={classes.typo}
+                        key={idx}
+                        paragraph={true}
+                      >
+                        {idx === 0 && <strong> Answer: </strong>}
+                        {textArray.map((item, index) => (
+                          <>
+                            {item}
+                            {index !== textArray.length - 1 && (
+                              <b>{strToBold}</b>
+                            )}
+                          </>
+                        ))}
+                      </Typography>
+                    )
+                  })}
                 </Typography>
               </AccordionDetails>
             </Accordion>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Button, Container, Typography } from '@material-ui/core'
+import { Box, Container, Typography } from '@material-ui/core'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
@@ -36,13 +36,6 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.secondary.main,
       fontSize: 32,
     },
-  },
-  buttonWrapper: {
-    marginTop: 16,
-  },
-  button: {
-    fontSize: 20,
-    cursor: 'pointer',
   },
   vector: {
     position: 'absolute',
@@ -93,15 +86,6 @@ const ContactUs = () => {
             }
             className={classes.button}
           />
-        </Box>
-        <Box className={classes.buttonWrapper}>
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.button}
-          >
-            Contact Us
-          </Button>
         </Box>
       </Container>
       <Box className={classes.vector}>

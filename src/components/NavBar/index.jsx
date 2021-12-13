@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography, IconButton, Menu } from '@material-ui/core'
+import { Box, IconButton, Menu } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
 import MenuIcon from '@material-ui/icons/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
-
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   bar: {
@@ -20,14 +19,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     zIndex: '2',
   },
-
   navBarLogo: {
     paddingLeft: '4rem',
     [theme.breakpoints.down('sm')]: {
       paddingLeft: '1rem',
     },
   },
-
   logoImage: {
     maxWidth: '100px',
     height: 'auto',
@@ -35,11 +32,9 @@ const useStyles = makeStyles((theme) => ({
       width: '80%',
     },
   },
-
   spacer: {
     flex: '1',
   },
-
   dropdownContent: {
     display: 'none',
     position: 'absolute',
@@ -59,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
       color: 'white',
     },
   },
-
   dropdown: {
     position: 'relative',
     display: 'inline-block',
@@ -83,6 +77,7 @@ const useStyles = makeStyles((theme) => ({
     },
     '& li': {
       padding: '0 1rem',
+      cursor: 'pointer',
     },
     '& ul': {
       listStyle: 'none',
@@ -93,7 +88,6 @@ const useStyles = makeStyles((theme) => ({
     '& :hover > div:hover > div': {
       display: 'block',
     },
-
     '& $dropdownContent': {
       '& :hover': {
         backgroundColor: '#cdcdcd',
@@ -103,14 +97,12 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
-
   navbarNavigation: {
     display: 'flex',
     height: '100%',
     alignItems: 'center',
     padding: '0 1rem',
   },
-
   navButton: {
     fontSize: '14px',
     [theme.breakpoints.down('sm')]: {
@@ -120,46 +112,23 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '8px',
     },
   },
-
   menuToggleButton: {
     display: 'none',
     [theme.breakpoints.down('sm')]: {
       display: 'block',
     },
   },
-  contentWrapper: {
-    padding: '48px 0px',
-    textAlign: 'center',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.background.primary,
-  },
-  header: {
-    fontWeight: 700,
-  },
-  bodyWrapper: {
-    marginTop: 16,
-  },
-  iconWrapper: {
-    marginTop: 16,
-    '& :not(:first-child)': {
-      marginLeft: 12,
-    },
-    '& .MuiSvgIcon-root': {
-      color: theme.palette.secondary.main,
-      fontSize: 32,
-    },
-  },
-  buttonWrapper: {
-    marginTop: 16,
-    '& :not(:first-child)': {
-      marginLeft: 12,
-    },
-  },
 }))
 
 const NavBar = () => {
   const classes = useStyles()
-  const [anchorElNav, setAnchorElNav] = React.useState(null)
+  const [anchorElNav, setAnchorElNav] = useState(null)
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, [])
+
+  const scrollDuration = 500
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)
@@ -204,32 +173,45 @@ const NavBar = () => {
               display: { xs: 'block', md: 'none' },
             }}
           >
-            <MenuItem component="a" href="/" onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">Home</Typography>
+            <MenuItem>
+              <Link
+                to="hero"
+                smooth={true}
+                duration={scrollDuration}
+                onClick={handleCloseNavMenu}
+              >
+                Home
+              </Link>
             </MenuItem>
-
-            <MenuItem
-              component="a"
-              href="/timeline"
-              onClick={handleCloseNavMenu}
-            >
-              <Typography textAlign="center">Timeline</Typography>
+            <MenuItem>
+              <Link
+                to="workshops"
+                smooth={true}
+                duration={scrollDuration}
+                onClick={handleCloseNavMenu}
+              >
+                Workshops
+              </Link>
             </MenuItem>
-
-            <MenuItem
-              component="a"
-              href="/workshops?category=blockchain"
-              onClick={handleCloseNavMenu}
-            >
-              <Typography textAlign="center">Workshop</Typography>
+            <MenuItem>
+              <Link
+                to="timeline"
+                smooth={true}
+                duration={scrollDuration}
+                onClick={handleCloseNavMenu}
+              >
+                Timeline
+              </Link>
             </MenuItem>
-
-            <MenuItem
-              component="a"
-              href="/contactus"
-              onClick={handleCloseNavMenu}
-            >
-              <Typography textAlign="center">Contact Us</Typography>
+            <MenuItem>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={scrollDuration}
+                onClick={handleCloseNavMenu}
+              >
+                Contact Us
+              </Link>
             </MenuItem>
           </Menu>
         </Box>
@@ -246,22 +228,24 @@ const NavBar = () => {
         <div className={classes.navbarItem}>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link to="hero" smooth={true} duration={scrollDuration}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="/timeline">Timeline</Link>
+              <Link to="workshops" smooth={true} duration={scrollDuration}>
+                Workshops
+              </Link>
             </li>
-            <div className={classes.dropdown}>
-              <Link href="#">Workshop</Link>
-              <div className={classes.dropdownContent}>
-                <a href="/workshops?category=blockchain">Blockchain</a>
-                <a href="/workshops?category=machine-learning">
-                  Machine Learning
-                </a>
-              </div>
-            </div>
             <li>
-              <Link href="#">Contact Us</Link>
+              <Link to="timeline" smooth={true} duration={scrollDuration}>
+                Timeline
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth={true} duration={scrollDuration}>
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

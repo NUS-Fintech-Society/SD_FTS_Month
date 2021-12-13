@@ -97,10 +97,9 @@ export default function AboutHackathon() {
               paragraph={true}
               variant="body1"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              accumsan, nulla et vestibulum porttitor, diam nisi maximus tortor,
-              quis sagittis ante nibh sit amet sapien. Nunc maximus felis ut
-              sapien
+              All students from tertiary education institutes around the world
+              are welcome to sign up for the hackathon. You don’t necessarily
+              have to be from NUS!
             </Typography>
           </Box>
         </Grid>

@@ -82,15 +82,13 @@ const useStyles = makeStyles((theme) => ({
   },
   coinAmtText: {
     fontWeight: 700,
-    fontSize: '48px',
+    fontSize: '3.75vw',
     marginRight: '3vh',
     [theme.breakpoints.down('sm')]: {
-      fontSize: '28px',
       marginRight: '2vh',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '15px',
-      marginRight: '0.5vh',
+      marginRight: '0.2vh',
     },
   },
   boxWrapper: {
@@ -127,13 +125,13 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
   },
   cryptoImage: {
-    maxWidth: '100%',
+    maxWidth: '80%',
     height: 'auto',
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '70%',
+      maxWidth: '50%',
     },
     [theme.breakpoints.down('xs')]: {
-      maxWidth: '50%',
+      maxWidth: '30%',
     },
   },
 }))
@@ -191,7 +189,7 @@ const Prizes = () => {
               alignItems="center"
               className={classes.boxWrapper}
             >
-              <Typography className={classes.coinAmtText}>0.5</Typography>
+              <Typography className={classes.coinAmtText}>$15000</Typography>
               <img
                 className={classes.cryptoImage}
                 alt="cryptocurrency"
@@ -219,7 +217,7 @@ const Prizes = () => {
               alignItems="center"
               className={classes.boxWrapper}
             >
-              <Typography className={classes.coinAmtText}>0.25</Typography>
+              <Typography className={classes.coinAmtText}>$10000</Typography>
               <img
                 className={classes.cryptoImage}
                 alt="cryptocurrency"
@@ -247,7 +245,7 @@ const Prizes = () => {
               alignItems="center"
               className={classes.boxWrapper}
             >
-              <Typography className={classes.coinAmtText}>0.1</Typography>
+              <Typography className={classes.coinAmtText}>$5000</Typography>
               <img
                 className={classes.cryptoImage}
                 alt="cryptocurrency"

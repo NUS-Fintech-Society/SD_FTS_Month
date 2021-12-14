@@ -28,7 +28,17 @@ const useStyles = makeStyles((theme) => ({
     height: '20vh',
   },
   text: {
+    fontSize: '26px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '18px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '14px',
+    },
+  },
+  boldedText: {
     fontSize: '24px',
+    fontWeight: 700,
     [theme.breakpoints.down('sm')]: {
       fontSize: '16px',
     },
@@ -64,11 +74,13 @@ export default function OtherPrizes() {
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography className={classes.text}>Most Creative</Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography className={classes.text}>Best Business Case</Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
         <Grid item xs={6} md={4}>
@@ -76,16 +88,19 @@ export default function OtherPrizes() {
             <Typography className={classes.text}>
               Easy Domain Application
             </Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography className={classes.text}>Public Favourite</Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography className={classes.text}>Judges Award</Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
         <Grid item xs={6} md={4}>
@@ -93,6 +108,7 @@ export default function OtherPrizes() {
             <Typography className={classes.text}>
               Applicable for Bybit
             </Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
       </Grid>
@@ -106,11 +122,13 @@ export default function OtherPrizes() {
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography className={classes.text}>BiDAO-Worthy</Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
             <Typography className={classes.text}>Best Code Design</Typography>
+            <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>
       </Grid>

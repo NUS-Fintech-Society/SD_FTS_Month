@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   textHighlight: {
-    color: '#EC255A',
+    color: theme.palette.primary.main,
+    fontStyle: 'italic',
   },
 
   buttonWrapper: {
@@ -55,16 +56,29 @@ const useStyles = makeStyles((theme) => ({
 
   image: {
     borderRadius: '50%',
-    width: 200,
-    height: 200,
+    width: 150,
+    height: 150,
     objectFit: 'cover',
   },
 
   speakerText: {
+    marginTop: 8,
+    color: theme.palette.primary.main,
+    fontWeight: 600,
+  },
+
+  roleText: {
     color: theme.palette.text.contrast,
+    fontWeight: 600,
+  },
+
+  companyText: {
+    color: theme.palette.text.contrast,
+    fontStyle: 'italic',
   },
 
   gridBox: {
+    display: 'grid',
     padding: 40,
     [theme.breakpoints.down('sm')]: {
       padding: 16,
@@ -88,10 +102,8 @@ export default function WorkshopBanner() {
             <Typography className={classes.speakerText}>
               {speaker.name}
             </Typography>
-            <Typography className={classes.speakerText}>
-              {speaker.role}
-            </Typography>
-            <Typography className={classes.speakerText}>
+            <Typography className={classes.roleText}>{speaker.role}</Typography>
+            <Typography className={classes.companyText}>
               {speaker.company}
             </Typography>
           </Box>

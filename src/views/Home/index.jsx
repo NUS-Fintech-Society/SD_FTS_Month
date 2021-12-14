@@ -11,7 +11,6 @@ import WorkshopBanner from '../../components/WorkshopBanner'
 import AboutHackathon from '../../components/AboutHackathon'
 import Timeline from '../../components/MyTimeline'
 import Workshops from '../../components/Workshops'
-import JudgingCriteria from '../../components/JudgingCriteria'
 
 const Home = () => {
   return (
@@ -27,7 +26,8 @@ const Home = () => {
       </div>
       <Prizes />
       <OtherPrizes />
-      <JudgingCriteria />
+      {/* Temporarily Removed */}
+      {/* <JudgingCriteria /> */}
       <div id="timeline">
         <Timeline />
       </div>

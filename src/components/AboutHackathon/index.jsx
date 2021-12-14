@@ -14,17 +14,24 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
     minHeight: '100vh',
+    padding: '16px 0px',
   },
   title: {
     textAlign: 'center',
     fontWeight: 700,
   },
   textWrapper: {
+    height: 200,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: theme.palette.background.primary,
     boxShadow: '4px 24px 60px rgba(109, 141, 173, 0.25);',
-    textAlign: 'left',
     margin: 20,
+    [theme.breakpoints.down('xs')]: {
+      height: 350,
+    },
   },
   box: {
     height: '20vh',

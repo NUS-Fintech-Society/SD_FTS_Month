@@ -190,11 +190,6 @@ const Prizes = () => {
               className={classes.boxWrapper}
             >
               <Typography className={classes.coinAmtText}>$15000</Typography>
-              <img
-                className={classes.cryptoImage}
-                alt="cryptocurrency"
-                src="crypto.png"
-              ></img>
             </Box>
             <Typography className={classes.firstPrizeText}>
               1st Prize
@@ -218,11 +213,6 @@ const Prizes = () => {
               className={classes.boxWrapper}
             >
               <Typography className={classes.coinAmtText}>$10000</Typography>
-              <img
-                className={classes.cryptoImage}
-                alt="cryptocurrency"
-                src="crypto.png"
-              ></img>
             </Box>
             <Typography className={classes.secondPrizeText}>
               2nd Prize
@@ -246,11 +236,6 @@ const Prizes = () => {
               className={classes.boxWrapper}
             >
               <Typography className={classes.coinAmtText}>$5000</Typography>
-              <img
-                className={classes.cryptoImage}
-                alt="cryptocurrency"
-                src="crypto.png"
-              ></img>
             </Box>
             <Typography className={classes.thirdPrizeText}>
               3rd Prize

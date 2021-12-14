@@ -41,7 +41,7 @@ const Timeline = () => {
       date: '14 Jan',
       title: 'Symposium 2 and 3',
       link: '',
-      content: 'Symposium 2: 4pm-5.30pm | Symposium 3: 8pm-9.30pm',
+      content: '',
     },
   ]
 

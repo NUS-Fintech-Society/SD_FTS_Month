@@ -16,18 +16,26 @@ import JudgingCriteria from '../../components/JudgingCriteria'
 const Home = () => {
   return (
     <Layout>
-      <Hero />
+      <div id="hero">
+        <Hero />
+      </div>
       <About />
-      <Workshops />
-      <WorkshopBanner />
       <AboutHackathon />
+      <div id="workshops">
+        <WorkshopBanner />
+        <Workshops />
+      </div>
       <Prizes />
       <OtherPrizes />
-      <Timeline />
       <JudgingCriteria />
+      <div id="timeline">
+        <Timeline />
+      </div>
       <FAQ />
       <Sponsors />
-      <ContactUs />
+      <div id="contact">
+        <ContactUs />
+      </div>
     </Layout>
   )
 }

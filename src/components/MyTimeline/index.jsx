@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'column',
     backgroundColor: theme.palette.background.primary,
     padding: '0px 8px',
     paddingTop: 80,
@@ -24,6 +25,12 @@ const useStyles = makeStyles((theme) => ({
 const Timeline = () => {
   const classes = useStyles()
   const workshopTimelineContent = [
+    {
+      date: '5 Jan',
+      title: 'Commencement of Internal workshops',
+      link: '',
+      content: '',
+    },
     {
       date: '10 Jan',
       title: 'Symposium 1',
@@ -41,25 +48,25 @@ const Timeline = () => {
   const compTimelineContent = [
     {
       date: '3 Jan',
-      title: 'Start of Hackathon',
+      title: 'Commencement of Hackthon First Round',
       link: '',
       content: '',
     },
     {
       date: '17 Jan',
-      title: 'First Round of Submissions',
+      title: 'First Round Submissions',
       link: '',
       content: '',
     },
     {
       date: '24 Jan',
-      title: 'Second Round Starts (Finals)',
+      title: 'Commencement of Hackathon Second Round',
       link: '',
       content: '',
     },
     {
       date: '28 Jan',
-      title: 'Second Round Submissions (Finals)',
+      title: 'Second Round Submissions',
       link: '',
       content: '',
     },

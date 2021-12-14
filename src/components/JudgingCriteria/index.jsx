@@ -14,8 +14,12 @@ const useStyles = makeStyles((theme) => ({
   title: {
     marginTop: '15vh',
     textAlign: 'center',
-    fontWeight: 700,
     marginBottom: '10vh',
+    padding: '0 10px',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '10vh',
+      marginBottom: '5vh',
+    },
   },
   listTitle: {
     color: theme.palette.primary.main,
@@ -33,6 +37,12 @@ export default function JudgingCriteria() {
           JUDGING CRITERIA
         </Typography>
       </Box>
+      {/* <Container className={classes.contentWrapper} maxWidth="100vw">
+        <Typography variant="h3" className={classes.title}>
+          JUDGING CRITERIA
+        </Typography>
+      </Container> */}
+
       <Container>
         <Grid
           container

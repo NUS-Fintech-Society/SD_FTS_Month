@@ -3,7 +3,7 @@ import React from 'react'
 export default function Vector() {
   return (
     <svg
-      width="100vw"
+      width="auto"
       height="100%"
       viewBox="0 0 1440 386"
       fill="none"

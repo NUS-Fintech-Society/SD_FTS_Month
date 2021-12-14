@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: theme.palette.background.primary,
-    width: '100vw',
+    width: '100%',
     flexShrink: 0,
     [theme.breakpoints.down('sm')]: {
       padding: '24px 24px',

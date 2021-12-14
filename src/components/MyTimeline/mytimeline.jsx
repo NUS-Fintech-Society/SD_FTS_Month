@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRef } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Container, Typography } from '@material-ui/core'
+import { Box, Container, Typography, Link } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
 const useStyles = makeStyles((theme) => ({
@@ -11,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     backgroundColor: theme.palette.background.primary,
     padding: '0px 8px',
-    paddingTop: 80,
     '& > *': {
       boxSizing: 'border-box',
     },
@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     borderLeft: `solid 18px ${theme.palette.secondary.main}`,
     position: 'relative',
     height: '800px',
-    marginBottom: '100px',
     [theme.breakpoints.down('sm')]: {
       borderLeft: `solid 9px ${theme.palette.secondary.main}`,
       height: '600px',
@@ -70,21 +69,19 @@ const useStyles = makeStyles((theme) => ({
   },
   data: {
     position: 'relative',
-    top: '100px',
+    height: 'max-content',
     '&:not(:first-child)': {
-      marginTop: '100px',
+      marginTop: '10px',
       [theme.breakpoints.down('sm')]: {
-        marginTop: '200px',
+        marginTop: '20px',
       },
       [theme.breakpoints.up('md')]: {
-        marginTop: '100px',
-      },
-      [theme.breakpoints.up('lg')]: {
-        marginTop: '180px',
+        marginTop: '40px',
       },
     },
   },
   dot: {
+    position: 'relative',
     width: '64px',
     height: '64px',
     borderRadius: '100%',
@@ -117,12 +114,12 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '76px',
     left: '160px',
     top: 0,
-    transform: 'translateY(-50%)',
     padding: '14px',
     fontSize: '1.2em',
     lineHeight: '1.2em',
     '& .title': {
       color: theme.palette.error.main,
+      textDecoration: 'none',
     },
     [theme.breakpoints.down('sm')]: {
       left: '80px',
@@ -155,6 +152,37 @@ const MyTimeline = (props) => {
   const classes = useStyles()
   const { title, content } = props
 
+  const [timelineItemHeight, setTimelineItemHeight] = useState(0)
+  const [margin, setMargin] = useState()
+  const itemsRef = useRef([])
+
+  const [width, setWidth] = React.useState()
+
+  useEffect(() => {
+    if (timelineItemHeight == undefined) {
+      setTimelineItemHeight(0)
+    }
+    itemsRef.current?.map((x) => {
+      if (timelineItemHeight < x.clientHeight) {
+        setTimelineItemHeight(x.clientHeight)
+      }
+      console.log(itemsRef.current?.map((x) => x.clientHeight))
+    })
+  }, [timelineItemHeight, itemsRef.current])
+
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    setWidth(window.innerWidth)
+  }, [])
+
+  useEffect(() => {
+    if (width > 960) {
+      setMargin(40)
+    } else {
+      setMargin(20)
+    }
+  }, [width])
+
   return (
     <Box className={classes.root}>
       <Container className={classes.contentWrapper} maxWidth="100vw">
@@ -163,30 +191,58 @@ const MyTimeline = (props) => {
         </Typography>
       </Container>
       <Container className={classes.contentWrapper} maxWidth="md">
-        <div className={classes.timeline}>
-          <div className={classes.line}>
+        <Box className={classes.timeline}>
+          <Box
+            className={classes.line}
+            style={{
+              height:
+                itemsRef.current
+                  ?.map((x) => (x?.clientHeight ? x.clientHeight : 0))
+                  .reduce((a, b) => a + b + margin, 0) + margin,
+            }}
+          >
             {content
               ? content.map((x, i) => (
-                  <div className={classes.data} key={i}>
-                    <div className={classes.longline}></div>
-                    <div className={classes.dot}></div>
-                    <div className={classes.date}>{x.date}</div>
-                    <div className={classes.content}>
-                      <a href={x.link}>
+                  <Box
+                    className={classes.data}
+                    key={i}
+                    style={{ height: itemsRef.current[i]?.clientHeight }}
+                  >
+                    <Box
+                      className={classes.longline}
+                      style={{ top: itemsRef.current[i]?.clientHeight * 0.5 }}
+                    ></Box>
+                    <Box
+                      className={classes.dot}
+                      style={{ top: itemsRef.current[i]?.clientHeight * 0.5 }}
+                    ></Box>
+                    <Box
+                      className={classes.date}
+                      style={{ top: itemsRef.current[i]?.clientHeight * 0.5 }}
+                    >
+                      {x.date}
+                    </Box>
+                    <Box
+                      className={classes.content}
+                      ref={(el) => (itemsRef.current[i] = el)}
+                    >
+                      <Link href={x.link}>
                         <Typography variant="p" className="title">
                           {x.title}
                         </Typography>
-                      </a>
+                      </Link>
                       <br />
-                      <Typography variant="p">{x.content}</Typography>
-                    </div>
-                  </div>
+                      <Typography variant="p" sx={{ whiteSpace: 'pre-line' }}>
+                        {x.content.split('\n').join('\n')}
+                      </Typography>
+                    </Box>
+                  </Box>
                 ))
               : ''}
 
-            <div className={classes.triangle}>▼</div>
-          </div>
-        </div>
+            <Box className={classes.triangle}>▼</Box>
+          </Box>
+        </Box>
       </Container>
     </Box>
   )

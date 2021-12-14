@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     padding: '0px 8px',
     paddingTop: 80,
+    paddingBottom: 80,
     minHeight: '100vh',
     height: 'min-content',
     '& > *': {
@@ -24,49 +25,43 @@ const Timeline = () => {
   const classes = useStyles()
   const workshopTimelineContent = [
     {
-      date: '16 Jan',
-      title: 'This is the Workshop Timeline',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      date: '10 Jan',
+      title: 'Symposium 1',
+      link: '',
+      content: '',
     },
     {
-      date: '17 Jan',
-      title: 'This is the Timeline page',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-    },
-    {
-      date: '18 Jan',
-      title: 'This is the Timeline page',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      date: '14 Jan',
+      title: 'Symposium 2 and 3',
+      link: '',
+      content: 'Symposium 2: 4pm-5.30pm | Symposium 3: 8pm-9.30pm',
     },
   ]
 
   const compTimelineContent = [
     {
-      date: '15 Jan',
-      title: 'This is the Start of the Competition',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      date: '3 Jan',
+      title: 'Start of Hackathon',
+      link: '',
+      content: '',
     },
     {
       date: '17 Jan',
-      title: 'This is the Timeline page',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      title: 'First Round of Submissions',
+      link: '',
+      content: '',
     },
     {
-      date: '18 Jan',
-      title: 'This is the Timeline page',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      date: '24 Jan',
+      title: 'Second Round Starts (Finals)',
+      link: '',
+      content: '',
+    },
+    {
+      date: '28 Jan',
+      title: 'Second Round Submissions (Finals)',
+      link: '',
+      content: '',
     },
   ]
 

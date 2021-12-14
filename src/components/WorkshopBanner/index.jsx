@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
 
   image: {
     maxWidth: '100%',
+    borderRadius: '50%',
   },
 
   speakerText: {
@@ -79,7 +80,7 @@ export default function WorkshopBanner() {
           <Box className={classes.gridBox}>
             <img
               className={classes.image}
-              src="speaker1.png"
+              src={speaker.image}
               alt={speaker.name}
             />
             <Typography className={classes.speakerText}>

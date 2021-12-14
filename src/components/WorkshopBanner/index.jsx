@@ -54,8 +54,10 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    maxWidth: '100%',
     borderRadius: '50%',
+    width: 200,
+    height: 200,
+    objectFit: 'cover',
   },
 
   speakerText: {

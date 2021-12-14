@@ -82,8 +82,8 @@ const useStyles = makeStyles((theme) => ({
   },
   coinAmtText: {
     fontWeight: 700,
-    fontSize: '3.75vw',
-    marginRight: '3vh',
+    fontSize: '3vw',
+    marginRight: '2.5vh',
     [theme.breakpoints.down('sm')]: {
       marginRight: '2vh',
     },
@@ -125,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
   },
   cryptoImage: {
-    maxWidth: '80%',
+    maxWidth: '70%',
     height: 'auto',
     [theme.breakpoints.down('sm')]: {
       maxWidth: '50%',

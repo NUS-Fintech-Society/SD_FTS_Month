@@ -81,7 +81,7 @@ export default function About() {
           <Typography paragraph={true}>
             NUS Fintech Month is a series of workshops and panel discussions
             designed to give university and polytechnic students an insight into
-            the world of FIntech. There will be workshops ranging from beginner
+            the world of Fintech. There will be workshops ranging from beginner
             levels to more advanced levels allowing everyone, no matter their
             background, to participate in this. There will also be a hackathon
             where a real-world problem will be tackled using Fintech, thus

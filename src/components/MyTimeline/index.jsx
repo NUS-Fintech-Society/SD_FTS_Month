@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     padding: '0px 8px',
     paddingTop: 80,
+    paddingBottom: 80,
     minHeight: '100vh',
     height: 'min-content',
     '& > *': {
@@ -27,23 +28,20 @@ const Timeline = () => {
     {
       date: '5 Jan',
       title: 'Commencement of Internal workshops',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      link: '',
+      content: '',
     },
     {
-      date: '17 Jan',
-      title: 'This is the Timeline page',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      date: '10 Jan',
+      title: 'Symposium 1',
+      link: '',
+      content: '',
     },
     {
-      date: '18 Jan',
-      title: 'This is the Timeline page',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      date: '14 Jan',
+      title: 'Symposium 2 and 3',
+      link: '',
+      content: '',
     },
   ]
 
@@ -51,30 +49,26 @@ const Timeline = () => {
     {
       date: '3 Jan',
       title: 'Commencement of Hackthon First Round',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      link: '',
+      content: '',
     },
     {
       date: '17 Jan',
       title: 'First Round Submissions',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      link: '',
+      content: '',
     },
     {
       date: '24 Jan',
       title: 'Commencement of Hackathon Second Round',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      link: '',
+      content: '',
     },
     {
       date: '28 Jan',
       title: 'Second Round Submissions',
-      link: '#',
-      content:
-        'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      link: '',
+      content: '',
     },
   ]
 

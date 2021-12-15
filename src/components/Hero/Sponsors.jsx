@@ -101,7 +101,7 @@ const Sponsors = () => {
         <Box className={classes.rowWrapper}>
           <Box className={classes.bybitImageWrapper}>
             <img
-              src="bybit-logo-trans.png"
+              src="/credits/bybit-logo-trans.png"
               alt="ByBit"
               height="100%"
               width="100%"
@@ -114,7 +114,7 @@ const Sponsors = () => {
         <Box className={classes.rowWrapper}>
           <div className={classes.rippleImageWrapper}>
             <img
-              src="ripple-logo.png"
+              src="/credits/ripple-logo.png"
               alt="Ripple"
               height="100%"
               width="100%"
@@ -123,7 +123,7 @@ const Sponsors = () => {
           </div>
           <div className={classes.stellarImageWrapper}>
             <img
-              src="stellar-logo.png"
+              src="/credits/stellar-logo.png"
               alt="Stellar"
               onClick={() => window.open('https://www.stellar.org/', '_blank')}
               height="100%"
@@ -139,7 +139,7 @@ const Sponsors = () => {
         <Box className={classes.rowWrapper}>
           <div className={classes.ftsImageWrapper}>
             <img
-              src="FTS-Logo-Transparent.png"
+              src="/credits/FTS-Logo-Transparent.png"
               alt="NUS FTS"
               height="100%"
               width="100%"
@@ -150,7 +150,7 @@ const Sponsors = () => {
           </div>
           <div className={classes.ftlImageWrapper}>
             <img
-              src="nus_ftl_logo.png"
+              src="/credits/nus_ftl_logo.png"
               alt="NUS FTL"
               height="100%"
               width="100%"

@@ -22,30 +22,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Timeline = () => {
+const HackathonTimeline = () => {
   const classes = useStyles()
-  const workshopTimelineContent = [
-    {
-      date: '5 Jan',
-      title: 'Commencement of Internal workshops',
-      link: '',
-      content: '',
-    },
-    {
-      date: '10 Jan',
-      title: 'Symposium 1',
-      link: '',
-      content: '',
-    },
-    {
-      date: '14 Jan',
-      title: 'Symposium 2 and 3',
-      link: '',
-      content: '',
-    },
-  ]
-
-  const compTimelineContent = [
+  const hackTimelineContent = [
     {
       date: '3 Jan',
       title: 'Commencement of Hackthon First Round',
@@ -74,10 +53,9 @@ const Timeline = () => {
 
   return (
     <Box className={classes.root}>
-      <MyTimeline title="COMPETITION TIMELINE" content={compTimelineContent} />
-      <MyTimeline title="WORKSHOP TIMELINE" content={workshopTimelineContent} />
+      <MyTimeline title="COMPETITION TIMELINE" content={hackTimelineContent} />
     </Box>
   )
 }
 
-export default Timeline
+export default HackathonTimeline

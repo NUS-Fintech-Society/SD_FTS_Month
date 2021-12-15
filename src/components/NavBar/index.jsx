@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, IconButton, Menu } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
 import MenuIcon from '@material-ui/icons/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import { Link } from 'react-scroll'
@@ -185,12 +184,12 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <Link
-                to="prizes"
+                to="hackathon"
                 smooth={true}
                 duration={scrollDuration}
                 onClick={handleCloseNavMenu}
               >
-                Prizes
+                Hackathon
               </Link>
             </MenuItem>
             <MenuItem>
@@ -205,12 +204,12 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <Link
-                to="timeline"
+                to="faq"
                 smooth={true}
                 duration={scrollDuration}
                 onClick={handleCloseNavMenu}
               >
-                Timeline
+                FAQ
               </Link>
             </MenuItem>
             <MenuItem>
@@ -229,7 +228,7 @@ const NavBar = () => {
         <div className={classes.navBarLogo}>
           <img
             className={classes.logoImage}
-            src="FTS-Logo-Transparent.png"
+            src="/credits/FTS-Logo-Transparent.png"
             alt="NUS FTS"
           />
         </div>
@@ -243,8 +242,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="prizes" smooth={true} duration={scrollDuration}>
-                Prizes
+              <Link to="hackathon" smooth={true} duration={scrollDuration}>
+                Hackathon
               </Link>
             </li>
             <li>
@@ -253,8 +252,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="timeline" smooth={true} duration={scrollDuration}>
-                Timeline
+              <Link to="faq" smooth={true} duration={scrollDuration}>
+                FAQ
               </Link>
             </li>
             <li>
@@ -264,14 +263,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-
-        <Button
-          className={classes.navButton}
-          color="primary"
-          variant="contained"
-        >
-          I&apos;m Interested
-        </Button>
       </nav>
     </Box>
   )

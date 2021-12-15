@@ -43,19 +43,19 @@ const useStyles = makeStyles((theme) => ({
     cursor: 'pointer',
     border: '0px',
     backgroundColor: theme.palette.background.primary,
-    width: '20%',
+    width: '30%',
   },
   rippleLogoButton: {
     cursor: 'pointer',
     border: '0px',
     backgroundColor: theme.palette.background.primary,
-    width: '30%',
+    width: '25%',
   },
   stellarLogoButton: {
     cursor: 'pointer',
     border: '0px',
     backgroundColor: theme.palette.background.primary,
-    width: '30%',
+    width: '25%',
   },
   partnersLogoWrapper: {
     display: 'flex',
@@ -96,7 +96,7 @@ const Sponsors = () => {
       <Box className={classes.sponsorLogoWrapper}>
         <button className={classes.bybitLogoButton}>
           <img
-            src="bybit-logo.png"
+            src="/credits/bybit-logo-trans.png"
             alt="ByBit"
             width="100%"
             onClick={() => window.open('https://www.bybit.com/en-US/', 'ByBit')}
@@ -104,7 +104,7 @@ const Sponsors = () => {
         </button>
         <button className={classes.rippleLogoButton}>
           <img
-            src="ripple-logo.png"
+            src="/credits/ripple-logo.png"
             alt="Ripple"
             width="100%"
             onClick={() => window.open('https://ripple.com/', '_blank')}
@@ -112,7 +112,7 @@ const Sponsors = () => {
         </button>
         <button className={classes.stellarLogoButton} position="right">
           <img
-            src="stellar-logo.png"
+            src="/credits/stellar-logo.png"
             alt="Stellar"
             onClick={() => window.open('https://www.stellar.org/', '_blank')}
             width="100%"
@@ -125,7 +125,7 @@ const Sponsors = () => {
       <Box className={classes.partnersLogoWrapper}>
         <Box className={classes.ftsLogo}>
           <img
-            src="FTS-Logo-Transparent.png"
+            src="/credits/FTS-Logo-Transparent.png"
             alt="NUS FTS"
             width="70%"
             onClick={() =>
@@ -135,7 +135,7 @@ const Sponsors = () => {
         </Box>
         <Box className={classes.ftsLogo}>
           <img
-            src="nus_ftl_logo.png"
+            src="/credits/nus_ftl_logo.png"
             alt="NUS FTL"
             width="100%"
             onClick={() =>
@@ -153,7 +153,7 @@ const Sponsors = () => {
         margin="auto"
       >
         <img
-          src="shopee_logo.png"
+          src="/credits/shopee_logo.png"
           alt="Shopee"
           width="40%"
           justifyContent="center"

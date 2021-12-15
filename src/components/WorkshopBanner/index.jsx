@@ -60,6 +60,10 @@ const useStyles = makeStyles((theme) => ({
     width: 150,
     height: 150,
     objectFit: 'cover',
+    [theme.breakpoints.down('xs')]: {
+      width: 120,
+      height: 120,
+    },
   },
 
   speakerText: {

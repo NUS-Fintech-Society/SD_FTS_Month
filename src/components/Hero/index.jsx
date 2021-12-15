@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'
-
+import { Link } from 'react-scroll'
 import Sponsors from './Sponsors.jsx'
 
 const calculateTimeLeft = () => {
@@ -158,21 +158,18 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonWrapper: {
     marginTop: '40px',
-    marginBottom: '60px',
     borderRadius: '50px',
-    height: '80px',
-    width: '320px',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '60vw',
-      marginBottom: '30px',
+    height: '70px',
+    width: '200px',
+    '&:not(:first-child)': {
+      marginLeft: 24,
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '150px',
       height: '40px',
       '& *': {
         fontSize: '1em',
       },
-    },
-
-    '& :not(:first-child)': {
-      marginLeft: 12,
     },
     zIndex: 1,
   },
@@ -228,15 +225,30 @@ const Hero = () => {
           ))}
         </div>
 
-        <Button
-          color="primary"
-          variant="contained"
-          className={classes.buttonWrapper}
-        >
-          <Typography variant="h5" className={classes.buttontext}>
-            Apply Now
-          </Typography>
-        </Button>
+        <Box display="flex" justifyContent="center">
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.buttonWrapper}
+          >
+            <Typography variant="subtitle1" className={classes.buttontext}>
+              <Link to="hackathon" smooth={true} duration={500}>
+                Hackathon
+              </Link>
+            </Typography>
+          </Button>
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.buttonWrapper}
+          >
+            <Typography variant="subtitle1" className={classes.buttontext}>
+              <Link to="workshops" smooth={true} duration={500}>
+                Workshops
+              </Link>
+            </Typography>
+          </Button>
+        </Box>
         <div className={classes.sponsors}>
           <Sponsors />
         </div>

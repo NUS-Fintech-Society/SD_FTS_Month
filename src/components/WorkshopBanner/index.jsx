@@ -38,13 +38,14 @@ const useStyles = makeStyles((theme) => ({
 
   buttonWrapper: {
     borderRadius: '50px',
-    height: '80px',
-    width: '320px',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '60vw',
-      height: '40px',
+    height: '70px',
+    width: '300px',
+    marginTop: 24,
+    [theme.breakpoints.down('xs')]: {
+      width: '250px',
+      height: '60px',
       '& *': {
-        fontSize: '1em',
+        fontSize: '1.2em',
       },
     },
   },
@@ -59,6 +60,10 @@ const useStyles = makeStyles((theme) => ({
     width: 150,
     height: 150,
     objectFit: 'cover',
+    [theme.breakpoints.down('xs')]: {
+      width: 120,
+      height: 120,
+    },
   },
 
   speakerText: {
@@ -78,9 +83,11 @@ const useStyles = makeStyles((theme) => ({
   },
 
   gridBox: {
-    display: 'grid',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     padding: 40,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       padding: 16,
     },
   },
@@ -138,7 +145,7 @@ export default function WorkshopBanner() {
             variant="contained"
             className={classes.buttonWrapper}
           >
-            <Typography variant="h5" className={classes.buttontext}>
+            <Typography variant="h6" className={classes.buttontext}>
               Register Now
             </Typography>
           </Button>

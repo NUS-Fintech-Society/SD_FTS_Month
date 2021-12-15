@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography, Grid } from '@material-ui/core'
+import { Box, Typography, Grid, Button } from '@material-ui/core'
 import StarsIcon from '@material-ui/icons/Stars'
 import PersonIcon from '@material-ui/icons/Person'
 import HelpIcon from '@material-ui/icons/HelpOutline'
@@ -14,7 +14,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
     minHeight: '100vh',
-    padding: '16px 0px',
+    [theme.breakpoints.down('xs')]: {
+      padding: '48px 0px',
+    },
+  },
+  header: {
+    marginBottom: 16,
   },
   title: {
     textAlign: 'center',
@@ -38,14 +43,29 @@ const useStyles = makeStyles((theme) => ({
   },
   captionWrapper: {
     display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'left',
     alignItems: 'center',
     gap: '10px',
   },
   paragraphText: {
     fontSize: '18px',
     color: 'rgb(0,0,0,0.6)',
+  },
+  buttonWrapper: {
+    borderRadius: '50px',
+    height: '70px',
+    width: '300px',
+    marginTop: 24,
+    [theme.breakpoints.down('xs')]: {
+      width: '250px',
+      height: '60px',
+      '& *': {
+        fontSize: '1.2em',
+      },
+    },
+  },
+  buttontext: {
+    fontWeight: 500,
+    color: theme.palette.text.contrast,
   },
 }))
 
@@ -54,22 +74,25 @@ export default function AboutHackathon() {
 
   return (
     <div className={classes.root}>
+      <Typography variant="h3" className={classes.header}>
+        HACKATHON
+      </Typography>
       <Grid container direction="row" justify="center" alignItems="center">
         <Grid item xs={10} md={5}>
           <Box padding={3} className={classes.textWrapper}>
             <Box className={classes.captionWrapper}>
               <ChartIcon fontSize="large" color="primary" />
-              <Typography variant="subtitle1">About the hackathon</Typography>
+              <Typography variant="subtitle1">About</Typography>
             </Box>
             <Typography
               className={classes.paragraphText}
               paragraph={true}
               variant="body1"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              accumsan, nulla et vestibulum porttitor, diam nisi maximus tortor,
-              quis sagittis ante nibh sit amet sapien. Nunc maximus felis ut
-              sapien
+              The theme for this upcoming hackathon is all about
+              &quot;Next-Generation Decentralized Applications&quot;, such as
+              DeFi, wallets, cross-chain applications, or even introducing
+              decentralized technologies to different industries
             </Typography>
           </Box>
         </Grid>
@@ -84,10 +107,9 @@ export default function AboutHackathon() {
               paragraph={true}
               variant="body1"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              accumsan, nulla et vestibulum porttitor, diam nisi maximus tortor,
-              quis sagittis ante nibh sit amet sapien. Nunc maximus felis ut
-              sapien
+              Promote the development of the world&apos;s blockchain. Explore
+              and push ideas to their fullest potential, and may the best team
+              win!
             </Typography>
           </Box>
         </Grid>
@@ -105,8 +127,8 @@ export default function AboutHackathon() {
               variant="body1"
             >
               All students from tertiary education institutes around the world
-              are welcome to sign up for the hackathon. You don’t necessarily
-              have to be from NUS!
+              are welcome to sign up for the hackathon. You don&apos;t
+              necessarily have to be from NUS!
             </Typography>
           </Box>
         </Grid>
@@ -114,21 +136,29 @@ export default function AboutHackathon() {
           <Box padding={3} className={classes.textWrapper}>
             <Box className={classes.captionWrapper}>
               <HelpIcon fontSize="large" color="primary" />
-              <Typography variant="subtitle1">Why should YOU join</Typography>
+              <Typography variant="subtitle1">Why join us?</Typography>
             </Box>
             <Typography
               className={classes.paragraphText}
               paragraph={true}
               variant="body1"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              accumsan, nulla et vestibulum porttitor, diam nisi maximus tortor,
-              quis sagittis ante nibh sit amet sapien. Nunc maximus felis ut
-              sapien
+              You will have the opportunity to work on real-world challenges,
+              gain invaluable exposure to the Fintech industry and work closely
+              with your team in the spirit of creativity and learning.
             </Typography>
           </Box>
         </Grid>
       </Grid>
+      <Button
+        color="primary"
+        variant="contained"
+        className={classes.buttonWrapper}
+      >
+        <Typography variant="h6" className={classes.buttontext}>
+          I&apos;m Interested
+        </Typography>
+      </Button>
     </div>
   )
 }

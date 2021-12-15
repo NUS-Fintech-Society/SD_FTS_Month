@@ -18,30 +18,6 @@ const DATA = [
     image: '/AlphaLab Capital - John Gu.png',
   },
   {
-    name: 'Oscar Lee',
-    role: 'Chief Investment Officer',
-    company: 'Platus Mazu',
-    image: '/speaker1.png',
-  },
-  {
-    name: 'Arthur Cheong',
-    role: 'Chief Investment Officer',
-    company: 'DeFiance Capital',
-    image: '/speaker1.png',
-  },
-  {
-    name: 'Gene Tan',
-    role: 'Director of Investments',
-    company: 'Octava Pte Ltd',
-    image: '/speaker1.png',
-  },
-  {
-    name: 'Joe McKenzie',
-    role: 'Community Manager',
-    company: 'Index Coop',
-    image: '/speaker1.png',
-  },
-  {
     name: 'Tomas Molin',
     role: 'Manager of Messari Governor',
     company: 'Messari',
@@ -58,6 +34,30 @@ const DATA = [
     role: 'CEO & Founder',
     company: 'Helicap',
     image: '/Helicap - David Z Wang.jpg',
+  },
+  {
+    name: 'Gene Tan',
+    role: 'Director of Investments',
+    company: 'Octava Pte Ltd',
+    image: '/Octava Singapore - Gene Yan.jpg',
+  },
+  {
+    name: 'Oscar Lee',
+    role: 'Chief Investment Officer',
+    company: 'Platus Mazu',
+    image: '/placeholder-male.png',
+  },
+  {
+    name: 'Arthur Cheong',
+    role: 'Chief Investment Officer',
+    company: 'DeFiance Capital',
+    image: '/placeholder-male.png',
+  },
+  {
+    name: 'Joe McKenzie',
+    role: 'Community Manager',
+    company: 'Index Coop',
+    image: '/placeholder-male.png',
   },
 ]
 

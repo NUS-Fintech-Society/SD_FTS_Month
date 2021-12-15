@@ -150,13 +150,12 @@ const Prizes = () => {
           <Box
             padding={2}
             justify="center"
-            alignItems="center"
             display="flex"
             flexDirection="column"
           >
             <Typography className={classes.header}>Hackathon Prizes</Typography>
             <Typography className={classes.description}>
-              Stand a chance to win BTC and more!
+              Stand a chance to win highly attractive cash prizes!
             </Typography>
           </Box>
         </Grid>

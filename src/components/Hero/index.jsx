@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'
-
+import { Link } from 'react-scroll'
 import Sponsors from './Sponsors.jsx'
 
 const calculateTimeLeft = () => {
@@ -232,7 +232,9 @@ const Hero = () => {
             className={classes.buttonWrapper}
           >
             <Typography variant="subtitle1" className={classes.buttontext}>
-              Hackathon
+              <Link to="hackathon" smooth={true} duration={500}>
+                Hackathon
+              </Link>
             </Typography>
           </Button>
           <Button
@@ -241,7 +243,9 @@ const Hero = () => {
             className={classes.buttonWrapper}
           >
             <Typography variant="subtitle1" className={classes.buttontext}>
-              Workshops
+              <Link to="workshops" smooth={true} duration={500}>
+                Workshops
+              </Link>
             </Typography>
           </Button>
         </Box>

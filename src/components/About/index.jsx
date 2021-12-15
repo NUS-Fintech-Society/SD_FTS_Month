@@ -96,7 +96,7 @@ export default function About() {
             context. We are anticipating rapid sign ups, with around{' '}
             <span className={classes.bold}>500 - 600 </span> students
             participating, so be sure to register early with your{' '}
-            <span className={classes.bold}>team of 2 - 4 </span> to ensure your
+            <span className={classes.bold}>team of 2 - 5 </span> to ensure your
             slot is reserved!
           </Typography>
         </Box>

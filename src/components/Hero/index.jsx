@@ -159,18 +159,17 @@ const useStyles = makeStyles((theme) => ({
   buttonWrapper: {
     marginTop: '40px',
     borderRadius: '50px',
-    height: '80px',
-    width: '320px',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '60vw',
+    height: '70px',
+    width: '200px',
+    '&:not(:first-child)': {
+      marginLeft: 24,
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '150px',
       height: '40px',
       '& *': {
         fontSize: '1em',
       },
-    },
-
-    '& :not(:first-child)': {
-      marginLeft: 12,
     },
     zIndex: 1,
   },
@@ -226,15 +225,26 @@ const Hero = () => {
           ))}
         </div>
 
-        <Button
-          color="primary"
-          variant="contained"
-          className={classes.buttonWrapper}
-        >
-          <Typography variant="h5" className={classes.buttontext}>
-            I&apos;m Interested
-          </Typography>
-        </Button>
+        <Box display="flex" justifyContent="center">
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.buttonWrapper}
+          >
+            <Typography variant="subtitle1" className={classes.buttontext}>
+              Hackathon
+            </Typography>
+          </Button>
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.buttonWrapper}
+          >
+            <Typography variant="subtitle1" className={classes.buttontext}>
+              Workshops
+            </Typography>
+          </Button>
+        </Box>
         <div className={classes.sponsors}>
           <Sponsors />
         </div>

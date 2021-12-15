@@ -20,22 +20,24 @@ const Home = () => {
       </div>
       <About />
       <AboutHackathon />
+      <div id="prizes">
+        <Prizes />
+        <OtherPrizes />
+      </div>
+      <div id="timeline">
+        <Timeline />
+      </div>
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />
-      </div>
-      <Prizes />
-      <OtherPrizes />
-      {/* Temporarily Removed */}
-      {/* <JudgingCriteria /> */}
-      <div id="timeline">
-        <Timeline />
       </div>
       <FAQ />
       <Sponsors />
       <div id="contact">
         <ContactUs />
       </div>
+      {/* Temporarily Removed */}
+      {/* <JudgingCriteria /> */}
     </Layout>
   )
 }

@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
     backgroundColor: theme.palette.background.primary,
     borderRadius: 20,
-    padding: 16,
+    padding: '16px 0px',
     [theme.breakpoints.down('xs')]: {
       height: 75,
       width: 170,

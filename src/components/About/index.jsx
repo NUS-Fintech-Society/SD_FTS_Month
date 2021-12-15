@@ -30,8 +30,9 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '5vh',
     textAlign: 'center',
   },
-  span: {
+  bold: {
     color: theme.palette.primary.main,
+    fontWeight: 600,
   },
   contentWrapper: {
     maxWidth: '1046.33px',
@@ -48,7 +49,6 @@ const useStyles = makeStyles((theme) => ({
   vector: {
     position: 'absolute',
     top: '25vh',
-    // left: '0',
     zIndex: '-1',
     width: '100%',
     [theme.breakpoints.down('sm')]: {
@@ -79,20 +79,25 @@ export default function About() {
       <Container className={classes.contentWrapper} maxWidth="md">
         <Box className={classes.bodyWrapper}>
           <Typography paragraph={true}>
-            NUS Fintech Month is a series of workshops and panel discussions
+            NUS Fintech Month constitutes a{' '}
+            <span className={classes.bold}>
+              series of workshops and panel discussions{' '}
+            </span>
             designed to give university and polytechnic students an insight into
-            the world of Fintech. There will be workshops ranging from beginner
-            levels to more advanced levels allowing everyone, no matter their
-            background, to participate in this. There will also be a hackathon
-            where a real-world problem will be tackled using Fintech, thus
-            demonstrating the usefulness of this technology in a real world
-            context.
+            the world of Fintech. The workshops range from beginner to advance
+            levels, allowing everyone to participate regardless of background.
           </Typography>
 
           <Typography paragraph={true}>
-            We are anticipating about <span className={classes.span}>150 </span>
-            participants for the hackathon, consisting of teams of 2-4 people.
-            Team members need not be from the same school.
+            Additionally, there will be a{' '}
+            <span className={classes.bold}>hackathon </span>
+            where a real-world problem will be tackled using Fintech, thus
+            demonstrating the usefulness of this technology in a real world
+            context. We are anticipating rapid sign ups, with around{' '}
+            <span className={classes.bold}>500 - 600 </span> students
+            participating, so be sure to register early with your{' '}
+            <span className={classes.bold}>team of 2 - 4 </span> to ensure your
+            slot is reserved!
           </Typography>
         </Box>
       </Container>

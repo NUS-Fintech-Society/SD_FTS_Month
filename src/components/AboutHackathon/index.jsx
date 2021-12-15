@@ -38,8 +38,6 @@ const useStyles = makeStyles((theme) => ({
   },
   captionWrapper: {
     display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'left',
     alignItems: 'center',
     gap: '10px',
   },
@@ -114,7 +112,7 @@ export default function AboutHackathon() {
           <Box padding={3} className={classes.textWrapper}>
             <Box className={classes.captionWrapper}>
               <HelpIcon fontSize="large" color="primary" />
-              <Typography variant="subtitle1">Why should YOU join</Typography>
+              <Typography variant="subtitle1">Why should you join?</Typography>
             </Box>
             <Typography
               className={classes.paragraphText}

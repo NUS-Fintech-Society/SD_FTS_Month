@@ -78,7 +78,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   gridBox: {
-    display: 'grid',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     padding: 40,
     [theme.breakpoints.down('sm')]: {
       padding: 16,

@@ -24,12 +24,12 @@ const Home = () => {
         <Prizes />
         <OtherPrizes />
       </div>
-      <div id="timeline">
-        <Timeline />
-      </div>
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />
+      </div>
+      <div id="timeline">
+        <Timeline />
       </div>
       <FAQ />
       <Sponsors />

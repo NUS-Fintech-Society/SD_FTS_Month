@@ -195,22 +195,22 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <Link
-                to="timeline"
-                smooth={true}
-                duration={scrollDuration}
-                onClick={handleCloseNavMenu}
-              >
-                Timeline
-              </Link>
-            </MenuItem>
-            <MenuItem>
-              <Link
                 to="workshops"
                 smooth={true}
                 duration={scrollDuration}
                 onClick={handleCloseNavMenu}
               >
                 Workshops
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link
+                to="timeline"
+                smooth={true}
+                duration={scrollDuration}
+                onClick={handleCloseNavMenu}
+              >
+                Timeline
               </Link>
             </MenuItem>
             <MenuItem>
@@ -248,13 +248,13 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="timeline" smooth={true} duration={scrollDuration}>
-                Timeline
+              <Link to="workshops" smooth={true} duration={scrollDuration}>
+                Workshops
               </Link>
             </li>
             <li>
-              <Link to="workshops" smooth={true} duration={scrollDuration}>
-                Workshops
+              <Link to="timeline" smooth={true} duration={scrollDuration}>
+                Timeline
               </Link>
             </li>
             <li>

@@ -5,11 +5,14 @@ import { Box, Typography } from '@material-ui/core'
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    padding: '48px',
+    padding: '96px 48px',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
+    [theme.breakpoints.down('xs')]: {
+      padding: '48px',
+    },
   },
   sponsorTitle: {
     textAlign: 'center',
@@ -24,9 +27,12 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     fontWeight: 700,
-    marginBottom: '48px',
+    marginTop: '56px',
+    marginBottom: '24px',
     textAlign: 'center',
-    paddingTop: '100px',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 24,
+    },
   },
   bodyWrapper: {
     marginTop: 16,
@@ -34,22 +40,22 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   bybitLogoButton: {
+    cursor: 'pointer',
     border: '0px',
     backgroundColor: theme.palette.background.primary,
     width: '20%',
-    cursor: 'pointer',
   },
   rippleLogoButton: {
+    cursor: 'pointer',
     border: '0px',
     backgroundColor: theme.palette.background.primary,
-    width: '40%',
-    cursor: 'pointer',
+    width: '30%',
   },
   stellarLogoButton: {
+    cursor: 'pointer',
     border: '0px',
     backgroundColor: theme.palette.background.primary,
-    width: '20%',
-    cursor: 'pointer',
+    width: '30%',
   },
   partnersLogoWrapper: {
     display: 'flex',
@@ -61,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: 'center',
   },
   shopeeLogoWrapper: {
+    cursor: 'pointer',
     display: 'flex',
     width: '100%',
     maxWidth: '900px',
@@ -70,13 +77,8 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: 'center',
     paddingBottom: '50px',
   },
-  nusLogoButton: {
-    border: '0px',
-    backgroundColor: theme.palette.background.primary,
-    width: '50%',
-    cursor: 'pointer',
-  },
   ftsLogo: {
+    cursor: 'pointer',
     backgroundColor: theme.palette.background.primary,
     width: '50%',
   },
@@ -87,11 +89,9 @@ const Sponsors = () => {
 
   return (
     <Box className={classes.root}>
-      <Typography variant="h3" className={classes.header}>
-        OUR SPONSORS
-      </Typography>
+      <Typography variant="h3">CREDITS</Typography>
       <Typography variant="h5" className={classes.header}>
-        Supported By:
+        Event Sponsors
       </Typography>
       <Box className={classes.sponsorLogoWrapper}>
         <button className={classes.bybitLogoButton}>
@@ -120,36 +120,32 @@ const Sponsors = () => {
         </button>
       </Box>
       <Typography variant="h5" className={classes.header}>
-        Schools and University Partners:
+        Event Organisers
       </Typography>
       <Box className={classes.partnersLogoWrapper}>
-        <button className={classes.nusLogoButton}>
-          <img
-            src="nus-logo.png"
-            alt="NUS"
-            width="100%"
-            onClick={() => window.open('https://www.nus.edu.sg/', '_blank')}
-          />
-        </button>
         <Box className={classes.ftsLogo}>
-          <img src="FTS-Logo-Transparent.png" alt="NUS FTS" width="100%" />
+          <img
+            src="FTS-Logo-Transparent.png"
+            alt="NUS FTS"
+            width="70%"
+            onClick={() =>
+              window.open('https://fintechsociety.comp.nus.edu.sg/', '_blank')
+            }
+          />
+        </Box>
+        <Box className={classes.ftsLogo}>
+          <img
+            src="nus_ftl_logo.png"
+            alt="NUS FTL"
+            width="100%"
+            onClick={() =>
+              window.open('https://fintechlab.nus.edu.sg/', '_blank')
+            }
+          />
         </Box>
       </Box>
-      <Box
-        className={classes.partnersLogoWrapper}
-        justifyContent="center"
-        margin="auto"
-      >
-        <img
-          src="nus_ftl_logo.png"
-          alt="NUS FTL"
-          width="100%"
-          justifyContent="center"
-          margin="auto"
-        />
-      </Box>
       <Typography variant="h5" className={classes.header}>
-        Supporting Partner:
+        Event Partners
       </Typography>
       <Box
         className={classes.shopeeLogoWrapper}
@@ -159,7 +155,7 @@ const Sponsors = () => {
         <img
           src="shopee_logo.png"
           alt="Shopee"
-          width="73%"
+          width="40%"
           justifyContent="center"
           margin="auto"
         />

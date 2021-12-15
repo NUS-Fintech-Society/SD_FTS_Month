@@ -43,8 +43,8 @@ const WorkshopCard = (props) => {
         <CardMedia
           component="img"
           alt={workshop.title}
-          height="150"
-          image="/placeholder-blockchain.png"
+          height="180"
+          image="/placeholder-fintech.jpg"
           title={workshop.title}
         />
         <CardContent>

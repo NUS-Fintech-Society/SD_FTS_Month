@@ -121,7 +121,7 @@ export default function OtherPrizes() {
       >
         <Grid item xs={6} md={4}>
           <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>BiDAO-Worthy</Typography>
+            <Typography className={classes.text}>BitDAO-Worthy</Typography>
             <Typography className={classes.boldedText}>$2500</Typography>
           </Box>
         </Grid>

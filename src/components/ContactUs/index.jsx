@@ -28,13 +28,14 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 16,
   },
   iconWrapper: {
+    cursor: 'pointer',
     marginTop: 30,
     '& :not(:first-child)': {
       marginLeft: 12,
     },
     '& .MuiSvgIcon-root': {
       color: theme.palette.secondary.main,
-      fontSize: 32,
+      fontSize: 48,
     },
   },
   vector: {
@@ -69,20 +70,26 @@ const ContactUs = () => {
         </Box>
         <Box className={classes.iconWrapper}>
           <FacebookIcon
-            onClick={() => window.open('https://www.facebook.com/NUSfintech/')}
+            onClick={() =>
+              window.open('https://www.facebook.com/NUSfintech/', '_blank')
+            }
             className={classes.button}
           />
           <LinkedInIcon
             onClick={() =>
               window.open(
-                'https://www.linkedin.com/company/nus-fintech-society/'
+                'https://www.linkedin.com/company/nus-fintech-society/',
+                '_blank'
               )
             }
             className={classes.button}
           />
           <InstagramIcon
             onClick={() =>
-              window.open('https://www.instagram.com/nusfintech/?hl=en')
+              window.open(
+                'https://www.instagram.com/nusfintech/?hl=en',
+                '_blank'
+              )
             }
             className={classes.button}
           />

@@ -179,7 +179,7 @@ const formatCards = (i) => {
           <CardMedia
             component="img"
             height="194"
-            image="workshop-image.png"
+            image={tagWorkshops[j]['image']}
             alt="Workshop Image"
           />
           <CardContent>

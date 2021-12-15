@@ -158,13 +158,11 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonWrapper: {
     marginTop: '40px',
-    marginBottom: '60px',
     borderRadius: '50px',
     height: '80px',
     width: '320px',
     [theme.breakpoints.down('sm')]: {
       maxWidth: '60vw',
-      marginBottom: '30px',
       height: '40px',
       '& *': {
         fontSize: '1em',
@@ -234,7 +232,7 @@ const Hero = () => {
           className={classes.buttonWrapper}
         >
           <Typography variant="h5" className={classes.buttontext}>
-            Apply Now
+            I&apos;m Interested
           </Typography>
         </Button>
         <div className={classes.sponsors}>

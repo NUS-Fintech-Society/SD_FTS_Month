@@ -254,9 +254,8 @@ const NavBar = () => {
           className={classes.navButton}
           color="primary"
           variant="contained"
-          href="https://fintechsociety.comp.nus.edu.sg/"
         >
-          Visit NUS Fintech Website
+          I&apos;m Interested
         </Button>
       </nav>
     </Box>

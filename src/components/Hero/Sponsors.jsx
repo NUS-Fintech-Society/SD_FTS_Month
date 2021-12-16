@@ -81,10 +81,11 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
     backgroundColor: theme.palette.background.primary,
     borderRadius: 20,
-    padding: '16px 0px',
+    padding: '24px 0px',
     [theme.breakpoints.down('xs')]: {
       height: 80,
       width: 170,
+      padding: '16px 0px',
     },
   },
 }))
@@ -139,7 +140,7 @@ const Sponsors = () => {
         <Box className={classes.rowWrapper}>
           <div className={classes.ftsImageWrapper}>
             <img
-              src="/credits/FTS-Logo-Transparent.png"
+              src="/credits/SocietyLogo.png"
               alt="NUS FTS"
               height="100%"
               width="100%"

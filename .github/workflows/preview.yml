@@ -3,6 +3,9 @@ name: Preview
 on:
   pull_request:
 
+env:
+  NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID}}
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest

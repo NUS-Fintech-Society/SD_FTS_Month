@@ -2,10 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
-import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import { Box } from '@material-ui/core'
 
@@ -13,9 +11,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
-    width: 300,
-    height: 600,
+    width: 250,
+    height: 550,
     overflowY: 'scroll',
     [theme.breakpoints.down('xs')]: {
       width: 150,
@@ -58,13 +55,19 @@ const WorkshopCard = (props) => {
           <Typography variant="body2" className={classes.sectionHeader}>
             Speakers:
           </Typography>
-          {workshop.speakers.map((speaker, index) => {
-            return (
-              <Typography key={index} variant="body2" color="textSecondary">
-                {`${speaker.name} (${speaker.company})`}
-              </Typography>
-            )
-          })}
+          {workshop.speakers.length > 0 ? (
+            workshop.speakers.map((speaker, index) => {
+              return (
+                <Typography key={index} variant="body2" color="textSecondary">
+                  {`${speaker.name} (${speaker.company})`}
+                </Typography>
+              )
+            })
+          ) : (
+            <Typography variant="body2" color="textSecondary">
+              TBC
+            </Typography>
+          )}
           <Typography variant="body2" className={classes.sectionHeader}>
             Date:
           </Typography>
@@ -85,9 +88,6 @@ const WorkshopCard = (props) => {
           </Typography>
         </CardContent>
       </Box>
-      <CardActions>
-        <Button color="primary">Register</Button>
-      </CardActions>
     </Card>
   )
 }

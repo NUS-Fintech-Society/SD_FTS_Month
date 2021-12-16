@@ -14,9 +14,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
     minHeight: '100vh',
-    [theme.breakpoints.down('xs')]: {
-      padding: '48px 0px',
-    },
+    padding: '48px 0px',
   },
   header: {
     marginBottom: 16,
@@ -66,6 +64,13 @@ const useStyles = makeStyles((theme) => ({
   buttontext: {
     fontWeight: 500,
     color: theme.palette.text.contrast,
+  },
+  caption: {
+    maxWidth: 400,
+    marginTop: 16,
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: 250,
+    },
   },
 }))
 
@@ -159,6 +164,10 @@ export default function AboutHackathon() {
           I&apos;m Interested
         </Typography>
       </Button>
+      <Typography variant="caption" className={classes.caption}>
+        *Click to indicate your interest in joining the hackathon and be
+        notified when official registration begins
+      </Typography>
     </div>
   )
 }

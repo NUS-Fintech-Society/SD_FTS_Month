@@ -93,9 +93,9 @@ export default function About() {
             <span className={classes.bold}>hackathon </span>
             where a real-world problem will be tackled using Fintech, thus
             demonstrating the usefulness of this technology in a real world
-            context. We are anticipating rapid sign ups, with around{' '}
-            <span className={classes.bold}>500 - 600 </span> students
-            participating, so be sure to register early with your{' '}
+            context. We are anticipating rapid sign ups, with more than{' '}
+            <span className={classes.bold}>300 </span> students participating,
+            so be sure to register early with your{' '}
             <span className={classes.bold}>team of 2 - 5 </span> to ensure your
             slot is reserved!
           </Typography>

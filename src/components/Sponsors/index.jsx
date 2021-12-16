@@ -21,7 +21,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    marginTop: 24,
+    marginTop: 88,
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 32,
+    },
   },
   sectionHeader: {
     fontWeight: 600,
@@ -31,10 +34,10 @@ const useStyles = makeStyles((theme) => ({
   },
   bybitImageWrapper: {
     cursor: 'pointer',
-    height: 150,
+    height: 120,
     width: 480,
     [theme.breakpoints.down('xs')]: {
-      height: 80,
+      height: 70,
       width: 250,
     },
   },
@@ -45,26 +48,26 @@ const useStyles = makeStyles((theme) => ({
   },
   rippleImageWrapper: {
     cursor: 'pointer',
-    height: 150,
+    height: 120,
     width: 250,
     marginRight: 24,
     [theme.breakpoints.down('xs')]: {
-      height: 75,
+      height: 65,
       width: 120,
     },
   },
   stellarImageWrapper: {
     cursor: 'pointer',
-    height: 150,
+    height: 120,
     width: 300,
     [theme.breakpoints.down('xs')]: {
-      height: 75,
+      height: 70,
       width: 170,
     },
   },
   ftsImageWrapper: {
     cursor: 'pointer',
-    height: 150,
+    height: 120,
     width: 200,
     marginRight: 24,
     [theme.breakpoints.down('xs')]: {
@@ -74,10 +77,10 @@ const useStyles = makeStyles((theme) => ({
   },
   ftlImageWrapper: {
     cursor: 'pointer',
-    height: 150,
+    height: 120,
     width: 350,
     [theme.breakpoints.down('xs')]: {
-      height: 75,
+      height: 65,
       width: 170,
     },
   },
@@ -113,11 +116,11 @@ const useStyles = makeStyles((theme) => ({
   },
   hlcImageWrapper: {
     cursor: 'pointer',
-    height: 70,
+    height: 50,
     width: 200,
     marginRight: 24,
     [theme.breakpoints.down('xs')]: {
-      height: 30,
+      height: 25,
       width: 80,
     },
   },
@@ -133,10 +136,10 @@ const useStyles = makeStyles((theme) => ({
   },
   msrImageWrapper: {
     cursor: 'pointer',
-    height: 50,
+    height: 35,
     width: 220,
     [theme.breakpoints.down('xs')]: {
-      height: 20,
+      height: 15,
       width: 80,
     },
   },

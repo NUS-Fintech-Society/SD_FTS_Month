@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Button, Container, Typography, Grid } from '@material-ui/core'
+import { Box, Container, Typography, Grid } from '@material-ui/core'
 import DATA from '../../data/speakers'
 
 const useStyles = makeStyles((theme) => ({
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   header: {
-    marginBottom: 40,
+    marginBottom: 16,
     color: theme.palette.text.contrast,
   },
 
@@ -34,25 +34,6 @@ const useStyles = makeStyles((theme) => ({
   textHighlight: {
     color: theme.palette.primary.main,
     fontStyle: 'italic',
-  },
-
-  buttonWrapper: {
-    borderRadius: '50px',
-    height: '70px',
-    width: '300px',
-    marginTop: 24,
-    [theme.breakpoints.down('xs')]: {
-      width: '250px',
-      height: '60px',
-      '& *': {
-        fontSize: '1.2em',
-      },
-    },
-  },
-
-  buttontext: {
-    fontWeight: 500,
-    color: theme.palette.text.contrast,
   },
 
   image: {
@@ -139,16 +120,6 @@ export default function WorkshopBanner() {
           </Typography>
 
           <Grid container>{renderSpeakers()}</Grid>
-
-          <Button
-            color="primary"
-            variant="contained"
-            className={classes.buttonWrapper}
-          >
-            <Typography variant="h6" className={classes.buttontext}>
-              Register Now
-            </Typography>
-          </Button>
         </Box>
       </Container>
     </Box>

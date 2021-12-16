@@ -77,10 +77,10 @@ const useStyles = makeStyles((theme) => ({
   },
   ftlImageWrapper: {
     cursor: 'pointer',
-    height: 120,
+    height: 110,
     width: 350,
     [theme.breakpoints.down('xs')]: {
-      height: 65,
+      height: 55,
       width: 170,
     },
   },
@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
     width: 200,
     marginRight: 24,
     [theme.breakpoints.down('xs')]: {
-      height: 40,
+      height: 30,
       width: 80,
     },
   },
@@ -145,12 +145,12 @@ const useStyles = makeStyles((theme) => ({
   },
   otvImageWrapper: {
     cursor: 'pointer',
-    height: 90,
+    height: 80,
     width: 110,
     marginRight: 24,
     [theme.breakpoints.down('xs')]: {
       height: 40,
-      width: 80,
+      width: 70,
     },
   },
   ptmImageWrapper: {
@@ -168,17 +168,17 @@ const useStyles = makeStyles((theme) => ({
     height: 50,
     width: 220,
     [theme.breakpoints.down('xs')]: {
-      height: 30,
+      height: 20,
       width: 80,
     },
   },
   stwImageWrapper: {
     cursor: 'pointer',
-    height: 60,
+    height: 50,
     width: 220,
     marginRight: 24,
     [theme.breakpoints.down('xs')]: {
-      height: 30,
+      height: 25,
       width: 100,
     },
   },

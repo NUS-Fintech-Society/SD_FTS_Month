@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 const Workshops = () => {
   const classes = useStyles()
 
-  const { INTRO_WORKSHOPS, INDUSTRY_WORKSHOPS } = WORKSHOPS
+  const { INTRO_WORKSHOPS, INDUSTRY_WORKSHOPS, SYMPOSIUMS } = WORKSHOPS
 
   const renderWorkshops = (data) => {
     return data.map((ws) => {
@@ -77,6 +77,7 @@ const Workshops = () => {
             required in order to receive the certificates.
           </Typography>
         </ul>
+
         <Typography variant="h5" className={classes.header}>
           Introductory Workshops
         </Typography>
@@ -86,6 +87,7 @@ const Workshops = () => {
         <Box className={classes.sectionWrapper}>
           {renderWorkshops(INTRO_WORKSHOPS)}
         </Box>
+
         <Typography variant="h5" className={classes.header}>
           Industry Workshops
         </Typography>
@@ -94,6 +96,16 @@ const Workshops = () => {
         </Button>
         <Box className={classes.sectionWrapper}>
           {renderWorkshops(INDUSTRY_WORKSHOPS)}
+        </Box>
+
+        <Typography variant="h5" className={classes.header}>
+          Symposiums
+        </Typography>
+        <Button variant="contained" color="primary" className={classes.button}>
+          <Typography variant="subtitle1">Register Now</Typography>
+        </Button>
+        <Box className={classes.sectionWrapper}>
+          {renderWorkshops(SYMPOSIUMS)}
         </Box>
       </Container>
     </Box>

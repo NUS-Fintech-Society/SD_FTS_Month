@@ -6,6 +6,7 @@ const INTRO_WORKSHOPS = [
     title: 'Natural Language Processing in Fintech',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const INTRO_WORKSHOPS = [
     title: 'Model Interpretability in Risk Analytics',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const INTRO_WORKSHOPS = [
     title: 'Intro to Blockchain',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
   {
     id: 4,
@@ -30,12 +33,91 @@ const INTRO_WORKSHOPS = [
     title: 'Web2 to Web3 : The new Internet',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
 ]
 
 const INDUSTRY_WORKSHOPS = [
   {
     id: 5,
+    date: '11 Jan 2022',
+    time: '1600-1700',
+    title: 'Stocks vs Crypto',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Jason Liew',
+        company: 'ByBit',
+      },
+    ],
+    image: 'placeholder-industry.jpg',
+  },
+  {
+    id: 6,
+    date: '11 Jan 2022',
+    time: '2000-2100',
+    title: 'Getting started with Stellar',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Anke Liu',
+        company: 'Stellar',
+      },
+      {
+        name: 'Tyler van der Hoeven',
+        company: 'Stellar',
+      },
+    ],
+    image: 'placeholder-industry.jpg',
+  },
+  {
+    id: 7,
+    date: '12 Jan 2022',
+    time: '1600-1700',
+    title:
+      'How Revolut makes foreign exchange faster and cheaper than traditional money changers?',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Arjun Khanna',
+        company: 'Revolut',
+      },
+    ],
+    image: 'placeholder-industry.jpg',
+  },
+  {
+    id: 8,
+    date: '12 Jan 2022',
+    time: '2000-2100',
+    title: 'Token Market Making by AlphaLab Capital',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'John Gu',
+        company: 'AlphaLab Capital',
+      },
+    ],
+    image: 'placeholder-industry.jpg',
+  },
+  {
+    id: 9,
+    date: '13 Jan 2022',
+    time: '1600-1700',
+    title: 'Navigating the Multi-Chain Landscape',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Sam Wong',
+        company: 'OIO Singapore',
+      },
+    ],
+    image: 'placeholder-industry.jpg',
+  },
+]
+
+const SYMPOSIUMS = [
+  {
+    id: 10,
     date: '10 Jan 2022',
     time: '2000-2130',
     title: 'FinTech for Personal Finance',
@@ -58,76 +140,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'ByBit',
       },
     ],
-  },
-  {
-    id: 6,
-    date: '11 Jan 2022',
-    time: '1600-1700',
-    title: 'Stocks vs Crypto',
-    location: 'Zoom',
-    speakers: [
-      {
-        name: 'Jason Liew',
-        company: 'ByBit',
-      },
-    ],
-  },
-  {
-    id: 7,
-    date: '11 Jan 2022',
-    time: '2000-2100',
-    title: 'Getting started with Stellar',
-    location: 'Zoom',
-    speakers: [
-      {
-        name: 'Anke Liu',
-        company: 'Stellar',
-      },
-      {
-        name: 'Tyler van der Hoeven',
-        company: 'Stellar',
-      },
-    ],
-  },
-  {
-    id: 8,
-    date: '12 Jan 2022',
-    time: '1600-1700',
-    title:
-      'How Revolut makes foreign exchange faster and cheaper than traditional money changers?',
-    location: 'Zoom',
-    speakers: [
-      {
-        name: 'Arjun Khanna',
-        company: 'Revolut',
-      },
-    ],
-  },
-  {
-    id: 9,
-    date: '12 Jan 2022',
-    time: '2000-2100',
-    title: 'Token Market Making by AlphaLab Capital',
-    location: 'Zoom',
-    speakers: [
-      {
-        name: 'John Gu',
-        company: 'AlphaLab Capital',
-      },
-    ],
-  },
-  {
-    id: 10,
-    date: '13 Jan 2022',
-    time: '1600-1700',
-    title: 'Navigating the Multi-Chain Landscape',
-    location: 'Zoom',
-    speakers: [
-      {
-        name: 'Sam Wong',
-        company: 'OIO Singapore',
-      },
-    ],
+    image: 'placeholder-symposium.jpg',
   },
   {
     id: 11,
@@ -149,6 +162,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Shopee',
       },
     ],
+    image: 'placeholder-symposium.jpg',
   },
   {
     id: 12,
@@ -174,10 +188,12 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Messari',
       },
     ],
+    image: 'placeholder-symposium.jpg',
   },
 ]
 
 export default {
   INTRO_WORKSHOPS,
   INDUSTRY_WORKSHOPS,
+  SYMPOSIUMS,
 }

@@ -41,7 +41,7 @@ const WorkshopCard = (props) => {
           component="img"
           alt={workshop.title}
           height="180"
-          image="/placeholder-fintech.jpg"
+          image={workshop.image}
           title={workshop.title}
         />
         <CardContent>

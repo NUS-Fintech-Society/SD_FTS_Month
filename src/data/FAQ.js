@@ -9,7 +9,7 @@ const DUMMY_QA = [
     id: 1,
     question: 'Are there any requirements for the hackathon team formation?',
     answer:
-      'The team should consist of 4-5 members. Team members need not be from the same school. Please appoint a team leader to be the main point of contact.',
+      'The team should consist of 2-5 members. Team members need not be from the same school. Please appoint a team leader to be the main point of contact.',
   },
   {
     id: 2,
@@ -21,75 +21,64 @@ const DUMMY_QA = [
     id: 3,
     question: 'How many rounds are there in the hackathon?',
     answer:
-      'There are a total of 2 rounds. \nIn the first round, the top 6 teams will be selected from the 1st round of the hackathon and invited to attend our closing ceremony. They will be pitching their prototypes to a panel of distinguished judges who are made up of industry experts and professors to compete for the top prizes. For overseas teams, this presentation will be done virtually over zoom. ',
+      'There are a total of 2 stages, Ideation and Prototyping.\nIn the Ideation Stage, teams have 4 days to conduct research and ideation for their solution to the problem statement. Top half of participating teams will be selected after the Ideation Stage to move on to the Prototyping Stage to code out their prototype or MVP (minimum viable product). The prototypes will then be assessed to select the finalists of the hackathon, who will be invited to attend the demo day. These teams will be pitching their prototypes to a panel of distinguished judges who are made up of industry experts and professors to compete for the top prizes. For teams outside of Singapore, this presentation will be done virtually over zoom.',
   },
   {
     id: 4,
     question: 'Will the hackathon be conducted remotely?',
     answer:
-      'The first round will be conducted remotely for all participants. \nHowever, the final round will be conducted physically in NUS for the top 6 teams. Overseas finalists will present Live through Zoom. For the teams that did not make it to the final round, we will be conducting a Live Stream event via Zoom.',
+      'Most of the hackathon will be conducted remotely, except for the demo day where finalists who are in Singapore will be invited to do a Live presentation on NUS campus to a panel of judges.',
   },
   {
     id: 5,
     question: 'What should the format of the file be for hackathon submission?',
     answer:
-      'Please prepare both a 10-page pitch deck and submission will be done via google forms.',
+      'Submissions for both stages will be in the form of a short video recording (10mins) where the idea or prototype can be presented in any way the team thinks is best. The videos are to be uploaded to YouTube as an unlisted video, and the video link submitted via Google Forms.',
   },
   {
     id: 6,
-    question: 'Where do we submit our files for the hackathon?',
-    answer:
-      'Please submit the 10-page pitch deck via google forms on the 17 January by 2359 (First round) and 28 January  (Finalist teams) by 2359. Please remember to enable sharing with nusfintech.ops@gmail.com or allow anyone on the internet to access the link.',
-  },
-  {
-    id: 7,
-    question: 'What are the judging criterias?',
-    answer: 'TBC',
-  },
-  {
-    id: 8,
     question: 'Who do we reach out to if we have more enquiries?',
     answer: 'Please email our team at nusfintech.ops@gmail.com',
   },
   {
-    id: 9,
-    question: 'How do we sign-up for workshops?',
+    id: 7,
+    question: 'How do we register for workshops and symposiums?',
     answer:
-      'Sign-up links will be made available when registration opens. You may retrieve the links from our social media (Instagram, Telegram, LinkedIn). \nThere will be 2 separate forms, one for internal workshops and another for external workshops. Under each form, please indicate all the sessions that you are keen on attending. Due to limited slots, we would like everyone to fully commit to the sessions that they have signed up for. Hence, if you fail to attend any 2 sessions that you have signed up for, you will be barred from attending future sessions and your slot will be given to the others. \nPlease sign up individually and only submit each of the forms once. \nOverseas participants are welcome to join the workshops and symposiums. Sign up links will be disseminated to their various faculty who will then assist in sending these links to their students.',
+      'Sign-up links will be made available when registration opens. You may retrieve the links from our social media (Instagram, Telegram, LinkedIn).\nThere will be 3 separate forms, first for introductory workshops, second for industry workshops, and third for symposiums. Under each form, please indicate all the sessions that you are keen on attending.',
   },
   {
-    id: 10,
+    id: 8,
     question: 'Will the workshops be conducted virtually?',
     answer:
-      'Yes, both the internal and external workshops will be conducted virtually via Zoom.',
+      'Introductory and Industry workshops will be conducted virtually via Zoom. Some symposiums will be conducted physically with online live streaming.',
   },
   {
-    id: 11,
+    id: 9,
     question: 'Are the workshops compulsory for hackathon participants?',
     answer:
       'No. The workshops are meant to better equip all participants, regardless of their background, for the hackathon. If you do not require any additional help/guidance, you need not sign up for the workshops.',
   },
   {
-    id: 12,
+    id: 10,
     question:
       'If I am not participating in the hackathon, can I still sign up for any of the workshops?',
     answer: 'Yes, you may still sign up for the workshops.',
   },
   {
-    id: 13,
+    id: 11,
     question: 'How many workshops can I sign up for?',
     answer:
       'There is no limit to the maximum number of workshops you can sign up for.',
   },
   {
-    id: 14,
+    id: 12,
     question:
       'Will all hackathon participants be physically present at the venue?',
     answer:
       'No, in view of COVID-19 restrictions, only the finalist teams based in Singapore will be invited down to the venue. For overseas finalists, they will be presenting via Zoom. However, a Live Stream event will be made available to the rest of the participants.',
   },
   {
-    id: 15,
+    id: 13,
     question:
       'Is it compulsory for all hackathon participants to join in the Live Stream?',
     answer:

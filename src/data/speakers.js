@@ -44,20 +44,20 @@ const DATA = [
   {
     name: 'Oscar Lee',
     role: 'Chief Investment Officer',
-    company: 'Platus Mazu',
-    image: '/placeholder-male.png',
+    company: 'Plutus Mazu',
+    image: '/Plutus Mazu - Oscar Lee.png',
   },
   {
     name: 'Arthur Cheong',
     role: 'Chief Investment Officer',
     company: 'DeFiance Capital',
-    image: '/placeholder-male.png',
+    image: '/DeFiance Capital - Arthur Cheong.jpg',
   },
   {
     name: 'Joe McKenzie',
     role: 'Community Manager',
     company: 'Index Coop',
-    image: '/placeholder-male.png',
+    image: '/IndexCoop - Joe McKenzie.jpg',
   },
 ]
 

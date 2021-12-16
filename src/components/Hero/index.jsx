@@ -179,8 +179,8 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
   },
   prizeTitle: {
-    [theme.breakpoints.up('md')]: {
-      fontSize: '72px',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '48px',
     },
   },
   prizeSubtitle: {

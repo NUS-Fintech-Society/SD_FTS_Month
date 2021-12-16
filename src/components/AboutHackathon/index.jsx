@@ -159,6 +159,9 @@ export default function AboutHackathon() {
         color="primary"
         variant="contained"
         className={classes.buttonWrapper}
+        onClick={() =>
+          window.open('https://forms.gle/nCNG44YSNA3fEDTh7', '_blank')
+        }
       >
         <Typography variant="h6" className={classes.buttontext}>
           I&apos;m Interested

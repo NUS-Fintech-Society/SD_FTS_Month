@@ -81,7 +81,14 @@ const Workshops = () => {
         <Typography variant="h5" className={classes.header}>
           Introductory Workshops
         </Typography>
-        <Button variant="contained" color="primary" className={classes.button}>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() =>
+            window.open('https://forms.gle/uY2Q8uGTMmLVTUeS6', '_blank')
+          }
+        >
           <Typography variant="subtitle1">Register Now</Typography>
         </Button>
         <Box className={classes.sectionWrapper}>
@@ -91,7 +98,14 @@ const Workshops = () => {
         <Typography variant="h5" className={classes.header}>
           Industry Workshops
         </Typography>
-        <Button variant="contained" color="primary" className={classes.button}>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() =>
+            window.open('https://forms.gle/3u4n8by519KTy9BV8', '_blank')
+          }
+        >
           <Typography variant="subtitle1">Register Now</Typography>
         </Button>
         <Box className={classes.sectionWrapper}>
@@ -101,7 +115,14 @@ const Workshops = () => {
         <Typography variant="h5" className={classes.header}>
           Symposiums
         </Typography>
-        <Button variant="contained" color="primary" className={classes.button}>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() =>
+            window.open('https://forms.gle/shL8Pei2os4Jvhi76', '_blank')
+          }
+        >
           <Typography variant="subtitle1">Register Now</Typography>
         </Button>
         <Box className={classes.sectionWrapper}>

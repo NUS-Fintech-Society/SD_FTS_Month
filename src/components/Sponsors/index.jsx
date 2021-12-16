@@ -246,7 +246,7 @@ const Sponsors = () => {
         <Box className={classes.rowWrapper}>
           <div className={classes.ftsImageWrapper}>
             <img
-              src="/credits/FTS-Logo-Transparent.png"
+              src="/credits/SocietyLogo.png"
               alt="NUS FTS"
               height="100%"
               width="100%"
@@ -521,7 +521,7 @@ export default Sponsors
 //       <Box className={classes.partnersLogoWrapper}>
 //         <Box className={classes.ftsLogo}>
 //           <img
-//             src="/credits/FTS-Logo-Transparent.png"
+//             src="/credits/SocietyLogo.png"
 //             alt="NUS FTS"
 //             width="70%"
 //             onClick={() =>

@@ -227,7 +227,7 @@ const NavBar = () => {
         <div className={classes.navBarLogo}>
           <img
             className={classes.logoImage}
-            src="/credits/FTS-Logo-Transparent.png"
+            src="/credits/SocietyLogo.png"
             alt="NUS FTS"
           />
         </div>

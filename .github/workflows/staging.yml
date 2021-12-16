@@ -3,7 +3,7 @@ name: Deploy Staging
 on:
   push:
     branches:
-      - main
+      - stg
 env:
   NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID_STG}}
 

@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   countdownUnitLabel: {
     color: theme.palette.text.contrast,
     fontWeight: 700,
-    paddingTop: '8px',
+    marginTop: 8,
   },
   digit: {
     position: 'relative',
@@ -232,9 +232,12 @@ const Hero = () => {
                   <Typography variant="h2">{timeLeft[x] % 10}</Typography>
                 </div>
               </div>
-              <div className={classes.countdownUnitLabel}>
-                <Typography variant="p">{x}</Typography>
-              </div>
+              <Typography
+                variant="body2"
+                className={classes.countdownUnitLabel}
+              >
+                {x}
+              </Typography>
             </div>
           ))}
         </div>
@@ -255,7 +258,7 @@ const Hero = () => {
               $50,000
             </Typography>
             <Typography
-              variant="subtitle"
+              variant="subtitle1"
               className={classes.prizeSubtitle}
               style={{ color: '#FFF' }}
             >

@@ -19,19 +19,15 @@ const Home = () => {
         <Hero />
       </div>
       <About />
-      <div id="timeline">
-        <StaticTimeline />
-      </div>
+      <StaticTimeline />
       <div id="hackathon">
         <AboutHackathon />
         <Prizes />
         <OtherPrizes />
-        {/* <HackathonTimeline /> */}
       </div>
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />
-        {/* <WorkshopTimeline /> */}
       </div>
       <div id="faq">
         <FAQ />
@@ -42,6 +38,8 @@ const Home = () => {
       </div>
       {/* Temporarily Removed */}
       {/* <JudgingCriteria /> */}
+      {/* <HackathonTimeline /> */}
+      {/* <WorkshopTimeline /> */}
     </Layout>
   )
 }

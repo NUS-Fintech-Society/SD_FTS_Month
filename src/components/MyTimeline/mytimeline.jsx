@@ -227,12 +227,15 @@ const MyTimeline = (props) => {
                       ref={(el) => (itemsRef.current[i] = el)}
                     >
                       <Link href={x.link}>
-                        <Typography variant="p" className="title">
+                        <Typography variant="body2" lassName="title">
                           {x.title}
                         </Typography>
                       </Link>
                       <br />
-                      <Typography variant="p" sx={{ whiteSpace: 'pre-line' }}>
+                      <Typography
+                        variant="body2"
+                        sx={{ whiteSpace: 'pre-line' }}
+                      >
                         {x.content.split('\n').join('\n')}
                       </Typography>
                     </Box>

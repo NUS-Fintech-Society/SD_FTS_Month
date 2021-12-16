@@ -6,6 +6,7 @@ const INTRO_WORKSHOPS = [
     title: 'Natural Language Processing in Fintech',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const INTRO_WORKSHOPS = [
     title: 'Model Interpretability in Risk Analytics',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const INTRO_WORKSHOPS = [
     title: 'Intro to Blockchain',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const INTRO_WORKSHOPS = [
     title: 'Web2 to Web3 : The new Internet',
     location: 'Zoom',
     speakers: [],
+    image: 'placeholder-intro.jpg',
   },
 ]
 
@@ -46,6 +50,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'ByBit',
       },
     ],
+    image: 'placeholder-industry.jpg',
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Stellar',
       },
     ],
+    image: 'placeholder-industry.jpg',
   },
   {
     id: 7,
@@ -77,6 +83,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Revolut',
       },
     ],
+    image: 'placeholder-industry.jpg',
   },
   {
     id: 8,
@@ -90,6 +97,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'AlphaLab Capital',
       },
     ],
+    image: 'placeholder-industry.jpg',
   },
   {
     id: 9,
@@ -103,6 +111,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'OIO Singapore',
       },
     ],
+    image: 'placeholder-industry.jpg',
   },
 ]
 
@@ -131,6 +140,7 @@ const SYMPOSIUMS = [
         company: 'ByBit',
       },
     ],
+    image: 'placeholder-symposium.jpg',
   },
   {
     id: 11,
@@ -152,6 +162,7 @@ const SYMPOSIUMS = [
         company: 'Shopee',
       },
     ],
+    image: 'placeholder-symposium.jpg',
   },
   {
     id: 12,
@@ -177,6 +188,7 @@ const SYMPOSIUMS = [
         company: 'Messari',
       },
     ],
+    image: 'placeholder-symposium.jpg',
   },
 ]
 

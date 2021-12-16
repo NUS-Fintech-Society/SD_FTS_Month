@@ -10,8 +10,7 @@ import ContactUs from '../../components/ContactUs'
 import WorkshopBanner from '../../components/WorkshopBanner'
 import AboutHackathon from '../../components/AboutHackathon'
 import Workshops from '../../components/Workshops'
-import HackathonTimeline from '../../components/MyTimeline/Hackathon'
-import WorkshopTimeline from '../../components/MyTimeline/Workshop'
+import StaticTimeline from '../../components/MyTimeline/StaticTimeline'
 
 const Home = () => {
   return (
@@ -20,16 +19,19 @@ const Home = () => {
         <Hero />
       </div>
       <About />
+      <div id="timeline">
+        <StaticTimeline />
+      </div>
       <div id="hackathon">
         <AboutHackathon />
         <Prizes />
         <OtherPrizes />
-        <HackathonTimeline />
+        {/* <HackathonTimeline /> */}
       </div>
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />
-        <WorkshopTimeline />
+        {/* <WorkshopTimeline /> */}
       </div>
       <div id="faq">
         <FAQ />

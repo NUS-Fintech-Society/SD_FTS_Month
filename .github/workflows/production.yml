@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID}}
+  NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID_PROD}}
 
 # IMPORTANT:
 # - Add .nojekyll file in output folder to inform GitHub not to build the project using Jekyll.

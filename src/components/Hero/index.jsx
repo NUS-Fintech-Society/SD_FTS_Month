@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     left: '50%',
     transform: 'translate(-50%, 0)',
     marginTop: '40px',
+    zIndex: 1,
     '& > div:not(:first-child)': {
       marginLeft: 36,
     },
@@ -177,6 +178,19 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
     position: 'relative',
   },
+  prizeTitle: {
+    [theme.breakpoints.up('md')]: {
+      fontSize: '72px',
+    },
+  },
+  prizeSubtitle: {
+    [theme.breakpoints.up('md')]: {
+      fontSize: '28px',
+    },
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '24px',
+    },
+  },
 }))
 
 const Hero = () => {
@@ -224,6 +238,52 @@ const Hero = () => {
             </div>
           ))}
         </div>
+
+        <Box style={{ position: 'relative', marginTop: '10px' }}>
+          <Box
+            style={{
+              position: 'relative',
+              zIndex: 1,
+              marginTop: '20px',
+            }}
+          >
+            <Typography
+              variant="h1"
+              className={classes.prizeTitle}
+              style={{ color: '#FFF' }}
+            >
+              $50,000
+            </Typography>
+            <Typography
+              variant="subtitle"
+              className={classes.prizeSubtitle}
+              style={{ color: '#FFF' }}
+            >
+              cash prizes to be won
+            </Typography>
+          </Box>
+          <img
+            style={{
+              position: 'relative',
+              width: '80%',
+              maxWidth: '400px',
+              zIndex: 1,
+            }}
+            src="hero-trophy.png"
+          />
+          <img
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              maxWidth: '700px',
+              width: '90%',
+              zIndex: 0,
+            }}
+            src="hero-confetti.png"
+          />
+        </Box>
 
         <Box display="flex" justifyContent="center">
           <Button

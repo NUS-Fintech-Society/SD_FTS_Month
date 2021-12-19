@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Container, Typography, Grid } from '@material-ui/core'
 import SPEAKERS from '../../data/speakers'
@@ -55,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.contrast,
     fontWeight: 600,
     marginTop: 32,
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: 16,
+    },
   },
   speakerText: {
     marginTop: 8,
@@ -91,6 +94,14 @@ const useStyles = makeStyles((theme) => ({
 export default function WorkshopBanner() {
   const classes = useStyles()
   const { SPONSOR_SPEAKERS, GUEST_SPEAKERS } = SPEAKERS
+  const [page, setPage] = useState(1)
+  const guestSpeakersPerPage = 8
+  const totalPages = Math.ceil(GUEST_SPEAKERS.length / guestSpeakersPerPage)
+
+  const handlePageChange = (event, value) => {
+    setPage(value)
+  }
+
   const renderSponsorSpeakers = () => {
     return SPONSOR_SPEAKERS.map((speaker, index) => {
       return (
@@ -114,7 +125,9 @@ export default function WorkshopBanner() {
     })
   }
   const renderGuestSpeakers = () => {
-    return GUEST_SPEAKERS.map((speaker, index) => {
+    const start = (page - 1) * guestSpeakersPerPage
+    const end = start + guestSpeakersPerPage
+    return GUEST_SPEAKERS.slice(start, end).map((speaker, index) => {
       return (
         <Grid item xs={6} md={3} key={index}>
           <Box className={classes.gridBox}>
@@ -161,10 +174,11 @@ export default function WorkshopBanner() {
           </Typography>
           <Grid container>{renderGuestSpeakers()}</Grid>
           <Pagination
-            count={3}
-            // page={1}
+            count={totalPages}
+            page={page}
             color="primary"
             className={classes.pagination}
+            onChange={handlePageChange}
           />
         </Box>
       </Container>

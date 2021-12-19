@@ -12,6 +12,12 @@ const SPONSOR_SPEAKERS = [
     image: '/speakers/Bybit - Igneus Terrenus.jpg',
   },
   {
+    name: 'Helen Liu',
+    role: 'Human Resources',
+    company: 'ByBit',
+    image: '/speakers/Bybit - Helen Liu.png',
+  },
+  {
     name: 'Anke Liu',
     role: 'Community and Events Manager',
     company: 'Stellar',
@@ -123,16 +129,16 @@ const GUEST_SPEAKERS = [
     image: '/speakers/Startbahn - Tomohiro Nakamura.jpg',
   },
   {
+    name: 'Daniel Lui',
+    role: 'VP Business Development',
+    company: 'Startbahn',
+    image: '/speakers/Startbahn - Daniel Lui.jpeg',
+  },
+  {
     name: 'Yudong Zheng',
     role: 'Head of Finance',
     company: 'SeaMoney',
     image: '/speakers/SeaMoney - ZHENG Yu Dong.jpg',
-  },
-  {
-    name: 'Helen Liu',
-    role: 'Human Resources',
-    company: 'ByBit',
-    image: '/speakers/Bybit - Helen Liu.png',
   },
   {
     name: 'Nancy Gao',

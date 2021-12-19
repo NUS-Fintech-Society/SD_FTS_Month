@@ -89,7 +89,7 @@ const INDUSTRY_WORKSHOPS = [
     id: 8,
     date: '12 Jan 2022',
     time: '2000-2100',
-    title: 'Token Market Making by AlphaLab Capital',
+    title: 'Token Market Making',
     location: 'Zoom',
     speakers: [
       {

@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Container, Typography, Grid } from '@material-ui/core'
 import DATA from '../../data/speakers'
+import Pagination from '@material-ui/lab/Pagination'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -104,7 +105,7 @@ export default function WorkshopBanner() {
     <Box className={classes.root}>
       <Container className={classes.contentWrapper} maxWidth="md">
         <Typography variant="h3" className={classes.header}>
-          WORKSHOPS
+          WORKSHOPS & SYMPOSIUMS
         </Typography>
         <Box className={classes.textWrapper}>
           <Typography className={classes.text}>
@@ -120,6 +121,7 @@ export default function WorkshopBanner() {
           </Typography>
 
           <Grid container>{renderSpeakers()}</Grid>
+          <Pagination count={10} color="primary" />
         </Box>
       </Container>
     </Box>

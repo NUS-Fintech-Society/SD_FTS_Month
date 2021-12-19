@@ -1,4 +1,31 @@
-const DATA = [
+const SPONSOR_SPEAKERS = [
+  {
+    name: 'Jason Liew',
+    role: 'Product Lead',
+    company: 'ByBit',
+    image: '/speakers/Bybit - Jason Liew.jpeg',
+  },
+  {
+    name: 'Igneus Terrenus',
+    role: 'Head of Communications',
+    company: 'ByBit',
+    image: '/speakers/Bybit - Igneus Terrenus.jpg',
+  },
+  {
+    name: 'Anke Liu',
+    role: 'Community and Events Manager',
+    company: 'Stellar',
+    image: '/speakers/Stellar - Anke Liu.jpg',
+  },
+  {
+    name: 'Tyler van der Hoeven',
+    role: 'Ecosystem Engineer',
+    company: 'Stellar',
+    image: '/speakers/Stellar - Tyler van der Hoeven.jpeg',
+  },
+]
+
+const GUEST_SPEAKERS = [
   {
     name: 'Amanda Ong',
     role: 'Country Manager of Singapore, Head of PR',
@@ -10,12 +37,6 @@ const DATA = [
     role: 'Managing Director',
     company: 'Futu Singapore',
     image: '/speakers/Futu Singapore - Gavin Chia .jpeg',
-  },
-  {
-    name: 'Igneus Terrenus',
-    role: 'Head of Communications',
-    company: 'ByBit',
-    image: '/speakers/placeholder-male.png',
   },
   {
     name: 'Ernest Tay',
@@ -42,46 +63,28 @@ const DATA = [
     image: '/speakers/AlphaLab Capital - John Gu.png',
   },
   {
-    name: 'Jason Liew',
-    role: 'Product Lead',
-    company: 'ByBit',
-    image: '/speakers/placeholder-male.png',
-  },
-  {
-    name: 'Anke Liu',
-    role: 'Community and Events Manager',
-    company: 'Stellar',
-    image: '/speakers/placeholder-male.png',
-  },
-  {
-    name: 'Tyler van der Hoeven',
-    role: 'Ecosystem Engineer',
-    company: 'Stellar',
-    image: '/speakers/placeholder-male.png',
-  },
-  {
     name: 'Deepak Khanna',
     role: 'Head of Wealth and Trading',
     company: 'Revolut',
-    image: '/speakers/placeholder-male.png',
-  },
-  {
-    name: 'Eric Neo',
-    role: 'President',
-    company: 'HG Exchange',
-    image: '/speakers/placeholder-male.png',
-  },
-  {
-    name: 'Lee Jun Wei',
-    role: 'Business Development Lead',
-    company: 'HG Exchange',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/Revolut - Deepak Khanna.jpg',
   },
   {
     name: 'Arjun Khanna',
     role: 'Strategy and Operations Manager',
     company: 'Revolut',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/Revolut - Arjun.jpeg',
+  },
+  {
+    name: 'Eric Neo',
+    role: 'President',
+    company: 'HG Exchange',
+    image: '/speakers/HG Exchange - Eric Neo.jpg',
+  },
+  {
+    name: 'Lee Jun Wei',
+    role: 'Business Development Lead',
+    company: 'HG Exchange',
+    image: '/speakers/HG Exchange - Lee Jun Wei.jpg',
   },
   {
     name: 'Gene Tan',
@@ -111,32 +114,35 @@ const DATA = [
     name: 'Sam Wong',
     role: 'Senior Solutions Architect',
     company: 'OIO Singapore',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/OIO Singapore - Sam Wong.jpg',
   },
   {
     name: 'Tomihoro Nakamura',
     role: 'CTO',
     company: 'Startbahn',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/Startbahn - Tomohiro Nakamura.jpg',
   },
   {
     name: 'Yudong Zheng',
     role: 'Head of Finance',
     company: 'SeaMoney',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/SeaMoney - ZHENG Yu Dong.jpg',
   },
   {
     name: 'Helen Liu',
     role: 'Human Resources',
     company: 'ByBit',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/Bybit - Helen Liu.png',
   },
   {
     name: 'Nancy Gao',
     role: 'Human Resources',
     company: 'Moledao',
-    image: '/speakers/placeholder-male.png',
+    image: '/speakers/Moledao - Nancy Gao.jpg',
   },
 ]
 
-export default DATA
+export default {
+  SPONSOR_SPEAKERS,
+  GUEST_SPEAKERS,
+}

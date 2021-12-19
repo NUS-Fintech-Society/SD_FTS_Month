@@ -18,6 +18,12 @@ const SPONSOR_SPEAKERS = [
     image: '/speakers/Bybit - Helen Liu.png',
   },
   {
+    name: 'Nancy Gao',
+    role: 'Human Resources',
+    company: 'ByBit',
+    image: '/speakers/Moledao - Nancy Gao.jpg',
+  },
+  {
     name: 'Anke Liu',
     role: 'Community and Events Manager',
     company: 'Stellar',
@@ -99,12 +105,6 @@ const GUEST_SPEAKERS = [
     image: '/speakers/Octava Singapore - Gene Yan.jpg',
   },
   {
-    name: 'Oscar Lee',
-    role: 'Chief Investment Officer',
-    company: 'Plutus Mazu',
-    image: '/speakers/Plutus Mazu - Oscar Lee.png',
-  },
-  {
     name: 'Arthur Cheong',
     role: 'Chief Investment Officer',
     company: 'DeFiance Capital',
@@ -133,18 +133,6 @@ const GUEST_SPEAKERS = [
     role: 'VP Business Development',
     company: 'Startbahn',
     image: '/speakers/Startbahn - Daniel Lui.jpeg',
-  },
-  {
-    name: 'Yudong Zheng',
-    role: 'Head of Finance',
-    company: 'SeaMoney',
-    image: '/speakers/SeaMoney - ZHENG Yu Dong.jpg',
-  },
-  {
-    name: 'Nancy Gao',
-    role: 'Human Resources',
-    company: 'Moledao',
-    image: '/speakers/Moledao - Nancy Gao.jpg',
   },
 ]
 

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography, Grid } from '@material-ui/core'
+import { Box, Typography, Grid, Container } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   box: {
-    height: '20vh',
+    height: '5vh',
   },
   text: {
     fontSize: '26px',
@@ -61,77 +61,81 @@ export default function OtherPrizes() {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h3" className={classes.title}>
-        OTHER PRIZES
-      </Typography>
-      <Grid
-        container
-        className={classes.gridContainer}
-        direction="row"
-        justify="center"
-        alignItems="center"
-      >
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>Most Creative</Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
+      <Container>
+        <Typography variant="h3" className={classes.title}>
+          OTHER PRIZES
+        </Typography>
+        <Grid
+          container
+          className={classes.gridContainer}
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>Most Creative</Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>
+                Best Business Case
+              </Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>
+                Easy Domain Application
+              </Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>Public Favourite</Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>Judges Award</Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>
+                Applicable for Bybit
+              </Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
         </Grid>
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>Best Business Case</Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
+        <Grid
+          container
+          className={classes.gridContainer}
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>BitDAO-Worthy</Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={6} md={4}>
+            <Box padding={2} className={classes.textWrapper}>
+              <Typography className={classes.text}>Best Code Design</Typography>
+              <Typography className={classes.boldedText}>$2500</Typography>
+            </Box>
+          </Grid>
         </Grid>
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>
-              Easy Domain Application
-            </Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>Public Favourite</Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>Judges Award</Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>
-              Applicable for Bybit
-            </Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        className={classes.gridContainer}
-        direction="row"
-        justify="center"
-        alignItems="center"
-      >
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>BitDAO-Worthy</Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={6} md={4}>
-          <Box padding={2} className={classes.textWrapper}>
-            <Typography className={classes.text}>Best Code Design</Typography>
-            <Typography className={classes.boldedText}>$2500</Typography>
-          </Box>
-        </Grid>
-      </Grid>
+      </Container>
       <Box className={classes.box}></Box>
     </div>
   )

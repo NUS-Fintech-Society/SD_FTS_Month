@@ -1,9 +1,13 @@
 import * as React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Container, Typography } from '@material-ui/core'
-import Accordion from '@material-ui/core/ExpansionPanel'
-import AccordionSummary from '@material-ui/core/ExpansionPanelSummary'
-import AccordionDetails from '@material-ui/core/ExpansionPanelDetails'
+import {
+  Box,
+  Container,
+  Typography,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from '@material-ui/core'
 import AddCircle from '@material-ui/icons/AddCircle'
 import RemoveCircle from '@material-ui/icons/RemoveCircle'
 import DUMMY_QA from '../../data/FAQ'

@@ -11,6 +11,7 @@ import WorkshopBanner from '../../components/WorkshopBanner'
 import AboutHackathon from '../../components/AboutHackathon'
 import Workshops from '../../components/Workshops'
 import StaticTimeline from '../../components/MyTimeline/StaticTimeline'
+import HackathonResources from '../../components/HackathonResources'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <Prizes />
         <OtherPrizes />
       </div>
+      <HackathonResources />
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />

@@ -13,6 +13,16 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     minHeight: '70vh',
     zIndex: '1',
+    backgroundImage: `url(${'notebook.png'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: '10% 90%',
+    [theme.breakpoints.down('md')]: {
+      backgroundPosition: '0% 50%',
+      backgroundSize: '30%',
+    },
+    [theme.breakpoints.down('sm')]: {
+      backgroundImage: 'none',
+    },
   },
   title: {
     position: 'relative',
@@ -34,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: '0',
     left: '90%',
     width: '100%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       display: 'none',
     },
   },
@@ -48,13 +58,16 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Lato',
     color: theme.palette.secondary.main,
     marginBottom: '20px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '14px',
+    },
   },
   leftVector: {
     position: 'absolute',
     zIndex: '0',
     left: '-3em',
     width: '50%',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       display: 'none',
     },
   },
@@ -64,10 +77,6 @@ const useStyles = makeStyles((theme) => ({
   book: {
     width: '90%',
     display: 'absolute',
-  },
-  inline: {
-    display: 'flex',
-    flexDirection: 'row',
   },
   notebook: {
     left: '-200px',
@@ -84,54 +93,41 @@ export default function HackathonResources() {
           Hackathon Resources
         </Typography>
       </Box>
-
       <div className={classes.vector}>
         <Vector />
       </div>
-      <div className={classes.inline}>
-        <div className={classes.notebook}>
-          {/*<img src={'notebook.png'} className={classes.book} />*/}
+      <ul>
+        <div className={classes.row}>
+          <ChevronRightIcon className={classes.icon} />
+          <Link
+            className={classes.linkStyle}
+            href="https://www.youtube.com/watch?v=M576WGiDBdQ"
+          >
+            {' '}
+            Solidity, Blockchain, and Smart Contracts FREE course{' '}
+          </Link>
         </div>
-        <ul>
-          <div className={classes.row}>
-            <ChevronRightIcon className={classes.icon} />
-            <Link
-              className={classes.linkStyle}
-              href="https://www.youtube.com/watch?v=M576WGiDBdQ"
-            >
-              {' '}
-              Solidity, Blockchain, and Smart Contracts FREE course{' '}
-            </Link>
-          </div>
-          <div className={classes.row}>
-            <ChevronRightIcon className={classes.icon} />
-            <Link
-              className={classes.linkStyle}
-              href="https://docs.chain.link/docs/hackathon-resources/?_ga=2.125184714.1306684740.1639755306-594479753.1639755306"
-            >
-              {' '}
-              Boilerplate, Starter Kits, and Tutorials{' '}
-            </Link>
-          </div>
-          <div className={classes.row}>
-            <ChevronRightIcon className={classes.icon} />
-            <Link
-              className={classes.linkStyle}
-              href="https://chain.link/bootcamp/bootcamp-2021-on-demand"
-            >
-              {' '}
-              Smart Contract Developer Bootcamp On-Demand{' '}
-            </Link>
-          </div>
-        </ul>
-      </div>
-
-      {/* <Container className={classes.contentWrapper} maxWidth="100vw">
-        <Typography variant="h3" className={classes.title}>
-          JUDGING CRITERIA
-        </Typography>
-      </Container> */}
-
+        <div className={classes.row}>
+          <ChevronRightIcon className={classes.icon} />
+          <Link
+            className={classes.linkStyle}
+            href="https://docs.chain.link/docs/hackathon-resources/?_ga=2.125184714.1306684740.1639755306-594479753.1639755306"
+          >
+            {' '}
+            Boilerplate, Starter Kits, and Tutorials{' '}
+          </Link>
+        </div>
+        <div className={classes.row}>
+          <ChevronRightIcon className={classes.icon} />
+          <Link
+            className={classes.linkStyle}
+            href="https://chain.link/bootcamp/bootcamp-2021-on-demand"
+          >
+            {' '}
+            Smart Contract Developer Bootcamp On-Demand{' '}
+          </Link>
+        </div>
+      </ul>
       <div className={classes.leftVector}>
         <LeftVector />
       </div>

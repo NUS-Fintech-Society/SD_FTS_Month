@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: theme.palette.background.primary,
     flexDirection: 'column',
-    minHeight: '80vh',
+    minHeight: '100vh',
   },
   title: {
     padding: '0 10px',
@@ -53,7 +53,7 @@ const PrizesDetails = () => {
                     </Typography>
                   </li>
                   <div>
-                    <Typography variant="body1">{p.description}</Typography>
+                    <Typography>{p.description}</Typography>
                   </div>
                 </ul>
               </Grid>

@@ -15,8 +15,7 @@ const useStyles = makeStyles((theme) => ({
     height: 550,
     overflowY: 'scroll',
     [theme.breakpoints.down('xs')]: {
-      width: 150,
-      height: 400,
+      textAlign: 'left',
     },
   },
   workshopTitle: {

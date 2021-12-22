@@ -134,6 +134,12 @@ const GUEST_SPEAKERS = [
     company: 'Startbahn',
     image: '/speakers/Startbahn - Daniel Lui.jpeg',
   },
+  {
+    name: 'E Teng Tay',
+    role: 'Senior Manager, Retail Finance',
+    company: 'SeaMoney',
+    image: '/speakers/SeaMoney - E Teng.jpg',
+  },
 ]
 
 export default {

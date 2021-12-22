@@ -158,8 +158,8 @@ const SYMPOSIUMS = [
         company: 'Helicap',
       },
       {
-        name: 'TBC',
-        company: 'Shopee',
+        name: 'E Teng Tay',
+        company: 'SeaMoney',
       },
     ],
     image: '/workshops/placeholder-symposium.jpg',

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     [theme.breakpoints.down('xs')]: {
       backgroundPosition: '50% 95%',
-      backgroundSize: '50%',
+      backgroundSize: '40%',
     },
   },
   leftVector: {
@@ -57,6 +57,8 @@ const useStyles = makeStyles((theme) => ({
   },
   row: {
     display: 'flex',
+    position: 'relative',
+    zIndex: 1,
   },
   linkStyle: {
     fontSize: '18px',

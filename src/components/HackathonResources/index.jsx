@@ -28,12 +28,10 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     left: '-6em',
     [theme.breakpoints.down('md')]: {
-      top: '40%',
-      left: '-15%',
+      top: '0%',
     },
     [theme.breakpoints.down('xs')]: {
-      top: '0%',
-      left: '-50%',
+      left: '-40%',
     },
   },
   rightVector: {
@@ -41,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     right: '0%',
     width: '10%',
     overflow: 'hidden',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('md')]: {
       bottom: '0%',
     },
   },
@@ -49,13 +47,13 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '160px',
     textAlign: 'center',
     padding: '0 10px',
+    zIndex: 1,
+    [theme.breakpoints.down('md')]: {
+      marginBottom: '48px',
+    },
     [theme.breakpoints.down('xs')]: {
       marginBottom: '16px',
-      zIndex: 1,
     },
-  },
-  header: {
-    marginBottom: 16,
   },
   row: {
     display: 'flex',
@@ -76,9 +74,9 @@ export default function HackathonResources() {
 
   return (
     <Box className={classes.root}>
-      <Box className={classes.title}>
-        <Typography variant="h3">HACKATHON RESOURCES</Typography>
-      </Box>
+      <Typography variant="h3" className={classes.title}>
+        HACKATHON RESOURCES
+      </Typography>
       <div className={classes.rightVector}>
         <Vector />
       </div>

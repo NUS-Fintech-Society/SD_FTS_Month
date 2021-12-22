@@ -9,43 +9,53 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
+    padding: 16,
     backgroundColor: theme.palette.background.secondary,
     flexDirection: 'column',
     minHeight: '100vh',
     backgroundImage: `url(${'notebook.png'})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '10% 90%',
-    [theme.breakpoints.down('md')]: {
-      backgroundPosition: '0% 60%',
-      backgroundSize: '30%',
-    },
+    backgroundSize: '25%',
+    position: 'relative',
     [theme.breakpoints.down('xs')]: {
       backgroundPosition: '50% 95%',
-      backgroundSize: '35%',
+      backgroundSize: '50%',
     },
   },
-  title: {
-    marginTop: '150px',
-    textAlign: 'center',
-    marginBottom: '100px',
-    padding: '0 10px',
-    [theme.breakpoints.down('xs')]: {
-      marginTop: '30px',
-      marginBottom: '15px',
-    },
-  },
-  header: {
-    marginBottom: 16,
-  },
-  vector: {
+  leftVector: {
     position: 'absolute',
-    zIndex: '0',
+    left: '-6em',
+    [theme.breakpoints.down('md')]: {
+      top: '40%',
+      left: '-15%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      top: '0%',
+      left: '-50%',
+    },
+  },
+  rightVector: {
+    position: 'absolute',
     right: '0%',
     width: '10%',
     overflow: 'hidden',
     [theme.breakpoints.down('xs')]: {
-      display: 'none',
+      bottom: '0%',
     },
+  },
+  title: {
+    marginBottom: '160px',
+    textAlign: 'center',
+    padding: '0 10px',
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: '16px',
+      zIndex: 1,
+    },
+  },
+  header: {
+    marginBottom: 16,
   },
   row: {
     display: 'flex',
@@ -59,20 +69,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '14px',
     },
   },
-  leftVector: {
-    position: 'absolute',
-    zIndex: '0',
-    left: '-6em',
-    width: '30%',
-    [theme.breakpoints.down('md')]: {
-      left: '-10em',
-    },
-    [theme.breakpoints.down('xs')]: {
-      display: 'none',
-      height: '10%',
-      right: '90%',
-    },
-  },
 }))
 
 export default function HackathonResources() {
@@ -81,11 +77,9 @@ export default function HackathonResources() {
   return (
     <Box className={classes.root}>
       <Box className={classes.title}>
-        <Typography variant="h1" className={classes.header}>
-          Hackathon Resources
-        </Typography>
+        <Typography variant="h3">HACKATHON RESOURCES</Typography>
       </Box>
-      <div className={classes.vector}>
+      <div className={classes.rightVector}>
         <Vector />
       </div>
       <ul>

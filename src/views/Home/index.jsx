@@ -25,8 +25,8 @@ const Home = () => {
         <AboutHackathon />
         <Prizes />
         <OtherPrizes />
+        <HackathonResources />
       </div>
-      <HackathonResources />
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />

@@ -9,53 +9,50 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: theme.palette.background.primary,
+    backgroundColor: theme.palette.background.secondary,
     flexDirection: 'column',
-    minHeight: '70vh',
-    zIndex: '1',
+    minHeight: '100vh',
     backgroundImage: `url(${'notebook.png'})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '10% 90%',
     [theme.breakpoints.down('md')]: {
-      backgroundPosition: '0% 50%',
+      backgroundPosition: '0% 60%',
       backgroundSize: '30%',
     },
-    [theme.breakpoints.down('sm')]: {
-      backgroundImage: 'none',
+    [theme.breakpoints.down('xs')]: {
+      backgroundPosition: '50% 95%',
+      backgroundSize: '35%',
     },
   },
   title: {
-    position: 'relative',
-    marginTop: '15vh',
+    marginTop: '150px',
     textAlign: 'center',
-    marginBottom: '10vh',
+    marginBottom: '100px',
     padding: '0 10px',
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '10vh',
-      marginBottom: '5vh',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '30px',
+      marginBottom: '15px',
     },
   },
-  listTitle: {
-    color: theme.palette.primary.main,
-    fontSize: 20,
+  header: {
+    marginBottom: 16,
   },
   vector: {
     position: 'absolute',
     zIndex: '0',
-    left: '90%',
-    width: '100%',
-    [theme.breakpoints.down('md')]: {
+    right: '0%',
+    width: '10%',
+    overflow: 'hidden',
+    [theme.breakpoints.down('xs')]: {
       display: 'none',
     },
   },
   row: {
     display: 'flex',
-    flexDirection: 'row',
   },
   linkStyle: {
     fontSize: '18px',
-    fontWeight: '700',
-    fontFamily: 'Lato',
+    fontWeight: '600',
     color: theme.palette.secondary.main,
     marginBottom: '20px',
     [theme.breakpoints.down('sm')]: {
@@ -65,21 +62,16 @@ const useStyles = makeStyles((theme) => ({
   leftVector: {
     position: 'absolute',
     zIndex: '0',
-    left: '-3em',
-    width: '50%',
+    left: '-6em',
+    width: '30%',
     [theme.breakpoints.down('md')]: {
-      display: 'none',
+      left: '-10em',
     },
-  },
-  icon: {
-    marginRight: '10px',
-  },
-  book: {
-    width: '90%',
-    display: 'absolute',
-  },
-  notebook: {
-    left: '-200px',
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+      height: '10%',
+      right: '90%',
+    },
   },
 }))
 
@@ -100,31 +92,34 @@ export default function HackathonResources() {
         <div className={classes.row}>
           <ChevronRightIcon className={classes.icon} />
           <Link
+            rel="noopener noreferrer"
+            target="_blank"
             className={classes.linkStyle}
             href="https://www.youtube.com/watch?v=M576WGiDBdQ"
           >
-            {' '}
-            Solidity, Blockchain, and Smart Contracts FREE course{' '}
+            Solidity, Blockchain, and Smart Contracts FREE course
           </Link>
         </div>
         <div className={classes.row}>
           <ChevronRightIcon className={classes.icon} />
           <Link
             className={classes.linkStyle}
+            rel="noopener noreferrer"
+            target="_blank"
             href="https://docs.chain.link/docs/hackathon-resources/?_ga=2.125184714.1306684740.1639755306-594479753.1639755306"
           >
-            {' '}
-            Boilerplate, Starter Kits, and Tutorials{' '}
+            Boilerplate, Starter Kits, and Tutorials
           </Link>
         </div>
         <div className={classes.row}>
           <ChevronRightIcon className={classes.icon} />
           <Link
             className={classes.linkStyle}
+            rel="noopener noreferrer"
+            target="_blank"
             href="https://chain.link/bootcamp/bootcamp-2021-on-demand"
           >
-            {' '}
-            Smart Contract Developer Bootcamp On-Demand{' '}
+            Smart Contract Developer Bootcamp On-Demand
           </Link>
         </div>
       </ul>

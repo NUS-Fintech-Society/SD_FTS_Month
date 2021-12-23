@@ -209,7 +209,7 @@ const Sponsors = () => {
           <Box className={classes.bybitImageWrapper}>
             <img
               src="/credits/bybit-logo-trans.png"
-              alt="ByBit"
+              alt="Bybit"
               height="100%"
               width="100%"
               onClick={() =>

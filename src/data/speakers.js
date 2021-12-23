@@ -2,25 +2,25 @@ const SPONSOR_SPEAKERS = [
   {
     name: 'Jason Liew',
     role: 'Product Lead',
-    company: 'ByBit',
+    company: 'Bybit',
     image: '/speakers/Bybit - Jason Liew.jpeg',
   },
   {
     name: 'Igneus Terrenus',
     role: 'Head of Communications',
-    company: 'ByBit',
+    company: 'Bybit',
     image: '/speakers/Bybit - Igneus Terrenus.jpg',
   },
   {
     name: 'Helen Liu',
     role: 'Human Resources',
-    company: 'ByBit',
+    company: 'Bybit',
     image: '/speakers/Bybit - Helen Liu.png',
   },
   {
     name: 'Nancy Gao',
     role: 'Human Resources',
-    company: 'ByBit',
+    company: 'Bybit',
     image: '/speakers/Moledao - Nancy Gao.jpg',
   },
   {

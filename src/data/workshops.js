@@ -47,7 +47,7 @@ const INDUSTRY_WORKSHOPS = [
     speakers: [
       {
         name: 'Jason Liew',
-        company: 'ByBit',
+        company: 'Bybit',
       },
     ],
     image: '/workshops/placeholder-industry.jpg',
@@ -137,7 +137,7 @@ const SYMPOSIUMS = [
       },
       {
         name: 'Igneus Terrenus',
-        company: 'ByBit',
+        company: 'Bybit',
       },
     ],
     image: '/workshops/fintech-for-personal-finance.jpg',

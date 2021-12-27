@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 40,
   },
   iconWrapper: {
-    cursor: 'pointer',
     marginTop: 40,
     '& :not(:first-child)': {
       marginLeft: 12,
@@ -44,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     bottom: '0',
     left: '0',
     right: '0',
+  },
+  button: {
+    cursor: 'pointer',
   },
 }))
 

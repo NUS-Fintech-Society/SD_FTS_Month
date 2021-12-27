@@ -72,6 +72,11 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 250,
     },
   },
+  textLink: {
+    fontWeight: 600,
+    textDecoration: 'underline',
+    cursor: 'pointer',
+  },
 }))
 
 export default function AboutHackathon() {
@@ -167,6 +172,19 @@ export default function AboutHackathon() {
           Register Now
         </Typography>
       </Button>
+      <Typography variant="caption" className={classes.caption}>
+        *If you require help in finding team members, feel free to join this{' '}
+        <Typography
+          variant="caption"
+          color="primary"
+          className={classes.textLink}
+          onClick={() =>
+            window.open('https://t.me/+d2wPI2kEHOBlZTk1', '_blank')
+          }
+        >
+          Telegram group
+        </Typography>
+      </Typography>
     </div>
   )
 }

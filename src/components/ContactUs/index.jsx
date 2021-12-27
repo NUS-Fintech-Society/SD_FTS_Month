@@ -4,6 +4,7 @@ import { Box, Container, Typography } from '@material-ui/core'
 import FacebookIcon from '@material-ui/icons/Facebook'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
+import TelegramIcon from '@material-ui/icons/Telegram'
 import Vector from './vector'
 
 const useStyles = makeStyles((theme) => ({
@@ -22,22 +23,29 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     textAlign: 'center',
-    marginBottom: 40,
+    marginBottom: 32,
   },
   textWrapper: {
-    marginTop: 40,
+    marginTop: 24,
+  },
+  boldText: {
+    fontWeight: 600,
+  },
+  teleWrapper: {
+    marginTop: 32,
+    display: 'flex',
+    justifyContent: 'center',
   },
   iconWrapper: {
-    marginTop: 40,
+    position: 'relative',
+    zIndex: 1,
+    marginTop: 16,
     '& :not(:first-child)': {
       marginLeft: 12,
     },
-    '& .MuiSvgIcon-root': {
-      color: theme.palette.secondary.main,
-      fontSize: 48,
-    },
   },
   vector: {
+    zIndex: 0,
     position: 'absolute',
     display: 'flex',
     bottom: '0',
@@ -46,6 +54,8 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     cursor: 'pointer',
+    fontSize: 40,
+    color: theme.palette.primary.main,
   },
 }))
 
@@ -59,48 +69,44 @@ const ContactUs = () => {
           CONTACT US
         </Typography>
         <Box className={classes.textWrapper}>
-          <Typography>
-            If you have any questions about the event, or would like to work
-            with us in the future:
-          </Typography>
-          <Typography style={{ display: 'inline', fontStyle: 'italic' }}>
-            Feel free to reach out to us at{' '}
+          <Typography className={classes.boldText}>
+            Event Queries and Potential Partnerships:
           </Typography>
           <Typography
             style={{
-              display: 'inline',
               fontWeight: 'bold',
-              fontStyle: 'italic',
             }}
             color="primary"
           >
             nusfintech.ops@gmail.com
           </Typography>
         </Box>
-        <Box className={classes.textWrapper}>
-          <Typography>
-            If you would like to join our Telegram group to receive quick
-            updates and find team members:
-          </Typography>
-          <Typography style={{ display: 'inline', fontStyle: 'italic' }}>
-            Feel free to do so{' '}
-          </Typography>
-          <Typography
-            style={{
-              display: 'inline',
-              fontWeight: 'bold',
-              cursor: 'pointer',
-              fontStyle: 'italic',
-            }}
-            color="primary"
-            onClick={() =>
-              window.open('https://t.me/+RJpVfJ1IVZcxYWNl', '_blank')
-            }
-          >
-            here
-          </Typography>
+        <Box className={classes.teleWrapper}>
+          <Box>
+            <Typography className={classes.boldText}>
+              Quick Event Updates:
+            </Typography>
+            <TelegramIcon
+              className={classes.button}
+              onClick={() =>
+                window.open('https://t.me/+RJpVfJ1IVZcxYWNl', '_blank')
+              }
+            />
+          </Box>
+          <Box style={{ marginLeft: 24 }}>
+            <Typography className={classes.boldText}>
+              Team Formation:
+            </Typography>
+            <TelegramIcon
+              className={classes.button}
+              onClick={() =>
+                window.open('https://t.me/+d2wPI2kEHOBlZTk1', '_blank')
+              }
+            />
+          </Box>
         </Box>
         <Box className={classes.iconWrapper}>
+          <Typography className={classes.boldText}>Socials:</Typography>
           <FacebookIcon
             onClick={() =>
               window.open('https://www.facebook.com/NUSfintech/', '_blank')

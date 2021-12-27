@@ -180,10 +180,6 @@ const SYMPOSIUMS = [
         company: 'Octava',
       },
       {
-        name: 'Joe Mckenzie',
-        company: 'Index Coop',
-      },
-      {
         name: 'Tomas Molin',
         company: 'Messari',
       },

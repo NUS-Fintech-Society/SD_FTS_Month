@@ -160,17 +160,13 @@ export default function AboutHackathon() {
         variant="contained"
         className={classes.buttonWrapper}
         onClick={() =>
-          window.open('https://forms.gle/nCNG44YSNA3fEDTh7', '_blank')
+          window.open('https://forms.gle/i6TeXTfES6wVj2NBA', '_blank')
         }
       >
         <Typography variant="h6" className={classes.buttontext}>
-          I&apos;m Interested
+          Register Now
         </Typography>
       </Button>
-      <Typography variant="caption" className={classes.caption}>
-        *Click to indicate your interest in joining the hackathon and be
-        notified when official registration begins
-      </Typography>
     </div>
   )
 }

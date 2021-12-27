@@ -24,12 +24,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     marginBottom: 40,
   },
-  bodyWrapper: {
-    marginTop: 16,
+  textWrapper: {
+    marginTop: 40,
   },
   iconWrapper: {
-    cursor: 'pointer',
-    marginTop: 30,
+    marginTop: 40,
     '& :not(:first-child)': {
       marginLeft: 12,
     },
@@ -45,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
     left: '0',
     right: '0',
   },
+  button: {
+    cursor: 'pointer',
+  },
 }))
 
 const ContactUs = () => {
@@ -56,16 +58,46 @@ const ContactUs = () => {
         <Typography variant="h3" className={classes.header}>
           CONTACT US
         </Typography>
-        <Box className={classes.bodyWrapper}>
+        <Box className={classes.textWrapper}>
           <Typography>
-            If you have any questions about this event, or would like to work
-            with us in the future?
+            If you have any questions about the event, or would like to work
+            with us in the future:
           </Typography>
-          <Typography style={{ display: 'inline' }}>
+          <Typography style={{ display: 'inline', fontStyle: 'italic' }}>
             Feel free to reach out to us at{' '}
           </Typography>
-          <Typography style={{ display: 'inline', fontWeight: 'bold' }}>
+          <Typography
+            style={{
+              display: 'inline',
+              fontWeight: 'bold',
+              fontStyle: 'italic',
+            }}
+            color="primary"
+          >
             nusfintech.ops@gmail.com
+          </Typography>
+        </Box>
+        <Box className={classes.textWrapper}>
+          <Typography>
+            If you would like to join our Telegram group to receive quick
+            updates and find team members:
+          </Typography>
+          <Typography style={{ display: 'inline', fontStyle: 'italic' }}>
+            Feel free to do so{' '}
+          </Typography>
+          <Typography
+            style={{
+              display: 'inline',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              fontStyle: 'italic',
+            }}
+            color="primary"
+            onClick={() =>
+              window.open('https://t.me/+RJpVfJ1IVZcxYWNl', '_blank')
+            }
+          >
+            here
           </Typography>
         </Box>
         <Box className={classes.iconWrapper}>

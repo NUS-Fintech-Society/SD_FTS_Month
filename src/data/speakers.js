@@ -1,11 +1,5 @@
 const SPONSOR_SPEAKERS = [
   {
-    name: 'Jason Liew',
-    role: 'Product Lead',
-    company: 'Bybit',
-    image: '/speakers/Bybit - Jason Liew.jpeg',
-  },
-  {
     name: 'Igneus Terrenus',
     role: 'Head of Communications',
     company: 'Bybit',
@@ -13,9 +7,15 @@ const SPONSOR_SPEAKERS = [
   },
   {
     name: 'Helen Liu',
-    role: 'Human Resources',
+    role: 'Vice President (HR)',
     company: 'Bybit',
     image: '/speakers/Bybit - Helen Liu.png',
+  },
+  {
+    name: 'Jason Liew',
+    role: 'Product Lead',
+    company: 'Bybit',
+    image: '/speakers/Bybit - Jason Liew.jpeg',
   },
   {
     name: 'Nancy Gao',
@@ -109,12 +109,6 @@ const GUEST_SPEAKERS = [
     role: 'Chief Investment Officer',
     company: 'DeFiance Capital',
     image: '/speakers/DeFiance Capital - Arthur Cheong.jpg',
-  },
-  {
-    name: 'Joe McKenzie',
-    role: 'Community Manager',
-    company: 'Index Coop',
-    image: '/speakers/IndexCoop - Joe McKenzie.jpg',
   },
   {
     name: 'Sam Wong',

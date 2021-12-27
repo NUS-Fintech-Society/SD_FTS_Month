@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   box: {
+    padding: 32,
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
@@ -18,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     height: 'min-content',
     '& > *': {
       boxSizing: 'border-box',
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: 0,
     },
   },
   image: {

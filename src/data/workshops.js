@@ -40,6 +40,24 @@ const INTRO_WORKSHOPS = [
 const INDUSTRY_WORKSHOPS = [
   {
     id: 5,
+    date: '10 Jan 2022',
+    time: '1600-1700',
+    title: 'Intro to Asset Tokenisation',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Eric Neo',
+        company: 'HG Exchange',
+      },
+      {
+        name: 'Lee Jun Wei',
+        company: 'HG Exchange',
+      },
+    ],
+    image: '/workshops/intro-to-asset-tokenisation.jpg',
+  },
+  {
+    id: 6,
     date: '11 Jan 2022',
     time: '1600-1700',
     title: 'Stocks vs Crypto',
@@ -53,7 +71,7 @@ const INDUSTRY_WORKSHOPS = [
     image: '/workshops/placeholder-industry.jpg',
   },
   {
-    id: 6,
+    id: 7,
     date: '11 Jan 2022',
     time: '2000-2100',
     title: 'Getting started with Stellar',
@@ -71,7 +89,7 @@ const INDUSTRY_WORKSHOPS = [
     image: '/workshops/getting-started-with-stellar.jpeg',
   },
   {
-    id: 7,
+    id: 8,
     date: '12 Jan 2022',
     time: '1600-1700',
     title:
@@ -86,7 +104,7 @@ const INDUSTRY_WORKSHOPS = [
     image: '/workshops/how-revolut.png',
   },
   {
-    id: 8,
+    id: 9,
     date: '12 Jan 2022',
     time: '2000-2100',
     title: 'Token Market Making',
@@ -100,7 +118,7 @@ const INDUSTRY_WORKSHOPS = [
     image: '/workshops/token-market-making.jpg',
   },
   {
-    id: 9,
+    id: 10,
     date: '13 Jan 2022',
     time: '1600-1700',
     title: 'Navigating the Multi-Chain Landscape',
@@ -113,11 +131,29 @@ const INDUSTRY_WORKSHOPS = [
     ],
     image: '/workshops/navigating-the-multi-chain-landscape.jpg',
   },
+  {
+    id: 11,
+    date: '13 Jan 2022',
+    time: '2000-2100',
+    title: 'NFT - State of the Art',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Tomohiro Nakamura',
+        company: 'StartBahn',
+      },
+      {
+        name: 'Daniel Lui',
+        company: 'StartBahn',
+      },
+    ],
+    image: '/workshops/nft-state-of-art.jpg',
+  },
 ]
 
 const SYMPOSIUMS = [
   {
-    id: 10,
+    id: 12,
     date: '10 Jan 2022',
     time: '2000-2130',
     title: 'FinTech for Personal Finance',
@@ -143,7 +179,7 @@ const SYMPOSIUMS = [
     image: '/workshops/fintech-for-personal-finance.jpg',
   },
   {
-    id: 11,
+    id: 13,
     date: '14 Jan 2022',
     time: 'TBC',
     title: 'Careers in Fintech (General)',
@@ -165,7 +201,7 @@ const SYMPOSIUMS = [
     image: '/workshops/placeholder-symposium.jpg',
   },
   {
-    id: 12,
+    id: 14,
     date: '14 Jan 2022',
     time: '2000-2130',
     title: 'Careers in Crypto',

@@ -115,7 +115,7 @@ const INDUSTRY_WORKSHOPS = [
     id: 9,
     date: '12 Jan 2022',
     time: '2000-2100',
-    title: 'Token Market Making',
+    title: 'Introduction to Market Making',
     location: 'Zoom',
     speakers: [
       {

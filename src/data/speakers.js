@@ -58,7 +58,7 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'David Wang',
-    role: 'CEO & Founder',
+    role: 'Founder & Chief Executive Officer',
     company: 'Helicap',
     image: '/speakers/Helicap - David Z Wang.jpg',
   },
@@ -70,7 +70,7 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'John Gu',
-    role: 'Founder & CEO',
+    role: 'Founder & Chief Executive Officer',
     company: 'AlphaLab Capital',
     image: '/speakers/AlphaLab Capital - John Gu.png',
   },
@@ -118,7 +118,7 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'Tomihoro Nakamura',
-    role: 'CTO',
+    role: 'Chief Technology Officer',
     company: 'Startbahn',
     image: '/speakers/Startbahn - Tomohiro Nakamura.jpg',
   },

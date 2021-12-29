@@ -6,6 +6,7 @@ const INTRO_WORKSHOPS = [
     title: 'Natural Language Processing in Fintech',
     location: 'Zoom',
     speakers: [],
+    moderators: [],
     image: '/workshops/placeholder-intro.jpg',
   },
   {
@@ -15,6 +16,7 @@ const INTRO_WORKSHOPS = [
     title: 'Model Interpretability in Risk Analytics',
     location: 'Zoom',
     speakers: [],
+    moderators: [],
     image: '/workshops/model-interpretability-in-risk-analytics.jpg',
   },
   {
@@ -24,6 +26,7 @@ const INTRO_WORKSHOPS = [
     title: 'Intro to Blockchain',
     location: 'Zoom',
     speakers: [],
+    moderators: [],
     image: '/workshops/intro-to-blockchain.jpg',
   },
   {
@@ -33,6 +36,7 @@ const INTRO_WORKSHOPS = [
     title: 'Web2 to Web3 : The new Internet',
     location: 'Zoom',
     speakers: [],
+    moderators: [],
     image: '/workshops/web2-to-web3.jpg',
   },
 ]
@@ -54,6 +58,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'HG Exchange',
       },
     ],
+    moderators: [],
     image: '/workshops/intro-to-asset-tokenisation.jpg',
   },
   {
@@ -68,6 +73,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Bybit',
       },
     ],
+    moderators: [],
     image: '/workshops/placeholder-industry.jpg',
   },
   {
@@ -86,6 +92,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Stellar',
       },
     ],
+    moderators: [],
     image: '/workshops/getting-started-with-stellar.jpeg',
   },
   {
@@ -101,6 +108,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'Revolut',
       },
     ],
+    moderators: [],
     image: '/workshops/how-revolut.png',
   },
   {
@@ -115,6 +123,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'AlphaLab Capital',
       },
     ],
+    moderators: [],
     image: '/workshops/token-market-making.jpg',
   },
   {
@@ -129,6 +138,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'OIO Singapore',
       },
     ],
+    moderators: [],
     image: '/workshops/navigating-the-multi-chain-landscape.jpg',
   },
   {
@@ -147,6 +157,7 @@ const INDUSTRY_WORKSHOPS = [
         company: 'StartBahn',
       },
     ],
+    moderators: [],
     image: '/workshops/nft-state-of-art.jpg',
   },
 ]
@@ -160,6 +171,10 @@ const SYMPOSIUMS = [
     location: 'TBC',
     speakers: [
       {
+        name: 'Igneus Terrenus',
+        company: 'Bybit',
+      },
+      {
         name: 'Gavin Chia',
         company: 'Futu Singapore',
       },
@@ -171,9 +186,11 @@ const SYMPOSIUMS = [
         name: 'Deepak Khanna',
         company: 'Revolut',
       },
+    ],
+    moderators: [
       {
-        name: 'Igneus Terrenus',
-        company: 'Bybit',
+        name: 'Su Shane Yeoh',
+        company: 'NUS Fintech Society',
       },
     ],
     image: '/workshops/fintech-for-personal-finance.jpg',
@@ -181,7 +198,7 @@ const SYMPOSIUMS = [
   {
     id: 13,
     date: '14 Jan 2022',
-    time: 'TBC',
+    time: '1830-2000',
     title: 'Careers in Fintech (General)',
     location: 'Shaw Foundation Alumni House',
     speakers: [
@@ -198,15 +215,25 @@ const SYMPOSIUMS = [
         company: 'SeaMoney',
       },
     ],
+    moderators: [
+      {
+        name: 'Prof. Keith Carter',
+        company: 'NUS Fintech Labs',
+      },
+    ],
     image: '/workshops/placeholder-symposium.jpg',
   },
   {
     id: 14,
     date: '14 Jan 2022',
-    time: '2000-2130',
+    time: '1930-2130',
     title: 'Careers in Crypto',
     location: 'UTown Auditorium 2',
     speakers: [
+      {
+        name: 'Helen Liu',
+        company: 'Bybit',
+      },
       {
         name: 'Arthur Cheong',
         company: 'DeFiance Capital',
@@ -218,6 +245,12 @@ const SYMPOSIUMS = [
       {
         name: 'Tomas Molin',
         company: 'Messari',
+      },
+    ],
+    moderators: [
+      {
+        name: 'Hum Qing Ze',
+        company: 'Tribe',
       },
     ],
     image: '/workshops/careers-in-crypto.jpg',

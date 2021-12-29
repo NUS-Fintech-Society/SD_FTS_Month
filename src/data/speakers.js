@@ -19,7 +19,7 @@ const SPONSOR_SPEAKERS = [
   },
   {
     name: 'Nancy Gao',
-    role: 'Human Resources',
+    role: 'Human Resources Manager',
     company: 'Bybit',
     image: '/speakers/Moledao - Nancy Gao.jpg',
   },
@@ -52,7 +52,7 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'Ernest Tay',
-    role: 'Head of sales',
+    role: 'Head of Sales',
     company: 'Spenmo',
     image: '/speakers/Spenmo - Ernest.jpeg',
   },

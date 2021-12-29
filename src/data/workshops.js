@@ -1,92 +1,231 @@
-export default [
+const INTRO_WORKSHOPS = [
   {
-    tag: 'Blockchain',
-    workshops: [
-      {
-        id: 1,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'Stock Price Prediction',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-      {
-        id: 2,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'News Headline Sentiment Analysis',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-      {
-        id: 3,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'Stock Price Prediction',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-    ],
+    id: 1,
+    date: '05 Jan 2022',
+    time: '1100-1200',
+    title: 'Natural Language Processing in Fintech',
+    location: 'Zoom',
+    speakers: [],
+    image: '/workshops/placeholder-intro.jpg',
   },
   {
-    tag: 'Machine Learning',
-    workshops: [
-      {
-        id: 4,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'News Headline Sentiment Analysis',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-      {
-        id: 5,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'Stock Price Prediction',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-      {
-        id: 6,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'News Headline Sentiment Analysis',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-      {
-        id: 7,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'News Headline Sentiment Analysis',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-      {
-        id: 8,
-        name: 'Lorem Ipsum',
-        role: 'Lead Data Scientist, Analytics',
-        title: 'News Headline Sentiment Analysis',
-        image: 'workshop-image.png',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iniaculis viverra laoreet. Nam pretium purus diam, eu lacinia nisiconsequat et. Mauris sollicitudin eget nulla vitae ultrices. Donecsed orci enim. In consectetur nisi non rhoncus aliquet. Proin nectortor et nunc laoreet ornare at vel justo. Vivamus consecteturnec leo ac tincidunt. Mauris elementum magna sed mattis laoreet.Vestibulum convallis blandit tincidunt. Integer laoreet tempus',
-        link: 'https://www.google.com',
-      },
-    ],
+    id: 2,
+    date: '06 Jan 2022',
+    time: '1100-1200',
+    title: 'Model Interpretability in Risk Analytics',
+    location: 'Zoom',
+    speakers: [],
+    image: '/workshops/model-interpretability-in-risk-analytics.jpg',
+  },
+  {
+    id: 3,
+    date: '07 Jan 2022',
+    time: '1100-1200',
+    title: 'Intro to Blockchain',
+    location: 'Zoom',
+    speakers: [],
+    image: '/workshops/intro-to-blockchain.jpg',
+  },
+  {
+    id: 4,
+    date: '08 Jan 2022',
+    time: '1100-1200',
+    title: 'Web2 to Web3 : The new Internet',
+    location: 'Zoom',
+    speakers: [],
+    image: '/workshops/web2-to-web3.jpg',
   },
 ]
+
+const INDUSTRY_WORKSHOPS = [
+  {
+    id: 5,
+    date: '10 Jan 2022',
+    time: '1600-1700',
+    title: 'Intro to Asset Tokenisation',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Eric Neo',
+        company: 'HG Exchange',
+      },
+      {
+        name: 'Lee Jun Wei',
+        company: 'HG Exchange',
+      },
+    ],
+    image: '/workshops/intro-to-asset-tokenisation.jpg',
+  },
+  {
+    id: 6,
+    date: '11 Jan 2022',
+    time: '1600-1700',
+    title: 'Stocks vs Crypto',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Jason Liew',
+        company: 'Bybit',
+      },
+    ],
+    image: '/workshops/placeholder-industry.jpg',
+  },
+  {
+    id: 7,
+    date: '11 Jan 2022',
+    time: '2000-2100',
+    title: 'Getting started with Stellar',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Anke Liu',
+        company: 'Stellar',
+      },
+      {
+        name: 'Tyler van der Hoeven',
+        company: 'Stellar',
+      },
+    ],
+    image: '/workshops/getting-started-with-stellar.jpeg',
+  },
+  {
+    id: 8,
+    date: '12 Jan 2022',
+    time: '1600-1700',
+    title:
+      'How Revolut makes foreign exchange faster and cheaper than traditional money changers?',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Arjun Khanna',
+        company: 'Revolut',
+      },
+    ],
+    image: '/workshops/how-revolut.png',
+  },
+  {
+    id: 9,
+    date: '12 Jan 2022',
+    time: '2000-2100',
+    title: 'Token Market Making',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'John Gu',
+        company: 'AlphaLab Capital',
+      },
+    ],
+    image: '/workshops/token-market-making.jpg',
+  },
+  {
+    id: 10,
+    date: '13 Jan 2022',
+    time: '1600-1700',
+    title: 'Navigating the Multi-Chain Landscape',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Sam Wong',
+        company: 'OIO Singapore',
+      },
+    ],
+    image: '/workshops/navigating-the-multi-chain-landscape.jpg',
+  },
+  {
+    id: 11,
+    date: '13 Jan 2022',
+    time: '2000-2100',
+    title: 'NFT - State of the Art',
+    location: 'Zoom',
+    speakers: [
+      {
+        name: 'Tomohiro Nakamura',
+        company: 'StartBahn',
+      },
+      {
+        name: 'Daniel Lui',
+        company: 'StartBahn',
+      },
+    ],
+    image: '/workshops/nft-state-of-art.jpg',
+  },
+]
+
+const SYMPOSIUMS = [
+  {
+    id: 12,
+    date: '10 Jan 2022',
+    time: '2000-2130',
+    title: 'FinTech for Personal Finance',
+    location: 'TBC',
+    speakers: [
+      {
+        name: 'Gavin Chia',
+        company: 'Futu Singapore',
+      },
+      {
+        name: 'Amanda Ong',
+        company: 'Stashaway',
+      },
+      {
+        name: 'Deepak Khanna',
+        company: 'Revolut',
+      },
+      {
+        name: 'Igneus Terrenus',
+        company: 'Bybit',
+      },
+    ],
+    image: '/workshops/fintech-for-personal-finance.jpg',
+  },
+  {
+    id: 13,
+    date: '14 Jan 2022',
+    time: 'TBC',
+    title: 'Careers in Fintech (General)',
+    location: 'Shaw Foundation Alumni House',
+    speakers: [
+      {
+        name: 'Ernest Teh Jia En',
+        company: 'Spenmo',
+      },
+      {
+        name: 'David Z Wang',
+        company: 'Helicap',
+      },
+      {
+        name: 'E Teng Tay',
+        company: 'SeaMoney',
+      },
+    ],
+    image: '/workshops/placeholder-symposium.jpg',
+  },
+  {
+    id: 14,
+    date: '14 Jan 2022',
+    time: '2000-2130',
+    title: 'Careers in Crypto',
+    location: 'UTown Auditorium 2',
+    speakers: [
+      {
+        name: 'Arthur Cheong',
+        company: 'DeFiance Capital',
+      },
+      {
+        name: 'Gene Yan',
+        company: 'Octava',
+      },
+      {
+        name: 'Tomas Molin',
+        company: 'Messari',
+      },
+    ],
+    image: '/workshops/careers-in-crypto.jpg',
+  },
+]
+
+export default {
+  INTRO_WORKSHOPS,
+  INDUSTRY_WORKSHOPS,
+  SYMPOSIUMS,
+}

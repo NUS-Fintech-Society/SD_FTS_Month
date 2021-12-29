@@ -9,9 +9,9 @@ import OtherPrizes from '../../components/OtherPrizes'
 import ContactUs from '../../components/ContactUs'
 import WorkshopBanner from '../../components/WorkshopBanner'
 import AboutHackathon from '../../components/AboutHackathon'
-import Timeline from '../../components/MyTimeline'
 import Workshops from '../../components/Workshops'
-import JudgingCriteria from '../../components/JudgingCriteria'
+import StaticTimeline from '../../components/MyTimeline/StaticTimeline'
+import HackathonResources from '../../components/HackathonResources'
 
 const Home = () => {
   return (
@@ -20,22 +20,28 @@ const Home = () => {
         <Hero />
       </div>
       <About />
-      <AboutHackathon />
+      <StaticTimeline />
+      <div id="hackathon">
+        <AboutHackathon />
+        <Prizes />
+        <OtherPrizes />
+        <HackathonResources />
+      </div>
       <div id="workshops">
         <WorkshopBanner />
         <Workshops />
       </div>
-      <Prizes />
-      <OtherPrizes />
-      <JudgingCriteria />
-      <div id="timeline">
-        <Timeline />
+      <div id="faq">
+        <FAQ />
       </div>
-      <FAQ />
       <Sponsors />
       <div id="contact">
         <ContactUs />
       </div>
+      {/* Temporarily Removed */}
+      {/* <JudgingCriteria /> */}
+      {/* <HackathonTimeline /> */}
+      {/* <WorkshopTimeline /> */}
     </Layout>
   )
 }

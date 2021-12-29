@@ -1,78 +1,135 @@
 import React from 'react'
-import Layout from '../Layout'
 import { makeStyles } from '@material-ui/core/styles'
-import { Box, Typography } from '@material-ui/core'
-import WorkshopRenderer from './WorkshopRenderer'
+import { Box, Button, Container, Typography } from '@material-ui/core'
+import WorkshopCard from './WorkshopCard'
+import WORKSHOPS from '../../data/workshops'
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    padding: 48,
+    minHeight: '100vh',
+    [theme.breakpoints.down('xs')]: {
+      padding: '24px 4px',
+      textAlign: 'center',
+    },
+  },
+  bodyWrapper: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: 80,
   },
-  title: {
-    textAlign: 'left',
-    fontWeight: 700,
-    margin: 'auto',
-    width: '100%',
-    maxWidth: '960px',
-    paddingBottom: '32px',
-    paddingTop: '48px',
-    [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
-      justifyContent: 'center',
+  header: {
+    marginTop: 48,
+    marginBottom: 24,
+    fontWeight: 600,
+  },
+  button: {
+    fontSize: 20,
+    borderRadius: '50px',
+    height: '60px',
+    width: '200px',
+    marginBottom: 8,
+    '& .MuiTypography-root': {
+      color: theme.palette.text.contrast,
     },
   },
-  overview: {
-    textAlign: 'justify',
-    margin: 'auto',
-    width: '100%',
-    maxWidth: '960px',
-    paddingBottom: '45px',
-    [theme.breakpoints.down('sm')]: {
-      textAlign: 'left',
-      maxWidth: '460px',
-      justifyContent: 'center',
+  sectionWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    maxWidth: '100%',
+    '& .MuiCard-root': {
+      margin: 16,
+    },
+    [theme.breakpoints.down('xs')]: {
+      '& .MuiCard-root': {
+        margin: '16px 4px',
+      },
     },
   },
 }))
 
 const Workshops = () => {
   const classes = useStyles()
-  const renderedWorkshops = WorkshopRenderer()
-  return (
-    <Layout>
-      <Box
-        display="flex"
-        textAlign="left"
-        margin="auto"
-        width="100%"
-        flexDirection="row"
-      >
-        <Box width="30%"></Box>
-      </Box>
-      <Box className={classes.root}>
-        <Typography className={classes.title} variant="h5">
-          General Workshop Details:
-        </Typography>
-        <Typography className={classes.overview}>
-          <ul>
-            <li>
-              Participants will earn a verifiable certificate of participation
-              when participating in each workshop.
-            </li>
-            <li>
-              Attendace will be taken during the workshops. A full attendance is
-              required in order to receive the certificates.
-            </li>
-          </ul>
-        </Typography>
 
-        {renderedWorkshops}
-      </Box>
-    </Layout>
+  const { INTRO_WORKSHOPS, INDUSTRY_WORKSHOPS, SYMPOSIUMS } = WORKSHOPS
+
+  const renderWorkshops = (data) => {
+    return data.map((ws) => {
+      return <WorkshopCard key={ws.key} workshop={ws} />
+    })
+  }
+
+  return (
+    <Box className={classes.root}>
+      <Container maxWidth="lg" className={classes.bodyWrapper}>
+        <Typography variant="h3" className={classes.title}>
+          WORKSHOP DETAILS
+        </Typography>
+        <ul>
+          <Typography component="li">
+            Participants will earn a verifiable certificate of participation
+            when participating in each workshop.
+          </Typography>
+          <Typography component="li">
+            Attendance will be taken during the workshops. A full attendance is
+            required in order to receive the certificates.
+          </Typography>
+        </ul>
+
+        <Typography variant="h5" className={classes.header}>
+          Introductory Workshops
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() =>
+            window.open('https://forms.gle/uY2Q8uGTMmLVTUeS6', '_blank')
+          }
+        >
+          <Typography variant="subtitle1">Register Now</Typography>
+        </Button>
+        <Box className={classes.sectionWrapper}>
+          {renderWorkshops(INTRO_WORKSHOPS)}
+        </Box>
+
+        <Typography variant="h5" className={classes.header}>
+          Industry Workshops
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() =>
+            window.open('https://forms.gle/3u4n8by519KTy9BV8', '_blank')
+          }
+        >
+          <Typography variant="subtitle1">Register Now</Typography>
+        </Button>
+        <Box className={classes.sectionWrapper}>
+          {renderWorkshops(INDUSTRY_WORKSHOPS)}
+        </Box>
+
+        <Typography variant="h5" className={classes.header}>
+          Symposiums
+        </Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() =>
+            window.open('https://forms.gle/shL8Pei2os4Jvhi76', '_blank')
+          }
+        >
+          <Typography variant="subtitle1">Register Now</Typography>
+        </Button>
+        <Box className={classes.sectionWrapper}>
+          {renderWorkshops(SYMPOSIUMS)}
+        </Box>
+      </Container>
+    </Box>
   )
 }
 

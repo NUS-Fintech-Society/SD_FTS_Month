@@ -82,15 +82,13 @@ const useStyles = makeStyles((theme) => ({
   },
   coinAmtText: {
     fontWeight: 700,
-    fontSize: '48px',
-    marginRight: '3vh',
+    fontSize: '3vw',
+    marginRight: '2.5vh',
     [theme.breakpoints.down('sm')]: {
-      fontSize: '28px',
       marginRight: '2vh',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '15px',
-      marginRight: '0.5vh',
+      marginRight: '0.2vh',
     },
   },
   boxWrapper: {
@@ -127,13 +125,13 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
   },
   cryptoImage: {
-    maxWidth: '100%',
+    maxWidth: '70%',
     height: 'auto',
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '70%',
+      maxWidth: '50%',
     },
     [theme.breakpoints.down('xs')]: {
-      maxWidth: '50%',
+      maxWidth: '30%',
     },
   },
 }))
@@ -152,13 +150,12 @@ const Prizes = () => {
           <Box
             padding={2}
             justify="center"
-            alignItems="center"
             display="flex"
             flexDirection="column"
           >
             <Typography className={classes.header}>Hackathon Prizes</Typography>
             <Typography className={classes.description}>
-              Stand a chance to win BTC and more!
+              Stand a chance to win highly attractive cash prizes!
             </Typography>
           </Box>
         </Grid>
@@ -191,12 +188,7 @@ const Prizes = () => {
               alignItems="center"
               className={classes.boxWrapper}
             >
-              <Typography className={classes.coinAmtText}>0.5</Typography>
-              <img
-                className={classes.cryptoImage}
-                alt="cryptocurrency"
-                src="crypto.png"
-              ></img>
+              <Typography className={classes.coinAmtText}>$15000</Typography>
             </Box>
             <Typography className={classes.firstPrizeText}>
               1st Prize
@@ -219,12 +211,7 @@ const Prizes = () => {
               alignItems="center"
               className={classes.boxWrapper}
             >
-              <Typography className={classes.coinAmtText}>0.25</Typography>
-              <img
-                className={classes.cryptoImage}
-                alt="cryptocurrency"
-                src="crypto.png"
-              ></img>
+              <Typography className={classes.coinAmtText}>$10000</Typography>
             </Box>
             <Typography className={classes.secondPrizeText}>
               2nd Prize
@@ -247,12 +234,7 @@ const Prizes = () => {
               alignItems="center"
               className={classes.boxWrapper}
             >
-              <Typography className={classes.coinAmtText}>0.1</Typography>
-              <img
-                className={classes.cryptoImage}
-                alt="cryptocurrency"
-                src="crypto.png"
-              ></img>
+              <Typography className={classes.coinAmtText}>$5000</Typography>
             </Box>
             <Typography className={classes.thirdPrizeText}>
               3rd Prize

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'
-
+import { Link } from 'react-scroll'
 import Sponsors from './Sponsors.jsx'
 
 const calculateTimeLeft = () => {
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     left: '50%',
     transform: 'translate(-50%, 0)',
     marginTop: '40px',
+    zIndex: 1,
     '& > div:not(:first-child)': {
       marginLeft: 36,
     },
@@ -55,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   countdownUnitLabel: {
     color: theme.palette.text.contrast,
     fontWeight: 700,
-    paddingTop: '8px',
+    marginTop: 8,
   },
   digit: {
     position: 'relative',
@@ -158,27 +159,37 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonWrapper: {
     marginTop: '40px',
-    marginBottom: '60px',
     borderRadius: '50px',
-    height: '80px',
-    width: '320px',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '60vw',
-      marginBottom: '30px',
+    height: '70px',
+    width: '200px',
+    '&:not(:first-child)': {
+      marginLeft: 24,
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '150px',
       height: '40px',
       '& *': {
         fontSize: '1em',
       },
-    },
-
-    '& :not(:first-child)': {
-      marginLeft: 12,
     },
     zIndex: 1,
   },
   sponsors: {
     zIndex: 1,
     position: 'relative',
+  },
+  prizeTitle: {
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '48px',
+    },
+  },
+  prizeSubtitle: {
+    [theme.breakpoints.up('md')]: {
+      fontSize: '28px',
+    },
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '24px',
+    },
   },
 }))
 
@@ -221,22 +232,86 @@ const Hero = () => {
                   <Typography variant="h2">{timeLeft[x] % 10}</Typography>
                 </div>
               </div>
-              <div className={classes.countdownUnitLabel}>
-                <Typography variant="p">{x}</Typography>
-              </div>
+              <Typography
+                variant="body2"
+                className={classes.countdownUnitLabel}
+              >
+                {x}
+              </Typography>
             </div>
           ))}
         </div>
 
-        <Button
-          color="primary"
-          variant="contained"
-          className={classes.buttonWrapper}
-        >
-          <Typography variant="h5" className={classes.buttontext}>
-            Apply Now
-          </Typography>
-        </Button>
+        <Box style={{ position: 'relative', marginTop: '10px' }}>
+          <Box
+            style={{
+              position: 'relative',
+              zIndex: 1,
+              marginTop: '20px',
+            }}
+          >
+            <Typography
+              variant="h1"
+              className={classes.prizeTitle}
+              style={{ color: '#FFF' }}
+            >
+              $50,000
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              className={classes.prizeSubtitle}
+              style={{ color: '#FFF' }}
+            >
+              cash prizes to be won
+            </Typography>
+          </Box>
+          <img
+            style={{
+              position: 'relative',
+              width: '80%',
+              maxWidth: '400px',
+              zIndex: 1,
+            }}
+            src="hero-trophy.png"
+          />
+          <img
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              maxWidth: '700px',
+              width: '90%',
+              zIndex: 0,
+            }}
+            src="hero-confetti.png"
+          />
+        </Box>
+
+        <Box display="flex" justifyContent="center">
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.buttonWrapper}
+          >
+            <Typography variant="subtitle1" className={classes.buttontext}>
+              <Link to="hackathon" smooth={true} duration={500}>
+                Hackathon
+              </Link>
+            </Typography>
+          </Button>
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.buttonWrapper}
+          >
+            <Typography variant="subtitle1" className={classes.buttontext}>
+              <Link to="workshops" smooth={true} duration={500}>
+                Workshops
+              </Link>
+            </Typography>
+          </Button>
+        </Box>
         <div className={classes.sponsors}>
           <Sponsors />
         </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, IconButton, Menu } from '@material-ui/core'
-import Button from '@material-ui/core/Button'
 import MenuIcon from '@material-ui/icons/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import { Link } from 'react-scroll'
@@ -146,7 +145,6 @@ const NavBar = () => {
           sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
         >
           <IconButton
-            size="large"
             aria-label="account of current user"
             aria-controls="menu-appbar"
             aria-haspopup="true"
@@ -185,6 +183,16 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <Link
+                to="hackathon"
+                smooth={true}
+                duration={scrollDuration}
+                onClick={handleCloseNavMenu}
+              >
+                Hackathon
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link
                 to="workshops"
                 smooth={true}
                 duration={scrollDuration}
@@ -195,12 +203,12 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem>
               <Link
-                to="timeline"
+                to="faq"
                 smooth={true}
                 duration={scrollDuration}
                 onClick={handleCloseNavMenu}
               >
-                Timeline
+                FAQ
               </Link>
             </MenuItem>
             <MenuItem>
@@ -219,7 +227,7 @@ const NavBar = () => {
         <div className={classes.navBarLogo}>
           <img
             className={classes.logoImage}
-            src="FTS-Logo-Transparent.png"
+            src="/credits/SocietyLogo.png"
             alt="NUS FTS"
           />
         </div>
@@ -233,13 +241,18 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
+              <Link to="hackathon" smooth={true} duration={scrollDuration}>
+                Hackathon
+              </Link>
+            </li>
+            <li>
               <Link to="workshops" smooth={true} duration={scrollDuration}>
                 Workshops
               </Link>
             </li>
             <li>
-              <Link to="timeline" smooth={true} duration={scrollDuration}>
-                Timeline
+              <Link to="faq" smooth={true} duration={scrollDuration}>
+                FAQ
               </Link>
             </li>
             <li>
@@ -249,15 +262,6 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-
-        <Button
-          className={classes.navButton}
-          color="primary"
-          variant="contained"
-          href="https://fintechsociety.comp.nus.edu.sg/"
-        >
-          Visit NUS Fintech Website
-        </Button>
       </nav>
     </Box>
   )

@@ -5,7 +5,10 @@ on:
     branches:
       - main
 
-# IMPORTANT: 
+env:
+  NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID_PROD}}
+
+# IMPORTANT:
 # - Add .nojekyll file in output folder to inform GitHub not to build the project using Jekyll.
 # - Using GitHub Pages without a custom domain will result in deployed site breaking, as static assets and URLs are not linked properly.
 # For more information, check out https://dev.to/jameswallis/deploying-a-next-js-app-to-github-pages-24pn
@@ -22,8 +25,8 @@ jobs:
           yarn
           yarn build
           touch out/.nojekyll
-      - name: Deploy 
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: gh-pages 
+          branch: gh-pages
           folder: out

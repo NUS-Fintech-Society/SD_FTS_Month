@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box, Container, Typography } from '@material-ui/core'
-import ImageComponent from './image'
 import Vector from './vector'
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +18,13 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     fontWeight: 700,
+  },
+  montageWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    '& > img': {
+      maxWidth: '100%',
+    },
   },
   bodyWrapper: {
     marginTop: 16,
@@ -68,10 +74,8 @@ export default function About() {
           ABOUT FINTECH MONTH
         </Typography>
       </Box>
-      <Container>
-        <div className={classes.imgBox}>
-          <ImageComponent />
-        </div>
+      <Container className={classes.montageWrapper} maxWidth="lg">
+        <img src="about-fintech-month.png" alt="Event Montage" />
       </Container>
       <div className={classes.vector}>
         <Vector />

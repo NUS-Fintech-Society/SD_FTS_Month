@@ -36,8 +36,10 @@ export default function MyApp(props) {
     <>
       <Head>
         <title>NUS Fintech Month</title>
-        <meta description="Official website for the annual Fintech Month, proudly hosted by NUS Fintech Society" />
-
+        <meta
+          name="description"
+          content="Official website for the annual Fintech Month, proudly hosted by NUS Fintech Society"
+        />
         <meta property="og:title" content="NUS Fintech Month" />
         <meta
           property="og:description"

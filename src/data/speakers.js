@@ -19,7 +19,7 @@ const SPONSOR_SPEAKERS = [
   },
   {
     name: 'Nancy Gao',
-    role: 'Human Resources',
+    role: 'Human Resources Manager',
     company: 'Bybit',
     image: '/speakers/Moledao - Nancy Gao.jpg',
   },
@@ -52,13 +52,13 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'Ernest Tay',
-    role: 'Head of sales',
+    role: 'Head of Sales',
     company: 'Spenmo',
     image: '/speakers/Spenmo - Ernest.jpeg',
   },
   {
     name: 'David Wang',
-    role: 'CEO & Founder',
+    role: 'Founder & CEO',
     company: 'Helicap',
     image: '/speakers/Helicap - David Z Wang.jpg',
   },
@@ -106,7 +106,7 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'Arthur Cheong',
-    role: 'Chief Investment Officer',
+    role: 'CIO',
     company: 'DeFiance Capital',
     image: '/speakers/DeFiance Capital - Arthur Cheong.jpg',
   },

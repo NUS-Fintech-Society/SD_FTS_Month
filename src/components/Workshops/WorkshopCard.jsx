@@ -51,22 +51,32 @@ const WorkshopCard = (props) => {
           >
             {workshop.title}
           </Typography>
-          <Typography variant="body2" className={classes.sectionHeader}>
-            Speakers:
-          </Typography>
-          {workshop.speakers.length > 0 ? (
+          {workshop.speakers.length > 0 && (
+            <Typography variant="body2" className={classes.sectionHeader}>
+              Speakers:
+            </Typography>
+          )}
+          {workshop.speakers.length > 0 &&
             workshop.speakers.map((speaker, index) => {
               return (
                 <Typography key={index} variant="body2" color="textSecondary">
                   {`${speaker.name} (${speaker.company})`}
                 </Typography>
               )
-            })
-          ) : (
-            <Typography variant="body2" color="textSecondary">
-              TBC
+            })}
+          {workshop.moderators.length > 0 && (
+            <Typography variant="body2" className={classes.sectionHeader}>
+              Moderator:
             </Typography>
           )}
+          {workshop.moderators.length > 0 &&
+            workshop.moderators.map((speaker, index) => {
+              return (
+                <Typography key={index} variant="body2" color="textSecondary">
+                  {`${speaker.name} (${speaker.company})`}
+                </Typography>
+              )
+            })}
           <Typography variant="body2" className={classes.sectionHeader}>
             Date:
           </Typography>

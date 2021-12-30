@@ -71,7 +71,7 @@ const Sponsors = () => {
               }
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <img
               src="/credits/ripple-logo.png"
               alt="Ripple"
@@ -79,7 +79,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://ripple.com/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <img
               src="/credits/stellar-logo.png"
               alt="Stellar"
@@ -131,7 +131,7 @@ const Sponsors = () => {
           spacing={4}
           style={{ maxWidth: '900px' }}
         >
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/alphalab-logo.png"
               alt="AlphaLab Capital"
@@ -141,7 +141,7 @@ const Sponsors = () => {
               }
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/defiance-capital-logo.png"
               alt="DeFiance Capital"
@@ -151,7 +151,7 @@ const Sponsors = () => {
               }
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/futu-singapore-logo.png"
               alt="Futu Singapore"
@@ -159,7 +159,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://www.futusg.com/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/helicap-logo.png"
               alt="Helicap"
@@ -167,7 +167,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://heli-cap.com/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/messari-logo.png"
               alt="Messari"
@@ -178,7 +178,7 @@ const Sponsors = () => {
           <Grid
             item
             xs={6}
-            md={3}
+            sm={3}
             style={{ paddingLeft: '48px', paddingRight: '48px' }}
           >
             <img
@@ -188,7 +188,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://www.octava.sg/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/revolut-logo.png"
               alt="Revolut"
@@ -198,7 +198,7 @@ const Sponsors = () => {
               }
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/spenmo-logo.png"
               alt="Spenmo"
@@ -206,7 +206,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://spenmo.com/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/stashaway-logo.png"
               alt="Stashaway"
@@ -214,15 +214,15 @@ const Sponsors = () => {
               onClick={() => window.open('https://www.stashaway.sg/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
-              src="/credits/shopee_logo.png"
-              alt="Shopee"
+              src="/credits/seamoney-logo.png"
+              alt="SeaMoney"
               width="100%"
-              onClick={() => window.open('https://shopee.sg/', '_blank')}
+              onClick={() => window.open('https://www.seamoney.com/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/oio-logo.png"
               alt="OIO"
@@ -230,7 +230,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://oio.holdings/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/startbahn-logo.png"
               alt="Startbahn"
@@ -238,7 +238,7 @@ const Sponsors = () => {
               onClick={() => window.open('https://startbahn.jp/en/', '_blank')}
             />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} sm={3}>
             <img
               src="/credits/hg-exchange-logo.webp"
               alt="HG Exchange"

@@ -17,6 +17,13 @@ const calculateTimeLeft = () => {
       Minutes: Math.floor((difference / 1000 / 60) % 60),
       Seconds: Math.floor((difference / 1000) % 60),
     }
+  } else {
+    timeLeft = {
+      Days: 0,
+      Hours: 0,
+      Minutes: 0,
+      Seconds: 0,
+    }
   }
 
   return timeLeft

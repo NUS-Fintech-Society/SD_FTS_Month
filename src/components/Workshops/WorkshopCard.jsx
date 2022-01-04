@@ -5,7 +5,8 @@ import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
-import { Box } from '@material-ui/core'
+import { Button, Box } from '@material-ui/core'
+import VideocamIcon from '@material-ui/icons/Videocam'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionHeader: {
     fontWeight: 600,
+  },
+  conferenceButton: {
+    marginTop: 4,
   },
 }))
 
@@ -92,9 +96,21 @@ const WorkshopCard = (props) => {
           <Typography variant="body2" className={classes.sectionHeader}>
             Location:
           </Typography>
-          <Typography variant="body2" color="textSecondary">
-            {workshop.location}
-          </Typography>
+          {workshop.location.link ? (
+            <Button
+              color="primary"
+              variant="outlined"
+              endIcon={<VideocamIcon />}
+              onClick={() => window.open(workshop.location.link, '_blank')}
+              className={classes.conferenceButton}
+            >
+              {workshop.location.venue}
+            </Button>
+          ) : (
+            <Typography variant="body2" color="textSecondary">
+              {workshop.location.venue}
+            </Typography>
+          )}
         </CardContent>
       </Box>
     </Card>

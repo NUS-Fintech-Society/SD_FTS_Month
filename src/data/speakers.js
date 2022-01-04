@@ -106,7 +106,7 @@ const GUEST_SPEAKERS = [
   },
   {
     name: 'Arthur Cheong',
-    role: 'CIO',
+    role: 'Founder & Portfolio Manager',
     company: 'DeFiance Capital',
     image: '/speakers/DeFiance Capital - Arthur Cheong.jpg',
   },

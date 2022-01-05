@@ -42,7 +42,7 @@ const INTRO_WORKSHOPS = [
     title: 'Intro to Blockchain',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/84096994842',
+      link: '',
     },
     speakers: [
       {
@@ -60,7 +60,7 @@ const INTRO_WORKSHOPS = [
     title: 'Web2 to Web3 : The new Internet',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/89280927336',
+      link: '',
     },
     speakers: [
       {

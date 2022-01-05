@@ -85,6 +85,13 @@ const Workshops = () => {
           <Typography component="li">
             Attendance will be taken during the workshops.{' '}
           </Typography>
+          <Typography component="li">
+            To be eligible for the certificate,{' '}
+            <Typography className={classes.bold}>
+              please use the same email address{' '}
+            </Typography>
+            used during registration to enter the Zoom session(s).
+          </Typography>
         </ul>
 
         <Typography variant="h5" className={classes.header}>

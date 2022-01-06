@@ -217,7 +217,7 @@ const INDUSTRY_WORKSHOPS = [
     id: 12,
     date: '19 Jan 2022',
     time: '2000-2100',
-    title: 'Crypto for Decentralized\nSystems',
+    title: 'Crypto for Decentralized Systems',
     location: {
       venue: 'Zoom',
       link: '',
@@ -271,7 +271,7 @@ const INDUSTRY_WORKSHOPS = [
     id: 15,
     date: '20 Jan 2022',
     time: '2000-2100',
-    title: 'Algorithmic Scalability of Blockchain protocols',
+    title: 'Algorithmic Scalability of Blockchain Protocols',
     location: {
       venue: 'Zoom',
       link: '',
@@ -307,7 +307,7 @@ const INDUSTRY_WORKSHOPS = [
     id: 17,
     date: '21 Jan 2022',
     time: '2100-2200',
-    title: 'Security of Layer-0 blockchain networks',
+    title: 'Security of Layer-0 Blockchain Networks',
     location: {
       venue: 'Zoom',
       link: '',

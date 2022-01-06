@@ -6,7 +6,7 @@ const INTRO_WORKSHOPS = [
     title: 'Natural Language Processing in Fintech',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/86441275301',
+      link: '',
     },
     speakers: [
       {
@@ -24,7 +24,7 @@ const INTRO_WORKSHOPS = [
     title: 'Model Interpretability in Risk Analytics',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/83149813842',
+      link: '',
     },
     speakers: [
       {
@@ -42,7 +42,7 @@ const INTRO_WORKSHOPS = [
     title: 'Intro to Blockchain',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/84096994842',
     },
     speakers: [
       {

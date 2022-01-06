@@ -33,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.contrast,
     },
   },
+  bold: {
+    fontWeight: 600,
+    display: 'inline',
+  },
   sectionWrapper: {
     display: 'flex',
     alignItems: 'center',
@@ -73,8 +77,20 @@ const Workshops = () => {
             when participating in each workshop.
           </Typography>
           <Typography component="li">
-            Attendance will be taken during the workshops. A full attendance is
-            required in order to receive the certificates.
+            <Typography className={classes.bold}>
+              Registration and full attendance
+            </Typography>{' '}
+            are required, in order to receive the certificates.
+          </Typography>
+          <Typography component="li">
+            Attendance will be taken during the workshops.{' '}
+          </Typography>
+          <Typography component="li">
+            To be eligible for the certificate,{' '}
+            <Typography className={classes.bold}>
+              please use the same email address{' '}
+            </Typography>
+            used during registration to enter the Zoom session(s).
           </Typography>
         </ul>
 

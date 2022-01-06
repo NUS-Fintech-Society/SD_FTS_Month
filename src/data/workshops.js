@@ -4,8 +4,16 @@ const INTRO_WORKSHOPS = [
     date: '05 Jan 2022',
     time: '1100-1200',
     title: 'Natural Language Processing in Fintech',
-    location: 'Zoom',
-    speakers: [],
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Machine Learning Department',
+        company: 'NUS Fintech Society',
+      },
+    ],
     moderators: [],
     image: '/workshops/placeholder-intro.jpg',
   },
@@ -14,8 +22,16 @@ const INTRO_WORKSHOPS = [
     date: '06 Jan 2022',
     time: '1100-1200',
     title: 'Model Interpretability in Risk Analytics',
-    location: 'Zoom',
-    speakers: [],
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Machine Learning Department',
+        company: 'NUS Fintech Society',
+      },
+    ],
     moderators: [],
     image: '/workshops/model-interpretability-in-risk-analytics.jpg',
   },
@@ -24,8 +40,16 @@ const INTRO_WORKSHOPS = [
     date: '07 Jan 2022',
     time: '1100-1200',
     title: 'Intro to Blockchain',
-    location: 'Zoom',
-    speakers: [],
+    location: {
+      venue: 'Zoom',
+      link: 'https://us02web.zoom.us/j/84096994842',
+    },
+    speakers: [
+      {
+        name: 'Blockchain Department',
+        company: 'NUS Fintech Society',
+      },
+    ],
     moderators: [],
     image: '/workshops/intro-to-blockchain.jpg',
   },
@@ -34,8 +58,16 @@ const INTRO_WORKSHOPS = [
     date: '08 Jan 2022',
     time: '1100-1200',
     title: 'Web2 to Web3 : The new Internet',
-    location: 'Zoom',
-    speakers: [],
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Blockchain Department',
+        company: 'NUS Fintech Society',
+      },
+    ],
     moderators: [],
     image: '/workshops/web2-to-web3.jpg',
   },
@@ -47,7 +79,10 @@ const INDUSTRY_WORKSHOPS = [
     date: '10 Jan 2022',
     time: '1600-1700',
     title: 'Intro to Asset Tokenisation',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'Eric Neo',
@@ -66,7 +101,10 @@ const INDUSTRY_WORKSHOPS = [
     date: '11 Jan 2022',
     time: '1600-1700',
     title: 'Stocks vs Crypto',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'Jason Liew',
@@ -81,7 +119,10 @@ const INDUSTRY_WORKSHOPS = [
     date: '11 Jan 2022',
     time: '2000-2100',
     title: 'Getting started with Stellar',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'Anke Liu',
@@ -101,7 +142,10 @@ const INDUSTRY_WORKSHOPS = [
     time: '1600-1700',
     title:
       'How Revolut makes foreign exchange faster and cheaper than traditional money changers?',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'Arjun Khanna',
@@ -116,7 +160,10 @@ const INDUSTRY_WORKSHOPS = [
     date: '12 Jan 2022',
     time: '2000-2100',
     title: 'Introduction to Market Making',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'John Gu',
@@ -131,7 +178,10 @@ const INDUSTRY_WORKSHOPS = [
     date: '13 Jan 2022',
     time: '1600-1700',
     title: 'Navigating the Multi-Chain Landscape',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'Sam Wong',
@@ -146,7 +196,10 @@ const INDUSTRY_WORKSHOPS = [
     date: '13 Jan 2022',
     time: '2000-2100',
     title: 'NFT - State of the Art',
-    location: 'Zoom',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
     speakers: [
       {
         name: 'Tomohiro Nakamura',
@@ -168,7 +221,10 @@ const SYMPOSIUMS = [
     date: '10 Jan 2022',
     time: '2000-2130',
     title: 'FinTech for Personal Finance',
-    location: 'TBC',
+    location: {
+      venue: 'TBC',
+      link: '',
+    },
     speakers: [
       {
         name: 'Igneus Terrenus',
@@ -200,7 +256,10 @@ const SYMPOSIUMS = [
     date: '14 Jan 2022',
     time: '1830-2000',
     title: 'Careers in Fintech (General)',
-    location: 'Shaw Foundation Alumni House',
+    location: {
+      venue: 'Shaw Foundation Alumni House',
+      link: '',
+    },
     speakers: [
       {
         name: 'Ernest Teh Jia En',
@@ -228,7 +287,10 @@ const SYMPOSIUMS = [
     date: '14 Jan 2022',
     time: '1930-2130',
     title: 'Careers in Crypto',
-    location: 'UTown Auditorium 2',
+    location: {
+      venue: 'UTown Auditorium 2',
+      link: '',
+    },
     speakers: [
       {
         name: 'Helen Liu',

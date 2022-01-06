@@ -213,11 +213,119 @@ const INDUSTRY_WORKSHOPS = [
     moderators: [],
     image: '/workshops/nft-state-of-art.jpg',
   },
+  {
+    id: 12,
+    date: '19 Jan 2022',
+    time: '2000-2100',
+    title: 'Crypto for Decentralized Systems',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Kareem Shehata',
+        company: 'NUS Crystal Center',
+      },
+    ],
+    moderators: [],
+    image: '/workshops/crystal-center-1.jpg',
+  },
+  {
+    id: 13,
+    date: '19 Jan 2022',
+    time: '2100-2200',
+    title: 'Decentralized Social Networks',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Aashish Kolluri',
+        company: 'NUS Crystal Center',
+      },
+    ],
+    moderators: [],
+    image: '/workshops/crystal-center-2.jpg',
+  },
+  {
+    id: 14,
+    date: '20 Jan 2022',
+    time: '2000-2100',
+    title: 'Secure and Scalable Smart Contracts',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Ilya Sergey',
+        company: 'NUS Crystal Center',
+      },
+    ],
+    moderators: [],
+    image: '/workshops/crystal-center-3.jpg',
+  },
+  {
+    id: 15,
+    date: '20 Jan 2022',
+    time: '2000-2100',
+    title: 'Algorithmic Scalability of Blockchain Protocols',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Prateek Saxena',
+        company: 'NUS Crystal Center',
+      },
+    ],
+    moderators: [],
+    image: '/workshops/crystal-center-4.jpg',
+  },
+  {
+    id: 16,
+    date: '21 Jan 2022',
+    time: '2000-2100',
+    title: 'Distributed Protocol Verification',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'George Pirlea',
+        company: 'NUS Crystal Center',
+      },
+    ],
+    moderators: [],
+    image: '/workshops/crystal-center-5.jpg',
+  },
+  {
+    id: 17,
+    date: '21 Jan 2022',
+    time: '2100-2200',
+    title: 'Security of Layer-0 Blockchain Networks',
+    location: {
+      venue: 'Zoom',
+      link: '',
+    },
+    speakers: [
+      {
+        name: 'Muoi Tran',
+        company: 'NUS Crystal Center',
+      },
+    ],
+    moderators: [],
+    image: '/workshops/crystal-center-6.jpg',
+  },
 ]
 
 const SYMPOSIUMS = [
   {
-    id: 12,
+    id: 18,
     date: '10 Jan 2022',
     time: '2000-2130',
     title: 'FinTech for Personal Finance',
@@ -252,7 +360,7 @@ const SYMPOSIUMS = [
     image: '/workshops/fintech-for-personal-finance.jpg',
   },
   {
-    id: 13,
+    id: 19,
     date: '14 Jan 2022',
     time: '1830-2000',
     title: 'Careers in Fintech (General)',
@@ -283,7 +391,7 @@ const SYMPOSIUMS = [
     image: '/workshops/placeholder-symposium.jpg',
   },
   {
-    id: 14,
+    id: 20,
     date: '14 Jan 2022',
     time: '1930-2130',
     title: 'Careers in Crypto',

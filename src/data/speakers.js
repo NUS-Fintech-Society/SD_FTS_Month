@@ -18,12 +18,6 @@ const SPONSOR_SPEAKERS = [
     image: '/speakers/Bybit - Jason Liew.jpeg',
   },
   {
-    name: 'Nancy Gao',
-    role: 'Human Resources Manager',
-    company: 'Bybit',
-    image: '/speakers/Moledao - Nancy Gao.jpg',
-  },
-  {
     name: 'Anke Liu',
     role: 'Community and Events Manager',
     company: 'Stellar',
@@ -133,6 +127,12 @@ const GUEST_SPEAKERS = [
     role: 'Senior Manager, Retail Finance',
     company: 'SeaMoney',
     image: '/speakers/SeaMoney - E Teng.jpg',
+  },
+  {
+    name: 'Nancy Gao',
+    role: 'Human Resources Manager',
+    company: 'Moledao',
+    image: '/speakers/Moledao - Nancy Gao.jpg',
   },
   {
     name: 'Prateek Saxena',

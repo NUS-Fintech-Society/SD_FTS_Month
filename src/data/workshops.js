@@ -42,7 +42,7 @@ const INTRO_WORKSHOPS = [
     title: 'Intro to Blockchain',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/84096994842',
+      link: '',
     },
     speakers: [
       {
@@ -57,10 +57,10 @@ const INTRO_WORKSHOPS = [
     id: 4,
     date: '08 Jan 2022',
     time: '1100-1200',
-    title: 'Web2 to Web3 : The new Internet',
+    title: 'Web2 to Web3 : The New Internet',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/89280927336',
     },
     speakers: [
       {
@@ -118,7 +118,7 @@ const INDUSTRY_WORKSHOPS = [
     id: 7,
     date: '11 Jan 2022',
     time: '2000-2100',
-    title: 'Getting started with Stellar',
+    title: 'Getting Started with Stellar',
     location: {
       venue: 'Zoom',
       link: '',

@@ -238,6 +238,19 @@ const Sponsors = () => {
               onClick={() => window.open('https://startbahn.jp/en/', '_blank')}
             />
           </Grid>
+          <Grid
+            item
+            xs={6}
+            sm={3}
+            style={{ paddingLeft: '48px', paddingRight: '48px' }}
+          >
+            <img
+              src="/credits/moledao-logo.jpg"
+              alt="Moledao"
+              width="100%"
+              onClick={() => window.open('https://www.moledao.io/', '_blank')}
+            />
+          </Grid>
           <Grid item xs={6} sm={3}>
             <img
               src="/credits/hg-exchange-logo.webp"

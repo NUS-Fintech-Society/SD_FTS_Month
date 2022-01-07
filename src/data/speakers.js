@@ -18,12 +18,6 @@ const SPONSOR_SPEAKERS = [
     image: '/speakers/Bybit - Jason Liew.jpeg',
   },
   {
-    name: 'Nancy Gao',
-    role: 'Human Resources Manager',
-    company: 'Bybit',
-    image: '/speakers/Moledao - Nancy Gao.jpg',
-  },
-  {
     name: 'Anke Liu',
     role: 'Community and Events Manager',
     company: 'Stellar',
@@ -133,6 +127,48 @@ const GUEST_SPEAKERS = [
     role: 'Senior Manager, Retail Finance',
     company: 'SeaMoney',
     image: '/speakers/SeaMoney - E Teng.jpg',
+  },
+  {
+    name: 'Nancy Gao',
+    role: 'Human Resources Manager',
+    company: 'Moledao',
+    image: '/speakers/Moledao - Nancy Gao.jpg',
+  },
+  {
+    name: 'Prateek Saxena',
+    role: 'Associate Professor',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Prateek Saxena.png',
+  },
+  {
+    name: 'Aashish Kolluri',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Aashish Kolluri.png',
+  },
+  {
+    name: 'Kareem Shehata',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Kareem Shehata.jpg',
+  },
+  {
+    name: 'Ilya Sergey',
+    role: 'Associate Professor',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Ilya Sergey.png',
+  },
+  {
+    name: 'George Pirlea',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - George Pirlea.jpg',
+  },
+  {
+    name: 'Muoi Tran',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Muoi Tran.png',
   },
 ]
 

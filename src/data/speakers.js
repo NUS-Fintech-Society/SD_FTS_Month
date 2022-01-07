@@ -134,6 +134,42 @@ const GUEST_SPEAKERS = [
     company: 'SeaMoney',
     image: '/speakers/SeaMoney - E Teng.jpg',
   },
+  {
+    name: 'Prateek Saxena',
+    role: 'Associate Professor',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Prateek Saxena.png',
+  },
+  {
+    name: 'Aashish Kolluri',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Aashish Kolluri.png',
+  },
+  {
+    name: 'Kareem Shehata',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Kareem Shehata.jpg',
+  },
+  {
+    name: 'Ilya Sergey',
+    role: 'Associate Professor',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Ilya Sergey.png',
+  },
+  {
+    name: 'George Pirlea',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - George Pirlea.jpg',
+  },
+  {
+    name: 'Muoi Tran',
+    role: 'PhD Student',
+    company: 'NUS School of Computing',
+    image: '/speakers/SOC NUS - Muoi Tran.png',
+  },
 ]
 
 export default {

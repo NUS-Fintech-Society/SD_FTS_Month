@@ -330,7 +330,7 @@ const SYMPOSIUMS = [
     time: '2000-2130',
     title: 'FinTech for Personal Finance',
     location: {
-      venue: 'TBC',
+      venue: 'Zoom',
       link: '',
     },
     speakers: [
@@ -365,7 +365,7 @@ const SYMPOSIUMS = [
     time: '1830-2000',
     title: 'Careers in Fintech (General)',
     location: {
-      venue: 'Shaw Foundation Alumni House',
+      venue: 'Zoom',
       link: '',
     },
     speakers: [
@@ -401,7 +401,7 @@ const SYMPOSIUMS = [
     },
     speakers: [
       {
-        name: 'Helen Liu',
+        name: 'Jerina Ang',
         company: 'Bybit',
       },
       {

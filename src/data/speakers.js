@@ -6,10 +6,10 @@ const SPONSOR_SPEAKERS = [
     image: '/speakers/Bybit - Igneus Terrenus.jpg',
   },
   {
-    name: 'Helen Liu',
-    role: 'Vice President (HR)',
+    name: 'Jerina Ang',
+    role: 'Senior HR Business Partner',
     company: 'Bybit',
-    image: '/speakers/Bybit - Helen Liu.png',
+    image: '/speakers/Bybit - Jerina.jpeg',
   },
   {
     name: 'Jason Liew',

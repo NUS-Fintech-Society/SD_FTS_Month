@@ -103,7 +103,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Stocks vs Crypto',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/89912086684',
     },
     speakers: [
       {
@@ -121,7 +121,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Getting Started with Stellar',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/84182051367',
     },
     speakers: [
       {

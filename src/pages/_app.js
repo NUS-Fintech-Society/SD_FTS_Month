@@ -2,13 +2,9 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-
-import { StylesProvider } from '@material-ui/styles'
-import { ThemeProvider as StyledComponentProvider } from 'styled-components'
-import { ThemeProvider as MaterialUiProvider } from '@material-ui/core/styles'
+import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from '../themes/'
-
+import theme from '../themes'
 import * as gtag from '../lib/gtag'
 
 export default function MyApp(props) {
@@ -55,16 +51,6 @@ export default function MyApp(props) {
         />
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-          rel="stylesheet"
-        />
         <script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
@@ -84,14 +70,11 @@ export default function MyApp(props) {
           }}
         />
       </Head>
-      <StyledComponentProvider theme={theme}>
-        <MaterialUiProvider theme={theme}>
-          <StylesProvider injectFirst>
-            <CssBaseline />
-            <Component {...pageProps} />
-          </StylesProvider>
-        </MaterialUiProvider>
-      </StyledComponentProvider>
+      <ThemeProvider theme={theme}>
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

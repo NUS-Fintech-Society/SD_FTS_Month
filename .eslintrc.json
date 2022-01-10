@@ -2,8 +2,7 @@
   "env": {
       "node": true,
       "browser": true,
-      "es6": true,
-      "jest/globals": true
+      "es6": true
   },
   "extends": [
       "eslint:recommended",
@@ -23,12 +22,12 @@
       "sourceType": "module"
   },
   "plugins": [
-      "jest",
       "react"
   ],
-  "settings": {
-    "import/resolver": {
-      "babel-module": {}
-    }
+  "rules": {
+   "react/react-in-jsx-scope": "off",
+   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+   "react/no-unescaped-entities": "off",
+   "react/no-children-prop": "off"
   }
 }

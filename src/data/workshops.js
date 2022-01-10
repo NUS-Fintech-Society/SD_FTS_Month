@@ -60,7 +60,7 @@ const INTRO_WORKSHOPS = [
     title: 'Web2 to Web3 : The New Internet',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/89280927336',
+      link: '',
     },
     speakers: [
       {
@@ -81,7 +81,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Intro to Asset Tokenisation',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/82223177498',
     },
     speakers: [
       {
@@ -331,7 +331,7 @@ const SYMPOSIUMS = [
     title: 'FinTech for Personal Finance',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/86453319720',
     },
     speakers: [
       {

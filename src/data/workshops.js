@@ -81,7 +81,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Intro to Asset Tokenisation',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/82223177498',
+      link: '',
     },
     speakers: [
       {
@@ -103,7 +103,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Stocks vs Crypto',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/89912086684',
+      link: '',
     },
     speakers: [
       {
@@ -121,7 +121,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Getting Started with Stellar',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/84182051367',
+      link: '',
     },
     speakers: [
       {
@@ -144,7 +144,7 @@ const INDUSTRY_WORKSHOPS = [
       'How Revolut makes foreign exchange faster and cheaper than traditional money changers?',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/85820107981',
     },
     speakers: [
       {
@@ -162,7 +162,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Introduction to Market Making',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/84047892672',
     },
     speakers: [
       {
@@ -331,7 +331,7 @@ const SYMPOSIUMS = [
     title: 'FinTech for Personal Finance',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/86453319720',
+      link: '',
     },
     speakers: [
       {

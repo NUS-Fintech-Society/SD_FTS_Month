@@ -144,7 +144,7 @@ const INDUSTRY_WORKSHOPS = [
       'How Revolut makes foreign exchange faster and cheaper than traditional money changers?',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/85820107981',
+      link: '',
     },
     speakers: [
       {
@@ -162,7 +162,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Introduction to Market Making',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/84047892672',
+      link: '',
     },
     speakers: [
       {
@@ -180,7 +180,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Navigating the Multi-Chain Landscape',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/85697585340',
     },
     speakers: [
       {
@@ -198,7 +198,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'NFT - State of the Art',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/82511837921',
     },
     speakers: [
       {

@@ -180,7 +180,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Navigating the Multi-Chain Landscape',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/85697585340',
+      link: '',
     },
     speakers: [
       {
@@ -198,7 +198,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'NFT - State of the Art',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/82511837921',
+      link: '',
     },
     speakers: [
       {
@@ -366,7 +366,7 @@ const SYMPOSIUMS = [
     title: 'Careers in Fintech (General)',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://nus-sg.zoom.us/j/84263829719?pwd=RFhzNlRaUmMreWgxM0M4dDBHVjloQT09',
     },
     speakers: [
       {
@@ -397,7 +397,7 @@ const SYMPOSIUMS = [
     title: 'Careers in Crypto',
     location: {
       venue: 'UTown Auditorium 2',
-      link: '',
+      link: 'https://us02web.zoom.us/j/83662323245?pwd=MGp3Qkd5SEJQQmdPMnQ4M0RLeDFXQT09',
     },
     speakers: [
       {

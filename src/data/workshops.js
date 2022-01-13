@@ -7,6 +7,7 @@ const INTRO_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=s2d0-3UZ_-E',
     },
     speakers: [
       {
@@ -25,6 +26,7 @@ const INTRO_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=tAnBAu1ZJhE',
     },
     speakers: [
       {
@@ -43,6 +45,7 @@ const INTRO_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=ReclZ76jZxA',
     },
     speakers: [
       {
@@ -61,6 +64,7 @@ const INTRO_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=6VPXcTdx_1U',
     },
     speakers: [
       {
@@ -82,6 +86,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=QjKifvvNxnM',
     },
     speakers: [
       {
@@ -104,6 +109,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=GR9oGFZfadA',
     },
     speakers: [
       {
@@ -122,6 +128,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=vbHCUMamLQw',
     },
     speakers: [
       {
@@ -145,6 +152,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=tnQImxBbnK0',
     },
     speakers: [
       {
@@ -163,6 +171,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=WXUxbj4SdXk',
     },
     speakers: [
       {
@@ -180,7 +189,8 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Navigating the Multi-Chain Landscape',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/85697585340',
+      link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -198,7 +208,8 @@ const INDUSTRY_WORKSHOPS = [
     title: 'NFT - State of the Art',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/82511837921',
+      link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -221,6 +232,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -239,6 +251,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -257,6 +270,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -275,6 +289,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -293,6 +308,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -311,6 +327,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: '',
     },
     speakers: [
       {
@@ -332,6 +349,7 @@ const SYMPOSIUMS = [
     location: {
       venue: 'Zoom',
       link: '',
+      recording: 'https://www.youtube.com/watch?v=ll2Im72V3zs',
     },
     speakers: [
       {
@@ -366,7 +384,8 @@ const SYMPOSIUMS = [
     title: 'Careers in Fintech (General)',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://nus-sg.zoom.us/j/84263829719?pwd=RFhzNlRaUmMreWgxM0M4dDBHVjloQT09',
+      recording: '',
     },
     speakers: [
       {
@@ -397,7 +416,8 @@ const SYMPOSIUMS = [
     title: 'Careers in Crypto',
     location: {
       venue: 'UTown Auditorium 2',
-      link: '',
+      link: 'https://us02web.zoom.us/j/83662323245?pwd=MGp3Qkd5SEJQQmdPMnQ4M0RLeDFXQT09',
+      recording: '',
     },
     speakers: [
       {

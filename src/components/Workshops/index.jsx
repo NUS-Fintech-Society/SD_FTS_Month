@@ -119,7 +119,7 @@ const Workshops = () => {
           color="primary"
           className={classes.button}
           onClick={() =>
-            window.open('https://forms.gle/3u4n8by519KTy9BV8', '_blank')
+            window.open('https://forms.gle/byDgBpzgbjh7HXdm7', '_blank')
           }
         >
           <Typography variant="subtitle1">Register Now</Typography>

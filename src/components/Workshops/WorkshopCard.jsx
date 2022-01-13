@@ -96,21 +96,29 @@ const WorkshopCard = (props) => {
           <Typography variant="body2" className={classes.sectionHeader}>
             Location:
           </Typography>
-          {workshop.location.link ? (
-            <Button
-              color="primary"
-              variant="outlined"
-              endIcon={<VideocamIcon />}
-              onClick={() => window.open(workshop.location.link, '_blank')}
-              className={classes.conferenceButton}
-            >
-              {workshop.location.venue}
-            </Button>
-          ) : (
-            <Typography variant="body2" color="textSecondary">
-              {workshop.location.venue}
-            </Typography>
-          )}
+          <Button
+            color="primary"
+            variant="outlined"
+            endIcon={<VideocamIcon />}
+            disabled={!workshop.location.link}
+            onClick={() => window.open(workshop.location.link, '_blank')}
+            className={classes.conferenceButton}
+          >
+            {workshop.location.venue}
+          </Button>
+          <Typography variant="body2" className={classes.sectionHeader}>
+            Recording:
+          </Typography>
+          <Button
+            color="primary"
+            variant="outlined"
+            endIcon={<VideocamIcon />}
+            disabled={!workshop.location.recording}
+            onClick={() => window.open(workshop.location.recording, '_blank')}
+            className={classes.conferenceButton}
+          >
+            YouTube
+          </Button>
         </CardContent>
       </Box>
     </Card>

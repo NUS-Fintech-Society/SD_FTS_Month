@@ -190,7 +190,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
-      recording: '',
+      recording: 'https://www.youtube.com/watch?v=4nmUZuAV8mg',
     },
     speakers: [
       {
@@ -209,7 +209,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
-      recording: '',
+      recording: 'https://www.youtube.com/watch?v=mWsgUF_yysg',
     },
     speakers: [
       {
@@ -384,8 +384,8 @@ const SYMPOSIUMS = [
     title: 'Careers in Fintech (General)',
     location: {
       venue: 'Zoom',
-      link: 'https://nus-sg.zoom.us/j/84263829719?pwd=RFhzNlRaUmMreWgxM0M4dDBHVjloQT09',
-      recording: '',
+      link: '',
+      recording: 'https://www.youtube.com/watch?v=TTG1bCAH7NY',
     },
     speakers: [
       {
@@ -416,7 +416,7 @@ const SYMPOSIUMS = [
     title: 'Careers in Crypto',
     location: {
       venue: 'UTown Auditorium 2',
-      link: 'https://us02web.zoom.us/j/83662323245?pwd=MGp3Qkd5SEJQQmdPMnQ4M0RLeDFXQT09',
+      link: '',
       recording: '',
     },
     speakers: [

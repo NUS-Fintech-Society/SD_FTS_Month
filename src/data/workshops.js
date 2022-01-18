@@ -231,7 +231,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Crypto for Decentralized Systems',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://nus-sg.zoom.us/j/88235354502?pwd=WGhzeE44bklDNXU5NFNiQ0dmSURUZz09',
       recording: '',
     },
     speakers: [
@@ -250,7 +250,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Decentralized Social Networks',
     location: {
       venue: 'Zoom',
-      link: '',
+      link: 'https://us02web.zoom.us/j/89930713702?pwd=VC9ScFJndTVSWENvR2VYeTlDWjlZQT09',
       recording: '',
     },
     speakers: [
@@ -284,7 +284,7 @@ const INDUSTRY_WORKSHOPS = [
   {
     id: 15,
     date: '20 Jan 2022',
-    time: '2000-2100',
+    time: '2100-2200',
     title: 'Algorithmic Scalability of Blockchain Protocols',
     location: {
       venue: 'Zoom',

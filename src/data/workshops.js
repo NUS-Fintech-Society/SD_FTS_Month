@@ -312,7 +312,7 @@ const INDUSTRY_WORKSHOPS = [
     },
     speakers: [
       {
-        name: 'George Pirlea',
+        name: 'Ilya Sergey',
         company: 'NUS Crystal Center',
       },
     ],

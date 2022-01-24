@@ -251,7 +251,7 @@ const INDUSTRY_WORKSHOPS = [
     location: {
       venue: 'Zoom',
       link: '',
-      recording: 'https://www.youtube.com/watch?v=4F1bh0J5dfc',
+      recording: '',
     },
     speakers: [
       {
@@ -269,7 +269,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Secure and Scalable Smart Contracts',
     location: {
       venue: 'Zoom',
-      link: 'https://nus-sg.zoom.us/j/85450232048?pwd=N3UveGVRY1ZxRjZuSG5zZ0hXU2VWQT09',
+      link: '',
       recording: '',
     },
     speakers: [
@@ -288,7 +288,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Algorithmic Scalability of Blockchain Protocols',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/88973113352?pwd=enA3SjNHMllUWGlNSGJ4RVVkQWdSQT09',
+      link: '',
       recording: '',
     },
     speakers: [
@@ -307,7 +307,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Distributed Protocol Verification',
     location: {
       venue: 'Zoom',
-      link: 'https://nus-sg.zoom.us/j/85901212504?pwd=Z2hDNy82L0xScFVibjhEVHl1RThNdz09',
+      link: '',
       recording: '',
     },
     speakers: [
@@ -326,7 +326,7 @@ const INDUSTRY_WORKSHOPS = [
     title: 'Security of Layer-0 Blockchain Networks',
     location: {
       venue: 'Zoom',
-      link: 'https://us02web.zoom.us/j/85850321820?pwd=cjV5T0hRbFd3Rnd0WXpUZEtibmYrUT09',
+      link: '',
       recording: '',
     },
     speakers: [

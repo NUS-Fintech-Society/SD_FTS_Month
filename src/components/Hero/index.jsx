@@ -4,6 +4,11 @@ import { makeStyles } from '@material-ui/core/styles'
 import { Box, Button, Container, Typography } from '@material-ui/core'
 import { Link } from 'react-scroll'
 import Sponsors from './Sponsors.jsx'
+import MuiAlert from '@material-ui/lab/Alert'
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />
+}
 
 const calculateTimeLeft = () => {
   let year = 2022
@@ -132,6 +137,7 @@ const useStyles = makeStyles((theme) => ({
   },
   root: {
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.palette.secondary.main,
@@ -139,14 +145,23 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     minHeight: '100vh',
   },
+  notification: {
+    zIndex: 1,
+    marginTop: 56,
+    width: '100%',
+    borderRadius: 0,
+  },
+  link: {
+    display: 'inline',
+    cursor: 'pointer',
+    color: theme.palette.text.contrast,
+    textDecoration: 'underline',
+  },
   contentWrapper: {
-    padding: '48px 0px',
+    paddingBottom: 48,
     textAlign: 'center',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: 'transparent',
-    [theme.breakpoints.down('sm')]: {
-      padding: '4px',
-    },
   },
   header: {
     fontWeight: 700,
@@ -215,6 +230,23 @@ const Hero = () => {
 
   return (
     <Box className={classes.root}>
+      <Alert severity="info" className={classes.notification}>
+        Greetings! Demo Day will be happening on 29 Jan 2022, 9am on Zoom. Tune
+        in to catch presentations by the finalists{' '}
+        <Typography
+          className={classes.link}
+          variant="body2"
+          onClick={() =>
+            window.open(
+              'https://nus-sg.zoom.us/j/88462969025?pwd=VHhJbTVjYlZiRllCUCtQNkgwOXlJQT09',
+              '_blank'
+            )
+          }
+        >
+          here
+        </Typography>
+        !
+      </Alert>
       <Container className={classes.contentWrapper} maxWidth="md">
         <div className={classes.SVGWrapper}>
           <img src="sprite-back.svg" className={classes.SVG} />

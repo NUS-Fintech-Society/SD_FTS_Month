@@ -151,12 +151,6 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     borderRadius: 0,
   },
-  link: {
-    display: 'inline',
-    cursor: 'pointer',
-    color: theme.palette.text.contrast,
-    textDecoration: 'underline',
-  },
   contentWrapper: {
     paddingBottom: 48,
     textAlign: 'center',
@@ -231,21 +225,10 @@ const Hero = () => {
   return (
     <Box className={classes.root}>
       <Alert severity="info" className={classes.notification}>
-        Greetings! Demo Day will be happening on 29 Jan 2022, 9am on Zoom. Tune
-        in to catch presentations by the finalists{' '}
-        <Typography
-          className={classes.link}
-          variant="body2"
-          onClick={() =>
-            window.open(
-              'https://nus-sg.zoom.us/j/88462969025?pwd=VHhJbTVjYlZiRllCUCtQNkgwOXlJQT09',
-              '_blank'
-            )
-          }
-        >
-          here
-        </Typography>
-        !
+        NUS Fintech Month 2022 has officially concluded. We would like to extend
+        our sincere gratitude to all our sponsors, partners, organisers and
+        participants for making this event possible. Stay tuned for the next
+        edition!
       </Alert>
       <Container className={classes.contentWrapper} maxWidth="md">
         <div className={classes.SVGWrapper}>

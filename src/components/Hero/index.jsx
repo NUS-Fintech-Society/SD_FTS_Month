@@ -226,8 +226,9 @@ const Hero = () => {
     <Box className={classes.root}>
       <Alert severity="info" className={classes.notification}>
         NUS Fintech Month 2022 has officially concluded. We would like to extend
-        our sincere gratitude to all partners, organisers and participants for
-        making this event possible. Stay tuned for the next edition!
+        our sincere gratitude to all our sponsors, partners, organisers and
+        participants for making this event possible. Stay tuned for the next
+        edition!
       </Alert>
       <Container className={classes.contentWrapper} maxWidth="md">
         <div className={classes.SVGWrapper}>

@@ -101,6 +101,7 @@ const Workshops = () => {
           variant="contained"
           color="primary"
           className={classes.button}
+          disabled
           onClick={() =>
             window.open('https://forms.gle/uY2Q8uGTMmLVTUeS6', '_blank')
           }
@@ -118,6 +119,7 @@ const Workshops = () => {
           variant="contained"
           color="primary"
           className={classes.button}
+          disabled
           onClick={() =>
             window.open('https://forms.gle/byDgBpzgbjh7HXdm7', '_blank')
           }
@@ -135,6 +137,7 @@ const Workshops = () => {
           variant="contained"
           color="primary"
           className={classes.button}
+          disabled
           onClick={() =>
             window.open('https://forms.gle/shL8Pei2os4Jvhi76', '_blank')
           }

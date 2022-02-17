@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - stg
-env:
-  NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID_STG}}
 
 jobs:
   build_and_deploy_staging:

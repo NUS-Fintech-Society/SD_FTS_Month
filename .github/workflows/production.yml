@@ -5,9 +5,6 @@ on:
     branches:
       - main
 
-env:
-  NEXT_PUBLIC_GA_ID: ${{secrets.NEXT_PUBLIC_GA_ID_PROD}}
-
 # IMPORTANT:
 # - Add .nojekyll file in output folder to inform GitHub not to build the project using Jekyll.
 # - Using GitHub Pages without a custom domain will result in deployed site breaking, as static assets and URLs are not linked properly.
